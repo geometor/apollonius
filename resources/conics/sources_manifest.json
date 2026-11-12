@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "work": {
+    "author": "Apollonius of Perga",
+    "greek_title": "Κωνικά (Kōnika)",
+    "latin_title": "Conicorum Libri Octo",
+    "english_title": "Treatise on Conic Sections (Books I–VII)",
+    "extant_books": 7,
+    "original_books": 8,
+    "classical_propositions_total": 387,
+    "heath_consolidated_propositions_total": 147
+  },
+  "editions": [
+    {
+      "id": "heath-1896-conics",
+      "role": "primary-english-edition",
+      "editor": "Sir Thomas Little Heath",
+      "title": "Apollonius of Perga: Treatise on Conic Sections, Edited in Modern Notation with Introductions Including an Essay on the Earlier History of the Subject",
+      "publisher": "Cambridge University Press",
+      "year": 1896,
+      "language": "en",
+      "rights": "Public Domain (published 1896; verified NOT_IN_COPYRIGHT)",
+      "archive_identifier": "treatiseonconics00apolrich",
+      "archive_url": "https://archive.org/details/treatiseonconics00apolrich",
+      "pdf_download_url": "https://archive.org/download/treatiseonconics00apolrich/treatiseonconics00apolrich.pdf",
+      "archival_pdf_bytes": 20397578,
+      "archival_pdf_sha256": "b8c059610cfdb28c5a3ca0d397223327d6dce1803a791dc278daf2ff576ed7ad",
+      "tracked_page_index": "sources/heath_1896_page_numbers.json",
+      "tracked_metadata": "sources/heath_1896_metadata.json"
+    },
+    {
+      "id": "heiberg-1891-vol1",
+      "role": "critical-greek-latin-books-1-4",
+      "editor": "Johan Ludvig Heiberg",
+      "title": "Apollonii Pergaei quae Graece exstant cum commentariis antiquis, Vol. I (Books I–IV)",
+      "publisher": "B. G. Teubner, Leipzig",
+      "year": 1891,
+      "language": "grc/la",
+      "rights": "Public Domain (published 1891)",
+      "archive_identifier": "apolloniipergaei01apoluoft",
+      "archive_url": "https://archive.org/details/apolloniipergaei01apoluoft",
+      "tracked_page_index": "sources/heiberg_1891_vol1_page_numbers.json"
+    },
+    {
+      "id": "heiberg-1893-vol2",
+      "role": "critical-greek-latin-fragments-eutocius-pappus",
+      "editor": "Johan Ludvig Heiberg",
+      "title": "Apollonii Pergaei quae Graece exstant cum commentariis antiquis, Vol. II (Fragments, Lemmas of Pappus, Commentaries of Eutocius)",
+      "publisher": "B. G. Teubner, Leipzig",
+      "year": 1893,
+      "language": "grc/la",
+      "rights": "Public Domain (published 1893)",
+      "archive_identifier": "apolloniipergaei02apoluoft",
+      "archive_url": "https://archive.org/details/apolloniipergaei02apoluoft",
+      "tracked_page_index": "sources/heiberg_1893_vol2_page_numbers.json"
+    },
+    {
+      "id": "halley-1710-oxon",
+      "role": "editio-princeps-books-5-7-arabic-latin",
+      "editor": "Edmond Halley",
+      "title": "Apollonii Pergaei Conicorum Libri Octo, et Sereni Antissensis De Sectione Cylindri & Coni Libri Duo",
+      "publisher": "E Theatro Sheldoniano, Oxford",
+      "year": 1710,
+      "language": "grc/la",
+      "rights": "Public Domain (published 1710; Books V–VII translated from Thabit ibn Qurra / Banu Musa Arabic MS Bodleian Marsh 667)",
+      "archive_identifier": "bub_gb_6N__e_V4xbAC",
+      "archive_url": "https://archive.org/details/bub_gb_6N__e_V4xbAC",
+      "tracked_metadata": "sources/halley_1710_metadata.json"
+    }
+  ],
+  "tracked_files": [
+    {
+      "filename": "sources/heath_1896_metadata.json",
+      "bytes": 3216,
+      "sha256": "1fc6e49ea5711fc75433d0e67c7cffc8786453a0cd7011a6469b5c163c82af18"
+    },
+    {
+      "filename": "sources/heath_1896_page_numbers.json",
+      "bytes": 58176,
+      "sha256": "e3e0a408c19ec040e88735c1f3cac0f9733614d8c3da7d6476e7f68e376d3064"
+    },
+    {
+      "filename": "sources/heiberg_1891_vol1_page_numbers.json",
+      "bytes": 71680,
+      "sha256": "2948ef7556965e5a3ae8169d7a2a50adefd623a525ce02a021ab47e8c19a7133"
+    },
+    {
+      "filename": "sources/heiberg_1893_vol2_page_numbers.json",
+      "bytes": 69308,
+      "sha256": "e3bdca2feafe5c7d8895eef0d38063a9c3dd84f2053f0702d610a9bf6e1f3494"
+    },
+    {
+      "filename": "sources/halley_1710_metadata.json",
+      "bytes": 1387,
+      "sha256": "d9bf150d45b3eec7aa5573ca503a020df1d4cf98671ca52647e5b1cb1ff7f817"
+    }
+  ]
+}

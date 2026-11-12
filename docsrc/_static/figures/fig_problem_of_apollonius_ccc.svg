@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" width="680" height="420" class="euclid-graphic" data-graphic-id="g11" data-proposition="Tangencies-CCC">
+  <defs>
+    <marker id="geom-tick-1" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-2" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+      <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-3" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+      <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+  </defs>
+  <style>
+    :root {
+      --geom-fg: #18181b;
+      --geom-bg: #ffffff;
+      --geom-muted: #71717a;
+      --geom-point-stroke: #ffffff;
+      --geom-poly-fill: #18181b;
+      --geom-accent: #c88a1e;
+      --geom-assert: #16a34a;
+      --geom-hyper: #2563eb;
+      --geom-rose: #be123c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --geom-fg: #e4ded5;
+        --geom-bg: #18181b;
+        --geom-muted: #a1a1aa;
+        --geom-point-stroke: #18181b;
+        --geom-poly-fill: #e4ded5;
+        --geom-accent: #eab308;
+        --geom-assert: #4ade80;
+        --geom-hyper: #60a5fa;
+        --geom-rose: #fb7185;
+      }
+    }
+    .euclid-graphic {
+      font-family: 'Fira Sans Condensed', 'Fira Sans', system-ui, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      background-color: var(--geom-bg);
+    }
+    .geom-line {
+      stroke: var(--geom-fg);
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-bold {
+      stroke: var(--geom-fg);
+      stroke-width: 2.35;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-faint {
+      stroke: var(--geom-muted);
+      stroke-width: 1.15;
+      stroke-opacity: 0.72;
+      stroke-linecap: round;
+      fill: none;
+    }
+    .geom-dashed {
+      stroke: var(--geom-muted);
+      stroke-width: 1.35;
+      stroke-dasharray: 5, 3.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-accent-line {
+      stroke: var(--geom-accent);
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-assert-line {
+      stroke: var(--geom-assert);
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-hyper-line {
+      stroke: var(--geom-hyper);
+      stroke-width: 2.1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-rose-line {
+      stroke: var(--geom-rose);
+      stroke-width: 2.0;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-circle {
+      stroke: var(--geom-fg);
+      stroke-width: 1.75;
+      fill: none;
+    }
+    .geom-overlay {
+      stroke: transparent;
+      stroke-width: 4.0;
+      stroke-linecap: round;
+      fill: none;
+    }
+    .geom-polygon {
+      fill: var(--geom-poly-fill);
+      fill-opacity: 0.06;
+      stroke: none;
+    }
+    .geom-polygon-accent {
+      fill: var(--geom-accent);
+      fill-opacity: 0.16;
+      stroke: var(--geom-accent);
+      stroke-width: 1.4;
+    }
+    .geom-polygon-assert {
+      fill: var(--geom-assert);
+      fill-opacity: 0.14;
+      stroke: var(--geom-assert);
+      stroke-width: 1.4;
+    }
+    .geom-polygon-rose {
+      fill: var(--geom-rose);
+      fill-opacity: 0.14;
+      stroke: var(--geom-rose);
+      stroke-width: 1.4;
+    }
+    .geom-point {
+      fill: var(--geom-fg);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-point-accent {
+      fill: var(--geom-accent);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-point-assert {
+      fill: var(--geom-assert);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-point-rose {
+      fill: var(--geom-rose);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-label {
+      font-size: 13.5px;
+      font-weight: 700;
+      fill: var(--geom-fg);
+      user-select: none;
+    }
+    .geom-label-sm {
+      font-size: 11.5px;
+      font-weight: 700;
+      fill: var(--geom-muted);
+      user-select: none;
+    }
+    .geom-label-accent {
+      font-size: 12.5px;
+      font-weight: 700;
+      fill: var(--geom-accent);
+      user-select: none;
+    }
+    .geom-label-assert {
+      font-size: 12.5px;
+      font-weight: 700;
+      fill: var(--geom-assert);
+      user-select: none;
+    }
+    .geom-label-hyper {
+      font-size: 12.5px;
+      font-weight: 700;
+      fill: var(--geom-hyper);
+      user-select: none;
+    }
+    .geom-label-rose {
+      font-size: 12.5px;
+      font-weight: 700;
+      fill: var(--geom-rose);
+      user-select: none;
+    }
+  </style>
+  <g id="elements">
+    <polygon points="308.00,180.00 307.74,183.92 306.98,187.76 305.72,191.48 303.98,195.00 301.80,198.26 299.21,201.21 296.26,203.80 293.00,205.98 289.48,207.72 285.76,208.98 281.92,209.74 278.00,210.00 274.08,209.74 270.24,208.98 266.52,207.72 263.00,205.98 259.74,203.80 256.79,201.21 254.20,198.26 252.02,195.00 250.28,191.48 249.02,187.76 248.26,183.92 248.00,180.00 248.26,176.08 249.02,172.24 250.28,168.52 252.02,165.00 254.20,161.74 256.79,158.79 259.74,156.20 263.00,154.02 266.52,152.28 270.24,151.02 274.08,150.26 278.00,150.00 281.92,150.26 285.76,151.02 289.48,152.28 293.00,154.02 296.26,156.20 299.21,158.79 301.80,161.74 303.98,165.00 305.72,168.52 306.98,172.24 307.74,176.08" class="geom-polygon" />
+    <polygon points="430.00,188.00 429.79,191.13 429.18,194.21 428.17,197.18 426.78,200.00 425.04,202.61 422.97,204.97 420.61,207.04 418.00,208.78 415.18,210.17 412.21,211.18 409.13,211.79 406.00,212.00 402.87,211.79 399.79,211.18 396.82,210.17 394.00,208.78 391.39,207.04 389.03,204.97 386.96,202.61 385.22,200.00 383.83,197.18 382.82,194.21 382.21,191.13 382.00,188.00 382.21,184.87 382.82,181.79 383.83,178.82 385.22,176.00 386.96,173.39 389.03,171.03 391.39,168.96 394.00,167.22 396.82,165.83 399.79,164.82 402.87,164.21 406.00,164.00 409.13,164.21 412.21,164.82 415.18,165.83 418.00,167.22 420.61,168.96 422.97,171.03 425.04,173.39 426.78,176.00 428.17,178.82 429.18,181.79 429.79,184.87" class="geom-polygon" />
+    <polygon points="371.00,276.00 370.77,279.52 370.08,282.99 368.94,286.33 367.38,289.50 365.42,292.44 363.09,295.09 360.44,297.42 357.50,299.38 354.33,300.94 350.99,302.08 347.52,302.77 344.00,303.00 340.48,302.77 337.01,302.08 333.67,300.94 330.50,299.38 327.56,297.42 324.91,295.09 322.58,292.44 320.62,289.50 319.06,286.33 317.92,282.99 317.23,279.52 317.00,276.00 317.23,272.48 317.92,269.01 319.06,265.67 320.62,262.50 322.58,259.56 324.91,256.91 327.56,254.58 330.50,252.62 333.67,251.06 337.01,249.92 340.48,249.23 344.00,249.00 347.52,249.23 350.99,249.92 354.33,251.06 357.50,252.62 360.44,254.58 363.09,256.91 365.42,259.56 367.38,262.50 368.94,265.67 370.08,269.01 370.77,272.48" class="geom-polygon" />
+  </g>
+  <g id="graphics">
+    <circle cx="343.72" cy="207.69" r="41.32" class="geom-accent-line" data-ref="( S1 )" />
+    <circle cx="342.40" cy="242.97" r="60.07" class="geom-rose-line" data-ref="( S2 )" />
+    <circle cx="368.73" cy="191.12" r="61.40" class="geom-rose-line" data-ref="( S3 )" />
+    <circle cx="314.73" cy="186.38" r="67.28" class="geom-rose-line" data-ref="( S4 )" />
+    <circle cx="373.68" cy="232.90" r="79.33" class="geom-hyper-line" data-ref="( S5 )" />
+    <circle cx="303.47" cy="231.34" r="87.31" class="geom-hyper-line" data-ref="( S6 )" />
+    <circle cx="337.30" cy="207.83" r="95.50" class="geom-assert-line" data-ref="( S7 )" />
+    <circle cx="340.76" cy="149.07" r="99.97" class="geom-hyper-line" data-ref="( S8 )" />
+    <circle cx="278.00" cy="180.00" r="30.00" class="geom-bold" data-ref="( C1 )" />
+    <circle cx="406.00" cy="188.00" r="24.00" class="geom-bold" data-ref="( C2 )" />
+    <circle cx="344.00" cy="276.00" r="27.00" class="geom-bold" data-ref="( C3 )" />
+  </g>
+  <g id="highlights" style="pointer-events: none;">
+    <circle cx="343.72" cy="207.69" r="41.32" class="geom-overlay" data-ref="( S1 )" />
+    <circle cx="342.40" cy="242.97" r="60.07" class="geom-overlay" data-ref="( S2 )" />
+    <circle cx="368.73" cy="191.12" r="61.40" class="geom-overlay" data-ref="( S3 )" />
+    <circle cx="314.73" cy="186.38" r="67.28" class="geom-overlay" data-ref="( S4 )" />
+    <circle cx="373.68" cy="232.90" r="79.33" class="geom-overlay" data-ref="( S5 )" />
+    <circle cx="303.47" cy="231.34" r="87.31" class="geom-overlay" data-ref="( S6 )" />
+    <circle cx="337.30" cy="207.83" r="95.50" class="geom-overlay" data-ref="( S7 )" />
+    <circle cx="340.76" cy="149.07" r="99.97" class="geom-overlay" data-ref="( S8 )" />
+    <circle cx="278.00" cy="180.00" r="30.00" class="geom-overlay" data-ref="( C1 )" />
+    <circle cx="406.00" cy="188.00" r="24.00" class="geom-overlay" data-ref="( C2 )" />
+    <circle cx="344.00" cy="276.00" r="27.00" class="geom-overlay" data-ref="( C3 )" />
+  </g>
+  <g id="points">
+    <circle cx="278.00" cy="180.00" r="3.40" class="geom-point" data-ref="C1" />
+    <circle cx="406.00" cy="188.00" r="3.40" class="geom-point" data-ref="C2" />
+    <circle cx="344.00" cy="276.00" r="3.40" class="geom-point" data-ref="C3" />
+  </g>
+  <g id="labels">
+    <text x="340.00" y="22.00" text-anchor="middle" class="geom-label-sm">Lost Tangencies (Pappus VII): The Problem of Apollonius (CCC — All 8 Tangent Circles)</text>
+    <text x="278.00" y="185.00" text-anchor="middle" class="geom-label">C₁</text>
+    <text x="406.00" y="193.00" text-anchor="middle" class="geom-label">C₂</text>
+    <text x="344.00" y="281.00" text-anchor="middle" class="geom-label">C₃</text>
+    <text x="340.00" y="404.00" text-anchor="middle" class="geom-label-sm">Given C₁, C₂, C₃ (bold):  1 externally tangent (green) · 1 enclosing (gold) · 6 mixed-contact pairs (blue/rose)</text>
+  </g>
+</svg>

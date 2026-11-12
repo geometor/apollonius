@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" width="680" height="380" class="euclid-graphic" data-graphic-id="g4" data-proposition="II.1-17">
+  <defs>
+    <marker id="geom-tick-1" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-2" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+      <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-3" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+      <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+  </defs>
+  <style>
+    :root {
+      --geom-fg: #18181b;
+      --geom-bg: #ffffff;
+      --geom-muted: #71717a;
+      --geom-point-stroke: #ffffff;
+      --geom-poly-fill: #18181b;
+      --geom-accent: #c88a1e;
+      --geom-assert: #16a34a;
+      --geom-hyper: #2563eb;
+      --geom-rose: #be123c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --geom-fg: #e4ded5;
+        --geom-bg: #18181b;
+        --geom-muted: #a1a1aa;
+        --geom-point-stroke: #18181b;
+        --geom-poly-fill: #e4ded5;
+        --geom-accent: #eab308;
+        --geom-assert: #4ade80;
+        --geom-hyper: #60a5fa;
+        --geom-rose: #fb7185;
+      }
+    }
+    .euclid-graphic {
+      font-family: 'Fira Sans Condensed', 'Fira Sans', system-ui, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      background-color: var(--geom-bg);
+    }
+    .geom-line {
+      stroke: var(--geom-fg);
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-bold {
+      stroke: var(--geom-fg);
+      stroke-width: 2.35;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-faint {
+      stroke: var(--geom-muted);
+      stroke-width: 1.15;
+      stroke-opacity: 0.72;
+      stroke-linecap: round;
+      fill: none;
+    }
+    .geom-dashed {
+      stroke: var(--geom-muted);
+      stroke-width: 1.35;
+      stroke-dasharray: 5, 3.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-accent-line {
+      stroke: var(--geom-accent);
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-assert-line {
+      stroke: var(--geom-assert);
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-hyper-line {
+      stroke: var(--geom-hyper);
+      stroke-width: 2.1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-rose-line {
+      stroke: var(--geom-rose);
+      stroke-width: 2.0;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-circle {
+      stroke: var(--geom-fg);
+      stroke-width: 1.75;
+      fill: none;
+    }
+    .geom-overlay {
+      stroke: transparent;
+      stroke-width: 4.0;
+      stroke-linecap: round;
+      fill: none;
+    }
+    .geom-polygon {
+      fill: var(--geom-poly-fill);
+      fill-opacity: 0.06;
+      stroke: none;
+    }
+    .geom-polygon-accent {
+      fill: var(--geom-accent);
+      fill-opacity: 0.16;
+      stroke: var(--geom-accent);
+      stroke-width: 1.4;
+    }
+    .geom-polygon-assert {
+      fill: var(--geom-assert);
+      fill-opacity: 0.14;
+      stroke: var(--geom-assert);
+      stroke-width: 1.4;
+    }
+    .geom-polygon-rose {
+      fill: var(--geom-rose);
+      fill-opacity: 0.14;
+      stroke: var(--geom-rose);
+      stroke-width: 1.4;
+    }
+    .geom-point {
+      fill: var(--geom-fg);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-point-accent {
+      fill: var(--geom-accent);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-point-assert {
+      fill: var(--geom-assert);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-point-rose {
+      fill: var(--geom-rose);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-label {
+      font-size: 13.5px;
+      font-weight: 700;
+      fill: var(--geom-fg);
+      user-select: none;
+    }
+    .geom-label-sm {
+      font-size: 11.5px;
+      font-weight: 700;
+      fill: var(--geom-muted);
+      user-select: none;
+    }
+    .geom-label-accent {
+      font-size: 12.5px;
+      font-weight: 700;
+      fill: var(--geom-accent);
+      user-select: none;
+    }
+    .geom-label-assert {
+      font-size: 12.5px;
+      font-weight: 700;
+      fill: var(--geom-assert);
+      user-select: none;
+    }
+    .geom-label-hyper {
+      font-size: 12.5px;
+      font-weight: 700;
+      fill: var(--geom-hyper);
+      user-select: none;
+    }
+    .geom-label-rose {
+      font-size: 12.5px;
+      font-weight: 700;
+      fill: var(--geom-rose);
+      user-select: none;
+    }
+  </style>
+  <g id="elements">
+  </g>
+  <g id="graphics">
+    <path d="M 62.00 3.54 L 340.00 196.00 L 618.00 388.46" class="geom-dashed" data-ref="[ L1 L2 ]" />
+    <path d="M 62.00 388.46 L 340.00 196.00 L 618.00 3.54" class="geom-dashed" data-ref="[ M1 M2 ]" />
+    <path d="M 573.39 348.29 L 556.53 335.84 L 541.04 324.28 L 526.85 313.54 L 513.85 303.56 L 501.96 294.27 L 491.11 285.60 L 481.23 277.51 L 472.25 269.94 L 464.12 262.85 L 456.79 256.18 L 450.20 249.90 L 444.32 243.96 L 439.11 238.33 L 434.53 232.97 L 430.55 227.85 L 427.16 222.93 L 424.32 218.18 L 422.03 213.58 L 420.26 209.08 L 419.00 204.68 L 418.25 200.32 L 418.00 196.00 L 418.25 191.68 L 419.00 187.32 L 420.26 182.92 L 422.03 178.42 L 424.32 173.82 L 427.16 169.07 L 430.55 164.15 L 434.53 159.03 L 439.11 153.67 L 444.32 148.04 L 450.20 142.10 L 456.79 135.82 L 464.12 129.15 L 472.25 122.06 L 481.23 114.49 L 491.11 106.40 L 501.96 97.73 L 513.85 88.44 L 526.85 78.46 L 541.04 67.72 L 556.53 56.16 L 573.39 43.71" class="geom-bold" />
+    <path d="M 106.61 348.29 L 123.47 335.84 L 138.96 324.28 L 153.15 313.54 L 166.15 303.56 L 178.04 294.27 L 188.89 285.60 L 198.77 277.51 L 207.75 269.94 L 215.88 262.85 L 223.21 256.18 L 229.80 249.90 L 235.68 243.96 L 240.89 238.33 L 245.47 232.97 L 249.45 227.85 L 252.84 222.93 L 255.68 218.18 L 257.97 213.58 L 259.74 209.08 L 261.00 204.68 L 261.75 200.32 L 262.00 196.00 L 261.75 191.68 L 261.00 187.32 L 259.74 182.92 L 257.97 178.42 L 255.68 173.82 L 252.84 169.07 L 249.45 164.15 L 245.47 159.03 L 240.89 153.67 L 235.68 148.04 L 229.80 142.10 L 223.21 135.82 L 215.88 129.15 L 207.75 122.06 L 198.77 114.49 L 188.89 106.40 L 178.04 97.73 L 166.15 88.44 L 153.15 78.46 L 138.96 67.72 L 123.47 56.16 L 106.61 43.71" class="geom-bold" />
+    <path d="M 138.01 46.10 L 154.71 56.82 L 170.21 66.64 L 184.63 75.64 L 198.06 83.87 L 210.57 91.38 L 222.26 98.22 L 233.20 104.44 L 243.45 110.07 L 253.08 115.15 L 262.15 119.71 L 270.73 123.78 L 278.86 127.39 L 286.60 130.56 L 294.00 133.31 L 301.11 135.66 L 307.96 137.62 L 314.61 139.21 L 321.10 140.44 L 327.47 141.31 L 333.75 141.83 L 340.00 142.00 L 346.25 141.83 L 352.53 141.31 L 358.90 140.44 L 365.39 139.21 L 372.04 137.62 L 378.89 135.66 L 386.00 133.31 L 393.40 130.56 L 401.14 127.39 L 409.27 123.78 L 417.85 119.71 L 426.92 115.15 L 436.55 110.07 L 446.80 104.44 L 457.74 98.22 L 469.43 91.38 L 481.94 83.87 L 495.37 75.64 L 509.79 66.64 L 525.29 56.82 L 541.99 46.10" class="geom-hyper-line" />
+    <path d="M 138.01 345.90 L 154.71 335.18 L 170.21 325.36 L 184.63 316.36 L 198.06 308.13 L 210.57 300.62 L 222.26 293.78 L 233.20 287.56 L 243.45 281.93 L 253.08 276.85 L 262.15 272.29 L 270.73 268.22 L 278.86 264.61 L 286.60 261.44 L 294.00 258.69 L 301.11 256.34 L 307.96 254.38 L 314.61 252.79 L 321.10 251.56 L 327.47 250.69 L 333.75 250.17 L 340.00 250.00 L 346.25 250.17 L 352.53 250.69 L 358.90 251.56 L 365.39 252.79 L 372.04 254.38 L 378.89 256.34 L 386.00 258.69 L 393.40 261.44 L 401.14 264.61 L 409.27 268.22 L 417.85 272.29 L 426.92 276.85 L 436.55 281.93 L 446.80 287.56 L 457.74 293.78 L 469.43 300.62 L 481.94 308.13 L 495.37 316.36 L 509.79 325.36 L 525.29 335.18 L 541.99 345.90" class="geom-hyper-line" />
+    <path d="M 471.20 105.17 L 449.99 135.90 L 428.79 166.64" class="geom-accent-line" data-ref="/ D1 P /" marker-mid="url(#geom-tick-1)" />
+    <path d="M 428.79 166.64 L 407.58 197.37 L 386.37 228.10" class="geom-accent-line" data-ref="/ P D2 /" marker-mid="url(#geom-tick-1)" />
+    <path d="M 522.73 81.60 L 481.59 160.71 L 440.45 239.82" class="geom-line" data-ref="/ Q1 Q2 /" />
+    <path d="M 532.56 62.69 L 527.65 72.14 L 522.73 81.60" class="geom-assert-line" data-ref="/ R1 Q1 /" marker-mid="url(#geom-tick-2)" />
+    <path d="M 440.45 239.82 L 435.54 249.28 L 430.62 258.74" class="geom-assert-line" data-ref="/ Q2 R2 /" marker-mid="url(#geom-tick-2)" />
+  </g>
+  <g id="highlights" style="pointer-events: none;">
+    <path d="M 62.00 3.54 L 340.00 196.00 L 618.00 388.46" class="geom-overlay" data-ref="[ L1 L2 ]" />
+    <path d="M 62.00 388.46 L 340.00 196.00 L 618.00 3.54" class="geom-overlay" data-ref="[ M1 M2 ]" />
+    <path d="M 471.20 105.17 L 449.99 135.90 L 428.79 166.64" class="geom-overlay" data-ref="/ D1 P /" />
+    <path d="M 428.79 166.64 L 407.58 197.37 L 386.37 228.10" class="geom-overlay" data-ref="/ P D2 /" />
+    <path d="M 522.73 81.60 L 481.59 160.71 L 440.45 239.82" class="geom-overlay" data-ref="/ Q1 Q2 /" />
+    <path d="M 532.56 62.69 L 527.65 72.14 L 522.73 81.60" class="geom-overlay" data-ref="/ R1 Q1 /" />
+    <path d="M 440.45 239.82 L 435.54 249.28 L 430.62 258.74" class="geom-overlay" data-ref="/ Q2 R2 /" />
+  </g>
+  <g id="points">
+    <circle cx="340.00" cy="196.00" r="3.40" class="geom-point" data-ref="C" />
+    <circle cx="418.00" cy="196.00" r="3.40" class="geom-point" data-ref="A" />
+    <circle cx="262.00" cy="196.00" r="3.40" class="geom-point" />
+    <circle cx="428.79" cy="166.64" r="3.40" class="geom-point-accent" data-ref="P" />
+    <circle cx="471.20" cy="105.17" r="3.40" class="geom-point-accent" data-ref="D" />
+    <circle cx="386.37" cy="228.10" r="3.40" class="geom-point-accent" />
+    <circle cx="532.56" cy="62.69" r="3.40" class="geom-point-assert" data-ref="R" />
+    <circle cx="522.73" cy="81.60" r="3.40" class="geom-point-assert" data-ref="Q" />
+    <circle cx="440.45" cy="239.82" r="3.40" class="geom-point-assert" />
+    <circle cx="430.62" cy="258.74" r="3.40" class="geom-point-assert" />
+  </g>
+  <g id="labels">
+    <text x="340.00" y="22.00" text-anchor="middle" class="geom-label-sm">II.1–17: Asymptotes, Conjugate Hyperbolas, Tangent Bisection &amp; Equal Secant Intercepts</text>
+    <text x="328.00" y="200.00" text-anchor="middle" class="geom-label">C</text>
+    <text x="408.00" y="210.00" text-anchor="middle" class="geom-label-sm">A</text>
+    <text x="272.00" y="210.00" text-anchor="middle" class="geom-label-sm">A′</text>
+    <text x="416.79" y="161.64" text-anchor="middle" class="geom-label-accent">P</text>
+    <text x="461.20" y="97.17" text-anchor="middle" class="geom-label-accent">D</text>
+    <text x="374.37" y="240.10" text-anchor="middle" class="geom-label-accent">D′</text>
+    <text x="545.56" y="58.69" text-anchor="middle" class="geom-label-assert">R</text>
+    <text x="535.73" y="84.60" text-anchor="middle" class="geom-label-assert">Q</text>
+    <text x="454.45" y="242.82" text-anchor="middle" class="geom-label-assert">Q′</text>
+    <text x="444.62" y="268.74" text-anchor="middle" class="geom-label-assert">R′</text>
+    <text x="340.00" y="62.00" text-anchor="middle" class="geom-label-hyper">Conjugate Hyperbola</text>
+    <text x="122.00" y="198.00" text-anchor="middle" class="geom-label-sm">Opposite Branch</text>
+    <text x="340.00" y="364.00" text-anchor="middle" class="geom-label-sm">II.3: DP = PD′ (tangent bisected)   ·   II.8: RQ = Q′R′ (secant intercepts equal)</text>
+  </g>
+</svg>

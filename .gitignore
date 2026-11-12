@@ -20,3 +20,5 @@ dist/
 resources/conics/scans/
 resources/conics/pdfs/
 scratch/
+docs/
+docsrc/modules/api/

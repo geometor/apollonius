@@ -1,0 +1,78 @@
+{
+  "identifier": "treatiseonconics00apolrich",
+  "metadata": {
+    "title": "Treatise on conic sections",
+    "creator": [
+      "Apollonius, of Perga",
+      "Heath, Thomas Little, Sir, 1861-1940"
+    ],
+    "subject": [
+      "Mathematics, Greek",
+      "Conic sections"
+    ],
+    "description": [
+      "\"List of principal authorities\": p. [xiii]",
+      "Introduction: pt. I. The earlier history of conic sections among the Greeks. 1. The discovery of conic sections; Menaechmus. 2. Aristaeus and Euclid. 3. Archimedes. pt. II. Introduction to the conics of Apollonius. 1. The author and his own account of the conics. 2. General characteristics. 3. The methods of Apollonius. 4. The construction of a conic by means of tangents. 5. The three-line and four-line locus. 6. The construction of a conic through five points.-Appendix: Notes on the terminology of Greek geometry.--The conics of Apollonius"
+    ],
+    "publisher": "Cambridge, University press",
+    "date": "1896",
+    "language": [
+      "eng",
+      "grc"
+    ],
+    "copyright-evidence-operator": "MarkGraves",
+    "possible-copyright-status": "NOT_IN_COPYRIGHT",
+    "copyright-region": "US",
+    "copyright-evidence": "Evidence reported by MarkGraves for item treatiseonconics00apolrich on August 25, 2008: no visible notice of copyright; stated date is 1896.",
+    "copyright-evidence-date": "20080825151613",
+    "sponsor": "MSN",
+    "contributor": "University of California Libraries",
+    "scanningcenter": "rich",
+    "mediatype": "texts",
+    "call_number": "nrlf_ucb:GLAD-246564",
+    "collection-library": "nrlf_ucb",
+    "identifier-bib": "GLAD-246564",
+    "repub_state": "4",
+    "updatedate": "2008-08-25 15:16:16",
+    "updater": "MarkGraves",
+    "identifier": "treatiseonconics00apolrich",
+    "uploader": "markg@archive.org",
+    "addeddate": "2008-08-25 15:16:18",
+    "publicdate": "2008-08-25 15:16:23",
+    "ppi": "500",
+    "camera": "Canon 5D",
+    "operator": "scanner-ani-rokosoi@archive.org",
+    "scanner": "scribe5.rich.archive.org",
+    "scandate": "20080827002136",
+    "imagecount": "444",
+    "foldoutcount": "0",
+    "identifier-access": "http://www.archive.org/details/treatiseonconics00apolrich",
+    "identifier-ark": "ark:/13960/t4bp08b2n",
+    "scanfactors": "13",
+    "curation": "[curator]julie@archive.org[/curator][date]20080904044648[/date][state]approved[/state]",
+    "collection": [
+      "cdl",
+      "americana",
+      "greekclassicslist"
+    ],
+    "backup_location": "ia903602_10",
+    "openlibrary_edition": "OL23349878M",
+    "openlibrary_work": "OL2038221W",
+    "external-identifier": "urn:oclc:record:1157948922",
+    "filesxml": [
+      "Sat Dec 26 13:56:04 UTC 2020",
+      "Fri Jan 1 2:55:33 UTC 2021"
+    ],
+    "lccn": "03015050//r85",
+    "oclc-id": "2021267",
+    "associated-names": "Heath, Thomas Little, Sir, 1861-1940",
+    "ocr_module_version": "0.0.21",
+    "ocr_converted": "abbyy-to-hocr 1.1.37",
+    "page_number_confidence": "80",
+    "page_number_module_version": "1.0.3"
+  },
+  "leaf_formula": {
+    "roman_frontmatter": "pdf_page = roman_value + 8 (pp. vii-clxx -> PDF 15-178)",
+    "arabic_treatise": "pdf_page = arabic_page + 180 (pp. 1-254 -> PDF 181-434)"
+  }
+}
