@@ -17,7 +17,7 @@ With ``geometor/apollonius``, the GEOMETOR Digital Scriptorium completes Sir Tho
 
 1. **Apollonius (1896)** — *Treatise on Conic Sections* (``geometor/apollonius``): **387 classical propositions** consolidated into **147 propositions** across Books I–VII, plus the analytic treasury in Pappus Book VII.
 2. **Archimedes (1897 / 1912)** — *The Works of Archimedes* & *The Method* (``geometor/archimedes``): Exhaustion, mechanical equilibrium, and quadrature of conic segments and paraboloids.
-3. **Euclid (1908 / 1926)** — *The Thirteen Books of Euclid's Elements* (``geometor/euclid``): The axiomatic and area-application foundation (`G.1`–`G.601` in ``geometor/elements``).
+3. **Euclid (1908 / 1926)** — *The Thirteen Books of Euclid's Elements* (``geometor/euclid``): The axiomatic and area-application foundation (``G.1``–``G.601`` in ``geometor/elements``).
 
 Explore the Codex
 -----------------
@@ -27,12 +27,3 @@ Explore the Codex
 * :doc:`About Apollonius & the Textual Tradition <about/index>` — Life of *The Great Geometer*, the Heath Trilogy, and the Greek-Arabic manuscript transmission.
 * :doc:`Python Package & Concordance API <modules/index>` — Reference for ``geometor.apollonius`` concordance verification, apparatus generation, and CLI utilities.
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-
-   conics/index
-   mission/index
-   about/index
-   modules/index
-   changelog
