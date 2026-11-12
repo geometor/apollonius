@@ -21,4 +21,7 @@ resources/conics/scans/
 resources/conics/pdfs/
 scratch/
 docs/
+docs.bak/
 docsrc/modules/api/
+.doctrees
+
