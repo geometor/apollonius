@@ -1,0 +1,163 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes — Books VI &amp; VII: Spectral Matrix Invariants &amp; the Lost Book VIII &mdash; ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • apollonius</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">apollonius</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Conics</a>
+        </li>
+        <li>
+          <a href="../../mission/index.html"  >Mission</a>
+        </li>
+        <li>
+          <a href="../../about/index.html"  >About</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >Modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; apollonius</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../book-5/book-5-notes.html" title="Book V — Normals, Minimum &amp; Maximum Lines, Subnormals &amp; the Evolute">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <a class="book-track-item" href="books-6-7-en.html">English</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="books-6-7-summary.html">Summary</a>
+              <span class="book-track-sep">&middot;</span>
+              <strong class="book-track-item is-active" aria-current="page">Notes</strong>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../lost-works-pappus/lost-works-pappus-notes.html" title="Appendix — The Lost Analytic Treasury in Pappus Book VII"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="notes-books-vi-vii-spectral-matrix-invariants-the-lost-book-viii">
+        <span id="unit-6-books-6-7-notes"></span><h1>Notes — Books VI &amp; VII: Spectral Matrix Invariants &amp; the Lost Book VIII<a class="headerlink" href="#notes-books-vi-vii-spectral-matrix-invariants-the-lost-book-viii" title="Link to this heading">¶</a></h1>
+        <section class="level-2" id="linear-algebraic-meaning-of-apollonius-s-two-theorems">
+        <h2>1. Linear-Algebraic Meaning of Apollonius’s Two Theorems<a class="headerlink" href="#linear-algebraic-meaning-of-apollonius-s-two-theorems" title="Link to this heading">¶</a></h2>
+        <p>From the vantage point of modern linear algebra and Rational Trigonometry (<a class="citation-ref" id="occ-cite-wildberger-2005-1" href="../bibliography.html#cite-wildberger-2005" data-cite="wildberger:2005" title="Norman J. Wildberger — Divine Proportions: Rational Trigonometry to Universal Geometry (Sydney: Wild Egg, 2005; GEOMETOR • wildberger)">Wildberger 2005</a>), <strong>Propositions 129 and 136 (`VII.12–13, 31`)</strong> express the two fundamental <strong>orthogonal invariants (trace and determinant)</strong> of a <span class="geom-eq-marker" data-assert-equal="2 \times 2" hidden></span> matrix!</p>
+        <p>Let <span class="geom-eq-marker" data-assert-equal="\mathbf{u} = \overrightarrow{CP}" hidden></span> and <span class="geom-eq-marker" data-assert-equal="\mathbf{v} = \overrightarrow{CD}" hidden></span> be any pair of conjugate semi-diameter vectors of the ellipse <span class="geom-eq-marker" data-assert-equal="\mathbf{x}^\top Q \mathbf{x} = 1" hidden></span>, where <span class="geom-eq-marker" data-assert-equal="Q = \operatorname{diag}(a^{-2}, b^{-2})" hidden></span>. Conjugacy means <span class="geom-eq-marker" data-assert-equal="[\mathbf{u}, \mathbf{v}]" hidden></span> maps the unit circle <span class="geom-eq-marker" data-assert-equal="\xi^2 + \eta^2 = 1" hidden></span> (or unit hyperbola <span class="geom-eq-marker" data-assert-equal="\xi^2 - \eta^2 = 1" hidden></span>) onto the conic, so <span class="geom-eq-marker" data-assert-equal="M = [\mathbf{u}\ \mathbf{v}]" hidden></span> satisfies <span class="geom-eq-marker" data-assert-equal="M M^\top = Q^{-1} = \operatorname{diag}(a^2, b^2)" hidden></span>:</p>
+        <ol class="arabic simple">
+        <li><p><strong>Trace Invariance (`VII.12`)</strong>: <span class="geom-eq-marker" data-assert-equal="\operatorname{tr}(M^\top M) = \operatorname{tr}(M M^\top) \implies \|\mathbf{u}\|^2 + \|\mathbf{v}\|^2 = a'^2 + b'^2 = a^2 + b^2" hidden></span>!</p></li>
+        <li><p><strong>Determinant Invariance (`VII.31`)</strong>: <span class="geom-eq-marker" data-assert-equal="\det(M)^2 = \det(Q^{-1}) \implies (\|\mathbf{u}\|\,\|\mathbf{v}\|\sin\omega)^2 = a^2 b^2 \implies a' b' \sin\omega = ab" hidden></span>!</p></li>
+        </ol>
+        <p>Apollonius discovered and proved both spectral invariants synthetically in 200 BCE using solely Euclidean proportions and auxiliary segments <span class="geom-ref" data-ref="MH, MH'" title="MH, MH&#x27;">MHMH</span> on the axis!</p>
+        </section>
+        <section class="level-2" id="how-book-vii-reconstructs-the-lost-book-viii">
+        <h2>2. How Book VII Reconstructs the Lost Book VIII<a class="headerlink" href="#how-book-vii-reconstructs-the-lost-book-viii" title="Link to this heading">¶</a></h2>
+        <p>In the <strong>Preface to Book VII</strong> (<em>Heath p. lxxv</em>), Apollonius explicitly tells <a class="person-ref" id="occ-person-attalus-1" href="../persons.html#person-attalus" data-person="attalus" title="Attalus of Pergamum (fl. c. 200 BCE) — Dedicatee of Books IV–VIII of the Conics">Attalus</a> why he forged the intricate inequality theorems <cite>VII.21–51</cite>: <em>“Several examples of these occur in the determinate conic problems solved and demonstrated by me in the eighth book, which is by way of an appendix.”</em> Both <a class="person-ref" id="occ-person-ibn-al-haytham-1" href="../persons.html#person-ibn-al-haytham" data-person="ibn-al-haytham" title="Ibn al-Haytham (Alhazen) (c. 965–1040 CE) — Geometer of the Completion of the Conics">Ibn al-Haytham</a> (c. 1024 CE) and <a class="person-ref" id="occ-person-halley-1" href="../persons.html#person-halley" data-person="halley" title="Edmond Halley (1656–1742) — Savilian Professor of Geometry; editor of the monumental 1710 Oxford Conics">Edmond Halley</a> (<a class="citation-ref" id="occ-cite-halley-1710-1" href="../bibliography.html#cite-halley-1710" data-cite="halley:1710" title="Apollonius of Perga (ed. Edmond Halley) — Apollonii Pergaei Conicorum Libri Octo, et Sereni Antissensis De Sectione Cylindri &amp; Coni Libri Duo (Oxford: E Theatro Sheldoniano, 1710)">1710</a>) used this clue—together with <a class="person-ref" id="occ-person-pappus-1" href="../persons.html#person-pappus" data-person="pappus" title="Pappus of Alexandria (c. 290–350 CE) — Author of the Synagoge (Mathematical Collection)">Pappus's</a> preserved lemmas for Books VII and VIII intertwined in <em>Synagoge</em> VII—to reconstruct Book VIII as the constructive solution of conics given prescribed conjugate-diameter sums, differences, ratios, or parameters.</p>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../book-5/book-5-notes.html" title="Book V — Normals, Minimum &amp; Maximum Lines, Subnormals &amp; the Evolute">&larr; <span class="nav-label">Book V — Normals, Minimum & Maximum Lines, Subnormals & the Evolute</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../lost-works-pappus/lost-works-pappus-notes.html" title="Appendix — The Lost Analytic Treasury in Pappus Book VII"><span class="nav-label">Appendix — The Lost Analytic Treasury in Pappus Book VII</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 200 BCE · 1896 Cambridge University Press · Digital Codex GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

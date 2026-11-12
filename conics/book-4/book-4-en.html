@@ -1,0 +1,228 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book IV — Number of Intersections &amp; Tangencies of Conics &mdash; ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • apollonius</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">apollonius</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Conics</a>
+        </li>
+        <li>
+          <a href="../../mission/index.html"  >Mission</a>
+        </li>
+        <li>
+          <a href="../../about/index.html"  >About</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >Modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; apollonius</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../book-3/book-3-en.html" title="Book III — Chord Rectangles, Poles &amp; Polars, Foci &amp; the 4-Line Locus">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <strong class="book-track-item is-active" aria-current="page">English</strong>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="book-4-summary.html">Summary</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="book-4-notes.html">Notes</a>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../book-5/book-5-en.html" title="Book V — Normals, Minimum &amp; Maximum Lines, Subnormals &amp; the Evolute"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="book-iv-number-of-intersections-tangencies-of-conics">
+        <span id="unit-4-book-4-en"></span><h1>Book IV — Number of Intersections &amp; Tangencies of Conics<a class="headerlink" href="#book-iv-number-of-intersections-tangencies-of-conics" title="Link to this heading">¶</a></h1>
+        <div class="folio-milestone" id="folio-Heath 1896, Props. 77–83 [IV. 1–57], pp. 126–138 (PDF 306–318)" data-folio="Heath 1896, Props. 77–83 [IV. 1–57], pp. 126–138 (PDF 306–318)" data-page="">[Folio Heath 1896, Props. 77–83 [IV. 1–57], pp. 126–138 (PDF 306–318)]</div>
+        <p>In the Preface to <strong>Book IV</strong> (addressed to <a class="person-ref" id="occ-person-attalus-1" href="../persons.html#person-attalus" data-person="attalus" title="Attalus of Pergamum (fl. c. 200 BCE) — Dedicatee of Books IV–VIII of the Conics">Attalus</a> after the death of <a class="person-ref" id="occ-person-eudemus-pergamum-1" href="../persons.html#person-eudemus-pergamum" data-person="eudemus-pergamum" title="Eudemus of Pergamum (fl. c. 205 BCE) — Scholarly dedicatee of Books I–III of the Conics">Eudemus</a>), <a class="person-ref" id="occ-person-apollonius-1" href="../persons.html#person-apollonius" data-person="apollonius" title="Apollonius of Perga (c. 240–190 BCE) — &#x27;The Great Geometer&#x27; (ὁ μέγας γεωμέτρης); author of the Conics">Apollonius</a> states the exact purpose of the fourth Book: <em>in how many points at most can sections of cones meet one another, or meet the circumference of a circle, whether by simple intersection or by tangency—and in particular how a double-branch hyperbola meets another conic</em>, resolving the polemic between <a class="person-ref" id="occ-person-conon-1" href="../persons.html#person-conon" data-person="conon" title="Conon of Samos (c. 280–220 BCE) — Court astronomer at Alexandria and precursor on intersecting conics">Conon of Samos</a> and <a class="person-ref" id="occ-person-nicoteles-1" href="../persons.html#person-nicoteles" data-person="nicoteles" title="Nicoteles of Cyrene (fl. c. 230 BCE) — Polemical critic of Conon on conic intersections">Nicoteles of Cyrene</a>.</p>
+        <section class="level-2" id="converse-harmonic-polarity-iv-123">
+        <h2>1. Converse Harmonic Polarity [IV. 1–23]<a class="headerlink" href="#converse-harmonic-polarity-iv-123" title="Link to this heading">¶</a></h2>
+        <div class="folio-milestone" id="folio-Heath 1896, p. 126 (PDF 306)" data-folio="Heath 1896, p. 126 (PDF 306)" data-page="">[Folio Heath 1896, p. 126 (PDF 306)]</div>
+        <p>Propositions <cite>IV.1–23</cite> supply the exact <strong>converse</strong> of Book III’s harmonic polar theorems (<cite>III.30–40</cite>): if from an external point <span class="geom-ref" data-ref="T" title="T">T</span> secants meet a conic in <span class="geom-ref" data-ref="R, R'" title="R, R&#x27;">RR</span> and harmonic conjugates <span class="geom-ref" data-ref="M" title="M">M</span> of <span class="geom-ref" data-ref="T" title="T">T</span> with respect to <span class="geom-ref" data-ref="R, R'" title="R, R&#x27;">RR</span> are marked on each secant, those harmonic conjugates lie along the <strong>straight polar chord of contact</strong> joining the points of tangency from <span class="geom-ref" data-ref="T" title="T">T</span>—giving a pure straightedge-only construction of tangents!</p>
+        </section>
+        <section class="level-2" id="non-coincidence-of-arcs-the-four-point-intersection-bound-props-7783-iv-2457">
+        <h2>2. Non-Coincidence of Arcs &amp; the Four-Point Intersection Bound [Props. 77–83 / IV. 24–57]<a class="headerlink" href="#non-coincidence-of-arcs-the-four-point-intersection-bound-props-7783-iv-2457" title="Link to this heading">¶</a></h2>
+        <div class="folio-milestone" id="folio-Heath 1896, pp. 126–138 (PDF 306–318)" data-folio="Heath 1896, pp. 126–138 (PDF 306–318)" data-page="">[Folio Heath 1896, pp. 126–138 (PDF 306–318)]</div>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 330" width="740" height="330" class="euclid-graphic" data-graphic-id="g8" data-proposition="IV.25-57">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+            </marker>
+            <marker id="geom-tick-2" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+              <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <g id="elements">
+            <polygon points="130.00,113.00 260.00,113.00 260.00,243.00 130.00,243.00" class="geom-polygon-assert" />
+          </g>
+          <g id="graphics">
+            <ellipse cx="195.00" cy="178.00" rx="136.00" ry="74.00" class="geom-bold" />
+            <ellipse cx="195.00" cy="178.00" rx="74.00" ry="136.00" class="geom-hyper-line" />
+            <path d="M 130.00 113.00 L 195.00 178.00 L 260.00 243.00" class="geom-dashed" />
+            <path d="M 260.00 113.00 L 195.00 178.00 L 130.00 243.00" class="geom-dashed" />
+            <path d="M 372.00 20.00 L 372.00 168.00 L 372.00 316.00" class="geom-faint" />
+            <ellipse cx="556.00" cy="178.00" rx="142.00" ry="88.00" class="geom-bold" />
+            <ellipse cx="556.00" cy="178.00" rx="142.00" ry="56.00" class="geom-accent-line" />
+            <path d="M 414.00 80.00 L 414.00 178.00 L 414.00 276.00" class="geom-rose-line" data-ref="[ T1 ]" />
+            <path d="M 698.00 80.00 L 698.00 178.00 L 698.00 276.00" class="geom-rose-line" data-ref="[ T2 ]" />
+            <path d="M 414.00 178.00 L 556.00 178.00 L 698.00 178.00" class="geom-dashed" data-ref="/ T1 T2 /" />
+          </g>
+          <g id="highlights" style="pointer-events: none;">
+            <path d="M 414.00 80.00 L 414.00 178.00 L 414.00 276.00" class="geom-overlay" data-ref="[ T1 ]" />
+            <path d="M 698.00 80.00 L 698.00 178.00 L 698.00 276.00" class="geom-overlay" data-ref="[ T2 ]" />
+            <path d="M 414.00 178.00 L 556.00 178.00 L 698.00 178.00" class="geom-overlay" data-ref="/ T1 T2 /" />
+          </g>
+          <g id="points">
+            <circle cx="130.00" cy="113.00" r="3.40" class="geom-point-assert" data-ref="P1" />
+            <circle cx="260.00" cy="113.00" r="3.40" class="geom-point-assert" data-ref="P2" />
+            <circle cx="260.00" cy="243.00" r="3.40" class="geom-point-assert" data-ref="P3" />
+            <circle cx="130.00" cy="243.00" r="3.40" class="geom-point-assert" data-ref="P4" />
+            <circle cx="414.00" cy="178.00" r="3.40" class="geom-point-rose" data-ref="T1" />
+            <circle cx="698.00" cy="178.00" r="3.40" class="geom-point-rose" data-ref="T2" />
+          </g>
+          <g id="labels">
+            <text x="195.00" y="22.00" text-anchor="middle" class="geom-label-sm">IV.25: At Most 4 Intersections</text>
+            <text x="115.00" y="107.00" text-anchor="middle" class="geom-label-assert">P₁</text>
+            <text x="275.00" y="107.00" text-anchor="middle" class="geom-label-assert">P₂</text>
+            <text x="275.00" y="257.00" text-anchor="middle" class="geom-label-assert">P₃</text>
+            <text x="115.00" y="257.00" text-anchor="middle" class="geom-label-assert">P₄</text>
+            <text x="195.00" y="316.00" text-anchor="middle" class="geom-label-sm">C₁ ∩ C₂ = {P₁, P₂, P₃, P₄}  (|C₁ ∩ C₂| ≤ 4)</text>
+            <text x="556.00" y="22.00" text-anchor="middle" class="geom-label-sm">IV.42–46: Double Tangency Exhausts All 4</text>
+            <text x="408.00" y="74.00" text-anchor="middle" class="geom-label-rose">T₁ (mult. 2)</text>
+            <text x="704.00" y="74.00" text-anchor="middle" class="geom-label-rose">T₂ (mult. 2)</text>
+            <text x="556.00" y="316.00" text-anchor="middle" class="geom-label-sm">Bitangent Conics: 2 + 2 = 4 ⇒ Zero Further Common Points</text>
+          </g>
+        </svg>
+        </figure>
+        <p><strong>Plate 8 — At Most Four Intersections &amp; the Four-Point Conic Pencil (Book IV.24–57 [Props. 77–83])</strong>. Two distinct conics (here an ellipse, a circle, and a two-branch hyperbola) can intersect in at most <strong>four points</strong> <span class="geom-ref" data-ref="A, B, C, D" title="A, B, C, D">ABCD</span>; their diagonal triangle <span class="geom-ref" data-ref="EFG" title="EFG">EFG</span> is self-polar with respect to every conic in the pencil.</p>
+        <div class="enunciation"><strong>Proposition 77 [IV. 24] — Identity Principle for Conic Arcs</strong>. No two conics can intersect in such a way that part of one of them is common to both, while the rest is not. (Proved via chord-bisection diameters: two curves sharing an arc <span class="geom-ref" data-ref="q'Q'PQ" title="q&#x27;Q&#x27;PQ">qQPQ</span> must share the same diameter <span class="geom-ref" data-ref="PV" title="PV">PV</span> and half-chords everywhere.)</div>
+        <div class="enunciation">
+        <p><strong>Proposition 78 [IV. 25, 38, 43] — Maximum of Four Intersection Points</strong>. Two conics (including a circle or a double-branch hyperbola) <strong>cannot intersect in more than four points</strong>.</p>
+        <p><em>Proof Method via Harmonic Polarity</em>: Suppose two conics met in five points <span class="geom-ref" data-ref="A, B, C, D, E" title="A, B, C, D, E">ABCDE</span> taken in order along a convex arc. Join <span class="geom-ref" data-ref="AB" title="AB">AB</span> and <span class="geom-ref" data-ref="CD" title="CD">CD</span> meeting at <span class="geom-ref" data-ref="T" title="T">T</span>. On both conics simultaneously, the harmonic conjugate of <span class="geom-ref" data-ref="T" title="T">T</span> with respect to <span class="geom-ref" data-ref="A, B" title="A, B">AB</span> is a single point <span class="geom-ref" data-ref="M_1" title="M_1">M1</span>, and with respect to <span class="geom-ref" data-ref="C, D" title="C, D">CD</span> is a single point <span class="geom-ref" data-ref="M_2" title="M_2">M2</span>. Hence both conics share the exact same polar line <span class="geom-ref" data-ref="M_1 M_2" title="M_1 M_2">M1M2</span> of pole <span class="geom-ref" data-ref="T" title="T">T</span>, forcing any fifth common point <span class="geom-ref" data-ref="E" title="E">E</span> to yield contradictory harmonic conjugates on a secant through <span class="geom-ref" data-ref="T" title="T">T</span>!</p>
+        </div>
+        <div class="enunciation"><strong>Propositions 79–83 [IV. 26–57] — Tangency Multiplicity Counting</strong>.
+        - <strong>Single Tangency (`Prop. 79 [IV. 26, 41–42, 46]`)</strong>: Two conics touching at one point cannot intersect in more than <strong>two</strong> other points (<span class="geom-eq-marker" data-assert-equal="2 + 1 + 1 = 4" hidden></span>).
+        - <strong>Double Tangency / Bitangency (`Prop. 80 [IV. 27–30, 49–54]`)</strong>: Two conics touching one another at <strong>two</strong> distinct points cannot intersect at any other point (<span class="geom-eq-marker" data-assert-equal="2 + 2 = 4" hidden></span>).
+        - <strong>Opposite-Branch Separations (`Props. 81–83 [IV. 35–37, 55–57]`)</strong>: Complete enumeration of how single-branch conics and opposite hyperbolic branches distribute up to four intersections across napes.</div>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../book-3/book-3-en.html" title="Book III — Chord Rectangles, Poles &amp; Polars, Foci &amp; the 4-Line Locus">&larr; <span class="nav-label">Book III — Chord Rectangles, Poles & Polars, Foci & the 4-Line Locus</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../book-5/book-5-en.html" title="Book V — Normals, Minimum &amp; Maximum Lines, Subnormals &amp; the Evolute"><span class="nav-label">Book V — Normals, Minimum & Maximum Lines, Subnormals & the Evolute</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 200 BCE · 1896 Cambridge University Press · Digital Codex GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

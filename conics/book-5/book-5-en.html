@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book V — Normals, Minimum &amp; Maximum Lines, Subnormals &amp; the Evolute &mdash; ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • apollonius</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">apollonius</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Conics</a>
+        </li>
+        <li>
+          <a href="../../mission/index.html"  >Mission</a>
+        </li>
+        <li>
+          <a href="../../about/index.html"  >About</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >Modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; apollonius</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../book-4/book-4-en.html" title="Book IV — Number of Intersections &amp; Tangencies of Conics">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <strong class="book-track-item is-active" aria-current="page">English</strong>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="book-5-summary.html">Summary</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="book-5-notes.html">Notes</a>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../books-6-7/books-6-7-en.html" title="Books VI &amp; VII — Equal and Similar Conics &amp; Conjugate Diameters"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="book-v-normals-minimum-maximum-lines-subnormals-the-evolute">
+        <span id="unit-5-book-5-en"></span><h1>Book V — Normals, Minimum &amp; Maximum Lines, Subnormals &amp; the Evolute<a class="headerlink" href="#book-v-normals-minimum-maximum-lines-subnormals-the-evolute" title="Link to this heading">¶</a></h1>
+        <div class="folio-milestone" id="folio-Heath 1896, Props. 84–113 [V. 1–77], pp. 139–196 (PDF 319–376)" data-folio="Heath 1896, Props. 84–113 [V. 1–77], pp. 139–196 (PDF 319–376)" data-page="">[Folio Heath 1896, Props. 84–113 [V. 1–77], pp. 139–196 (PDF 319–376)]</div>
+        <p>Preserved solely through <a class="person-ref" id="occ-person-thabit-ibn-qurra-1" href="../persons.html#person-thabit-ibn-qurra" data-person="thabit-ibn-qurra" title="Thābit ibn Qurra (836–901 CE) — Translator into Arabic of Books V–VII of Apollonius&#x27;s Conics">Thābit ibn Qurra's</a> ninth-century Arabic translation (<a class="citation-ref" id="occ-cite-halley-1710-1" href="../bibliography.html#cite-halley-1710" data-cite="halley:1710" title="Apollonius of Perga (ed. Edmond Halley) — Apollonii Pergaei Conicorum Libri Octo, et Sereni Antissensis De Sectione Cylindri &amp; Coni Libri Duo (Oxford: E Theatro Sheldoniano, 1710)">Halley 1710</a>, <a class="citation-ref" id="occ-cite-nix-1889-1" href="../bibliography.html#cite-nix-1889" data-cite="nix:1889" title="Ludwig M. L. Nix — Das fünfte Buch der Conica des Apollonius von Perga in der arabischen Übersetzung des Thabit ibn Corrah (Leipzig: W. Drugulin, 1889)">Nix 1889</a>), <strong>Book V</strong> is universally acclaimed by historians of mathematics as the supreme masterpiece of ancient synthetic geometry—anticipating differential curvature, centers of osculation, and the <a class="term-ref glossary-term" id="occ-term-evolute-1" href="../glossary.html#term-evolute" data-term="evolute" title="evolute / envelope of normals (V.51–63) (cuspidal threshold curve separating 4-normal and 2-normal domains): Although Apollonius has no single noun for the curve as a locus, Book V Props. 51–52 [Prop. 99] construct for every abscissa x the exact critical ordinate y below which 4 normals pass through (x, y), on which 2 normals coalesce, and above which only 2 normals exist—yielding point-for-point the semicubical parabola 27py² = 4(x − p/2)³ and the astroidal Lamé curve (ax)^(2/3) + (by)^(2/3) = (a² − b²)^(2/3).">evolute</a> of a conic nearly two millennia before Huygens, Leibniz, and Newton.</p>
+        <section class="level-2" id="normals-as-maxima-and-minima-the-subnormal-laws-props-8494-v-134">
+        <h2>1. Normals as Maxima and Minima &amp; the Subnormal Laws [Props. 84–94 / V. 1–34]<a class="headerlink" href="#normals-as-maxima-and-minima-the-subnormal-laws-props-8494-v-134" title="Link to this heading">¶</a></h2>
+        <div class="folio-milestone" id="folio-Heath 1896, pp. 139–159 (PDF 319–339)" data-folio="Heath 1896, pp. 139–159 (PDF 319–339)" data-page="">[Folio Heath 1896, pp. 139–159 (PDF 319–339)]</div>
+        <p>Extending <a class="person-ref" id="occ-person-euclid-1" href="../persons.html#person-euclid" data-person="euclid" title="Euclid of Alexandria (fl. c. 300 BCE) — Author of the Elements, Conics (4 Books), and Surface Loci">Euclid's</a> theorems on the shortest and longest segments from an eccentric point to a circle (<span class="justification" data-ref-target="III.7" title="III.7">[III.7]</span>, <span class="justification" data-ref-target="III.8" title="III.8">[III.8]</span>), <a class="person-ref" id="occ-person-apollonius-1" href="../persons.html#person-apollonius" data-person="apollonius" title="Apollonius of Perga (c. 240–190 BCE) — &#x27;The Great Geometer&#x27; (ὁ μέγας γεωμέτρης); author of the Conics">Apollonius</a> investigates the minimum and maximum straight lines <span class="geom-ref" data-ref="GP" title="GP">GP</span> drawn to a conic from a point <span class="geom-ref" data-ref="G" title="G">G</span> on its principal axis:</p>
+        <ul>
+        <li><p><strong>Constant Subnormal of the Parabola [Props. 87, 90 / V. 8, 13, 27]</strong>: If <span class="geom-ref" data-ref="G" title="G">G</span> lie on the axis of a parabola with <span class="geom-eq-marker" data-assert-equal="AG &gt; \tfrac{1}{2} p_a" hidden></span>, the minimum straight line from <span class="geom-ref" data-ref="G" title="G">G</span> to the curve is <span class="geom-ref" data-ref="GP" title="GP">GP</span> whose ordinate foot <span class="geom-ref" data-ref="N" title="N">N</span> cuts off a <strong>constant subnormal</strong>:</p>
+        <div class="math notranslate nohighlight">
+        \[NG = \tfrac{1}{2}\, p_a,\]</div>
+        <p>and <span class="geom-ref" data-ref="GP" title="GP">GP</span> is strictly <strong>perpendicular to the tangent</strong> at <span class="geom-ref" data-ref="P" title="P">P</span> (hence a <strong>normal</strong>).</p>
+        </li>
+        <li><p><strong>Proportional Subnormal of Central Conics [Props. 88–91 / V. 9–15, 28–29]</strong>: For an ellipse or hyperbola with center <span class="geom-ref" data-ref="C" title="C">C</span>, transverse axis <span class="geom-ref" data-ref="AA'" title="AA&#x27;">AA</span>, and principal parameter <span class="geom-eq-marker" data-assert-equal="p_a = \frac{2b^2}{a}" hidden></span>, a segment <span class="geom-ref" data-ref="GP" title="GP">GP</span> from an axis point <span class="geom-ref" data-ref="G" title="G">G</span> is a minimum or maximum line (and perpendicular to the tangent at <span class="geom-ref" data-ref="P" title="P">P</span>) if and only if its subnormal <span class="geom-ref" data-ref="NG" title="NG">NG</span> satisfies:</p>
+        <div class="math notranslate nohighlight">
+        \[NG : CN = p_a : AA' \quad \bigl(= b^2 : a^2\bigr).\]</div>
+        </li>
+        </ul>
+        </section>
+        <section class="level-2" id="determination-of-the-evolute-diorismos-props-99100-v-5152">
+        <h2>2. Determination of the Evolute Diorismos [Props. 99–100 / V. 51–52]<a class="headerlink" href="#determination-of-the-evolute-diorismos-props-99100-v-5152" title="Link to this heading">¶</a></h2>
+        <div class="folio-milestone" id="folio-Heath 1896, pp. 168–179 (PDF 348–359)" data-folio="Heath 1896, pp. 168–179 (PDF 348–359)" data-page="">[Folio Heath 1896, pp. 168–179 (PDF 348–359)]</div>
+        <p>Apollonius next poses the profound <a class="term-ref glossary-term" id="occ-term-diorismos-1" href="../glossary.html#term-diorismos" data-term="diorismos" title="diorismos (διορισμός) (determination of limits of possibility / discriminantal threshold): The rigorous determination of the exact parameter bounds separating zero, one (double/tangent), or two real solutions—reaching its supreme ancient expression in Book V Props. 51–52 [Prop. 99] (the evolute discriminant separating 2 vs. 3 vs. 4 normals) and in Book VII&#x27;s inequality theorems created for Book VIII.">diorismos</a> problem for an <strong>arbitrary point</strong> <span class="geom-ref" data-ref="O" title="O">O</span> off the axis: <em>how many normals can be drawn through</em> <span class="geom-ref" data-ref="O" title="O">O</span> <em>that cut the axis between</em> <span class="geom-ref" data-ref="O" title="O">O</span> <em>and the vertex?</em></p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" width="680" height="380" class="euclid-graphic" data-graphic-id="g9" data-proposition="V.1-63">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+            </marker>
+            <marker id="geom-tick-2" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+              <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <g id="elements">
+          </g>
+          <g id="graphics">
+            <ellipse cx="340.00" cy="194.00" rx="196.00" ry="114.00" class="geom-bold" />
+            <path d="M 122.00 194.00 L 340.00 194.00 L 558.00 194.00" class="geom-faint" />
+            <path d="M 340.00 58.00 L 340.00 194.00 L 340.00 330.00" class="geom-faint" />
+            <path d="M 536.00 194.00 L 502.85 194.00 L 469.69 194.00" class="geom-faint" />
+            <path d="M 533.02 174.20 L 498.45 184.69 L 463.87 195.17" class="geom-faint" />
+            <path d="M 524.18 155.01 L 485.90 178.97 L 447.62 202.92" class="geom-faint" />
+            <path d="M 509.74 137.00 L 466.99 179.44 L 424.24 221.87" class="geom-faint" />
+            <path d="M 490.14 120.72 L 444.22 186.97 L 398.30 253.22" class="geom-faint" />
+            <path d="M 465.99 106.67 L 420.22 200.45 L 374.44 294.24" class="geom-faint" />
+            <path d="M 438.00 95.27 L 397.11 217.05 L 356.21 338.83" class="geom-faint" />
+            <path d="M 407.04 86.88 L 376.11 232.95 L 345.19 379.02" class="geom-faint" />
+            <path d="M 374.04 81.73 L 357.36 244.35 L 340.68 406.97" class="geom-faint" />
+            <path d="M 340.00 80.00 L 340.00 248.49 L 340.00 416.98" class="geom-faint" />
+            <path d="M 305.96 81.73 L 322.64 244.35 L 339.32 406.97" class="geom-faint" />
+            <path d="M 272.96 86.88 L 303.89 232.95 L 334.81 379.02" class="geom-faint" />
+            <path d="M 242.00 95.27 L 282.89 217.05 L 323.79 338.83" class="geom-faint" />
+            <path d="M 214.01 106.67 L 259.78 200.45 L 305.56 294.24" class="geom-faint" />
+            <path d="M 189.86 120.72 L 235.78 186.97 L 281.70 253.22" class="geom-faint" />
+            <path d="M 170.26 137.00 L 213.01 179.44 L 255.76 221.87" class="geom-faint" />
+            <path d="M 155.82 155.01 L 194.10 178.97 L 232.38 202.92" class="geom-faint" />
+            <path d="M 146.98 174.20 L 181.55 184.69 L 216.13 195.17" class="geom-faint" />
+            <path d="M 144.00 194.00 L 177.15 194.00 L 210.31 194.00" class="geom-faint" />
+            <path d="M 146.98 213.80 L 181.55 203.31 L 216.13 192.83" class="geom-faint" />
+            <path d="M 155.82 232.99 L 194.10 209.03 L 232.38 185.08" class="geom-faint" />
+            <path d="M 170.26 251.00 L 213.01 208.56 L 255.76 166.13" class="geom-faint" />
+            <path d="M 189.86 267.28 L 235.78 201.03 L 281.70 134.78" class="geom-faint" />
+            <path d="M 214.01 281.33 L 259.78 187.55 L 305.56 93.76" class="geom-faint" />
+            <path d="M 242.00 292.73 L 282.89 170.95 L 323.79 49.17" class="geom-faint" />
+            <path d="M 272.96 301.12 L 303.89 155.05 L 334.81 8.98" class="geom-faint" />
+            <path d="M 305.96 306.27 L 322.64 143.65 L 339.32 -18.97" class="geom-faint" />
+            <path d="M 340.00 308.00 L 340.00 139.51 L 340.00 -28.98" class="geom-faint" />
+            <path d="M 374.04 306.27 L 357.36 143.65 L 340.68 -18.97" class="geom-faint" />
+            <path d="M 407.04 301.12 L 376.11 155.05 L 345.19 8.98" class="geom-faint" />
+            <path d="M 438.00 292.73 L 397.11 170.95 L 356.21 49.17" class="geom-faint" />
+            <path d="M 465.99 281.33 L 420.22 187.55 L 374.44 93.76" class="geom-faint" />
+            <path d="M 490.14 267.28 L 444.22 201.03 L 398.30 134.78" class="geom-faint" />
+            <path d="M 509.74 251.00 L 466.99 208.56 L 424.24 166.13" class="geom-faint" />
+            <path d="M 524.18 232.99 L 485.90 209.03 L 447.62 185.08" class="geom-faint" />
+            <path d="M 533.02 213.80 L 498.45 203.31 L 463.87 192.83" class="geom-faint" />
+            <path d="M 469.69 194.00 L 469.56 194.00 L 469.16 194.03 L 468.50 194.11 L 467.57 194.25 L 466.39 194.50 L 464.96 194.85 L 463.29 195.35 L 461.38 196.00 L 459.24 196.84 L 456.88 197.87 L 454.32 199.11 L 451.57 200.58 L 448.63 202.29 L 445.53 204.26 L 442.27 206.50 L 438.88 209.00 L 435.36 211.79 L 431.74 214.86 L 428.03 218.22 L 424.24 221.87 L 420.39 225.81 L 416.51 230.02 L 412.59 234.52 L 408.67 239.28 L 404.76 244.31 L 400.87 249.58 L 397.02 255.08 L 393.23 260.80 L 389.50 266.73 L 385.85 272.84 L 382.30 279.11 L 378.86 285.51 L 375.53 292.04 L 372.32 298.66 L 369.26 305.34 L 366.34 312.07 L 363.57 318.81 L 360.95 325.54 L 358.50 332.22 L 356.21 338.83 L 354.09 345.34 L 352.14 351.73 L 350.35 357.96 L 348.73 364.00 L 347.27 369.84 L 345.97 375.44 L 344.82 380.77 L 343.83 385.82 L 342.97 390.55 L 342.25 394.96 L 341.65 399.01 L 341.17 402.68 L 340.78 405.97 L 340.50 408.85 L 340.29 411.31 L 340.15 413.34 L 340.06 414.93 L 340.02 416.07 L 340.00 416.75 L 340.00 416.98 L 340.00 416.75 L 339.98 416.07 L 339.94 414.93 L 339.85 413.34 L 339.71 411.31 L 339.50 408.85 L 339.22 405.97 L 338.83 402.68 L 338.35 399.01 L 337.75 394.96 L 337.03 390.55 L 336.17 385.82 L 335.18 380.77 L 334.03 375.44 L 332.73 369.84 L 331.27 364.00 L 329.65 357.96 L 327.86 351.73 L 325.91 345.34 L 323.79 338.83 L 321.50 332.22 L 319.05 325.54 L 316.43 318.81 L 313.66 312.07 L 310.74 305.34 L 307.68 298.66 L 304.47 292.04 L 301.14 285.51 L 297.70 279.11 L 294.15 272.84 L 290.50 266.73 L 286.77 260.80 L 282.98 255.08 L 279.13 249.58 L 275.24 244.31 L 271.33 239.28 L 267.41 234.52 L 263.49 230.02 L 259.61 225.81 L 255.76 221.87 L 251.97 218.22 L 248.26 214.86 L 244.64 211.79 L 241.12 209.00 L 237.73 206.50 L 234.47 204.26 L 231.37 202.29 L 228.43 200.58 L 225.68 199.11 L 223.12 197.87 L 220.76 196.84 L 218.62 196.00 L 216.71 195.35 L 215.04 194.85 L 213.61 194.50 L 212.43 194.25 L 211.50 194.11 L 210.84 194.03 L 210.44 194.00 L 210.31 194.00 L 210.44 194.00 L 210.84 193.97 L 211.50 193.89 L 212.43 193.75 L 213.61 193.50 L 215.04 193.15 L 216.71 192.65 L 218.62 192.00 L 220.76 191.16 L 223.12 190.13 L 225.68 188.89 L 228.43 187.42 L 231.37 185.71 L 234.47 183.74 L 237.73 181.50 L 241.12 179.00 L 244.64 176.21 L 248.26 173.14 L 251.97 169.78 L 255.76 166.13 L 259.61 162.19 L 263.49 157.98 L 267.41 153.48 L 271.33 148.72 L 275.24 143.69 L 279.13 138.42 L 282.98 132.92 L 286.77 127.20 L 290.50 121.27 L 294.15 115.16 L 297.70 108.89 L 301.14 102.49 L 304.47 95.96 L 307.68 89.34 L 310.74 82.66 L 313.66 75.93 L 316.43 69.19 L 319.05 62.46 L 321.50 55.78 L 323.79 49.17 L 325.91 42.66 L 327.86 36.27 L 329.65 30.04 L 331.27 24.00 L 332.73 18.16 L 334.03 12.56 L 335.18 7.23 L 336.17 2.18 L 337.03 -2.55 L 337.75 -6.96 L 338.35 -11.01 L 338.83 -14.68 L 339.22 -17.97 L 339.50 -20.85 L 339.71 -23.31 L 339.85 -25.34 L 339.94 -26.93 L 339.98 -28.07 L 340.00 -28.75 L 340.00 -28.98 L 340.00 -28.75 L 340.02 -28.07 L 340.06 -26.93 L 340.15 -25.34 L 340.29 -23.31 L 340.50 -20.85 L 340.78 -17.97 L 341.17 -14.68 L 341.65 -11.01 L 342.25 -6.96 L 342.97 -2.55 L 343.83 2.18 L 344.82 7.23 L 345.97 12.56 L 347.27 18.16 L 348.73 24.00 L 350.35 30.04 L 352.14 36.27 L 354.09 42.66 L 356.21 49.17 L 358.50 55.78 L 360.95 62.46 L 363.57 69.19 L 366.34 75.93 L 369.26 82.66 L 372.32 89.34 L 375.53 95.96 L 378.86 102.49 L 382.30 108.89 L 385.85 115.16 L 389.50 121.27 L 393.23 127.20 L 397.02 132.92 L 400.87 138.42 L 404.76 143.69 L 408.67 148.72 L 412.59 153.48 L 416.51 157.98 L 420.39 162.19 L 424.24 166.13 L 428.03 169.78 L 431.74 173.14 L 435.36 176.21 L 438.88 179.00 L 442.27 181.50 L 445.53 183.74 L 448.63 185.71 L 451.57 187.42 L 454.32 188.89 L 456.88 190.13 L 459.24 191.16 L 461.38 192.00 L 463.29 192.65 L 464.96 193.15 L 466.39 193.50 L 467.57 193.75 L 468.50 193.89 L 469.16 193.97 L 469.56 194.00 L 469.69 194.00 Z" class="geom-rose-line" data-ref="( Evolute )" />
+            <path d="M 366.00 212.00 L 450.50 197.24 L 535.00 182.48" class="geom-assert-line" data-ref="/ O N1 /" />
+            <path d="M 533.71 175.09 L 526.32 176.38 L 527.61 183.77" class="geom-assert-line" />
+            <path d="M 366.00 212.00 L 374.42 147.38 L 382.84 82.76" class="geom-assert-line" data-ref="/ O N2 /" />
+            <path d="M 375.40 81.79 L 374.43 89.22 L 381.87 90.19" class="geom-assert-line" />
+            <path d="M 366.00 212.00 L 255.22 199.17 L 144.44 186.34" class="geom-assert-line" data-ref="/ O N3 /" />
+            <path d="M 143.58 193.79 L 151.03 194.65 L 151.89 187.20" class="geom-assert-line" />
+            <path d="M 366.00 212.00 L 371.15 259.01 L 376.31 306.03" class="geom-assert-line" data-ref="/ O N4 /" />
+            <path d="M 383.77 305.21 L 382.95 297.75 L 375.49 298.57" class="geom-assert-line" />
+          </g>
+          <g id="highlights" style="pointer-events: none;">
+            <path d="M 366.00 212.00 L 450.50 197.24 L 535.00 182.48" class="geom-overlay" data-ref="/ O N1 /" />
+            <path d="M 366.00 212.00 L 374.42 147.38 L 382.84 82.76" class="geom-overlay" data-ref="/ O N2 /" />
+            <path d="M 366.00 212.00 L 255.22 199.17 L 144.44 186.34" class="geom-overlay" data-ref="/ O N3 /" />
+            <path d="M 366.00 212.00 L 371.15 259.01 L 376.31 306.03" class="geom-overlay" data-ref="/ O N4 /" />
+          </g>
+          <g id="points">
+            <circle cx="535.00" cy="182.48" r="3.40" class="geom-point-assert" data-ref="N1" />
+            <circle cx="382.84" cy="82.76" r="3.40" class="geom-point-assert" data-ref="N2" />
+            <circle cx="144.44" cy="186.34" r="3.40" class="geom-point-assert" data-ref="N3" />
+            <circle cx="376.31" cy="306.03" r="3.40" class="geom-point-assert" data-ref="N4" />
+            <circle cx="366.00" cy="212.00" r="4.00" class="geom-point-accent" data-ref="O" />
+          </g>
+          <g id="labels">
+            <text x="340.00" y="22.00" text-anchor="middle" class="geom-label-sm">V.51–62: Envelope of Normals (Astroidal Evolute) &amp; Four Normals from Interior Point O</text>
+            <text x="545.00" y="172.48" text-anchor="middle" class="geom-label-assert">N₁</text>
+            <text x="367.84" y="72.76" text-anchor="middle" class="geom-label-assert">N₂</text>
+            <text x="129.44" y="201.34" text-anchor="middle" class="geom-label-assert">N₃</text>
+            <text x="388.31" y="320.03" text-anchor="middle" class="geom-label-assert">N₄</text>
+            <text x="378.00" y="217.00" text-anchor="middle" class="geom-label-accent">O</text>
+            <text x="436.00" y="152.00" text-anchor="middle" class="geom-label-rose">Evolute Envelope</text>
+            <text x="340.00" y="364.00" text-anchor="middle" class="geom-label-sm">Inside Evolute: 4 Normals (ON₁, ON₂, ON₃, ON₄)   ·   Outside Evolute: 2 Normals</text>
+          </g>
+        </svg>
+        </figure>
+        <p><strong>Plate 9 — Normals &amp; the Astroidal Evolute Envelope (Book V.51–63 [Props. 99–106])</strong>. Inside the four-cusped <a class="term-ref glossary-term" id="occ-term-evolute-2" href="../glossary.html#term-evolute" data-term="evolute" title="evolute / envelope of normals (V.51–63) (cuspidal threshold curve separating 4-normal and 2-normal domains): Although Apollonius has no single noun for the curve as a locus, Book V Props. 51–52 [Prop. 99] construct for every abscissa x the exact critical ordinate y below which 4 normals pass through (x, y), on which 2 normals coalesce, and above which only 2 normals exist—yielding point-for-point the semicubical parabola 27py² = 4(x − p/2)³ and the astroidal Lamé curve (ax)^(2/3) + (by)^(2/3) = (a² − b²)^(2/3).">evolute</a> <span class="geom-eq-marker" data-assert-equal="(ax)^{2/3} + (by)^{2/3} = (a^2 - b^2)^{2/3}" hidden></span>, an interior point <span class="geom-ref" data-ref="O" title="O">O</span> admits <strong>four distinct normals</strong> <span class="geom-ref" data-ref="OP_1, OP_2, OP_3, OP_4" title="OP_1, OP_2, OP_3, OP_4">OP1OP2OP3OP4</span> to the ellipse; on the evolute two normals coalesce at a center of curvature; outside the evolute only two real normals exist.</p>
+        <div class="enunciation">
+        <p><strong>Proposition 99 [V. 51, 52] — Exact Evolute Threshold</strong>. If <span class="geom-ref" data-ref="AM" title="AM">AM</span> measured along the axis from vertex <span class="geom-ref" data-ref="A" title="A">A</span> be greater than <span class="geom-eq-marker" data-assert-equal="\tfrac{1}{2} p_a" hidden></span> (and in the ellipse less than <span class="geom-ref" data-ref="AC" title="AC">AC</span>), and if <span class="geom-ref" data-ref="MO" title="MO">MO</span> be drawn perpendicular to the axis, then a critical length <span class="geom-eq-marker" data-assert-equal="y_c" hidden></span> can be assigned by pure cubic/mean-proportional division along the axis such that:</p>
+        <ul class="simple">
+        <li><p><strong>(a)</strong> if <span class="geom-eq-marker" data-assert-equal="OM &gt; y_c" hidden></span>, <strong>no normal</strong> can be drawn through <span class="geom-ref" data-ref="O" title="O">O</span> cutting the axis in that quadrant (only 2 normals exist globally on an ellipse);</p></li>
+        <li><p><strong>(b)</strong> if <span class="geom-eq-marker" data-assert-equal="OM = y_c" hidden></span>, <strong>one unique coalesced normal</strong> can be so drawn through <span class="geom-ref" data-ref="O" title="O">O</span> (hence <span class="geom-ref" data-ref="O" title="O">O</span> lies directly on the <strong>evolute</strong>!);</p></li>
+        <li><p><strong>(c)</strong> if <span class="geom-eq-marker" data-assert-equal="OM &lt; y_c" hidden></span>, <strong>two distinct normals</strong> can be so drawn in that quadrant (yielding <strong>4 real normals</strong> globally on an ellipse, or 3 on the evolute!).</p></li>
+        </ul>
+        </div>
+        </section>
+        <section class="level-2" id="constructing-normals-via-apollonius-s-rectangular-hyperbola-props-105106-v-5863">
+        <h2>3. Constructing Normals via Apollonius’s Rectangular Hyperbola [Props. 105–106 / V. 58–63]<a class="headerlink" href="#constructing-normals-via-apollonius-s-rectangular-hyperbola-props-105106-v-5863" title="Link to this heading">¶</a></h2>
+        <div class="folio-milestone" id="folio-Heath 1896, pp. 180–186 (PDF 360–366)" data-folio="Heath 1896, pp. 180–186 (PDF 360–366)" data-page="">[Folio Heath 1896, pp. 180–186 (PDF 360–366)]</div>
+        <p>Because finding the feet <span class="geom-ref" data-ref="P_i" title="P_i">Pi</span> of the four normals from <span class="geom-ref" data-ref="O = (x_0, y_0)" title="O = (x_0, y_0)">Ox0y0</span> is a <strong>solid (degree-4 / cubic-resolvent) problem</strong>, Apollonius constructs the normal feet synthetically (<cite>V.62–63 [Prop. 106]</cite>) by intersecting the given conic with an <strong>auxiliary rectangular hyperbola</strong> (the <em>Hyperbola of Apollonius</em>) whose asymptotes are parallel to the conic’s axes!</p>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../book-4/book-4-en.html" title="Book IV — Number of Intersections &amp; Tangencies of Conics">&larr; <span class="nav-label">Book IV — Number of Intersections & Tangencies of Conics</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../books-6-7/books-6-7-en.html" title="Books VI &amp; VII — Equal and Similar Conics &amp; Conjugate Diameters"><span class="nav-label">Books VI & VII — Equal and Similar Conics & Conjugate Diameters</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 200 BCE · 1896 Cambridge University Press · Digital Codex GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,503 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cross-Corpus Concordance &amp; Symbolic Gap Audit &mdash; ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <h1>GEOMETOR • apollonius</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">apollonius</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="index.html" class="is-active" aria-selected="true" >Conics</a>
+        </li>
+        <li>
+          <a href="../mission/index.html"  >Mission</a>
+        </li>
+        <li>
+          <a href="../about/index.html"  >About</a>
+        </li>
+        <li>
+          <a href="../modules/index.html"  >Modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../index.html" title="Return to Project Portal">&larr; apollonius</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="index.html">ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="lost-works-pappus/lost-works-pappus-en.html" title="Appendix — The Lost Analytic Treasury in Pappus Book VII">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="bibliography.html" title="Bibliography &amp; Critical Editions"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="cross-corpus-concordance-symbolic-gap-audit">
+        <span id="conics-concordance"></span><h1>Cross-Corpus Concordance &amp; Symbolic Gap Audit<a class="headerlink" href="#cross-corpus-concordance-symbolic-gap-audit" title="Link to this heading">¶</a></h1>
+        <p>This concordance maps the <strong>387 classical Greek and Arabic propositions</strong> of
+        Apollonius’s <em>Conics</em> (Books I–VII) and <strong>T. L. Heath’s 147 consolidated
+        propositions</strong> (1896) across the Digital Scriptorium Codex units,
+        Euclid’s <em>Elements</em>, Archimedes, Pappus’s <em>Synagoge</em> Book VII, Kepler,
+        Kimberling’s <em>Encyclopedia of Triangle Centers</em> (<code class="docutils literal notranslate"><span class="pre">etc</span></code>), Wildberger’s
+        Rational Trigonometry (<code class="docutils literal notranslate"><span class="pre">wildberger</span></code>), Lean <code class="docutils literal notranslate"><span class="pre">mathlib4</span></code>, and current
+        symbolic conic gaps in <code class="docutils literal notranslate"><span class="pre">sympy.geometry</span></code>.</p>
+        <section class="level-2" id="classical-vs-heath-proposition-synopsis-books-ivii">
+        <h2>1. Classical vs. Heath Proposition Synopsis (Books I–VII)<a class="headerlink" href="#classical-vs-heath-proposition-synopsis-books-ivii" title="Link to this heading">¶</a></h2>
+        <table class="docutils align-default">
+        <colgroup>
+        <col style="width: 10.0%" />
+        <col style="width: 14.0%" />
+        <col style="width: 24.0%" />
+        <col style="width: 16.0%" />
+        <col style="width: 36.0%" />
+        </colgroup>
+        <thead>
+        <tr class="row-odd"><th class="head"><p>Book</p></th>
+        <th class="head"><p>Classical Props.</p></th>
+        <th class="head"><p>Heath (1896) Range</p></th>
+        <th class="head"><p>Heath Pages</p></th>
+        <th class="head"><p>Primary Textual Witness</p></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="row-even"><td><p><strong>Book I</strong></p></td>
+        <td><p>60</p></td>
+        <td><p>Props. 1–27 (plus Cone Lemmas I.1–10)</p></td>
+        <td><p>pp. 1–52</p></td>
+        <td><p>Greek (Heiberg Vol. I, 1891; Vat. gr. 206)</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><strong>Book II</strong></p></td>
+        <td><p>53</p></td>
+        <td><p>Props. 28–53</p></td>
+        <td><p>pp. 53–94</p></td>
+        <td><p>Greek (Heiberg Vol. I, 1891; Vat. gr. 206)</p></td>
+        </tr>
+        <tr class="row-even"><td><p><strong>Book III</strong></p></td>
+        <td><p>56</p></td>
+        <td><p>Props. 54–76</p></td>
+        <td><p>pp. 95–125</p></td>
+        <td><p>Greek (Heiberg Vol. I, 1891; Vat. gr. 206)</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><strong>Book IV</strong></p></td>
+        <td><p>57</p></td>
+        <td><p>Props. 77–83</p></td>
+        <td><p>pp. 126–138</p></td>
+        <td><p>Greek (Heiberg Vol. II, 1893; Vat. gr. 206)</p></td>
+        </tr>
+        <tr class="row-even"><td><p><strong>Book V</strong></p></td>
+        <td><p>77</p></td>
+        <td><p>Props. 84–113</p></td>
+        <td><p>pp. 139–196</p></td>
+        <td><p>Arabic of Thābit ibn Qurra / Latin of Halley (1710; Bodleian Marsh 667)</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><strong>Book VI</strong></p></td>
+        <td><p>33</p></td>
+        <td><p>Props. 114–122</p></td>
+        <td><p>pp. 197–220</p></td>
+        <td><p>Arabic of Thābit ibn Qurra / Latin of Halley (1710; Bodleian Marsh 667)</p></td>
+        </tr>
+        <tr class="row-even"><td><p><strong>Book VII</strong></p></td>
+        <td><p>51</p></td>
+        <td><p>Props. 123–147</p></td>
+        <td><p>pp. 221–254</p></td>
+        <td><p>Arabic of Thābit ibn Qurra / Latin of Halley (1710; Bodleian Marsh 667)</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><strong>Total</strong></p></td>
+        <td><p><strong>387</strong></p></td>
+        <td><p><strong>Propositions 1–147</strong></p></td>
+        <td><p><strong>pp. 1–254</strong></p></td>
+        <td><p><strong>Books I–IV Greek; Books V–VII Arabic/Latin</strong></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="locus-by-locus-cross-corpus-concordance">
+        <h2>2. Locus-by-Locus Cross-Corpus Concordance<a class="headerlink" href="#locus-by-locus-cross-corpus-concordance" title="Link to this heading">¶</a></h2>
+        <section class="level-3" id="books-i-ii-iv-v-vi-vii-prefaces-intro-part-ii-ch-i">
+        <span id="conc-prefaces-letters"></span><h3>Books I, II, IV, V, VI, VII Prefaces — Intro Part II, Ch. I<a class="headerlink" href="#books-i-ii-iv-v-vi-vii-prefaces-intro-part-ii-ch-i" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="preface-intro/preface-intro-en.html"><span class="doc">Preface, Introduction &amp; Prefatory Letters</span></a> (Heath pp. lxix–lxxv · PDF 77–83)</p></li>
+        <li><p><strong>Geometric Plate</strong>: —</p></li>
+        <li><p><strong>Euclid Foundations</strong>: VI.27, VI.28, VI.29, XII.10</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">archimedes</span></code>, <code class="docutils literal notranslate"><span class="pre">pappus</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Epistolary prefaces to Eudemus and Attalus dividing Books I–IV (elementary foundation, ἀγωγὴ στοιχειώδης) from Books V–VIII (special extensions, περιουσιαστικώτερα).</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="i-110-the-cone-introductory-props">
+        <span id="conc-i-1-10-cone"></span><h3>I. 1–10 — The Cone (Introductory Props.)<a class="headerlink" href="#i-110-the-cone-introductory-props" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-1/book-1-en.html"><span class="doc">Book I — Generation of the Cone &amp; Fundamental Symptoms</span></a> (Heath pp. 1–8 · PDF 181–188)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_oblique_cone_sections.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: III.35, VI.4, XI.Def.18</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">elements</span></code>, <code class="docutils literal notranslate"><span class="pre">pappus</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Generation of the arbitrary oblique scalene circular double cone, axial triangle, parallel circular sections (I.4), and antiparallel subcontrary circular sections (I.5, I.9).</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="i-11-proposition-1">
+        <span id="conc-i-11-parabola"></span><h3>I. 11 — Proposition 1<a class="headerlink" href="#i-11-proposition-1" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-1/book-1-en.html"><span class="doc">Book I — Generation of the Cone &amp; Fundamental Symptoms</span></a> (Heath pp. 8–9 · PDF 188–189)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_application_of_areas.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: I.44, II.14, VI.4, VI.27</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">elements</span></code>, <code class="docutils literal notranslate"><span class="pre">archimedes</span></code>, <code class="docutils literal notranslate"><span class="pre">wildberger</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Fundamental symptom of the Parabola (παραβολή): cutting plane parallel to a generator of the axial triangle yields QV² = PL · PV (y² = px), exact application of area.</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="i-12-proposition-2">
+        <span id="conc-i-12-hyperbola"></span><h3>I. 12 — Proposition 2<a class="headerlink" href="#i-12-proposition-2" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-1/book-1-en.html"><span class="doc">Book I — Generation of the Cone &amp; Fundamental Symptoms</span></a> (Heath pp. 9–11 · PDF 189–191)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_application_of_areas.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: II.6, VI.4, VI.29</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">elements</span></code>, <code class="docutils literal notranslate"><span class="pre">wildberger</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Fundamental symptom of the Hyperbola (ὑπερβολή): cutting plane meeting both napes yields QV² = PV · PL + (PL/PP’) PV², application exceeding by a figure similar to d × p.</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="i-13-proposition-3">
+        <span id="conc-i-13-ellipse"></span><h3>I. 13 — Proposition 3<a class="headerlink" href="#i-13-proposition-3" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-1/book-1-en.html"><span class="doc">Book I — Generation of the Cone &amp; Fundamental Symptoms</span></a> (Heath pp. 11–13 · PDF 191–193)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_application_of_areas.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: II.5, VI.4, VI.28</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">elements</span></code>, <code class="docutils literal notranslate"><span class="pre">archimedes</span></code>, <code class="docutils literal notranslate"><span class="pre">wildberger</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Fundamental symptom of the Ellipse (ἔλλειψις): cutting plane meeting all generators of one nape yields QV² = PV · PL − (PL/PP’) PV², application falling short by a figure similar to d × p.</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="i-14-15-16-propositions-46">
+        <span id="conc-i-14-opposites"></span><h3>I. 14, 15, 16 — Propositions 4–6<a class="headerlink" href="#i-14-15-16-propositions-46" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-1/book-1-en.html"><span class="doc">Book I — Generation of the Cone &amp; Fundamental Symptoms</span></a> (Heath pp. 13–17 · PDF 193–197)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_oblique_cone_sections.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: VI.4, VI.29</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">pappus</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Opposite branches (αἱ ἀντικείμεναι) cut from the double cone have equal latus rectum and form a single two-branched curve with center bisecting PP’ and secondary conjugate diameter.</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="i-3338-propositions-1215">
+        <span id="conc-i-33-38-tangents"></span><h3>I. 33–38 — Propositions 12–15<a class="headerlink" href="#i-3338-propositions-1215" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-1/book-1-en.html"><span class="doc">Book I — Generation of the Cone &amp; Fundamental Symptoms</span></a> (Heath pp. 25–30 · PDF 205–210)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_tangent_harmonic_division.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: II.5, II.6, III.16, VI.17</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">pappus</span></code>, <code class="docutils literal notranslate"><span class="pre">mathlib4</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Tangent construction and harmonic division: TP = PV for the parabola (I.33, 35) and TP : TP’ = PV : VP’ (equivalently CT · CV = CP²) for central conics (I.34, 36–37).</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="i-4951-propositions-2021">
+        <span id="conc-i-49-51-coordinate-change"></span><h3>I. 49–51 — Propositions 20–21<a class="headerlink" href="#i-4951-propositions-2021" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-1/book-1-en.html"><span class="doc">Book I — Generation of the Cone &amp; Fundamental Symptoms</span></a> (Heath pp. 36–41 · PDF 216–221)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_tangent_harmonic_division.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: I.43, VI.4</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">wildberger</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Invariance of the conic symptom under transformation from the original cone-derived diameter to any new diameter QQ’ and tangent at Q.</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="ii-114-propositions-2835">
+        <span id="conc-ii-1-14-asymptotes"></span><h3>II. 1–14 — Propositions 28–35<a class="headerlink" href="#ii-114-propositions-2835" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-2/book-2-en.html"><span class="doc">Book II — Asymptotes, Conjugate Hyperbolas &amp; Secant Intercepts</span></a> (Heath pp. 53–62 · PDF 233–242)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_hyperbola_asymptotes_secant.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: II.5, II.6, X.1</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">archimedes</span></code>, <code class="docutils literal notranslate"><span class="pre">descartes</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Construction of asymptotes (PL² = ¼ p·d), proof of non-intersection, bisected tangent segment LL’ at P (II.3, 9), equal secant intercepts RQ = Q’R’ (II.8, 16), asymptotic equation xy = const (II.12), and indefinite approach (II.14).</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="ii-1523-propositions-28-3639">
+        <span id="conc-ii-15-23-conjugate-hyperbolas"></span><h3>II. 15–23 — Propositions 28, 36–39<a class="headerlink" href="#ii-1523-propositions-28-3639" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-2/book-2-en.html"><span class="doc">Book II — Asymptotes, Conjugate Hyperbolas &amp; Secant Intercepts</span></a> (Heath pp. 53, 62–64 · PDF 233, 242–244)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_hyperbola_asymptotes_secant.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: II.6, VI.4</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">wildberger</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Opposite branches and conjugate hyperbolas share common asymptotes; conjugate diameters of original hyperbola swap transverse and secondary roles on the conjugate hyperbola.</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="ii-4453-propositions-4753">
+        <span id="conc-ii-44-53-axes-tangents"></span><h3>II. 44–53 — Propositions 47–53<a class="headerlink" href="#ii-4453-propositions-4753" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-2/book-2-en.html"><span class="doc">Book II — Asymptotes, Conjugate Hyperbolas &amp; Secant Intercepts</span></a> (Heath pp. 72–83 · PDF 252–263)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_tangent_harmonic_division.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: III.17, III.31</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">elements</span></code>, <code class="docutils literal notranslate"><span class="pre">pappus</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Finding a diameter, center, and principal orthogonal axes of a given conic; constructing tangents from an external point by harmonic division and compass-and-straightedge.</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="iii-1629-propositions-5761">
+        <span id="conc-iii-16-29-chord-rectangles"></span><h3>III. 16–29 — Propositions 57–61<a class="headerlink" href="#iii-1629-propositions-5761" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-3/book-3-en.html"><span class="doc">Book III — Chord Rectangles, Poles &amp; Polars, Foci &amp; the 4-Line Locus</span></a> (Heath pp. 97–101 · PDF 277–281)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_three_four_line_locus.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: III.35, III.36, III.37</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">pappus</span></code>, <code class="docutils literal notranslate"><span class="pre">newton</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Ratio of rectangles under segments of intersecting chords PO·OQ : RO·OS equals the ratio of squares on parallel tangents—generalizing Euclid III.35–36 (power of a point) from circles to all conics.</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="iii-3040-propositions-6266">
+        <span id="conc-iii-30-40-poles-polars"></span><h3>III. 30–40 — Propositions 62–66<a class="headerlink" href="#iii-3040-propositions-6266" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-3/book-3-en.html"><span class="doc">Book III — Chord Rectangles, Poles &amp; Polars, Foci &amp; the 4-Line Locus</span></a> (Heath pp. 102–108 · PDF 282–288)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_harmonic_pole_polar.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: VI.2, VI.4</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">pappus</span></code>, <code class="docutils literal notranslate"><span class="pre">mathlib4</span></code>, <code class="docutils literal notranslate"><span class="pre">wildberger</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Harmonic properties of poles and polars: any secant through pole T is divided harmonically by the conic at R, R’ and the chord of contact (polar) Qq at M: TR : TR’ = MR : MR’.</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="iii-4552-propositions-6973">
+        <span id="conc-iii-45-52-foci"></span><h3>III. 45–52 — Propositions 69–73<a class="headerlink" href="#iii-4552-propositions-6973" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-3/book-3-en.html"><span class="doc">Book III — Chord Rectangles, Poles &amp; Polars, Foci &amp; the 4-Line Locus</span></a> (Heath pp. 113–118 · PDF 293–298)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_central_conic_foci.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: I.47, II.5, II.6, III.21, III.31</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">pappus</span></code>, <code class="docutils literal notranslate"><span class="pre">kepler</span></code>, <code class="docutils literal notranslate"><span class="pre">wildberger</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Focal properties of central conics (‘points arising out of the application’, AS·SA’ = b²): optical reflection equality (III.48 [Prop. 71]), pedal auxiliary circle (III.49 [Prop. 72]), and constant sum/difference SP ± S’P = AA’ = 2a (III.51–52 [Prop. 73]).</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="iii-5356-propositions-7476">
+        <span id="conc-iii-53-56-four-line-locus"></span><h3>III. 53–56 — Propositions 74–76<a class="headerlink" href="#iii-5356-propositions-7476" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-3/book-3-en.html"><span class="doc">Book III — Chord Rectangles, Poles &amp; Polars, Foci &amp; the 4-Line Locus</span></a> (Heath pp. 119–125 · PDF 299–305)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_three_four_line_locus.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: VI.16, VI.23</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">pappus</span></code>, <code class="docutils literal notranslate"><span class="pre">descartes</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Projective product of tangent intercepts and synthetic key to the Three-Line and Four-Line Locus of Euclid, Apollonius, Pappus (Book VII), and Descartes (La Géométrie, 1637).</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="iv-123-introductory-note-to-book-iv">
+        <span id="conc-iv-1-23-polar-converse"></span><h3>IV. 1–23 — Introductory Note to Book IV<a class="headerlink" href="#iv-123-introductory-note-to-book-iv" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-4/book-4-en.html"><span class="doc">Book IV — Number of Intersections &amp; Tangencies of Conics</span></a> (Heath pp. 126 · PDF 306)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_harmonic_pole_polar.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: III.17, VI.4</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">pappus</span></code>, <code class="docutils literal notranslate"><span class="pre">mathlib4</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Converse harmonic polar construction of tangents from an external point across single-branch and opposite-branch hyperbolas.</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="iv-2457-propositions-7783">
+        <span id="conc-iv-24-57-intersections"></span><h3>IV. 24–57 — Propositions 77–83<a class="headerlink" href="#iv-2457-propositions-7783" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-4/book-4-en.html"><span class="doc">Book IV — Number of Intersections &amp; Tangencies of Conics</span></a> (Heath pp. 126–138 · PDF 306–318)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_four_point_conic_pencil.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: III.10, III.13</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">pappus</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Two distinct conics cannot share an arc (IV.24 [Prop. 77]), intersect in at most four points (IV.25, 38, 43, 55 [Props. 78–83]), and if tangent at one point meet in at most two others—the ancient foundation of Bézout’s theorem (2 × 2 = 4) and five-point conic uniqueness.</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="v-134-propositions-8494">
+        <span id="conc-v-1-34-subnormals"></span><h3>V. 1–34 — Propositions 84–94<a class="headerlink" href="#v-134-propositions-8494" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-5/book-5-en.html"><span class="doc">Book V — Normals, Minimum &amp; Maximum Lines, Subnormals &amp; the Evolute</span></a> (Heath pp. 139–159 · PDF 319–339)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_normals_evolute.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: I.19, III.7, III.8, III.16</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">archimedes</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Minimum and maximum straight lines from axis points to a conic; constant parabola subnormal NG = ½ p_a (V.13, 27) and central-conic subnormal proportion NG : CN = p_a : AA’ (V.14–15, 28–29); perpendicularity of minimum/maximum lines to the tangent (normals).</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="v-5163-propositions-99106">
+        <span id="conc-v-51-63-evolute"></span><h3>V. 51–63 — Propositions 99–106<a class="headerlink" href="#v-5163-propositions-99106" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="book-5/book-5-en.html"><span class="doc">Book V — Normals, Minimum &amp; Maximum Lines, Subnormals &amp; the Evolute</span></a> (Heath pp. 168–186 · PDF 348–366)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_normals_evolute.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: II.5, V.8, VI.28</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">archimedes</span></code>, <code class="docutils literal notranslate"><span class="pre">descartes</span></code>, <code class="docutils literal notranslate"><span class="pre">wildberger</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Exact diorismos of the number of normals through an arbitrary point O (2, 3, or 4 normals), determining point-by-point the evolute envelope of every conic and constructing normal feet via an auxiliary rectangular hyperbola.</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="vi-133-definitions-16-propositions-114122">
+        <span id="conc-vi-1-33-similarity-cones"></span><h3>VI. 1–33 — Definitions 1–6 &amp; Propositions 114–122<a class="headerlink" href="#vi-133-definitions-16-propositions-114122" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="books-6-7/books-6-7-en.html"><span class="doc">Books VI &amp; VII — Equal and Similar Conics &amp; Conjugate Diameters</span></a> (Heath pp. 197–220 · PDF 377–400)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_oblique_cone_sections.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: VI.Def.1, VI.20, XI.24</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">elements</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Congruence and similarity of conic sections and segments: all parabolas are similar (VI.11 [Prop. 115]); central conics are similar iff their figures d × p are similar (VI.12–13 [Prop. 116]); embedding any given conic inside a prescribed right cone (VI.28–30 [Props. 120–122]).</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="vii-12-13-29-30-31-propositions-129-136">
+        <span id="conc-vii-12-31-apollonius-theorems"></span><h3>VII. 12, 13, 29, 30, 31 — Propositions 129 &amp; 136<a class="headerlink" href="#vii-12-13-29-30-31-propositions-129-136" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="books-6-7/books-6-7-en.html"><span class="doc">Books VI &amp; VII — Equal and Similar Conics &amp; Conjugate Diameters</span></a> (Heath pp. 228–236 · PDF 408–416)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_conjugate_diameters_theorems.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: I.35, I.47, II.5, II.6, VI.23</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">wildberger</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Apollonius’s First and Second Conjugate Diameter Theorems: (1) PP’² ± DD’² = AA’² ± BB’² (a’² ± b’² = a² ± b²); (2) area of circumscribed conjugate parallelogram LL’MM’ equals rectangle of axes AA’ · BB’ (a’b’ sin ω = ab).</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="vii-3351-propositions-137147">
+        <span id="conc-vii-33-51-extrema"></span><h3>VII. 33–51 — Propositions 137–147<a class="headerlink" href="#vii-3351-propositions-137147" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="books-6-7/books-6-7-en.html"><span class="doc">Books VI &amp; VII — Equal and Similar Conics &amp; Conjugate Diameters</span></a> (Heath pp. 236–254 · PDF 416–434)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_conjugate_diameters_theorems.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: V.8, V.10, VI.27</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">euclid</span></code>, <code class="docutils literal notranslate"><span class="pre">ibn-al-haytham</span></code>, <code class="docutils literal notranslate"><span class="pre">halley</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Extrema and monotonic variations of d’ ± d’’, d’·d’’, p’, and d’² ± p’² across conjugate diameters, forged explicitly as diorismos machinery for the lost Book VIII.</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="pappus-synagoge-vii-intro-part-ii-ch-i-viete-1600">
+        <span id="conc-pappus-vii-tangencies-ccc"></span><h3>Pappus Synagoge VII (Περὶ ἐπαφῶν) — Intro Part II, Ch. I &amp; Viète (1600)<a class="headerlink" href="#pappus-synagoge-vii-intro-part-ii-ch-i-viete-1600" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="lost-works-pappus/lost-works-pappus-en.html"><span class="doc">Appendix — The Lost Analytic Treasury in Pappus Book VII</span></a> (Heath pp. lxviii · PDF 76)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_problem_of_apollonius_ccc.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: III.17, III.36, IV.4, IV.5</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">pappus</span></code>, <code class="docutils literal notranslate"><span class="pre">elements</span></code>, <code class="docutils literal notranslate"><span class="pre">etc</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Apollonius’s On Tangencies: the ten contact problems (PPP through CCC, up to 8 tangent circles), reconstructed by Viète’s Apollonius Gallus (1600) and connected to ETC X(181) (Apollonius Point).</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="pappus-synagoge-vii-ii-circle-of-apollonius-analytic-treasury">
+        <span id="conc-pappus-vii-plane-loci-apollonius-circle"></span><h3>Pappus Synagoge VII (Τόποι ἐπίπεδοι II) — Circle of Apollonius &amp; Analytic Treasury<a class="headerlink" href="#pappus-synagoge-vii-ii-circle-of-apollonius-analytic-treasury" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Codex Unit</strong>: <a class="reference internal" href="lost-works-pappus/lost-works-pappus-en.html"><span class="doc">Appendix — The Lost Analytic Treasury in Pappus Book VII</span></a> (Heath pp. lxviii, cxxv–cxxvi · PDF 76, 133–134)</p></li>
+        <li><p><strong>Geometric Plate</strong>: <code class="docutils literal notranslate"><span class="pre">fig_apollonius_circle_locus.svg</span></code></p></li>
+        <li><p><strong>Euclid Foundations</strong>: VI.3, VI.A</p></li>
+        <li><p><strong>GEOMETOR &amp; Formal Links</strong>: <code class="docutils literal notranslate"><span class="pre">pappus</span></code>, <code class="docutils literal notranslate"><span class="pre">elements</span></code>, <code class="docutils literal notranslate"><span class="pre">etc</span></code>, <code class="docutils literal notranslate"><span class="pre">wildberger</span></code></p></li>
+        <li><p><strong>Doctrinal Summary</strong>: Apollonius’s Plane Loci Book II: the locus PA : PB = k (k ≠ 1) is the Circle of Apollonius on harmonic diameter H_in H_ex; the three Apollonius circles of a triangle form a coaxal pencil intersecting at the Isodynamic Points X(15) and X(16), alongside Cutting Off of a Ratio, Determinate Section, and Inclinations.</p></li>
+        </ul>
+        </section>
+        </section>
+        <section class="level-2" id="symbolic-conic-capabilities-sympy-geometry-gap-audit">
+        <h2>3. Symbolic Conic Capabilities &amp; sympy.geometry Gap Audit<a class="headerlink" href="#symbolic-conic-capabilities-sympy-geometry-gap-audit" title="Link to this heading">¶</a></h2>
+        <p>A central architectural purpose of <code class="docutils literal notranslate"><span class="pre">geometor-apollonius</span></code> is specifying the
+        exact algebraic and projective operations required for a future constructive
+        conic engine beyond the axis-aligned limitations of <code class="docutils literal notranslate"><span class="pre">sympy.geometry</span></code>:</p>
+        <section class="level-3" id="general-planar-conic-ax2-bxy-cy2-dx-ey-f-0-oblique-diameter-frame-i-1114-i-4960">
+        <span id="gap-general-conic-quadratic"></span><h3>General planar conic Ax² + Bxy + Cy² + Dx + Ey + F = 0 &amp; oblique-diameter frame (I.11–14, I.49–60)<a class="headerlink" href="#general-planar-conic-ax2-bxy-cy2-dx-ey-f-0-oblique-diameter-frame-i-1114-i-4960" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Current ``sympy.geometry`` Status</strong>: Partial / Axis-Aligned Only (<cite>sympy.geometry.ellipse.Ellipse</cite> and <cite>parabola.Parabola</cite> lack general rotated/projective hyperbola and two-branch oblique-diameter conic kernel)</p></li>
+        <li><p><strong>GEOMETOR Constructive Target</strong>: geometor.model exact algebraic/projective Conic element over Q(sqrt(d)) and Q(phi)</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="harmonic-pole-polar-bijection-chord-of-contact-and-self-polar-triangle-iii-3040-props-6266">
+        <span id="gap-pole-polar-duality"></span><h3>Harmonic pole-polar bijection, chord of contact, and self-polar triangle (III.30–40 [Props. 62–66])<a class="headerlink" href="#harmonic-pole-polar-bijection-chord-of-contact-and-self-polar-triangle-iii-3040-props-6266" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Current ``sympy.geometry`` Status</strong>: Missing in <cite>sympy.geometry</cite> (no <cite>polar_line(point)</cite> or <cite>pole_point(line)</cite> on conics; formalized in Lean <cite>mathlib4</cite> <cite>PolePolar.lean</cite>)</p></li>
+        <li><p><strong>GEOMETOR Constructive Target</strong>: geometor.pappus &amp; geometor.model symmetric 3×3 matrix polarity P ↦ C·P</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="four-line-locus-conic-pencil-c1-c2-0-five-point-conic-constructor-and-exact-4-point-intersection-solver-iii-5356-props-7476-iv-2457-props-7783">
+        <span id="gap-five-point-pencil"></span><h3>Four-line locus conic pencil C₁ + λ C₂ = 0, five-point conic constructor, and exact 4-point intersection solver (III.53–56 [Props. 74–76] &amp; IV.24–57 [Props. 77–83])<a class="headerlink" href="#four-line-locus-conic-pencil-c1-c2-0-five-point-conic-constructor-and-exact-4-point-intersection-solver-iii-5356-props-7476-iv-2457-props-7783" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Current ``sympy.geometry`` Status</strong>: Missing in <cite>sympy.geometry</cite> (no <cite>conic_through_five_points</cite> or 4-point pencil resolver)</p></li>
+        <li><p><strong>GEOMETOR Constructive Target</strong>: geometor.pappus Braikenridge–Maclaurin / determinant 6×6 exact symbolic constructor</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="exact-4-normal-cubic-quartic-foot-resolver-from-arbitrary-point-o-and-rational-algebraic-evolute-envelope-v-5163-props-99109">
+        <span id="gap-normals-evolute"></span><h3>Exact 4-normal cubic/quartic foot resolver from arbitrary point O and rational/algebraic evolute envelope (V.51–63 [Props. 99–109])<a class="headerlink" href="#exact-4-normal-cubic-quartic-foot-resolver-from-arbitrary-point-o-and-rational-algebraic-evolute-envelope-v-5163-props-99109" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Current ``sympy.geometry`` Status</strong>: Missing in <cite>sympy.geometry</cite> (<cite>Ellipse.normal_lines</cite> uses numeric/Groebner fallbacks that stall on symbolic parameters; no <cite>evolute</cite> method)</p></li>
+        <li><p><strong>GEOMETOR Constructive Target</strong>: Apollonius rectangular-hyperbola intersection constructor (V.62–63 [Prop. 106])</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="exact-symbolic-solver-for-all-8-tangent-circles-to-three-given-circles-problem-of-apollonius-ccc-lost-tangencies-pappus-vii-viete-1600">
+        <span id="gap-apollonius-ccc"></span><h3>Exact symbolic solver for all 8 tangent circles to three given circles (Problem of Apollonius CCC) (Lost Tangencies (Pappus VII) / Viète (1600))<a class="headerlink" href="#exact-symbolic-solver-for-all-8-tangent-circles-to-three-given-circles-problem-of-apollonius-ccc-lost-tangencies-pappus-vii-viete-1600" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Current ``sympy.geometry`` Status</strong>: Missing in <cite>sympy.geometry</cite> (<cite>Circle</cite> supports only basic tangent lines from a point)</p></li>
+        <li><p><strong>GEOMETOR Constructive Target</strong>: Gergonne radical-center / pole-polar 8-solution algebraic solver in geometor.elements / geometor.etc</p></li>
+        </ul>
+        </section>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="lost-works-pappus/lost-works-pappus-en.html" title="Appendix — The Lost Analytic Treasury in Pappus Book VII">&larr; <span class="nav-label">Appendix — The Lost Analytic Treasury in Pappus Book VII</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="index.html">ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="bibliography.html" title="Bibliography &amp; Critical Editions"><span class="nav-label">Bibliography & Critical Editions</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 200 BCE · 1896 Cambridge University Press · Digital Codex GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

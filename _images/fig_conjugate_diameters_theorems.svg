@@ -1,0 +1,252 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" width="680" height="360" class="euclid-graphic" data-graphic-id="g10" data-proposition="VII.12-31">
+  <defs>
+    <marker id="geom-tick-1" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-2" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+      <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-3" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+      <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+  </defs>
+  <style>
+    :root {
+      --geom-fg: #18181b;
+      --geom-bg: #ffffff;
+      --geom-muted: #71717a;
+      --geom-point-stroke: #ffffff;
+      --geom-poly-fill: #18181b;
+      --geom-accent: #c88a1e;
+      --geom-assert: #16a34a;
+      --geom-hyper: #2563eb;
+      --geom-rose: #be123c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --geom-fg: #e4ded5;
+        --geom-bg: #18181b;
+        --geom-muted: #a1a1aa;
+        --geom-point-stroke: #18181b;
+        --geom-poly-fill: #e4ded5;
+        --geom-accent: #eab308;
+        --geom-assert: #4ade80;
+        --geom-hyper: #60a5fa;
+        --geom-rose: #fb7185;
+      }
+    }
+    .euclid-graphic {
+      font-family: 'Fira Sans Condensed', 'Fira Sans', system-ui, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      background-color: var(--geom-bg);
+    }
+    .geom-line {
+      stroke: var(--geom-fg);
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-bold {
+      stroke: var(--geom-fg);
+      stroke-width: 2.35;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-faint {
+      stroke: var(--geom-muted);
+      stroke-width: 1.15;
+      stroke-opacity: 0.72;
+      stroke-linecap: round;
+      fill: none;
+    }
+    .geom-dashed {
+      stroke: var(--geom-muted);
+      stroke-width: 1.35;
+      stroke-dasharray: 5, 3.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-accent-line {
+      stroke: var(--geom-accent);
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-assert-line {
+      stroke: var(--geom-assert);
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-hyper-line {
+      stroke: var(--geom-hyper);
+      stroke-width: 2.1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-rose-line {
+      stroke: var(--geom-rose);
+      stroke-width: 2.0;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-circle {
+      stroke: var(--geom-fg);
+      stroke-width: 1.75;
+      fill: none;
+    }
+    .geom-overlay {
+      stroke: transparent;
+      stroke-width: 4.0;
+      stroke-linecap: round;
+      fill: none;
+    }
+    .geom-polygon {
+      fill: var(--geom-poly-fill);
+      fill-opacity: 0.06;
+      stroke: none;
+    }
+    .geom-polygon-accent {
+      fill: var(--geom-accent);
+      fill-opacity: 0.16;
+      stroke: var(--geom-accent);
+      stroke-width: 1.4;
+    }
+    .geom-polygon-assert {
+      fill: var(--geom-assert);
+      fill-opacity: 0.14;
+      stroke: var(--geom-assert);
+      stroke-width: 1.4;
+    }
+    .geom-polygon-rose {
+      fill: var(--geom-rose);
+      fill-opacity: 0.14;
+      stroke: var(--geom-rose);
+      stroke-width: 1.4;
+    }
+    .geom-point {
+      fill: var(--geom-fg);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-point-accent {
+      fill: var(--geom-accent);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-point-assert {
+      fill: var(--geom-assert);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-point-rose {
+      fill: var(--geom-rose);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-label {
+      font-size: 13.5px;
+      font-weight: 700;
+      fill: var(--geom-fg);
+      user-select: none;
+    }
+    .geom-label-sm {
+      font-size: 11.5px;
+      font-weight: 700;
+      fill: var(--geom-muted);
+      user-select: none;
+    }
+    .geom-label-accent {
+      font-size: 12.5px;
+      font-weight: 700;
+      fill: var(--geom-accent);
+      user-select: none;
+    }
+    .geom-label-assert {
+      font-size: 12.5px;
+      font-weight: 700;
+      fill: var(--geom-assert);
+      user-select: none;
+    }
+    .geom-label-hyper {
+      font-size: 12.5px;
+      font-weight: 700;
+      fill: var(--geom-hyper);
+      user-select: none;
+    }
+    .geom-label-rose {
+      font-size: 12.5px;
+      font-weight: 700;
+      fill: var(--geom-rose);
+      user-select: none;
+    }
+  </style>
+  <g id="elements">
+    <polygon points="182.00,92.00 498.00,92.00 498.00,284.00 182.00,284.00" class="geom-polygon" />
+    <polygon points="385.57,55.09 121.25,160.31 294.43,320.91 558.75,215.69" class="geom-polygon-accent" data-ref="&lt; K L M N &gt;" />
+  </g>
+  <g id="graphics">
+    <path d="M 182.00 92.00 L 340.00 92.00 L 498.00 92.00" class="geom-dashed" />
+    <path d="M 498.00 92.00 L 498.00 188.00 L 498.00 284.00" class="geom-dashed" />
+    <path d="M 498.00 284.00 L 340.00 284.00 L 182.00 284.00" class="geom-dashed" />
+    <path d="M 182.00 284.00 L 182.00 188.00 L 182.00 92.00" class="geom-dashed" />
+    <path d="M 385.57 55.09 L 253.41 107.70 L 121.25 160.31" class="geom-accent-line" />
+    <path d="M 121.25 160.31 L 207.84 240.61 L 294.43 320.91" class="geom-accent-line" />
+    <path d="M 294.43 320.91 L 426.59 268.30 L 558.75 215.69" class="geom-accent-line" />
+    <path d="M 558.75 215.69 L 472.16 135.39 L 385.57 55.09" class="geom-accent-line" />
+    <ellipse cx="340.00" cy="188.00" rx="158.00" ry="96.00" class="geom-bold" />
+    <path d="M 182.00 188.00 L 340.00 188.00 L 498.00 188.00" class="geom-faint" data-ref="/ A1 A /" />
+    <path d="M 340.00 92.00 L 340.00 188.00 L 340.00 284.00" class="geom-faint" data-ref="/ B1 B /" />
+    <path d="M 207.84 240.61 L 340.00 188.00 L 472.16 135.39" class="geom-assert-line" data-ref="/ P1 P /" />
+    <path d="M 426.59 268.30 L 340.00 188.00 L 253.41 107.70" class="geom-hyper-line" data-ref="/ D1 D /" />
+    <path d="M 364.16 178.38 A 26.00 26.00 0 0 0 344.77 162.44 A 26.00 26.00 0 0 0 320.94 170.32" class="geom-rose-line" data-ref="&lt; P C D )" />
+  </g>
+  <g id="highlights" style="pointer-events: none;">
+    <path d="M 182.00 188.00 L 340.00 188.00 L 498.00 188.00" class="geom-overlay" data-ref="/ A1 A /" />
+    <path d="M 340.00 92.00 L 340.00 188.00 L 340.00 284.00" class="geom-overlay" data-ref="/ B1 B /" />
+    <path d="M 207.84 240.61 L 340.00 188.00 L 472.16 135.39" class="geom-overlay" data-ref="/ P1 P /" />
+    <path d="M 426.59 268.30 L 340.00 188.00 L 253.41 107.70" class="geom-overlay" data-ref="/ D1 D /" />
+  </g>
+  <g id="points">
+    <circle cx="340.00" cy="188.00" r="3.40" class="geom-point" data-ref="C" />
+    <circle cx="498.00" cy="188.00" r="3.40" class="geom-point" data-ref="A" />
+    <circle cx="340.00" cy="92.00" r="3.40" class="geom-point" data-ref="B" />
+    <circle cx="472.16" cy="135.39" r="3.40" class="geom-point-assert" data-ref="P" />
+    <circle cx="207.84" cy="240.61" r="3.40" class="geom-point-assert" />
+    <circle cx="253.41" cy="107.70" r="3.40" class="geom-point" data-ref="D" />
+    <circle cx="426.59" cy="268.30" r="3.40" class="geom-point" />
+    <circle cx="385.57" cy="55.09" r="3.40" class="geom-point-accent" data-ref="K" />
+    <circle cx="121.25" cy="160.31" r="3.40" class="geom-point-accent" data-ref="L" />
+    <circle cx="294.43" cy="320.91" r="3.40" class="geom-point-accent" data-ref="M" />
+    <circle cx="558.75" cy="215.69" r="3.40" class="geom-point-accent" data-ref="N" />
+  </g>
+  <g id="labels">
+    <text x="340.00" y="22.00" text-anchor="middle" class="geom-label-sm">VII.12 &amp; VII.31: Apollonius's Invariance Theorems on Conjugate Diameters</text>
+    <text x="330.00" y="203.00" text-anchor="middle" class="geom-label">C</text>
+    <text x="510.00" y="192.00" text-anchor="middle" class="geom-label-sm">A</text>
+    <text x="350.00" y="86.00" text-anchor="middle" class="geom-label-sm">B</text>
+    <text x="484.16" y="130.39" text-anchor="middle" class="geom-label-assert">P</text>
+    <text x="193.84" y="250.61" text-anchor="middle" class="geom-label-assert">P′</text>
+    <text x="241.41" y="99.70" text-anchor="middle" class="geom-label-hyper">D</text>
+    <text x="438.59" y="280.30" text-anchor="middle" class="geom-label-hyper">D′</text>
+    <text x="395.57" y="47.09" text-anchor="middle" class="geom-label-accent">K</text>
+    <text x="109.25" y="154.31" text-anchor="middle" class="geom-label-accent">L</text>
+    <text x="282.43" y="332.91" text-anchor="middle" class="geom-label-accent">M</text>
+    <text x="570.75" y="225.69" text-anchor="middle" class="geom-label-accent">N</text>
+    <text x="352.00" y="160.00" text-anchor="middle" class="geom-label-rose">ω</text>
+    <text x="414.72" y="175.64" text-anchor="middle" class="geom-label-assert">a′</text>
+    <text x="282.97" y="150.24" text-anchor="middle" class="geom-label-hyper">b′</text>
+    <text x="340.00" y="344.00" text-anchor="middle" class="geom-label-sm">VII.12: CP² + CD² = a′² + b′² = a² + b²   ·   VII.31: Area(KLMN) = 4 a′b′ sin ω = 4 ab</text>
+  </g>
+</svg>

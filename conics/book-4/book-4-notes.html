@@ -1,0 +1,158 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes — Book IV: Bézout’s Theorem, Five-Point Uniqueness &amp; Pencils &mdash; ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • apollonius</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">apollonius</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Conics</a>
+        </li>
+        <li>
+          <a href="../../mission/index.html"  >Mission</a>
+        </li>
+        <li>
+          <a href="../../about/index.html"  >About</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >Modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; apollonius</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../book-3/book-3-notes.html" title="Book III — Chord Rectangles, Poles &amp; Polars, Foci &amp; the 4-Line Locus">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <a class="book-track-item" href="book-4-en.html">English</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="book-4-summary.html">Summary</a>
+              <span class="book-track-sep">&middot;</span>
+              <strong class="book-track-item is-active" aria-current="page">Notes</strong>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../book-5/book-5-notes.html" title="Book V — Normals, Minimum &amp; Maximum Lines, Subnormals &amp; the Evolute"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="notes-book-iv-bezout-s-theorem-five-point-uniqueness-pencils">
+        <span id="unit-4-book-4-notes"></span><h1>Notes — Book IV: Bézout’s Theorem, Five-Point Uniqueness &amp; Pencils<a class="headerlink" href="#notes-book-iv-bezout-s-theorem-five-point-uniqueness-pencils" title="Link to this heading">¶</a></h1>
+        <section class="level-2" id="ancient-precursor-to-bezout-s-theorem-five-point-conics">
+        <h2>1. Ancient Precursor to Bézout’s Theorem &amp; Five-Point Conics<a class="headerlink" href="#ancient-precursor-to-bezout-s-theorem-five-point-conics" title="Link to this heading">¶</a></h2>
+        <p>Book IV (<cite>IV.24–57</cite>) is the direct synthetic ancestor of <strong>Bézout’s Theorem</strong> for degree-2 plane curves (<span class="geom-eq-marker" data-assert-equal="2 \times 2 = 4" hidden></span>), generalizing <a class="person-ref" id="occ-person-euclid-1" href="../persons.html#person-euclid" data-person="euclid" title="Euclid of Alexandria (fl. c. 300 BCE) — Author of the Elements, Conics (4 Books), and Surface Loci">Euclid's</a> <span class="justification" data-ref-target="III.10" title="III.10">[III.10]</span> (<em>“A circle does not cut a circle at more points than two”</em>—which holds only because every circle already passes through the two complex circular points at infinity <span class="geom-eq-marker" data-assert-equal="I, J" hidden></span>, leaving <span class="geom-eq-marker" data-assert-equal="4 - 2 = 2" hidden></span> finite intersections!).</p>
+        <p>Moreover, <cite>IV.25</cite> (<cite>Prop. 78</cite>) immediately implies <strong>uniqueness of the conic through five general points</strong> (<em>Heath Intro Ch. VI, pp. cli–clvi</em>): no two distinct conics can pass through the same five points in general position, complementing <a class="person-ref" id="occ-person-pascal-1" href="../persons.html#person-pascal" data-person="pascal" title="Blaise Pascal (1623–1662) — Author of the Essay pour les coniques (1640)">Pascal's</a> <em>Hexagrammum Mysticum</em> (1640) and <a class="person-ref" id="occ-person-pappus-1" href="../persons.html#person-pappus" data-person="pappus" title="Pappus of Alexandria (c. 290–350 CE) — Author of the Synagoge (Mathematical Collection)">Pappus's</a> five-point ellipse construction in <em>Synagoge</em> VIII.</p>
+        </section>
+        <section class="level-2" id="desargues-s-involution-the-self-polar-diagonal-triangle">
+        <h2>2. Desargues’s Involution &amp; the Self-Polar Diagonal Triangle<a class="headerlink" href="#desargues-s-involution-the-self-polar-diagonal-triangle" title="Link to this heading">¶</a></h2>
+        <p>Look closely at Apollonius’s proof technique in <cite>IV.25–57</cite>: given four intersection points <span class="geom-ref" data-ref="A, B, C, D" title="A, B, C, D">ABCD</span>, the intersection <span class="geom-ref" data-ref="T = AB \cap CD" title="T = AB \cap CD">TABcapCD</span> has the <strong>exact same polar line</strong> with respect to every conic passing through <span class="geom-ref" data-ref="A, B, C, D" title="A, B, C, D">ABCD</span>! In modern projective geometry (<code class="docutils literal notranslate"><span class="pre">geometor/pappus</span></code>), the three diagonal points <span class="geom-ref" data-ref="E = AB \cap CD" title="E = AB \cap CD">EABcapCD</span>, <span class="geom-ref" data-ref="F = AC \cap BD" title="F = AC \cap BD">FACcapBD</span>, <span class="geom-ref" data-ref="G = AD \cap BC" title="G = AD \cap BC">GADcapBC</span> of the complete quadrangle <span class="geom-ref" data-ref="ABCD" title="ABCD">ABCD</span> form a <strong>common self-polar triangle</strong> for the entire pencil <span class="geom-eq-marker" data-assert-equal="\mathcal{C}_1 + \lambda \mathcal{C}_2 = 0" hidden></span>, reducing the quartic intersection of two conics algebraically to solving a single resolvent cubic <span class="geom-eq-marker" data-assert-equal="\det(Q_1 + \lambda Q_2) = 0" hidden></span>!</p>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../book-3/book-3-notes.html" title="Book III — Chord Rectangles, Poles &amp; Polars, Foci &amp; the 4-Line Locus">&larr; <span class="nav-label">Book III — Chord Rectangles, Poles & Polars, Foci & the 4-Line Locus</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../book-5/book-5-notes.html" title="Book V — Normals, Minimum &amp; Maximum Lines, Subnormals &amp; the Evolute"><span class="nav-label">Book V — Normals, Minimum & Maximum Lines, Subnormals & the Evolute</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 200 BCE · 1896 Cambridge University Press · Digital Codex GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

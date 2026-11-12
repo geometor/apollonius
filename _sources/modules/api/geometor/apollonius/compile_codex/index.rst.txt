@@ -1,0 +1,70 @@
+geometor.apollonius.compile_codex
+=================================
+
+.. py:module:: geometor.apollonius.compile_codex
+
+.. autoapi-nested-parse::
+
+   Apparatus RST generator and 3-track Book Codex integrity verifier for GEOMETOR • apollonius.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.apollonius.compile_codex.EXPECTED_SVG_FIGURES
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.apollonius.compile_codex.render_concordance_rst
+   geometor.apollonius.compile_codex.render_bibliography_rst
+   geometor.apollonius.compile_codex.render_persons_rst
+   geometor.apollonius.compile_codex.render_glossary_rst
+   geometor.apollonius.compile_codex.write_apparatus_pages
+   geometor.apollonius.compile_codex.verify_codex_tracks
+
+
+Module Contents
+---------------
+
+.. py:data:: EXPECTED_SVG_FIGURES
+   :type:  tuple[str, ...]
+   :value: ('fig_oblique_cone_sections.svg', 'fig_application_of_areas.svg',...
+
+
+.. py:function:: render_concordance_rst(resources_dir: pathlib.Path | None = None) -> str
+
+   Render ``docsrc/conics/concordance.rst`` from ``concordance.json``.
+
+
+.. py:function:: render_bibliography_rst(resources_dir: pathlib.Path | None = None) -> str
+
+   Render ``docsrc/conics/bibliography.rst`` from ``citations.json``.
+
+
+.. py:function:: render_persons_rst(resources_dir: pathlib.Path | None = None) -> str
+
+   Render ``docsrc/conics/persons.rst`` from ``persons.json``.
+
+
+.. py:function:: render_glossary_rst(resources_dir: pathlib.Path | None = None) -> str
+
+   Render ``docsrc/conics/glossary.rst`` from ``glossary.json``.
+
+
+.. py:function:: write_apparatus_pages(docsrc_conics_dir: pathlib.Path | None = None, resources_dir: pathlib.Path | None = None) -> list[pathlib.Path]
+
+   Generate and write all four scholarly apparatus RST files into ``docsrc/conics/``.
+
+
+.. py:function:: verify_codex_tracks(docsrc_dir: pathlib.Path | None = None) -> list[str]
+
+   Verify 8 units × 3 tracks = 24 synchronized RST files, 12 SVGs, and zero embedded Python.
+
+

@@ -1,0 +1,173 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes — Book I: Geometric Algebra, Order of Curves &amp; Projective Frames &mdash; ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • apollonius</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">apollonius</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Conics</a>
+        </li>
+        <li>
+          <a href="../../mission/index.html"  >Mission</a>
+        </li>
+        <li>
+          <a href="../../about/index.html"  >About</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >Modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; apollonius</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../preface-intro/preface-intro-notes.html" title="Preface, Introduction &amp; Prefatory Letters">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <a class="book-track-item" href="book-1-en.html">English</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="book-1-summary.html">Summary</a>
+              <span class="book-track-sep">&middot;</span>
+              <strong class="book-track-item is-active" aria-current="page">Notes</strong>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../book-2/book-2-notes.html" title="Book II — Asymptotes, Conjugate Hyperbolas &amp; Secant Intercepts"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="notes-book-i-geometric-algebra-order-of-curves-projective-frames">
+        <span id="unit-1-book-1-notes"></span><h1>Notes — Book I: Geometric Algebra, Order of Curves &amp; Projective Frames<a class="headerlink" href="#notes-book-i-geometric-algebra-order-of-curves-projective-frames" title="Link to this heading">¶</a></h1>
+        <section class="level-2" id="why-apollonius-orders-the-curves-parabola-hyperbola-ellipse">
+        <h2>1. Why Apollonius Orders the Curves Parabola → Hyperbola → Ellipse<a class="headerlink" href="#why-apollonius-orders-the-curves-parabola-hyperbola-ellipse" title="Link to this heading">¶</a></h2>
+        <p>Modern textbooks routinely list <em>ellipse, parabola, hyperbola</em> by eccentricity (<span class="geom-eq-marker" data-assert-equal="e &lt; 1" hidden></span>, <span class="geom-eq-marker" data-assert-equal="e = 1" hidden></span>, <span class="geom-eq-marker" data-assert-equal="e &gt; 1" hidden></span>). In <strong>Book I.11–13</strong>, however, <a class="person-ref" id="occ-person-apollonius-1" href="../persons.html#person-apollonius" data-person="apollonius" title="Apollonius of Perga (c. 240–190 BCE) — &#x27;The Great Geometer&#x27; (ὁ μέγας γεωμέτρης); author of the Conics">Apollonius</a> proves <strong>Parabola (`I.11`)</strong>, then <strong>Hyperbola (`I.12`)</strong>, then <strong>Ellipse (`I.13`)</strong>:</p>
+        <ul class="simple">
+        <li><p>In <cite>I.11</cite>, the cutting plane is parallel to a side of the axial triangle, giving the simplest one-parameter application <span class="geom-eq-marker" data-assert-equal="y^2 = px" hidden></span>.</p></li>
+        <li><p>In <cite>I.12</cite> and <cite>I.13</cite>, the cutting plane is non-parallel to both sides; when the intersection <span class="geom-ref" data-ref="P'" title="P&#x27;">P</span> with the second generator falls above the apex <span class="geom-ref" data-ref="A" title="A">A</span> on the opposite nape (<cite>I.12</cite>, hyperbola), the auxiliary parallel <span class="geom-ref" data-ref="AF" title="AF">AF</span> falls <em>outside</em> the axial triangle, whereas for <cite>I.13</cite> (ellipse) it falls <em>inside</em>, and both proofs pave the immediate transition to <cite>I.14</cite> (<a class="term-ref glossary-term" id="occ-term-antikeimenai-1" href="../glossary.html#term-antikeimenai" data-term="antikeimenai" title="hai antikeimenai (αἱ ἀντικείμεναι) (the opposite sections / two-branched hyperbola): Apollonius&#x27;s revolutionary recognition (I.14, I.16) that when a plane cuts both napes of the double cone, the two resulting hyperbolic branches share a single transverse diameter, center, conjugate diameter, and common pair of asymptotes—forming one unified algebraic curve.">opposite branches</a>).</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="connection-to-euclid-vi-2729-rational-trigonometry">
+        <h2>2. Connection to Euclid VI.27–29 &amp; Rational Trigonometry<a class="headerlink" href="#connection-to-euclid-vi-2729-rational-trigonometry" title="Link to this heading">¶</a></h2>
+        <p>Apollonius’s naming triad translates <a class="person-ref" id="occ-person-euclid-1" href="../persons.html#person-euclid" data-person="euclid" title="Euclid of Alexandria (fl. c. 300 BCE) — Author of the Elements, Conics (4 Books), and Surface Loci">Euclid's</a> Pythagorean <strong>application of areas</strong> (<span class="justification" data-ref-target="I.44" title="I.44">[I.44]</span>, <span class="justification" data-ref-target="VI.27" title="VI.27">[VI.27]</span>, <span class="justification" data-ref-target="VI.28" title="VI.28">[VI.28]</span>, <span class="justification" data-ref-target="VI.29" title="VI.29">[VI.29]</span> in <code class="docutils literal notranslate"><span class="pre">geometor/euclid</span></code>) directly into curve theory:</p>
+        <ul>
+        <li><p>Because <span class="geom-eq-marker" data-assert-equal="d'^2 = p \cdot d" hidden></span> defines the conjugate diameter <span class="geom-eq-marker" data-assert-equal="d' = 2b" hidden></span> for transverse diameter <span class="geom-eq-marker" data-assert-equal="d = 2a" hidden></span> (so <span class="geom-eq-marker" data-assert-equal="p = \frac{2b^2}{a}" hidden></span>), shifting origin from the vertex <span class="geom-ref" data-ref="P" title="P">P</span> (<span class="geom-eq-marker" data-assert-equal="x = a \mp X" hidden></span>) to the center <span class="geom-ref" data-ref="C" title="C">C</span> converts Apollonius’s two-vertex proportion <span class="geom-eq-marker" data-assert-equal="QV^2 : PV \cdot VP' = p : d = b^2 : a^2" hidden></span> immediately into the central quadratic form</p>
+        <div class="math notranslate nohighlight">
+        \[\frac{X^2}{a^2} \pm \frac{Y^2}{b^2} = 1,\]</div>
+        <p>purely in <strong>quadrances</strong> (<a class="citation-ref" id="occ-cite-wildberger-2005-1" href="../bibliography.html#cite-wildberger-2005" data-cite="wildberger:2005" title="Norman J. Wildberger — Divine Proportions: Rational Trigonometry to Universal Geometry (Sydney: Wild Egg, 2005; GEOMETOR • wildberger)">Wildberger 2005</a>) without a single trigonometric function even when <span class="geom-eq-marker" data-assert-equal="X, Y" hidden></span> are measured along <em>oblique</em> conjugate diameters!</p>
+        </li>
+        </ul>
+        </section>
+        <section class="level-2" id="tangent-harmonicity-as-1d-projective-polarity">
+        <h2>3. Tangent Harmonicity as 1D Projective Polarity<a class="headerlink" href="#tangent-harmonicity-as-1d-projective-polarity" title="Link to this heading">¶</a></h2>
+        <p>Propositions 12–14 (<cite>I.33–37</cite>) reveal why the parabola’s <span class="geom-eq-marker" data-assert-equal="TP = PV" hidden></span> is the exact projective limit of <span class="geom-eq-marker" data-assert-equal="TP : TP' = PV : VP'" hidden></span>: as the second vertex <span class="geom-ref" data-ref="P'" title="P&#x27;">P</span> recedes to infinity along the diameter, the ratio <span class="geom-eq-marker" data-assert-equal="TP' / VP' \to 1" hidden></span>, leaving <span class="geom-ref" data-ref="P" title="P">P</span> as the midpoint of <span class="geom-ref" data-ref="TV" title="TV">TV</span>—that is, <span class="geom-eq-marker" data-assert-equal="(P, \infty; V, T) = -1" hidden></span>.</p>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../preface-intro/preface-intro-notes.html" title="Preface, Introduction &amp; Prefatory Letters">&larr; <span class="nav-label">Preface, Introduction & Prefatory Letters</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../book-2/book-2-notes.html" title="Book II — Asymptotes, Conjugate Hyperbolas &amp; Secant Intercepts"><span class="nav-label">Book II — Asymptotes, Conjugate Hyperbolas & Secant Intercepts</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 200 BCE · 1896 Cambridge University Press · Digital Codex GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

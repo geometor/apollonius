@@ -1,0 +1,33 @@
+geometor.apollonius.cli
+=======================
+
+.. py:module:: geometor.apollonius.cli
+
+.. autoapi-nested-parse::
+
+   Command-line interface for GEOMETOR • apollonius.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.apollonius.cli.build_parser
+   geometor.apollonius.cli.main
+
+
+Module Contents
+---------------
+
+.. py:function:: build_parser() -> argparse.ArgumentParser
+
+   Construct the ``geometor-apollonius`` CLI argument parser.
+
+
+.. py:function:: main(argv: list[str] | None = None) -> int
+
+   Execute the ``geometor-apollonius`` CLI.
+
+

@@ -1,0 +1,139 @@
+geometor.apollonius.concordance
+===============================
+
+.. py:module:: geometor.apollonius.concordance
+
+.. autoapi-nested-parse::
+
+   Canonical Codex Unit registry and cross-corpus concordance verifier for Apollonius's Conics.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.apollonius.concordance.CODEX_UNITS
+   geometor.apollonius.concordance.CODEX_UNITS_BY_SLUG
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.apollonius.concordance.CodexUnitSpec
+   geometor.apollonius.concordance.PropositionMapping
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.apollonius.concordance.default_resources_dir
+   geometor.apollonius.concordance.load_concordance
+   geometor.apollonius.concordance.verify_concordance
+
+
+Module Contents
+---------------
+
+.. py:class:: CodexUnitSpec
+
+   Metadata specification for one 3-track unit in ``docsrc/conics/``.
+
+
+   .. py:attribute:: unit_number
+      :type:  int
+
+
+   .. py:attribute:: slug
+      :type:  str
+
+
+   .. py:attribute:: title
+      :type:  str
+
+
+   .. py:attribute:: heath_loci
+      :type:  str
+
+
+   .. py:attribute:: classical_scope
+      :type:  str
+
+
+   .. py:attribute:: figures
+      :type:  tuple[str, ...]
+
+
+.. py:class:: PropositionMapping
+
+   Typed cross-corpus mapping record loaded from ``concordance.json``.
+
+
+   .. py:attribute:: id
+      :type:  str
+
+
+   .. py:attribute:: classical_locus
+      :type:  str
+
+
+   .. py:attribute:: heath_prop
+      :type:  str
+
+
+   .. py:attribute:: heath_pages
+      :type:  str
+
+
+   .. py:attribute:: pdf_pages
+      :type:  str
+
+
+   .. py:attribute:: codex_unit
+      :type:  str
+
+
+   .. py:attribute:: figure
+      :type:  str | None
+
+
+   .. py:attribute:: topic
+      :type:  str
+
+
+   .. py:attribute:: euclid_refs
+      :type:  tuple[str, ...]
+
+
+   .. py:attribute:: ecosystem_links
+      :type:  tuple[str, ...]
+
+
+.. py:data:: CODEX_UNITS
+   :type:  tuple[CodexUnitSpec, ...]
+
+.. py:data:: CODEX_UNITS_BY_SLUG
+   :type:  dict[str, CodexUnitSpec]
+
+.. py:function:: default_resources_dir() -> pathlib.Path
+
+   Return the repository ``resources/conics`` directory.
+
+
+.. py:function:: load_concordance(resources_dir: pathlib.Path | None = None) -> tuple[dict[str, Any], list[PropositionMapping]]
+
+   Load ``concordance.json`` and parse typed :class:`PropositionMapping` records.
+
+
+.. py:function:: verify_concordance(resources_dir: pathlib.Path | None = None) -> list[str]
+
+   Validate provenance SHA-256 hashes, classical proposition totals, and apparatus registries.
+
+   Returns an empty list when all checks pass, or human-readable error strings otherwise.
+
+
