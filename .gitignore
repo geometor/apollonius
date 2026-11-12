@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.venv/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Archival binaries & bulk folio renders (never commit raw PDFs or bulk PNGs)
+*.pdf
+*.djvu
+resources/conics/scans/
+resources/conics/pdfs/
+scratch/
