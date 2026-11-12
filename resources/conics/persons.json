@@ -1,0 +1,292 @@
+{
+  "menaechmus": {
+    "name": "Menaechmus",
+    "greek": "Μέναιχμος",
+    "dates": "c. 380–320 BCE",
+    "sort_year": -350,
+    "era": "classical",
+    "role": "Discoverer of the conic sections",
+    "summary": "Pupil of Eudoxus and associate of Plato; discovered the triad of conic sections (section of a right-angled, acute-angled, and obtuse-angled right cone cut perpendicular to a generator) while solving the Delian problem of two mean proportionals (x² = ay, y² = bx, xy = ab).",
+    "heath_loci": "pp. xvii–xxx"
+  },
+  "aristaeus": {
+    "name": "Aristaeus the Elder",
+    "greek": "Ἀρισταῖος ὁ Πρεσβύτερος",
+    "dates": "fl. c. 330 BCE",
+    "sort_year": -330,
+    "era": "classical",
+    "role": "Author of the Five Books on Solid Loci",
+    "summary": "Composed the foundational Five Books concerning Solid Loci (Τόποι στερεοί) connected with the three conic sections prior to Euclid; Pappus records that Aristaeus retained the pre-Apollonian triad names based on three species of right cones.",
+    "heath_loci": "pp. xxxi–xxxvi, lxxvi"
+  },
+  "euclid": {
+    "name": "Euclid of Alexandria",
+    "greek": "Εὐκλείδης",
+    "dates": "fl. c. 300 BCE",
+    "sort_year": -300,
+    "era": "hellenistic",
+    "role": "Author of the Elements, Conics (4 Books), and Surface Loci",
+    "summary": "Compiled a lost four-book treatise on Conics subsequently absorbed and generalized by Books I–IV of Apollonius; furnished the exact geometrical-algebraic machinery (Elements Books II, III, V, VI, XII) upon which Apollonius grounds every symptom and proportion.",
+    "heath_loci": "pp. xxxi–xl, lxxvii, lxxxvii–xcvi"
+  },
+  "archimedes": {
+    "name": "Archimedes of Syracuse",
+    "greek": "Ἀρχιμήδης ὁ Συρακούσιος",
+    "dates": "c. 287–212 BCE",
+    "sort_year": -250,
+    "era": "hellenistic",
+    "role": "Geometer of Quadrature of the Parabola and On Conoids and Spheroids",
+    "summary": "Mastered extensive properties of conic sections prior to Apollonius using the pre-Apollonian names ('section of a right-angled/acute-angled/obtuse-angled cone'), including oblique circular cones, subcontrary sections, and the two-abscissa proportion y² : x·x₁ = const.",
+    "heath_loci": "pp. xli–lxvii, lxxxii"
+  },
+  "conon": {
+    "name": "Conon of Samos",
+    "greek": "Κόνων ὁ Σάμιος",
+    "dates": "c. 280–220 BCE",
+    "sort_year": -245,
+    "era": "hellenistic",
+    "role": "Court astronomer at Alexandria and precursor on intersecting conics",
+    "summary": "Friend of Archimedes and predecessor of Apollonius in investigating how many points two conic sections or a conic and a circle can have in common (Preface to Book IV), later critiqued by Nicoteles of Cyrene.",
+    "heath_loci": "pp. lxxii–lxxiii"
+  },
+  "nicoteles": {
+    "name": "Nicoteles of Cyrene",
+    "greek": "Νικοτέλης ὁ Κυρηναῖος",
+    "dates": "fl. c. 230 BCE",
+    "sort_year": -230,
+    "era": "hellenistic",
+    "role": "Polemical critic of Conon on conic intersections",
+    "summary": "Addressed polemical replies to Conon of Samos concerning the number of intersections of conics; Apollonius notes in the Preface to Book IV that Nicoteles hinted at how the double-branch hyperbola meets another conic without supplying rigorous demonstrations.",
+    "heath_loci": "pp. lxxii–lxxiii"
+  },
+  "naucrates": {
+    "name": "Naucrates the Geometer",
+    "greek": "Ναυκράτης ὁ Γεωμέτρης",
+    "dates": "fl. c. 210 BCE",
+    "sort_year": -210,
+    "era": "hellenistic",
+    "role": "Instigator of the first draft of Apollonius's Conics",
+    "summary": "Visiting geometer in Alexandria at whose request Apollonius hurriedly committed the initial unrevised eight-book draft of the Conics to writing before Naucrates set sail.",
+    "heath_loci": "p. lxix"
+  },
+  "eudemus-pergamum": {
+    "name": "Eudemus of Pergamum",
+    "greek": "Εὔδημος ὁ Περγαμηνός",
+    "dates": "fl. c. 205 BCE",
+    "sort_year": -205,
+    "era": "hellenistic",
+    "role": "Scholarly dedicatee of Books I–III of the Conics",
+    "summary": "Philosopher and mathematician at Pergamum to whom Apollonius addressed the Prefatory Letters of Books I and II (and originally Book III) before Eudemus's death, sending Book II via Apollonius's son of the same name.",
+    "heath_loci": "pp. lxviii–lxxii"
+  },
+  "philonides": {
+    "name": "Philonides of Laodicea",
+    "greek": "Φιλωνίδης",
+    "dates": "c. 200–130 BCE",
+    "sort_year": -195,
+    "era": "hellenistic",
+    "role": "Epicurean philosopher and geometer",
+    "summary": "Commended to Eudemus by Apollonius at the close of the Preface to Book II ('if Philonides the geometer whom I introduced to you in Ephesus should ever happen to visit the neighbourhood of Pergamum, communicate it to him also'); attested independently in Herculaneum papyrus PHerc. 1044.",
+    "heath_loci": "p. lxxii"
+  },
+  "attalus": {
+    "name": "Attalus of Pergamum",
+    "greek": "Ἄτταλος",
+    "dates": "fl. c. 200 BCE",
+    "sort_year": -200,
+    "era": "hellenistic",
+    "role": "Dedicatee of Books IV–VIII of the Conics",
+    "summary": "Recipient of Apollonius's Prefatory Letters to Books IV, V, VI, and VII following the death of Eudemus of Pergamum (traditionally identified either with King Attalus I Soter of Pergamum, r. 241–197 BCE, or a Pergamene mathematical patron).",
+    "heath_loci": "pp. lxxii–lxxv"
+  },
+  "apollonius": {
+    "name": "Apollonius of Perga",
+    "greek": "Ἀπολλώνιος ὁ Περγαῖος",
+    "dates": "c. 240–190 BCE",
+    "sort_year": -200,
+    "era": "hellenistic",
+    "role": "'The Great Geometer' (ὁ μέγας γεωμέτρης); author of the Conics",
+    "summary": "Born at Perga in Pamphylia and educated at Alexandria under the pupils of Euclid; unified the theory of conics by cutting all three curves and the opposite branches from a single arbitrary oblique double cone, coining the enduring names parabola, ellipse, and hyperbola via application of areas.",
+    "heath_loci": "pp. lxviii–clxx, 1–254"
+  },
+  "diocles": {
+    "name": "Diocles",
+    "greek": "Διοκλῆς",
+    "dates": "c. 240–180 BCE",
+    "sort_year": -185,
+    "era": "hellenistic",
+    "role": "Author of On Burning Mirrors and discoverer of the focus-directrix property of the parabola",
+    "summary": "Contemporaneous Hellenistic geometer whose treatise On Burning Mirrors (preserved in Arabic) explicitly established the focal reflection property and focus-directrix construction of the parabola omitted from Book III of Apollonius.",
+    "heath_loci": "pp. 113–118"
+  },
+  "geminus": {
+    "name": "Geminus of Rhodes",
+    "greek": "Γεμῖνος",
+    "dates": "c. 110–40 BCE",
+    "sort_year": -70,
+    "era": "hellenistic",
+    "role": "Historian and philosopher of Greek mathematics",
+    "summary": "Author of the lost Theory of the Mathematical Sciences quoted by Eutocius, preserving the testimony that contemporaries styled Apollonius 'The Great Geometer' for proving that every cone—right or scalene—yields all three conic sections.",
+    "heath_loci": "pp. lxviii, lxxvii"
+  },
+  "pappus": {
+    "name": "Pappus of Alexandria",
+    "greek": "Πάππος ὁ Ἀλεξανδρεύς",
+    "dates": "c. 290–350 CE",
+    "sort_year": 320,
+    "era": "late-antique",
+    "role": "Author of the Synagoge (Mathematical Collection)",
+    "summary": "Preserved in Book VII of his Collection (Domain of Analysis, Τόπος ἀναλυόμενος) the sole surviving analytical syllabus, proposition counts, and 180+ auxiliary lemmas for Apollonius's Conics and six lost analytic treatises (Tangencies, Plane Loci, Cutting Off of a Ratio, Cutting Off of an Area, Determinate Section, Inclinations), together with the focus-directrix theorem.",
+    "heath_loci": "pp. xxxi–xxxvi, lxviii, lxxvii, cxxxviii–cl"
+  },
+  "hypatia": {
+    "name": "Hypatia of Alexandria",
+    "greek": "Ὑπατία",
+    "dates": "c. 355–415 CE",
+    "sort_year": 400,
+    "era": "late-antique",
+    "role": "Neoplatonic philosopher, astronomer, and commentator on Apollonius",
+    "summary": "Daughter of Theon of Alexandria; according to the Suda lexicon, composed a learned commentary on Apollonius's Conics alongside commentaries on Diophantus and Ptolemy's Handy Tables.",
+    "heath_loci": "p. lxviii"
+  },
+  "eutocius": {
+    "name": "Eutocius of Ascalon",
+    "greek": "Εὐτόκιος ὁ Ἀσκαλωνίτης",
+    "dates": "c. 480–540 CE",
+    "sort_year": 510,
+    "era": "late-antique",
+    "role": "Editor and commentator of Books I–IV of the Conics",
+    "summary": "Prepared the canonical late-antique Greek recension and commentary on Books I–IV of Apollonius dedicated to Anthemius of Tralles (architect of Hagia Sophia), ensuring the survival of the first four Books in Byzantine Greek manuscripts.",
+    "heath_loci": "pp. xiii, lxviii, lxxvii"
+  },
+  "banu-musa": {
+    "name": "Banū Mūsā (Ahmad & al-Hasan ibn Shākir)",
+    "greek": "Banū Mūsā",
+    "dates": "9th cent. CE (Baghdad)",
+    "sort_year": 860,
+    "era": "medieval-arabic",
+    "role": "Patrons and editors of the Arabic Conics Books I–VII",
+    "summary": "Commissioned the 9th-century Baghdad recovery and translation of Books I–VII of Apollonius's Conics; Ahmad ibn Musa discovered a Damascus manuscript of Eutocius's Books I–IV allowing the decipherment of the corrupt seven-book Arabic archetype.",
+    "heath_loci": "pp. xiii, lxviii, lxxiv"
+  },
+  "thabit-ibn-qurra": {
+    "name": "Thābit ibn Qurra",
+    "greek": "Thābit ibn Qurra al-Ḥarrānī",
+    "dates": "836–901 CE",
+    "sort_year": 880,
+    "era": "medieval-arabic",
+    "role": "Translator into Arabic of Books V–VII of Apollonius's Conics",
+    "summary": "Sabian mathematician and astronomer of Harran and Baghdad who translated Books V–VII of the Conics into Arabic (while Hilal ibn Abi Hilal al-Himsi translated Books I–IV) under the patronage of the Banu Musa—the sole textual channel through which Books V–VII survived.",
+    "heath_loci": "pp. xiii, lxviii, lxxiv"
+  },
+  "ibn-al-haytham": {
+    "name": "Ibn al-Haytham (Alhazen)",
+    "greek": "Abū ʿAlī al-Ḥasan ibn al-Haytham",
+    "dates": "c. 965–1040 CE",
+    "sort_year": 1010,
+    "era": "medieval-arabic",
+    "role": "Geometer of the Completion of the Conics",
+    "summary": "Studied Thabit's Arabic Conics deeply (copying a complete manuscript in his own hand in 1024 CE, MS Aya Sofya 2762) and authored Maqāla fī Tamām Kitāb al-Makhrūṭāt, reconstructing the lost Book VIII via determinate conic problems.",
+    "heath_loci": "p. lxviii"
+  },
+  "viete": {
+    "name": "François Viète",
+    "greek": "Franciscus Vieta",
+    "dates": "1540–1603",
+    "sort_year": 1600,
+    "era": "early-modern",
+    "role": "Author of Apollonius Gallus (1600)",
+    "summary": "Reconstructed Apollonius's lost treatise On Tangencies (Περὶ ἐπαφῶν) in his Apollonius Gallus (1600), solving the Problem of Apollonius (CCC: constructing a circle tangent to three given circles) by pure Euclidean compass-and-straightedge reductions.",
+    "heath_loci": "p. lxviii"
+  },
+  "kepler": {
+    "name": "Johannes Kepler",
+    "greek": "Ioannes Keplerus",
+    "dates": "1571–1630",
+    "sort_year": 1604,
+    "era": "early-modern",
+    "role": "Coined the term focus (1604) and discovered elliptical planetary orbits (1609)",
+    "summary": "Turned Apollonius's pure geometry into celestial mechanics in Astronomia Nova (1609) and introduced in Ad Vitellionem Paralipomena (1604) both the modern name 'foci' (burning points) for Apollonius's 'points arising from the application' and the principle of projective continuity uniting all conics.",
+    "heath_loci": "pp. 113–118"
+  },
+  "desargues": {
+    "name": "Girard Desargues",
+    "greek": "Girard Desargues",
+    "dates": "1591–1661",
+    "sort_year": 1639,
+    "era": "early-modern",
+    "role": "Founder of synthetic projective conic geometry (Brouillon project, 1639)",
+    "summary": "Extended Apollonius's oblique-cone generation and Book III harmonic pole-polar properties into universal projective geometry in his Brouillon project d'une atteinte aux événemens des rencontres du cône avec un plan (1639), introducing involutions and points at infinity.",
+    "heath_loci": "pp. 102–108"
+  },
+  "descartes": {
+    "name": "René Descartes",
+    "greek": "Renatus Cartesius",
+    "dates": "1596–1650",
+    "sort_year": 1637,
+    "era": "early-modern",
+    "role": "Founder of analytic coordinate geometry via Pappus's Three- and Four-Line Locus",
+    "summary": "Made the Apollonian-Pappus Three-Line and Four-Line Locus (Book III Props. 53–56; Pappus Book VII) the centerpiece test problem of La Géométrie (1637), proving algebraically that every three- or four-line locus is a quadratic curve and launching symbolic algebraic geometry.",
+    "heath_loci": "pp. cxxxviii–cl, 119–125"
+  },
+  "pascal": {
+    "name": "Blaise Pascal",
+    "greek": "Blasius Pascalis",
+    "dates": "1623–1662",
+    "sort_year": 1640,
+    "era": "early-modern",
+    "role": "Author of the Essay pour les coniques (1640)",
+    "summary": "At age sixteen generalized Pappus's hexagon theorem from a degenerate line-pair to any non-degenerate Apollonian conic section via central projection on the cone (Hexagrammum Mysticum).",
+    "heath_loci": "pp. cli–clvi"
+  },
+  "newton": {
+    "name": "Sir Isaac Newton",
+    "greek": "Isaacus Newtonus",
+    "dates": "1642–1727",
+    "sort_year": 1687,
+    "era": "early-modern",
+    "role": "Author of Principia Book I Sections IV–V (organic construction & five-point conics)",
+    "summary": "Vindicated Greek synthetic conic geometry in Principia Mathematica (1687, Book I Lemmas XVII–XXVII), praising the elegance of the Ancients' Three- and Four-Line Locus and constructing conics from five points and tangents.",
+    "heath_loci": "pp. cxxxviii–clvi"
+  },
+  "halley": {
+    "name": "Edmond Halley",
+    "greek": "Edmundus Halleius",
+    "dates": "1656–1742",
+    "sort_year": 1710,
+    "era": "modern-scholar",
+    "role": "Savilian Professor of Geometry; editor of the monumental 1710 Oxford Conics",
+    "summary": "Published De Sectione Rationis (1706, learning Arabic directly from Bodleian manuscripts) and the monumental folio editio princeps Apollonii Pergaei Conicorum Libri Octo (Oxford, 1710), presenting Books I–IV in Greek and Latin, Books V–VII in Latin from Thabit ibn Qurra's Arabic MS Bodleian Marsh 667, and a conjectural Book VIII.",
+    "heath_loci": "pp. vii–xiii, lxviii"
+  },
+  "zeuthen": {
+    "name": "Hieronymus Georg Zeuthen",
+    "greek": "H. G. Zeuthen",
+    "dates": "1839–1920",
+    "sort_year": 1886,
+    "era": "modern-scholar",
+    "role": "Historian of Greek conic geometry (Die Lehre von den Kegelschnitten im Altertum, 1886)",
+    "summary": "Danish mathematician whose 1886 treatise uncovered the geometric-algebraic coordinate architecture of Apollonius and reconstructed how Book III Props. 41–56 supply the synthetic proof of the Three-Line and Four-Line Locus.",
+    "heath_loci": "pp. vii–xiii, lxxxii, cxxxviii–cl"
+  },
+  "heiberg": {
+    "name": "Johan Ludvig Heiberg",
+    "greek": "I. L. Heiberg",
+    "dates": "1854–1928",
+    "sort_year": 1891,
+    "era": "modern-scholar",
+    "role": "Critical Teubner editor of Apollonius (1891–1893), Euclid, and Archimedes",
+    "summary": "Established the definitive critical Greek text of Apollonius's Books I–IV, ancient fragments, Pappus's lemmas, and Eutocius's commentaries in two Teubner volumes (1891, 1893) from Codex Vaticanus Graecus 206 (12th–13th c.).",
+    "heath_loci": "pp. vii, xiii, lxviii"
+  },
+  "heath": {
+    "name": "Sir Thomas Little Heath",
+    "greek": "T. L. Heath",
+    "dates": "1861–1940",
+    "sort_year": 1896,
+    "era": "modern-scholar",
+    "role": "Editor of the Cambridge Greek Mathematical Trilogy: Apollonius (1896), Archimedes (1897), Euclid (1908)",
+    "summary": "Published at Cambridge University Press in 1896 the landmark English edition of Apollonius's Conics (Books I–VII in 147 consolidated propositions preserving all 387 classical bracketed references, preceded by a 170-page historical and analytical introduction), launching the Cambridge trilogy completed by Archimedes (1897/1912) and Euclid (1908).",
+    "heath_loci": "pp. vii–clxx, 1–254"
+  }
+}

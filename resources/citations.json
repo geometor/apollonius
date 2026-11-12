@@ -1,0 +1,155 @@
+{
+  "heath:1896": {
+    "author": "Apollonius of Perga (ed. Sir Thomas Little Heath)",
+    "work": "Treatise on Conic Sections, Edited in Modern Notation with Introductions Including an Essay on the Earlier History of the Subject",
+    "locus": "Cambridge: At the University Press, 1896 (pp. clxx + 254)",
+    "year": "1896",
+    "category": "edition",
+    "note": "Primary Public Domain English codex source: 170-page historical and mathematical introduction plus Books I–VII rendered into 147 consolidated propositions mapped to all 387 classical Greek/Arabic numbers.",
+    "url": "https://archive.org/details/treatiseonconics00apolrich"
+  },
+  "heiberg:1891": {
+    "author": "Apollonius of Perga (ed. Johan Ludvig Heiberg)",
+    "work": "Apollonii Pergaei quae Graece exstant cum commentariis antiquis, Vol. I",
+    "locus": "Leipzig: B. G. Teubner, 1891",
+    "year": "1891",
+    "category": "edition",
+    "note": "Definitive critical Greek text and Latin translation of Books I–III (and Book IV opening) based on Codex Vaticanus Graecus 206.",
+    "url": "https://archive.org/details/apolloniipergaei01apoluoft"
+  },
+  "heiberg:1893": {
+    "author": "Apollonius of Perga (ed. Johan Ludvig Heiberg)",
+    "work": "Apollonii Pergaei quae Graece exstant cum commentariis antiquis, Vol. II",
+    "locus": "Leipzig: B. G. Teubner, 1893",
+    "year": "1893",
+    "category": "edition",
+    "note": "Completion of Book IV, extant Greek fragments, Lemmas of Pappus (Synagoge VII), and Commentaries of Eutocius of Ascalon on Books I–IV.",
+    "url": "https://archive.org/details/apolloniipergaei02apoluoft"
+  },
+  "halley:1710": {
+    "author": "Apollonius of Perga (ed. Edmond Halley)",
+    "work": "Apollonii Pergaei Conicorum Libri Octo, et Sereni Antissensis De Sectione Cylindri & Coni Libri Duo",
+    "locus": "Oxford: E Theatro Sheldoniano, 1710",
+    "year": "1710",
+    "category": "edition",
+    "note": "Monumental Oxford folio editio princeps presenting Books I–IV in Greek/Latin, Books V–VII in Latin translated from Thābit ibn Qurra's Arabic MS Bodleian Marsh 667, and Halley's conjectural Book VIII.",
+    "url": "https://archive.org/details/bub_gb_6N__e_V4xbAC"
+  },
+  "halley:1706": {
+    "author": "Apollonius of Perga (ed. Edmond Halley)",
+    "work": "Apollonii Pergaei De Sectione Rationis Libri Duo ex Arabico MSto Latine Versi; Accedunt Ejusdem De Sectione Spatii Libri Duo Restituti",
+    "locus": "Oxford: E Theatro Sheldoniano, 1706",
+    "year": "1706",
+    "category": "edition",
+    "note": "Halley's Latin translation from Bodleian Arabic MS Selden Arch. A. 34 of Apollonius's otherwise lost Cutting Off of a Ratio (Περὶ λόγου ἀποτομῆς), with restoration of Cutting Off of an Area.",
+    "url": "https://archive.org/details/apolloniipergaei00apol"
+  },
+  "nix:1889": {
+    "author": "Ludwig M. L. Nix",
+    "work": "Das fünfte Buch der Conica des Apollonius von Perga in der arabischen Übersetzung des Thabit ibn Corrah",
+    "locus": "Leipzig: W. Drugulin, 1889",
+    "year": "1889",
+    "category": "edition",
+    "note": "Arabic text and German translation of the Preface and opening propositions of Book V from Bodleian MS Marsh 667, cited by Heath on p. lxxiv.",
+    "url": ""
+  },
+  "balsam:1861": {
+    "author": "Hugo Balsam",
+    "work": "Des Apollonius von Perga sieben Bücher über Kegelschnitte nebst dem durch Halley wieder hergestellten achten Buche",
+    "locus": "Berlin: Georg Reimer, 1861",
+    "year": "1861",
+    "category": "edition",
+    "note": "German translation and analytical study of Books I–VII consulted closely by Heath.",
+    "url": ""
+  },
+  "zeuthen:1886": {
+    "author": "Hieronymus Georg Zeuthen",
+    "work": "Die Lehre von den Kegelschnitten im Altertum",
+    "locus": "Copenhagen: Andr. Fred. Höst & Sohn, 1886",
+    "year": "1886",
+    "category": "secondary",
+    "note": "Foundational historical reconstruction of Greek geometric algebra, Apollonian transformation of coordinates, and the synthesis of the Three- and Four-Line Locus.",
+    "url": ""
+  },
+  "hultsch:1877": {
+    "author": "Pappus of Alexandria (ed. Friedrich Hultsch)",
+    "work": "Pappi Alexandrini Collectionis quae supersunt, Vol. II (Book VII: Domain of Analysis)",
+    "locus": "Berlin: Weidmann, 1877",
+    "year": "1877",
+    "category": "primary-ancient",
+    "note": "Critical Greek edition of Pappus Book VII preserving the syllabus, proposition counts, and auxiliary lemmas for Apollonius's Conics and six lost analytic treatises.",
+    "url": ""
+  },
+  "euclid:heath1908": {
+    "author": "Euclid (trans. Sir Thomas Little Heath)",
+    "work": "The Thirteen Books of Euclid's Elements (3 vols.)",
+    "locus": "Cambridge: At the University Press, 1908 (2nd ed. 1926); GEOMETOR • euclid",
+    "year": "1908",
+    "category": "trilogy",
+    "note": "Third pillar of Heath's Cambridge Greek Trilogy; Books I.44, II.5–6, II.11, II.14, III.16–18, III.35–37, VI.27–29, and XII.10 underpin Apollonius's demonstrations.",
+    "url": "https://geometor.github.io/euclid"
+  },
+  "archimedes:heath1897": {
+    "author": "Archimedes (ed. Sir Thomas Little Heath)",
+    "work": "The Works of Archimedes, Edited in Modern Notation with Introductory Chapters",
+    "locus": "Cambridge: At the University Press, 1897 (Supplement: The Method, 1912); GEOMETOR • archimedes",
+    "year": "1897",
+    "category": "trilogy",
+    "note": "Second pillar of Heath's Cambridge Greek Trilogy, pairing Quadrature of the Parabola and On Conoids and Spheroids directly with Apollonius's symptom theory.",
+    "url": "https://geometor.github.io/archimedes"
+  },
+  "viete:1600": {
+    "author": "François Viète",
+    "work": "Apollonius Gallus, seu Exsuscitata Apollonii Pergaei Περὶ Ἐπαφῶν Geometria",
+    "locus": "Paris: David Le Clerc, 1600",
+    "year": "1600",
+    "category": "reception",
+    "note": "Classical Euclidean reconstruction of Apollonius's lost On Tangencies culminating in Problem X (CCC: circle tangent to three given circles).",
+    "url": ""
+  },
+  "kepler:1604": {
+    "author": "Johannes Kepler",
+    "work": "Ad Vitellionem Paralipomena, Quibus Astronomiae Pars Optica Traditur (Cap. IV, §4: De Coni Sectionibus)",
+    "locus": "Frankfurt: Claudius Marnius & Heirs of Johann Aubry, 1604",
+    "year": "1604",
+    "category": "reception",
+    "note": "Introduces the term 'foci' for Apollonius's 'points arising from the application' (III.45–52), supplies the parabola focus at finite distance with the second focus at infinity, and formulates projective continuity.",
+    "url": ""
+  },
+  "descartes:1637": {
+    "author": "René Descartes",
+    "work": "La Géométrie (Books I–II: Problem of Pappus on Three, Four, and Many Lines)",
+    "locus": "Leiden: Jan Maire, 1637",
+    "year": "1637",
+    "category": "reception",
+    "note": "Solves the Apollonius–Pappus Three-Line and Four-Line Locus in symbolic algebraic coordinates, inaugurating modern algebraic geometry.",
+    "url": ""
+  },
+  "kimberling:etc": {
+    "author": "Clark Kimberling",
+    "work": "Encyclopedia of Triangle Centers (ETC)",
+    "locus": "University of Evansville / GEOMETOR • etc",
+    "year": "1998–2026",
+    "category": "ecosystem",
+    "note": "Catalogues the Isodynamic Points X(15), X(16) (intersections of the three coaxal Apollonius circles of a triangle) and the Apollonius Point X(181) (perspector of the outer Soddy/Apollonius CCC contact triangle).",
+    "url": "https://geometor.github.io/etc"
+  },
+  "wildberger:2005": {
+    "author": "Norman J. Wildberger",
+    "work": "Divine Proportions: Rational Trigonometry to Universal Geometry",
+    "locus": "Sydney: Wild Egg, 2005; GEOMETOR • wildberger",
+    "year": "2005",
+    "category": "ecosystem",
+    "note": "Reformulates classical Apollonian conics, focus-directrix quadrances, and projective polarity purely over arbitrary fields without transcendental functions.",
+    "url": "https://geometor.github.io/wildberger"
+  },
+  "mathlib4:polepolar": {
+    "author": "Lean Community (mathlib4)",
+    "work": "Mathlib.LinearAlgebra.QuadraticForm.PolePolar / Projective Conic Polarity",
+    "locus": "Lean 4 Formal Mathematical Library",
+    "year": "2024–2026",
+    "category": "formalization",
+    "note": "Formalizes bilinear symmetric polarity, self-polar triangles, and harmonic cross-ratio division corresponding directly to Apollonius Conics Book III Props. 30–40.",
+    "url": "https://leanprover-community.github.io/mathlib4_docs/"
+  }
+}

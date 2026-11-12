@@ -1,0 +1,346 @@
+{
+  "metadata": {
+    "title": "GEOMETOR Apollonius — Treatise on Conic Sections (Heath 1896) Cross-Corpus Concordance",
+    "edition": "Apollonius of Perga, Treatise on Conic Sections, ed. Sir Thomas Little Heath (Cambridge University Press, 1896)",
+    "classical_books_extant": 7,
+    "classical_books_original": 8,
+    "classical_propositions_total": 387,
+    "heath_consolidated_propositions_total": 147,
+    "book_counts": {
+      "I": {"classical_propositions": 60, "heath_range": "Props. 1–27 (plus Cone Lemmas I.1–10)", "heath_pages": "1–52", "source_tradition": "Greek (Heiberg Vol. I, 1891; Vat. gr. 206)"},
+      "II": {"classical_propositions": 53, "heath_range": "Props. 28–53", "heath_pages": "53–94", "source_tradition": "Greek (Heiberg Vol. I, 1891; Vat. gr. 206)"},
+      "III": {"classical_propositions": 56, "heath_range": "Props. 54–76", "heath_pages": "95–125", "source_tradition": "Greek (Heiberg Vol. I, 1891; Vat. gr. 206)"},
+      "IV": {"classical_propositions": 57, "heath_range": "Props. 77–83", "heath_pages": "126–138", "source_tradition": "Greek (Heiberg Vol. II, 1893; Vat. gr. 206)"},
+      "V": {"classical_propositions": 77, "heath_range": "Props. 84–113", "heath_pages": "139–196", "source_tradition": "Arabic of Thābit ibn Qurra / Latin of Halley (1710; Bodleian Marsh 667)"},
+      "VI": {"classical_propositions": 33, "heath_range": "Props. 114–122", "heath_pages": "197–220", "source_tradition": "Arabic of Thābit ibn Qurra / Latin of Halley (1710; Bodleian Marsh 667)"},
+      "VII": {"classical_propositions": 51, "heath_range": "Props. 123–147", "heath_pages": "221–254", "source_tradition": "Arabic of Thābit ibn Qurra / Latin of Halley (1710; Bodleian Marsh 667)"}
+    }
+  },
+  "sympy_geometry_gaps": [
+    {
+      "id": "gap-general-conic-quadratic",
+      "apollonius_locus": "I.11–14, I.49–60",
+      "feature": "General planar conic Ax² + Bxy + Cy² + Dx + Ey + F = 0 & oblique-diameter frame",
+      "sympy_status": "Partial / Axis-Aligned Only (`sympy.geometry.ellipse.Ellipse` and `parabola.Parabola` lack general rotated/projective hyperbola and two-branch oblique-diameter conic kernel)",
+      "geometor_target": "geometor.model exact algebraic/projective Conic element over Q(sqrt(d)) and Q(phi)"
+    },
+    {
+      "id": "gap-pole-polar-duality",
+      "apollonius_locus": "III.30–40 [Props. 62–66]",
+      "feature": "Harmonic pole-polar bijection, chord of contact, and self-polar triangle",
+      "sympy_status": "Missing in `sympy.geometry` (no `polar_line(point)` or `pole_point(line)` on conics; formalized in Lean `mathlib4` `PolePolar.lean`)",
+      "geometor_target": "geometor.pappus & geometor.model symmetric 3×3 matrix polarity P ↦ C·P"
+    },
+    {
+      "id": "gap-five-point-pencil",
+      "apollonius_locus": "III.53–56 [Props. 74–76] & IV.24–57 [Props. 77–83]",
+      "feature": "Four-line locus conic pencil C₁ + λ C₂ = 0, five-point conic constructor, and exact 4-point intersection solver",
+      "sympy_status": "Missing in `sympy.geometry` (no `conic_through_five_points` or 4-point pencil resolver)",
+      "geometor_target": "geometor.pappus Braikenridge–Maclaurin / determinant 6×6 exact symbolic constructor"
+    },
+    {
+      "id": "gap-normals-evolute",
+      "apollonius_locus": "V.51–63 [Props. 99–109]",
+      "feature": "Exact 4-normal cubic/quartic foot resolver from arbitrary point O and rational/algebraic evolute envelope",
+      "sympy_status": "Missing in `sympy.geometry` (`Ellipse.normal_lines` uses numeric/Groebner fallbacks that stall on symbolic parameters; no `evolute` method)",
+      "geometor_target": "Apollonius rectangular-hyperbola intersection constructor (V.62–63 [Prop. 106])"
+    },
+    {
+      "id": "gap-apollonius-ccc",
+      "apollonius_locus": "Lost Tangencies (Pappus VII) / Viète (1600)",
+      "feature": "Exact symbolic solver for all 8 tangent circles to three given circles (Problem of Apollonius CCC)",
+      "sympy_status": "Missing in `sympy.geometry` (`Circle` supports only basic tangent lines from a point)",
+      "geometor_target": "Gergonne radical-center / pole-polar 8-solution algebraic solver in geometor.elements / geometor.etc"
+    }
+  ],
+  "entries": [
+    {
+      "id": "conc-prefaces-letters",
+      "classical_locus": "Books I, II, IV, V, VI, VII Prefaces",
+      "heath_prop": "Intro Part II, Ch. I",
+      "heath_pages": "lxix–lxxv",
+      "pdf_pages": "77–83",
+      "codex_unit": "preface-intro",
+      "figure": null,
+      "topic": "Epistolary prefaces to Eudemus and Attalus dividing Books I–IV (elementary foundation, ἀγωγὴ στοιχειώδης) from Books V–VIII (special extensions, περιουσιαστικώτερα).",
+      "euclid_refs": ["VI.27", "VI.28", "VI.29", "XII.10"],
+      "ecosystem_links": ["euclid", "archimedes", "pappus"]
+    },
+    {
+      "id": "conc-i-1-10-cone",
+      "classical_locus": "I. 1–10",
+      "heath_prop": "The Cone (Introductory Props.)",
+      "heath_pages": "1–8",
+      "pdf_pages": "181–188",
+      "codex_unit": "book-1",
+      "figure": "fig_oblique_cone_sections.svg",
+      "topic": "Generation of the arbitrary oblique scalene circular double cone, axial triangle, parallel circular sections (I.4), and antiparallel subcontrary circular sections (I.5, I.9).",
+      "euclid_refs": ["III.35", "VI.4", "XI.Def.18"],
+      "ecosystem_links": ["euclid", "elements", "pappus"]
+    },
+    {
+      "id": "conc-i-11-parabola",
+      "classical_locus": "I. 11",
+      "heath_prop": "Proposition 1",
+      "heath_pages": "8–9",
+      "pdf_pages": "188–189",
+      "codex_unit": "book-1",
+      "figure": "fig_application_of_areas.svg",
+      "topic": "Fundamental symptom of the Parabola (παραβολή): cutting plane parallel to a generator of the axial triangle yields QV² = PL · PV (y² = px), exact application of area.",
+      "euclid_refs": ["I.44", "II.14", "VI.4", "VI.27"],
+      "ecosystem_links": ["euclid", "elements", "archimedes", "wildberger"]
+    },
+    {
+      "id": "conc-i-12-hyperbola",
+      "classical_locus": "I. 12",
+      "heath_prop": "Proposition 2",
+      "heath_pages": "9–11",
+      "pdf_pages": "189–191",
+      "codex_unit": "book-1",
+      "figure": "fig_application_of_areas.svg",
+      "topic": "Fundamental symptom of the Hyperbola (ὑπερβολή): cutting plane meeting both napes yields QV² = PV · PL + (PL/PP') PV², application exceeding by a figure similar to d × p.",
+      "euclid_refs": ["II.6", "VI.4", "VI.29"],
+      "ecosystem_links": ["euclid", "elements", "wildberger"]
+    },
+    {
+      "id": "conc-i-13-ellipse",
+      "classical_locus": "I. 13",
+      "heath_prop": "Proposition 3",
+      "heath_pages": "11–13",
+      "pdf_pages": "191–193",
+      "codex_unit": "book-1",
+      "figure": "fig_application_of_areas.svg",
+      "topic": "Fundamental symptom of the Ellipse (ἔλλειψις): cutting plane meeting all generators of one nape yields QV² = PV · PL − (PL/PP') PV², application falling short by a figure similar to d × p.",
+      "euclid_refs": ["II.5", "VI.4", "VI.28"],
+      "ecosystem_links": ["euclid", "elements", "archimedes", "wildberger"]
+    },
+    {
+      "id": "conc-i-14-opposites",
+      "classical_locus": "I. 14, 15, 16",
+      "heath_prop": "Propositions 4–6",
+      "heath_pages": "13–17",
+      "pdf_pages": "193–197",
+      "codex_unit": "book-1",
+      "figure": "fig_oblique_cone_sections.svg",
+      "topic": "Opposite branches (αἱ ἀντικείμεναι) cut from the double cone have equal latus rectum and form a single two-branched curve with center bisecting PP' and secondary conjugate diameter.",
+      "euclid_refs": ["VI.4", "VI.29"],
+      "ecosystem_links": ["euclid", "pappus"]
+    },
+    {
+      "id": "conc-i-33-38-tangents",
+      "classical_locus": "I. 33–38",
+      "heath_prop": "Propositions 12–15",
+      "heath_pages": "25–30",
+      "pdf_pages": "205–210",
+      "codex_unit": "book-1",
+      "figure": "fig_tangent_harmonic_division.svg",
+      "topic": "Tangent construction and harmonic division: TP = PV for the parabola (I.33, 35) and TP : TP' = PV : VP' (equivalently CT · CV = CP²) for central conics (I.34, 36–37).",
+      "euclid_refs": ["II.5", "II.6", "III.16", "VI.17"],
+      "ecosystem_links": ["euclid", "pappus", "mathlib4"]
+    },
+    {
+      "id": "conc-i-49-51-coordinate-change",
+      "classical_locus": "I. 49–51",
+      "heath_prop": "Propositions 20–21",
+      "heath_pages": "36–41",
+      "pdf_pages": "216–221",
+      "codex_unit": "book-1",
+      "figure": "fig_tangent_harmonic_division.svg",
+      "topic": "Invariance of the conic symptom under transformation from the original cone-derived diameter to any new diameter QQ' and tangent at Q.",
+      "euclid_refs": ["I.43", "VI.4"],
+      "ecosystem_links": ["euclid", "wildberger"]
+    },
+    {
+      "id": "conc-ii-1-14-asymptotes",
+      "classical_locus": "II. 1–14",
+      "heath_prop": "Propositions 28–35",
+      "heath_pages": "53–62",
+      "pdf_pages": "233–242",
+      "codex_unit": "book-2",
+      "figure": "fig_hyperbola_asymptotes_secant.svg",
+      "topic": "Construction of asymptotes (PL² = ¼ p·d), proof of non-intersection, bisected tangent segment LL' at P (II.3, 9), equal secant intercepts RQ = Q'R' (II.8, 16), asymptotic equation xy = const (II.12), and indefinite approach (II.14).",
+      "euclid_refs": ["II.5", "II.6", "X.1"],
+      "ecosystem_links": ["euclid", "archimedes", "descartes"]
+    },
+    {
+      "id": "conc-ii-15-23-conjugate-hyperbolas",
+      "classical_locus": "II. 15–23",
+      "heath_prop": "Propositions 28, 36–39",
+      "heath_pages": "53, 62–64",
+      "pdf_pages": "233, 242–244",
+      "codex_unit": "book-2",
+      "figure": "fig_hyperbola_asymptotes_secant.svg",
+      "topic": "Opposite branches and conjugate hyperbolas share common asymptotes; conjugate diameters of original hyperbola swap transverse and secondary roles on the conjugate hyperbola.",
+      "euclid_refs": ["II.6", "VI.4"],
+      "ecosystem_links": ["euclid", "wildberger"]
+    },
+    {
+      "id": "conc-ii-44-53-axes-tangents",
+      "classical_locus": "II. 44–53",
+      "heath_prop": "Propositions 47–53",
+      "heath_pages": "72–83",
+      "pdf_pages": "252–263",
+      "codex_unit": "book-2",
+      "figure": "fig_tangent_harmonic_division.svg",
+      "topic": "Finding a diameter, center, and principal orthogonal axes of a given conic; constructing tangents from an external point by harmonic division and compass-and-straightedge.",
+      "euclid_refs": ["III.17", "III.31"],
+      "ecosystem_links": ["euclid", "elements", "pappus"]
+    },
+    {
+      "id": "conc-iii-16-29-chord-rectangles",
+      "classical_locus": "III. 16–29",
+      "heath_prop": "Propositions 57–61",
+      "heath_pages": "97–101",
+      "pdf_pages": "277–281",
+      "codex_unit": "book-3",
+      "figure": "fig_three_four_line_locus.svg",
+      "topic": "Ratio of rectangles under segments of intersecting chords PO·OQ : RO·OS equals the ratio of squares on parallel tangents—generalizing Euclid III.35–36 (power of a point) from circles to all conics.",
+      "euclid_refs": ["III.35", "III.36", "III.37"],
+      "ecosystem_links": ["euclid", "pappus", "newton"]
+    },
+    {
+      "id": "conc-iii-30-40-poles-polars",
+      "classical_locus": "III. 30–40",
+      "heath_prop": "Propositions 62–66",
+      "heath_pages": "102–108",
+      "pdf_pages": "282–288",
+      "codex_unit": "book-3",
+      "figure": "fig_harmonic_pole_polar.svg",
+      "topic": "Harmonic properties of poles and polars: any secant through pole T is divided harmonically by the conic at R, R' and the chord of contact (polar) Qq at M: TR : TR' = MR : MR'.",
+      "euclid_refs": ["VI.2", "VI.4"],
+      "ecosystem_links": ["pappus", "mathlib4", "wildberger"]
+    },
+    {
+      "id": "conc-iii-45-52-foci",
+      "classical_locus": "III. 45–52",
+      "heath_prop": "Propositions 69–73",
+      "heath_pages": "113–118",
+      "pdf_pages": "293–298",
+      "codex_unit": "book-3",
+      "figure": "fig_central_conic_foci.svg",
+      "topic": "Focal properties of central conics ('points arising out of the application', AS·SA' = b²): optical reflection equality (III.48 [Prop. 71]), pedal auxiliary circle (III.49 [Prop. 72]), and constant sum/difference SP ± S'P = AA' = 2a (III.51–52 [Prop. 73]).",
+      "euclid_refs": ["I.47", "II.5", "II.6", "III.21", "III.31"],
+      "ecosystem_links": ["euclid", "pappus", "kepler", "wildberger"]
+    },
+    {
+      "id": "conc-iii-53-56-four-line-locus",
+      "classical_locus": "III. 53–56",
+      "heath_prop": "Propositions 74–76",
+      "heath_pages": "119–125",
+      "pdf_pages": "299–305",
+      "codex_unit": "book-3",
+      "figure": "fig_three_four_line_locus.svg",
+      "topic": "Projective product of tangent intercepts and synthetic key to the Three-Line and Four-Line Locus of Euclid, Apollonius, Pappus (Book VII), and Descartes (La Géométrie, 1637).",
+      "euclid_refs": ["VI.16", "VI.23"],
+      "ecosystem_links": ["pappus", "descartes"]
+    },
+    {
+      "id": "conc-iv-1-23-polar-converse",
+      "classical_locus": "IV. 1–23",
+      "heath_prop": "Introductory Note to Book IV",
+      "heath_pages": "126",
+      "pdf_pages": "306",
+      "codex_unit": "book-4",
+      "figure": "fig_harmonic_pole_polar.svg",
+      "topic": "Converse harmonic polar construction of tangents from an external point across single-branch and opposite-branch hyperbolas.",
+      "euclid_refs": ["III.17", "VI.4"],
+      "ecosystem_links": ["pappus", "mathlib4"]
+    },
+    {
+      "id": "conc-iv-24-57-intersections",
+      "classical_locus": "IV. 24–57",
+      "heath_prop": "Propositions 77–83",
+      "heath_pages": "126–138",
+      "pdf_pages": "306–318",
+      "codex_unit": "book-4",
+      "figure": "fig_four_point_conic_pencil.svg",
+      "topic": "Two distinct conics cannot share an arc (IV.24 [Prop. 77]), intersect in at most four points (IV.25, 38, 43, 55 [Props. 78–83]), and if tangent at one point meet in at most two others—the ancient foundation of Bézout's theorem (2 × 2 = 4) and five-point conic uniqueness.",
+      "euclid_refs": ["III.10", "III.13"],
+      "ecosystem_links": ["euclid", "pappus"]
+    },
+    {
+      "id": "conc-v-1-34-subnormals",
+      "classical_locus": "V. 1–34",
+      "heath_prop": "Propositions 84–94",
+      "heath_pages": "139–159",
+      "pdf_pages": "319–339",
+      "codex_unit": "book-5",
+      "figure": "fig_normals_evolute.svg",
+      "topic": "Minimum and maximum straight lines from axis points to a conic; constant parabola subnormal NG = ½ p_a (V.13, 27) and central-conic subnormal proportion NG : CN = p_a : AA' (V.14–15, 28–29); perpendicularity of minimum/maximum lines to the tangent (normals).",
+      "euclid_refs": ["I.19", "III.7", "III.8", "III.16"],
+      "ecosystem_links": ["euclid", "archimedes"]
+    },
+    {
+      "id": "conc-v-51-63-evolute",
+      "classical_locus": "V. 51–63",
+      "heath_prop": "Propositions 99–106",
+      "heath_pages": "168–186",
+      "pdf_pages": "348–366",
+      "codex_unit": "book-5",
+      "figure": "fig_normals_evolute.svg",
+      "topic": "Exact diorismos of the number of normals through an arbitrary point O (2, 3, or 4 normals), determining point-by-point the evolute envelope of every conic and constructing normal feet via an auxiliary rectangular hyperbola.",
+      "euclid_refs": ["II.5", "V.8", "VI.28"],
+      "ecosystem_links": ["archimedes", "descartes", "wildberger"]
+    },
+    {
+      "id": "conc-vi-1-33-similarity-cones",
+      "classical_locus": "VI. 1–33",
+      "heath_prop": "Definitions 1–6 & Propositions 114–122",
+      "heath_pages": "197–220",
+      "pdf_pages": "377–400",
+      "codex_unit": "books-6-7",
+      "figure": "fig_oblique_cone_sections.svg",
+      "topic": "Congruence and similarity of conic sections and segments: all parabolas are similar (VI.11 [Prop. 115]); central conics are similar iff their figures d × p are similar (VI.12–13 [Prop. 116]); embedding any given conic inside a prescribed right cone (VI.28–30 [Props. 120–122]).",
+      "euclid_refs": ["VI.Def.1", "VI.20", "XI.24"],
+      "ecosystem_links": ["euclid", "elements"]
+    },
+    {
+      "id": "conc-vii-12-31-apollonius-theorems",
+      "classical_locus": "VII. 12, 13, 29, 30, 31",
+      "heath_prop": "Propositions 129 & 136",
+      "heath_pages": "228–236",
+      "pdf_pages": "408–416",
+      "codex_unit": "books-6-7",
+      "figure": "fig_conjugate_diameters_theorems.svg",
+      "topic": "Apollonius's First and Second Conjugate Diameter Theorems: (1) PP'² ± DD'² = AA'² ± BB'² (a'² ± b'² = a² ± b²); (2) area of circumscribed conjugate parallelogram LL'MM' equals rectangle of axes AA' · BB' (a'b' sin ω = ab).",
+      "euclid_refs": ["I.35", "I.47", "II.5", "II.6", "VI.23"],
+      "ecosystem_links": ["euclid", "wildberger"]
+    },
+    {
+      "id": "conc-vii-33-51-extrema",
+      "classical_locus": "VII. 33–51",
+      "heath_prop": "Propositions 137–147",
+      "heath_pages": "236–254",
+      "pdf_pages": "416–434",
+      "codex_unit": "books-6-7",
+      "figure": "fig_conjugate_diameters_theorems.svg",
+      "topic": "Extrema and monotonic variations of d' ± d'', d'·d'', p', and d'² ± p'² across conjugate diameters, forged explicitly as diorismos machinery for the lost Book VIII.",
+      "euclid_refs": ["V.8", "V.10", "VI.27"],
+      "ecosystem_links": ["euclid", "ibn-al-haytham", "halley"]
+    },
+    {
+      "id": "conc-pappus-vii-tangencies-ccc",
+      "classical_locus": "Pappus Synagoge VII (Περὶ ἐπαφῶν)",
+      "heath_prop": "Intro Part II, Ch. I & Viète (1600)",
+      "heath_pages": "lxviii",
+      "pdf_pages": "76",
+      "codex_unit": "lost-works-pappus",
+      "figure": "fig_problem_of_apollonius_ccc.svg",
+      "topic": "Apollonius's On Tangencies: the ten contact problems (PPP through CCC, up to 8 tangent circles), reconstructed by Viète's Apollonius Gallus (1600) and connected to ETC X(181) (Apollonius Point).",
+      "euclid_refs": ["III.17", "III.36", "IV.4", "IV.5"],
+      "ecosystem_links": ["pappus", "elements", "etc"]
+    },
+    {
+      "id": "conc-pappus-vii-plane-loci-apollonius-circle",
+      "classical_locus": "Pappus Synagoge VII (Τόποι ἐπίπεδοι II)",
+      "heath_prop": "Circle of Apollonius & Analytic Treasury",
+      "heath_pages": "lxviii, cxxv–cxxvi",
+      "pdf_pages": "76, 133–134",
+      "codex_unit": "lost-works-pappus",
+      "figure": "fig_apollonius_circle_locus.svg",
+      "topic": "Apollonius's Plane Loci Book II: the locus PA : PB = k (k ≠ 1) is the Circle of Apollonius on harmonic diameter H_in H_ex; the three Apollonius circles of a triangle form a coaxal pencil intersecting at the Isodynamic Points X(15) and X(16), alongside Cutting Off of a Ratio, Determinate Section, and Inclinations.",
+      "euclid_refs": ["VI.3", "VI.A"],
+      "ecosystem_links": ["pappus", "elements", "etc", "wildberger"]
+    }
+  ]
+}

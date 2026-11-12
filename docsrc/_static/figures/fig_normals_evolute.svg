@@ -1,0 +1,270 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" width="680" height="380" class="euclid-graphic" data-graphic-id="g9" data-proposition="V.1-63">
+  <defs>
+    <marker id="geom-tick-1" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-2" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+      <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-3" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+      <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+  </defs>
+  <style>
+    :root {
+      --geom-fg: #18181b;
+      --geom-bg: #ffffff;
+      --geom-muted: #71717a;
+      --geom-point-stroke: #ffffff;
+      --geom-poly-fill: #18181b;
+      --geom-accent: #c88a1e;
+      --geom-assert: #16a34a;
+      --geom-hyper: #2563eb;
+      --geom-rose: #be123c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --geom-fg: #e4ded5;
+        --geom-bg: #18181b;
+        --geom-muted: #a1a1aa;
+        --geom-point-stroke: #18181b;
+        --geom-poly-fill: #e4ded5;
+        --geom-accent: #eab308;
+        --geom-assert: #4ade80;
+        --geom-hyper: #60a5fa;
+        --geom-rose: #fb7185;
+      }
+    }
+    .euclid-graphic {
+      font-family: 'Fira Sans Condensed', 'Fira Sans', system-ui, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      background-color: var(--geom-bg);
+    }
+    .geom-line {
+      stroke: var(--geom-fg);
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-bold {
+      stroke: var(--geom-fg);
+      stroke-width: 2.35;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-faint {
+      stroke: var(--geom-muted);
+      stroke-width: 1.15;
+      stroke-opacity: 0.72;
+      stroke-linecap: round;
+      fill: none;
+    }
+    .geom-dashed {
+      stroke: var(--geom-muted);
+      stroke-width: 1.35;
+      stroke-dasharray: 5, 3.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-accent-line {
+      stroke: var(--geom-accent);
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-assert-line {
+      stroke: var(--geom-assert);
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-hyper-line {
+      stroke: var(--geom-hyper);
+      stroke-width: 2.1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-rose-line {
+      stroke: var(--geom-rose);
+      stroke-width: 2.0;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .geom-circle {
+      stroke: var(--geom-fg);
+      stroke-width: 1.75;
+      fill: none;
+    }
+    .geom-overlay {
+      stroke: transparent;
+      stroke-width: 4.0;
+      stroke-linecap: round;
+      fill: none;
+    }
+    .geom-polygon {
+      fill: var(--geom-poly-fill);
+      fill-opacity: 0.06;
+      stroke: none;
+    }
+    .geom-polygon-accent {
+      fill: var(--geom-accent);
+      fill-opacity: 0.16;
+      stroke: var(--geom-accent);
+      stroke-width: 1.4;
+    }
+    .geom-polygon-assert {
+      fill: var(--geom-assert);
+      fill-opacity: 0.14;
+      stroke: var(--geom-assert);
+      stroke-width: 1.4;
+    }
+    .geom-polygon-rose {
+      fill: var(--geom-rose);
+      fill-opacity: 0.14;
+      stroke: var(--geom-rose);
+      stroke-width: 1.4;
+    }
+    .geom-point {
+      fill: var(--geom-fg);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-point-accent {
+      fill: var(--geom-accent);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-point-assert {
+      fill: var(--geom-assert);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-point-rose {
+      fill: var(--geom-rose);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-label {
+      font-size: 13.5px;
+      font-weight: 700;
+      fill: var(--geom-fg);
+      user-select: none;
+    }
+    .geom-label-sm {
+      font-size: 11.5px;
+      font-weight: 700;
+      fill: var(--geom-muted);
+      user-select: none;
+    }
+    .geom-label-accent {
+      font-size: 12.5px;
+      font-weight: 700;
+      fill: var(--geom-accent);
+      user-select: none;
+    }
+    .geom-label-assert {
+      font-size: 12.5px;
+      font-weight: 700;
+      fill: var(--geom-assert);
+      user-select: none;
+    }
+    .geom-label-hyper {
+      font-size: 12.5px;
+      font-weight: 700;
+      fill: var(--geom-hyper);
+      user-select: none;
+    }
+    .geom-label-rose {
+      font-size: 12.5px;
+      font-weight: 700;
+      fill: var(--geom-rose);
+      user-select: none;
+    }
+  </style>
+  <g id="elements">
+  </g>
+  <g id="graphics">
+    <ellipse cx="340.00" cy="194.00" rx="196.00" ry="114.00" class="geom-bold" />
+    <path d="M 122.00 194.00 L 340.00 194.00 L 558.00 194.00" class="geom-faint" />
+    <path d="M 340.00 58.00 L 340.00 194.00 L 340.00 330.00" class="geom-faint" />
+    <path d="M 536.00 194.00 L 502.85 194.00 L 469.69 194.00" class="geom-faint" />
+    <path d="M 533.02 174.20 L 498.45 184.69 L 463.87 195.17" class="geom-faint" />
+    <path d="M 524.18 155.01 L 485.90 178.97 L 447.62 202.92" class="geom-faint" />
+    <path d="M 509.74 137.00 L 466.99 179.44 L 424.24 221.87" class="geom-faint" />
+    <path d="M 490.14 120.72 L 444.22 186.97 L 398.30 253.22" class="geom-faint" />
+    <path d="M 465.99 106.67 L 420.22 200.45 L 374.44 294.24" class="geom-faint" />
+    <path d="M 438.00 95.27 L 397.11 217.05 L 356.21 338.83" class="geom-faint" />
+    <path d="M 407.04 86.88 L 376.11 232.95 L 345.19 379.02" class="geom-faint" />
+    <path d="M 374.04 81.73 L 357.36 244.35 L 340.68 406.97" class="geom-faint" />
+    <path d="M 340.00 80.00 L 340.00 248.49 L 340.00 416.98" class="geom-faint" />
+    <path d="M 305.96 81.73 L 322.64 244.35 L 339.32 406.97" class="geom-faint" />
+    <path d="M 272.96 86.88 L 303.89 232.95 L 334.81 379.02" class="geom-faint" />
+    <path d="M 242.00 95.27 L 282.89 217.05 L 323.79 338.83" class="geom-faint" />
+    <path d="M 214.01 106.67 L 259.78 200.45 L 305.56 294.24" class="geom-faint" />
+    <path d="M 189.86 120.72 L 235.78 186.97 L 281.70 253.22" class="geom-faint" />
+    <path d="M 170.26 137.00 L 213.01 179.44 L 255.76 221.87" class="geom-faint" />
+    <path d="M 155.82 155.01 L 194.10 178.97 L 232.38 202.92" class="geom-faint" />
+    <path d="M 146.98 174.20 L 181.55 184.69 L 216.13 195.17" class="geom-faint" />
+    <path d="M 144.00 194.00 L 177.15 194.00 L 210.31 194.00" class="geom-faint" />
+    <path d="M 146.98 213.80 L 181.55 203.31 L 216.13 192.83" class="geom-faint" />
+    <path d="M 155.82 232.99 L 194.10 209.03 L 232.38 185.08" class="geom-faint" />
+    <path d="M 170.26 251.00 L 213.01 208.56 L 255.76 166.13" class="geom-faint" />
+    <path d="M 189.86 267.28 L 235.78 201.03 L 281.70 134.78" class="geom-faint" />
+    <path d="M 214.01 281.33 L 259.78 187.55 L 305.56 93.76" class="geom-faint" />
+    <path d="M 242.00 292.73 L 282.89 170.95 L 323.79 49.17" class="geom-faint" />
+    <path d="M 272.96 301.12 L 303.89 155.05 L 334.81 8.98" class="geom-faint" />
+    <path d="M 305.96 306.27 L 322.64 143.65 L 339.32 -18.97" class="geom-faint" />
+    <path d="M 340.00 308.00 L 340.00 139.51 L 340.00 -28.98" class="geom-faint" />
+    <path d="M 374.04 306.27 L 357.36 143.65 L 340.68 -18.97" class="geom-faint" />
+    <path d="M 407.04 301.12 L 376.11 155.05 L 345.19 8.98" class="geom-faint" />
+    <path d="M 438.00 292.73 L 397.11 170.95 L 356.21 49.17" class="geom-faint" />
+    <path d="M 465.99 281.33 L 420.22 187.55 L 374.44 93.76" class="geom-faint" />
+    <path d="M 490.14 267.28 L 444.22 201.03 L 398.30 134.78" class="geom-faint" />
+    <path d="M 509.74 251.00 L 466.99 208.56 L 424.24 166.13" class="geom-faint" />
+    <path d="M 524.18 232.99 L 485.90 209.03 L 447.62 185.08" class="geom-faint" />
+    <path d="M 533.02 213.80 L 498.45 203.31 L 463.87 192.83" class="geom-faint" />
+    <path d="M 469.69 194.00 L 469.56 194.00 L 469.16 194.03 L 468.50 194.11 L 467.57 194.25 L 466.39 194.50 L 464.96 194.85 L 463.29 195.35 L 461.38 196.00 L 459.24 196.84 L 456.88 197.87 L 454.32 199.11 L 451.57 200.58 L 448.63 202.29 L 445.53 204.26 L 442.27 206.50 L 438.88 209.00 L 435.36 211.79 L 431.74 214.86 L 428.03 218.22 L 424.24 221.87 L 420.39 225.81 L 416.51 230.02 L 412.59 234.52 L 408.67 239.28 L 404.76 244.31 L 400.87 249.58 L 397.02 255.08 L 393.23 260.80 L 389.50 266.73 L 385.85 272.84 L 382.30 279.11 L 378.86 285.51 L 375.53 292.04 L 372.32 298.66 L 369.26 305.34 L 366.34 312.07 L 363.57 318.81 L 360.95 325.54 L 358.50 332.22 L 356.21 338.83 L 354.09 345.34 L 352.14 351.73 L 350.35 357.96 L 348.73 364.00 L 347.27 369.84 L 345.97 375.44 L 344.82 380.77 L 343.83 385.82 L 342.97 390.55 L 342.25 394.96 L 341.65 399.01 L 341.17 402.68 L 340.78 405.97 L 340.50 408.85 L 340.29 411.31 L 340.15 413.34 L 340.06 414.93 L 340.02 416.07 L 340.00 416.75 L 340.00 416.98 L 340.00 416.75 L 339.98 416.07 L 339.94 414.93 L 339.85 413.34 L 339.71 411.31 L 339.50 408.85 L 339.22 405.97 L 338.83 402.68 L 338.35 399.01 L 337.75 394.96 L 337.03 390.55 L 336.17 385.82 L 335.18 380.77 L 334.03 375.44 L 332.73 369.84 L 331.27 364.00 L 329.65 357.96 L 327.86 351.73 L 325.91 345.34 L 323.79 338.83 L 321.50 332.22 L 319.05 325.54 L 316.43 318.81 L 313.66 312.07 L 310.74 305.34 L 307.68 298.66 L 304.47 292.04 L 301.14 285.51 L 297.70 279.11 L 294.15 272.84 L 290.50 266.73 L 286.77 260.80 L 282.98 255.08 L 279.13 249.58 L 275.24 244.31 L 271.33 239.28 L 267.41 234.52 L 263.49 230.02 L 259.61 225.81 L 255.76 221.87 L 251.97 218.22 L 248.26 214.86 L 244.64 211.79 L 241.12 209.00 L 237.73 206.50 L 234.47 204.26 L 231.37 202.29 L 228.43 200.58 L 225.68 199.11 L 223.12 197.87 L 220.76 196.84 L 218.62 196.00 L 216.71 195.35 L 215.04 194.85 L 213.61 194.50 L 212.43 194.25 L 211.50 194.11 L 210.84 194.03 L 210.44 194.00 L 210.31 194.00 L 210.44 194.00 L 210.84 193.97 L 211.50 193.89 L 212.43 193.75 L 213.61 193.50 L 215.04 193.15 L 216.71 192.65 L 218.62 192.00 L 220.76 191.16 L 223.12 190.13 L 225.68 188.89 L 228.43 187.42 L 231.37 185.71 L 234.47 183.74 L 237.73 181.50 L 241.12 179.00 L 244.64 176.21 L 248.26 173.14 L 251.97 169.78 L 255.76 166.13 L 259.61 162.19 L 263.49 157.98 L 267.41 153.48 L 271.33 148.72 L 275.24 143.69 L 279.13 138.42 L 282.98 132.92 L 286.77 127.20 L 290.50 121.27 L 294.15 115.16 L 297.70 108.89 L 301.14 102.49 L 304.47 95.96 L 307.68 89.34 L 310.74 82.66 L 313.66 75.93 L 316.43 69.19 L 319.05 62.46 L 321.50 55.78 L 323.79 49.17 L 325.91 42.66 L 327.86 36.27 L 329.65 30.04 L 331.27 24.00 L 332.73 18.16 L 334.03 12.56 L 335.18 7.23 L 336.17 2.18 L 337.03 -2.55 L 337.75 -6.96 L 338.35 -11.01 L 338.83 -14.68 L 339.22 -17.97 L 339.50 -20.85 L 339.71 -23.31 L 339.85 -25.34 L 339.94 -26.93 L 339.98 -28.07 L 340.00 -28.75 L 340.00 -28.98 L 340.00 -28.75 L 340.02 -28.07 L 340.06 -26.93 L 340.15 -25.34 L 340.29 -23.31 L 340.50 -20.85 L 340.78 -17.97 L 341.17 -14.68 L 341.65 -11.01 L 342.25 -6.96 L 342.97 -2.55 L 343.83 2.18 L 344.82 7.23 L 345.97 12.56 L 347.27 18.16 L 348.73 24.00 L 350.35 30.04 L 352.14 36.27 L 354.09 42.66 L 356.21 49.17 L 358.50 55.78 L 360.95 62.46 L 363.57 69.19 L 366.34 75.93 L 369.26 82.66 L 372.32 89.34 L 375.53 95.96 L 378.86 102.49 L 382.30 108.89 L 385.85 115.16 L 389.50 121.27 L 393.23 127.20 L 397.02 132.92 L 400.87 138.42 L 404.76 143.69 L 408.67 148.72 L 412.59 153.48 L 416.51 157.98 L 420.39 162.19 L 424.24 166.13 L 428.03 169.78 L 431.74 173.14 L 435.36 176.21 L 438.88 179.00 L 442.27 181.50 L 445.53 183.74 L 448.63 185.71 L 451.57 187.42 L 454.32 188.89 L 456.88 190.13 L 459.24 191.16 L 461.38 192.00 L 463.29 192.65 L 464.96 193.15 L 466.39 193.50 L 467.57 193.75 L 468.50 193.89 L 469.16 193.97 L 469.56 194.00 L 469.69 194.00 Z" class="geom-rose-line" data-ref="( Evolute )" />
+    <path d="M 366.00 212.00 L 450.50 197.24 L 535.00 182.48" class="geom-assert-line" data-ref="/ O N1 /" />
+    <path d="M 533.71 175.09 L 526.32 176.38 L 527.61 183.77" class="geom-assert-line" />
+    <path d="M 366.00 212.00 L 374.42 147.38 L 382.84 82.76" class="geom-assert-line" data-ref="/ O N2 /" />
+    <path d="M 375.40 81.79 L 374.43 89.22 L 381.87 90.19" class="geom-assert-line" />
+    <path d="M 366.00 212.00 L 255.22 199.17 L 144.44 186.34" class="geom-assert-line" data-ref="/ O N3 /" />
+    <path d="M 143.58 193.79 L 151.03 194.65 L 151.89 187.20" class="geom-assert-line" />
+    <path d="M 366.00 212.00 L 371.15 259.01 L 376.31 306.03" class="geom-assert-line" data-ref="/ O N4 /" />
+    <path d="M 383.77 305.21 L 382.95 297.75 L 375.49 298.57" class="geom-assert-line" />
+  </g>
+  <g id="highlights" style="pointer-events: none;">
+    <path d="M 366.00 212.00 L 450.50 197.24 L 535.00 182.48" class="geom-overlay" data-ref="/ O N1 /" />
+    <path d="M 366.00 212.00 L 374.42 147.38 L 382.84 82.76" class="geom-overlay" data-ref="/ O N2 /" />
+    <path d="M 366.00 212.00 L 255.22 199.17 L 144.44 186.34" class="geom-overlay" data-ref="/ O N3 /" />
+    <path d="M 366.00 212.00 L 371.15 259.01 L 376.31 306.03" class="geom-overlay" data-ref="/ O N4 /" />
+  </g>
+  <g id="points">
+    <circle cx="535.00" cy="182.48" r="3.40" class="geom-point-assert" data-ref="N1" />
+    <circle cx="382.84" cy="82.76" r="3.40" class="geom-point-assert" data-ref="N2" />
+    <circle cx="144.44" cy="186.34" r="3.40" class="geom-point-assert" data-ref="N3" />
+    <circle cx="376.31" cy="306.03" r="3.40" class="geom-point-assert" data-ref="N4" />
+    <circle cx="366.00" cy="212.00" r="4.00" class="geom-point-accent" data-ref="O" />
+  </g>
+  <g id="labels">
+    <text x="340.00" y="22.00" text-anchor="middle" class="geom-label-sm">V.51–62: Envelope of Normals (Astroidal Evolute) &amp; Four Normals from Interior Point O</text>
+    <text x="545.00" y="172.48" text-anchor="middle" class="geom-label-assert">N₁</text>
+    <text x="367.84" y="72.76" text-anchor="middle" class="geom-label-assert">N₂</text>
+    <text x="129.44" y="201.34" text-anchor="middle" class="geom-label-assert">N₃</text>
+    <text x="388.31" y="320.03" text-anchor="middle" class="geom-label-assert">N₄</text>
+    <text x="378.00" y="217.00" text-anchor="middle" class="geom-label-accent">O</text>
+    <text x="436.00" y="152.00" text-anchor="middle" class="geom-label-rose">Evolute Envelope</text>
+    <text x="340.00" y="364.00" text-anchor="middle" class="geom-label-sm">Inside Evolute: 4 Normals (ON₁, ON₂, ON₃, ON₄)   ·   Outside Evolute: 2 Normals</text>
+  </g>
+</svg>
