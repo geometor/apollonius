@@ -26,8 +26,7 @@ Explore the Codex
 * :doc:`People (Prosopography of the Conic Tradition) <conics/persons>` — Register of 29 ancient geometers, Pergamene patrons, commentators, and critical editors.
 * :doc:`Bibliography & Critical Editions <conics/bibliography>` — Editions, translations, and reception canon.
 * :doc:`Using This Edition (Reader's Guide) <usage/index>` — Guide to synchronized tracks, interactive diagrams, search, and apparatus.
-* :doc:`Mission & Architectural Scope <mission/index>` — Exact symbolic conic roadmap, strict content/code separation, and ``sympy.geometry`` capability audit.
-* :doc:`About Apollonius & the Textual Tradition <about/index>` — Life of *The Great Geometer*, the Heath Trilogy, and the Greek-Arabic manuscript transmission.
+* :doc:`About Apollonius, the Textual Tradition & GEOMETOR Mission <about/index>` — Life of *The Great Geometer*, Heath Trilogy, manuscript transmission, and exact symbolic conic architecture.
 * :doc:`Python Package & Concordance API <modules/index>` — Reference for ``geometor.apollonius`` concordance verification, apparatus generation, and CLI utilities.
 
 .. toctree::
@@ -37,7 +36,6 @@ Explore the Codex
    conics/index
    conics/persons
    conics/bibliography
-   mission/index
    usage/index
    about/index
    modules/index

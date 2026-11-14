@@ -46,7 +46,7 @@
           <a href="../conics/bibliography.html"  >Bibliography</a>
         </li>
         <li>
-          <a href="../mission/index.html"  >Mission</a>
+          <a href="#" class="is-active" aria-selected="true" aria-current="page">About</a>
         </li>
         <li>
           <a href="../usage/index.html"  >Usage</a>
@@ -80,9 +80,44 @@
         </div>
       </header>
       <div class="content body book-content" role="main">
-        <section class="level-1" id="about">
-        <span id="apollonius-about"></span><h1>About<a class="headerlink" href="#about" title="Link to this heading">¶</a></h1>
-        <p>Historical, textual, and mathematical essays accompanying the <em>Treatise on Conic Sections</em> Book Codex:</p>
+        <section class="level-1" id="apollonius-mission">
+        <span id="apollonius-about"></span><span id="about-index"></span><span id="about"></span><span id="id1"></span><h1>About<a class="headerlink" href="#apollonius-mission" title="Link to this heading">¶</a></h1>
+        <p class="rubric">Extracting Historical Semantic Knowledge &amp; Repurposing It for Exact Symbolic Reasoning</p>
+        <section class="level-2" id="about-this-edition">
+        <h2>About This Edition<a class="headerlink" href="#about-this-edition" title="Link to this heading">¶</a></h2>
+        <p><strong>GEOMETOR • apollonius</strong> presents the Digital Scriptorium <strong>3-Track Book Codex</strong> and cross-corpus concordance of <span class="person-ref" data-person="apollonius" title="Apollonius of Perga (c. 240–190 BCE) — &#x27;The Great Geometer&#x27; (ὁ μέγας γεωμέτρης); author of the Conics">Apollonius of Perga's</span> <em>Treatise on Conic Sections</em> (<em>Κωνικά</em>, Books I–VII, c. 200 BCE). This critical digital edition is grounded directly on folio-inspected 300 DPI scans of <span class="person-ref" data-person="heath" title="Sir Thomas Little Heath (1861–1940) — Editor of the Cambridge Greek Mathematical Trilogy: Apollonius (1896), Archimedes (1897), Euclid (1908)">Sir Thomas Little Heath's</span> landmark 1896 Cambridge University Press edition (<span class="citation-ref" data-cite="heath:1896" title="Apollonius of Perga (ed. Sir Thomas Little Heath) — Treatise on Conic Sections, Edited in Modern Notation with Introductions Including an Essay on the Earlier History of the Subject (Cambridge: At the University Press, 1896 (pp. clxx + 254))">Heath 1896</span>), cross-referenced to <span class="person-ref" data-person="heiberg" title="Johan Ludvig Heiberg (1854–1928) — Critical Teubner editor of Apollonius (1891–1893), Euclid, and Archimedes">Johan Ludvig Heiberg's</span> Teubner Greek text of Books I–IV (<span class="citation-ref" data-cite="heiberg:1891" title="Apollonius of Perga (ed. Johan Ludvig Heiberg) — Apollonii Pergaei quae Graece exstant cum commentariis antiquis, Vol. I (Leipzig: B. G. Teubner, 1891)">1891–1893</span>) and <span class="person-ref" data-person="halley" title="Edmond Halley (1656–1742) — Savilian Professor of Geometry; editor of the monumental 1710 Oxford Conics">Edmond Halley's</span> monumental 1710 Oxford folio of <span class="person-ref" data-person="thabit-ibn-qurra" title="Thābit ibn Qurra (836–901 CE) — Translator into Arabic of Books V–VII of Apollonius&#x27;s Conics">Thābit ibn Qurra's</span> Arabic Books V–VII (<span class="citation-ref" data-cite="halley:1710" title="Apollonius of Perga (ed. Edmond Halley) — Apollonii Pergaei Conicorum Libri Octo, et Sereni Antissensis De Sectione Cylindri &amp; Coni Libri Duo (Oxford: E Theatro Sheldoniano, 1710)">Halley 1710</span>).</p>
+        <p>The codex extracts Apollonius’s monumental deductive corpus—387 classical propositions consolidated into 147 propositions across Books I–VII, plus the analytic treasury in Pappus Book VII—into synchronized <strong>English</strong>, <strong>Summary</strong>, and <strong>Notes</strong> tracks across 8 structural units. Following the Digital Scriptorium architecture, zero executable Python blocks are embedded into the treatise source; all interactive <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVG plates are deterministically compiled. Every proposition, definition, enunciation, step, and historical annotation is rendered addressable, establishing the blueprint for symbolic conics far beyond the capabilities of conventional computer algebra systems: arbitrary oblique conjugate diameters (Book I), asymptotic coordinates (Book II), harmonic pole-polar duality (Book III), four-point conic pencils (Book IV), rectangular-hyperbola normal resolvers and evolutes (Book V), trace/determinant matrix invariants (Book VII), and eight-circle <code class="docutils literal notranslate"><span class="pre">CCC</span></code> tangency (Pappus VII).</p>
+        <p>Within the GEOMETOR ecosystem, this edition completes Heath’s celebrated Cambridge Greek Trilogy alongside <code class="docutils literal notranslate"><span class="pre">geometor/archimedes</span></code> (<em>The Works of Archimedes</em> and <em>The Method</em>) and <code class="docutils literal notranslate"><span class="pre">geometor/euclid</span></code> (<em>The Thirteen Books of Euclid’s Elements</em>). It provides the definitive projective and quadratic bridge linking Euclidean plane foundations (<code class="docutils literal notranslate"><span class="pre">geometor.elements</span></code>), projective and harmonic ranges (<code class="docutils literal notranslate"><span class="pre">geometor.pappus</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code>), Kimberling triangle center structures (<code class="docutils literal notranslate"><span class="pre">geometor.etc</span></code>), and Rational Trigonometry (<code class="docutils literal notranslate"><span class="pre">geometor.wildberger</span></code>).</p>
+        </section>
+        <section class="level-2" id="the-geometor-mission">
+        <h2>The GEOMETOR Mission<a class="headerlink" href="#the-geometor-mission" title="Link to this heading">¶</a></h2>
+        <p>The GEOMETOR project, directed by <strong>phi ARCHITECT</strong>, is dedicated to the systematic recovery, exact formalization, and dynamic re-expression of foundational geometric and philosophical knowledge. The mission unfolds across three essential pillars:</p>
+        <ul class="simple">
+        <li><p><strong>Extracting Historical Semantic Knowledge</strong>: Moving beyond passive page scans and OCR to recover the living deductive structure of 2,300+ years of geometric, axiomatic, and philosophical treatises—elevating prose, marginal citations, primary-source folios (via <code class="docutils literal notranslate"><span class="pre">publish</span> <span class="pre">folio</span></code>), and calibrated Ink-to-Vector <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> diagrams into structured, machine-addressable semantic graphs.</p></li>
+        <li><p><strong>Exact Symbolic Grounding (``geometor.model``)</strong>: Anchoring geometric constructions in 100% exact symbolic algebra (using <code class="docutils literal notranslate"><span class="pre">SymPy</span></code>) and Rational Trigonometry invariants (quadrance, spread, cross-ratio) over exact algebraic fields rather than floating-point approximations.</p></li>
+        <li><p><strong>Repurposing Knowledge Across Mediums</strong>: Re-deploying extracted semantic and algebraic structures across synchronized multi-track <strong>Book Codices</strong> and EPUB 3 editions (via <code class="docutils literal notranslate"><span class="pre">photon-platform/publish</span></code>), computable deductive canons (<code class="docutils literal notranslate"><span class="pre">geometor.elements</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.etc</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.pappus</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code>), interactive SVG laboratories (<code class="docutils literal notranslate"><span class="pre">geometor.explorer</span></code>), QHD visual broadcasts, and neuro-symbolic program synthesis (<code class="docutils literal notranslate"><span class="pre">geometor.seer</span></code>) across <code class="docutils literal notranslate"><span class="pre">geometor.com</span></code>.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="sources-provenance-methodology">
+        <h2>Sources, Provenance &amp; Methodology<a class="headerlink" href="#sources-provenance-methodology" title="Link to this heading">¶</a></h2>
+        <section class="level-3" id="archival-sources-critical-editions">
+        <h3>Archival Sources &amp; Critical Editions<a class="headerlink" href="#archival-sources-critical-editions" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>T. L. Heath (1896)</strong>: <em>Treatise on Conic Sections</em>, edited in modern notation with introductions including an essay on the earlier history of the subject by T. L. Heath. Cambridge: Cambridge University Press, 1896.</p></li>
+        <li><p><strong>J. L. Heiberg (1891–1893)</strong>: <em>Apollonii Pergaei quae Graece exstant cum commentariis antiquis</em>, 2 vols. Leipzig: B. G. Teubner (critical Greek text and Latin translation of Books I–IV and Eutocius’s commentary).</p></li>
+        <li><p><strong>Edmond Halley (1710)</strong>: <em>Apollonii Pergaei Conicorum Libri Octo et Sereni Antissensis De Sectione Cylindri &amp; Coni Libri Duo</em>. Oxford: Theater Sheldonian (Latin translation of Thābit ibn Qurra’s Arabic text of Books V–VII, Greek Books I–IV, and Halley’s conjectural restoration of Book VIII).</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="digital-scriptorium-methodology">
+        <h3>Digital Scriptorium Methodology<a class="headerlink" href="#digital-scriptorium-methodology" title="Link to this heading">¶</a></h3>
+        <ul class="simple">
+        <li><p><strong>Strict Content / Code Separation</strong>: RST source files maintain absolute textual purity; all diagrammatic representations are compiled to standalone, accessible SVG graphics with exact mathematical coordinates.</p></li>
+        <li><p><strong>Synchronized Multi-Track Codex</strong>: Readers navigate side-by-side between unabridged English demonstrations, concise modern synopses, and deep historical/mathematical commentary notes.</p></li>
+        <li><p><strong>Systematic Concordance &amp; Prosopography</strong>: Biographies of 29 ancient and early modern mathematicians are cross-linked via <code class="docutils literal notranslate"><span class="pre">:person:</span></code> roles, accompanied by complete bibliographic citations and citation keys.</p></li>
+        </ul>
+        </section>
+        <section class="level-3" id="historical-textual-transmission-essays">
+        <h3>Historical &amp; Textual Transmission Essays<a class="headerlink" href="#historical-textual-transmission-essays" title="Link to this heading">¶</a></h3>
         <ul class="simple">
         <li><p><a class="reference internal" href="apollonius-of-perga.html"><span class="doc">Apollonius of Perga: The Great Geometer</span></a> — Life at Perga, Alexandria, Ephesus, and Pergamum; astronomical epicycles and lost works.</p></li>
         <li><p><a class="reference internal" href="heath-trilogy.html"><span class="doc">The Heath Cambridge Greek Trilogy (1896–1912)</span></a> — How Heath’s 1896 <em>Apollonius</em> inaugurated the unified edition of Apollonius, Archimedes, and Euclid.</p></li>
@@ -90,6 +125,8 @@
         </ul>
         <div class="toctree-wrapper compound">
         </div>
+        </section>
+        </section>
         </section>
 
       </div>
@@ -132,7 +169,6 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="#" class="is-active" aria-selected="true" aria-current="page">About</a></li>
         <li><a href="../changelog.html"  >Changelog</a></li>
       </ul>
     </div>
@@ -146,7 +182,7 @@
 
   <script src="../_static/jquery.js?v=5d32c60e"></script>
   <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../_static/documentation_options.js?v=360bc84d"></script>
+  <script src="../_static/documentation_options.js?v=fd825880"></script>
   <script src="../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
