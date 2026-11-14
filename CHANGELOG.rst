@@ -2,6 +2,11 @@
 Changelog
 =========
 
+0.1.2 (2026-11-13)
+------------------
+
+* Added track-aware primary-source folio map (``resources/conics/folio_map.json``) resolving 27/27 folio directives to Internet Archive Heath facsimile locus pages.
+
 0.1.0 (Initial Codex)
 ---------------------
 

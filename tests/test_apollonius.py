@@ -39,7 +39,7 @@ def _load_build_figures_module():
 
 
 def test_version_and_codex_unit_registry() -> None:
-    assert __version__ == "0.1.1"
+    assert __version__ == "0.1.2"
     assert len(CODEX_UNITS) == 8
     expected_slugs = [
         "preface-intro",
