@@ -150,11 +150,18 @@ def render_bibliography_rst(resources_dir: Path | None = None) -> str:
     citations = json.loads((res_dir / "citations.json").read_text(encoding="utf-8"))
 
     lines: list[str] = [
+        ":navigation: header",
+        ":order: 6",
+        ":nav_title: Bibliography",
         ":layout: book",
+        ":title: Bibliography",
         "",
+        ".. _bibliography:",
         ".. _conics-bibliography:",
         "",
-        _rst_heading("Bibliography & Critical Editions", "="),
+        _rst_heading("Bibliography", "="),
+        "",
+        ".. rubric:: Editions, Manuscripts, and Critical Studies of the Conic Tradition",
         "",
         "Primary Public Domain editions, ancient and medieval witnesses, early-modern",
         "reconstructions, and GEOMETOR ecosystem references cited via ``:cite:`` across",
@@ -190,26 +197,75 @@ def render_persons_rst(resources_dir: Path | None = None) -> str:
     ordered = sorted(persons.items(), key=lambda kv: kv[1].get("sort_year", 0))
 
     lines: list[str] = [
+        ":navigation: header",
+        ":order: 5",
+        ":nav_title: People",
         ":layout: book",
+        ":title: People",
         "",
+        ".. _persons:",
         ".. _conics-persons:",
         "",
-        _rst_heading("Prosopography of the Conic Tradition", "="),
+        _rst_heading("People", "="),
+        "",
+        ".. rubric:: Prosopographical Register of Geometers, Translators, Patrons, and Editors",
         "",
         "Chronological register of ancient Greek geometers, Pergamene dedicatees,",
         "Alexandrian commentators, ninth-century Baghdad translators, seventeenth-century",
         "projective and analytic pioneers, and modern critical editors referenced via",
         "``:person:`` across the codex.",
         "",
+        _rst_heading("Authors, Translators & Editors", "-"),
+        "",
     ]
+
+    top_slugs = ["apollonius", "heath", "eutocius", "halley", "heiberg"]
+    for slug in top_slugs:
+        if slug in persons:
+            entry = persons[slug]
+            heading = f"{entry['name']} ({entry['dates']})"
+            lines.extend(
+                [
+                    f".. _person-{slug}:",
+                    "",
+                    _rst_heading(heading, "~"),
+                    "",
+                    f"- **Original Name / Form**: {entry.get('greek', entry['name'])}",
+                    f"- **Role**: {entry['role']}",
+                    f"- **Heath (1896) Loci**: {entry.get('heath_loci', '—')}",
+                    f"- **Contribution**: {entry['summary']}",
+                ]
+            )
+            if slug == "apollonius":
+                lines.extend(
+                    [
+                        "",
+                        "Born at Perga in Pamphylia around **240 BCE** during the reign of Ptolemy III Euergetes and flourishing under Ptolemy IV Philopator (*Heath 1896, p. lxviii*), :person:`Apollonius of Perga <apollonius>` studied as a young man at **Alexandria** under the successors of :person:`Euclid <euclid>`. As :person:`Geminus <geminus>` (quoted by :person:`Eutocius <eutocius>`) records, his contemporaries held him in such awe for his mastery of conic sections that they named him simply **ὁ μέγας γεωμέτρης — \"The Great Geometer.\"**",
+                        "",
+                        "From Apollonius's own epistolary Prefaces (:doc:`Unit 0 </conics/preface-intro/preface-intro-en>`), we trace an unusually vivid intellectual network across the Hellenistic eastern Mediterranean: at **Alexandria**, prompted by :person:`Naucrates <naucrates>`, he drafted the initial eight books of the *Conics*; at **Ephesus**, he conversed with the Epicurean mathematician :person:`Philonides <philonides>`; at **Pergamum**, home of the Attalid royal library, he dedicated Books I–III to :person:`Eudemus of Pergamum <eudemus-pergamum>` and Books IV–VIII to :person:`Attalus <attalus>`.",
+                        "",
+                        "In addition to the *Conics* and the six analytic treatises preserved in syllabus by :person:`Pappus <pappus>`, ancient sources credit Apollonius with proving the geometric equivalence of eccentric and epicyclic planetary models (Ptolemy, *Almagest* XII.1), comparing the regular dodecahedron and icosahedron inscribed in the same sphere (*Elements* Book XIV), and calculating closer approximations to :eq:`\\pi` in his *Quick-Delivery* (*Ὠκυτόκιον*).",
+                    ]
+                )
+            lines.append("")
+
+    lines.extend(
+        [
+            _rst_heading("Cited Geometers, Philosophers & Scholars", "-"),
+            "",
+        ]
+    )
+
     for key, entry in ordered:
+        if key in top_slugs:
+            continue
         slug = _apparatus_slug(key)
         heading = f"{entry['name']} ({entry['dates']})"
         lines.extend(
             [
                 f".. _person-{slug}:",
                 "",
-                _rst_heading(heading, "-"),
+                _rst_heading(heading, "~"),
                 "",
                 f"- **Original Name / Form**: {entry.get('greek', entry['name'])}",
                 f"- **Role**: {entry['role']}",

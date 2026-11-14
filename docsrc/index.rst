@@ -1,7 +1,7 @@
 .. _apollonius-home:
 
-apollonius
-==========
+GEOMETOR • apollonius
+=====================
 
 **GEOMETOR • apollonius** presents the Digital Scriptorium **3-Track Book Codex** and cross-corpus concordance of :person:`Apollonius of Perga's <apollonius>` **Treatise on Conic Sections** (*Κωνικά*, Books I–VII, c. 200 BCE), anchored on :person:`Sir Thomas Little Heath's <heath>` landmark 1896 Cambridge University Press edition (:cite:`Heath 1896 <heath:1896>`), :person:`Johan Ludvig Heiberg's <heiberg>` Teubner Greek text (:cite:`1891–1893 <heiberg:1891>`), and :person:`Edmond Halley's <halley>` 1710 Oxford edition of :person:`Thābit ibn Qurra's <thabit-ibn-qurra>` Arabic Books V–VII (:cite:`Halley 1710 <halley:1710>`).
 
@@ -23,7 +23,22 @@ Explore the Codex
 -----------------
 
 * :doc:`Conics (3-Track Book Codex) <conics/index>` — Synchronized **English**, **Summary**, and **Notes** tracks across **8 Units** (Prefaces & Introduction, Books I–VII, and the Lost Analytic Treasury in Pappus Book VII) illustrated with **12 standalone ``.euclid-graphic`` SVG plates**.
+* :doc:`People (Prosopography of the Conic Tradition) <conics/persons>` — Register of 29 ancient geometers, Pergamene patrons, commentators, and critical editors.
+* :doc:`Bibliography & Critical Editions <conics/bibliography>` — Editions, translations, and reception canon.
+* :doc:`Using This Edition (Reader's Guide) <usage/index>` — Guide to synchronized tracks, interactive diagrams, search, and apparatus.
 * :doc:`Mission & Architectural Scope <mission/index>` — Exact symbolic conic roadmap, strict content/code separation, and ``sympy.geometry`` capability audit.
 * :doc:`About Apollonius & the Textual Tradition <about/index>` — Life of *The Great Geometer*, the Heath Trilogy, and the Greek-Arabic manuscript transmission.
 * :doc:`Python Package & Concordance API <modules/index>` — Reference for ``geometor.apollonius`` concordance verification, apparatus generation, and CLI utilities.
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   conics/index
+   conics/persons
+   conics/bibliography
+   mission/index
+   usage/index
+   about/index
+   modules/index
 
