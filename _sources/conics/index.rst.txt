@@ -1,30 +1,32 @@
 :navigation: header
-:order: 10
+:order: 1
+:nav_title: Conics
 :layout: book
-:book_title: ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ · Treatise on Conic Sections
+:book_title: Conics
 :book_subtitle: Apollonius of Perga · Books I–VII (ed. Sir Thomas Little Heath, 1896)
+:author: Apollonius of Perga
+:year: 1896
 
 .. _conics-codex:
 
 Conics
 ======
 
-.. rst-class:: title-page
+.. rubric:: *ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ* · Treatise on Conic Sections — Apollonius of Perga (ed. T. L. Heath, 1896)
 
-   **ΑΠΟΛΛΩΝΙΟΥ ΠΕΡΓΑΙΟΥ ΚΩΝΙΚΩΝ**
+.. container:: title-page
 
-   *APOLLONII PERGAEI CONICORUM LIBRI SEPTEM*
+   | **ΑΠΟΛΛΩΝΙΟΥ ΠΕΡΓΑΙΟΥ ΚΩΝΙΚΩΝ**
+   | *Apollonii Pergaei Conicorum Libri Septem*
+   | *Treatise on Conic Sections (c. 200 BCE)*
+   |
+   | **Author**: :person:`Apollonius of Perga <apollonius>` (*The Great Geometer*, c. 262 – c. 190 BCE)
+   | **English Edition & Mathematical Commentary**: :person:`Sir Thomas Little Heath <heath>` (Cambridge University Press, 1896)
+   | **Critical Greek Text (Books I–IV)**: :person:`Johan Ludvig Heiberg <heiberg>` (Leipzig: B. G. Teubner, 1891–1893)
+   | **Arabic-Latin First Edition (Books V–VII)**: :person:`Thābit ibn Qurra <thabit-ibn-qurra>` (9th c.) & :person:`Edmond Halley <halley>` (Oxford, 1710)
 
-   *Treatise on Conic Sections (c. 200 BCE)*
-
-   English Edition in Modern Notation: Sir Thomas Little Heath (Cambridge University Press, 1896)
-
-   Critical Greek Text (Books I–IV): Johan Ludvig Heiberg (Leipzig: B. G. Teubner, 1891–1893)
-
-   Arabic-Latin Editio Princeps (Books V–VII): Thābit ibn Qurra (9th c.) & Edmond Halley (Oxford, 1710)
-
-Conspectus Totius Operis
-------------------------
+Table of Contents
+-----------------
 
 Composed at Alexandria and Pergamum around 200 BCE by :person:`Apollonius of Perga <apollonius>`—acclaimed in antiquity as *The Great Geometer*—the *Conics* unified the geometry of second-degree curves by generating the :term:`parabola <parabole>`, :term:`ellipse <elleipsis>`, :term:`hyperbola <hyperbole>`, and :term:`opposite branches <antikeimenai>` from a single arbitrary oblique circular double cone. Completing the **Heath Cambridge Greek Trilogy** alongside ``geometor/archimedes`` (1897) and ``geometor/euclid`` (1908), each unit of this **3-Track Digital Scriptorium Codex** provides three synchronized reading tabs: **English**, **Summary**, and **Notes**.
 
@@ -37,8 +39,8 @@ Composed at Alexandria and Pergamum around 200 BCE by :person:`Apollonius of Per
 * **Unit 6** (*Books VI & VII · Props. 114–147 [VI.1–33, VII.1–51], pp. 197–254*): :doc:`Books VI & VII — Equal and Similar Conics & Conjugate Diameters <books-6-7/books-6-7-en>` — Congruence and similarity of conics, cutting a given section from a given right cone, and Apollonius's Conjugate Diameter Theorems (:eq:`a'^2 \pm b'^2 = a^2 \pm b^2` and :eq:`a'b'\sin\omega = ab`). (:doc:`EN <books-6-7/books-6-7-en>` · :doc:`Summary <books-6-7/books-6-7-summary>` · :doc:`Notes <books-6-7/books-6-7-notes>`)
 * **Unit 7** (*Pappus Book VII Appendix*): :doc:`Appendix — The Lost Analytic Treasury in Pappus Book VII <lost-works-pappus/lost-works-pappus-en>` — :term:`Problem of Apollonius (Tangencies CCC) <epaphai>`, *Plane Loci* (Circle of Apollonius & Isodynamic Points ``X(15)``, ``X(16)``), *Cutting Off of a Ratio*, *Determinate Section*, and :term:`Inclinations (Neusis) <neusis>`. (:doc:`EN <lost-works-pappus/lost-works-pappus-en>` · :doc:`Summary <lost-works-pappus/lost-works-pappus-summary>` · :doc:`Notes <lost-works-pappus/lost-works-pappus-notes>`)
 
-Critical Apparatus & Concordances
----------------------------------
+Scholarly Apparatus
+-------------------
 
 * :doc:`Cross-Corpus Concordance & Symbolic Gap Audit <concordance>` — Complete mapping of the **387 classical propositions** and **147 Heath propositions** to ``euclid``, ``elements``, ``archimedes``, ``pappus``, ``etc``, ``wildberger``, Lean ``mathlib4``, and ``sympy.geometry`` gaps.
 * :doc:`Bibliography & Critical Editions <bibliography>` — Public Domain editions (:cite:`Heath 1896 <heath:1896>`, :cite:`Heiberg 1891–1893 <heiberg:1891>`, :cite:`Halley 1710 <halley:1710>`) and reception canon.
@@ -78,7 +80,7 @@ Critical Apparatus & Concordances
 .. toctree::
    :maxdepth: 1
    :hidden:
-   :caption: Critical Apparatus
+   :caption: Scholarly Apparatus
 
    concordance
    bibliography
