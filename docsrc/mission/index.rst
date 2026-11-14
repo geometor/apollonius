@@ -1,5 +1,6 @@
 :navigation: header
-:order: 20
+:order: 10
+:nav_title: Mission
 
 .. _apollonius-mission:
 

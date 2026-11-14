@@ -1,9 +1,16 @@
+:navigation: header
+:order: 6
+:nav_title: Bibliography
 :layout: book
+:title: Bibliography
 
+.. _bibliography:
 .. _conics-bibliography:
 
-Bibliography & Critical Editions
-================================
+Bibliography
+============
+
+.. rubric:: Editions, Manuscripts, and Critical Studies of the Conic Tradition
 
 Primary Public Domain editions, ancient and medieval witnesses, early-modern
 reconstructions, and GEOMETOR ecosystem references cited via ``:cite:`` across
