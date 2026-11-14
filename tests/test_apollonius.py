@@ -5,6 +5,7 @@ from __future__ import annotations
 import importlib.util
 import json
 import math
+import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -38,7 +39,7 @@ def _load_build_figures_module():
 
 
 def test_version_and_codex_unit_registry() -> None:
-    assert __version__ == "0.1.0"
+    assert __version__ == "0.1.1"
     assert len(CODEX_UNITS) == 8
     expected_slugs = [
         "preface-intro",
@@ -147,3 +148,30 @@ def test_apparatus_rendering_and_cli(tmp_path: Path, capsys) -> None:
     assert cli_main(["verify"]) == 0
     out_verify = capsys.readouterr().out
     assert "OK:" in out_verify
+
+
+def test_primary_source_folio_map_integrity() -> None:
+    folio_map_path = REPO_ROOT / "resources" / "conics" / "folio_map.json"
+    assert folio_map_path.is_file(), "resources/conics/folio_map.json must exist"
+
+    data = json.loads(folio_map_path.read_text(encoding="utf-8"))
+    folios = data.get("folios", data)
+    assert len(folios) >= 27
+
+    # Verify all 27 directives in docsrc match an entry
+    directives = []
+    docsrc = REPO_ROOT / "docsrc"
+    for rst in docsrc.rglob("*.rst"):
+        for line in rst.read_text(encoding="utf-8").splitlines():
+            m = re.match(r"^\s*\.\.\s+folio::\s*(.+?)\s*$", line)
+            if m:
+                directives.append(m.group(1).strip())
+
+    assert len(directives) == 27
+    for d in directives:
+        assert d in folios, f"Directive '{d}' not in folio_map.json"
+        entry = folios[d]
+        assert isinstance(entry, dict)
+        assert entry.get("default", "").startswith("https://archive.org/")
+        assert entry.get("en", "").startswith("https://archive.org/")
+

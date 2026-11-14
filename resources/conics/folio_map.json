@@ -1,0 +1,392 @@
+{
+  "_schema_version": "1.0",
+  "_description": "Canonical primary-source folio map for Apollonius of Perga's Conics (Heath 1896, Heiberg 1891/1893, Halley 1710)",
+  "_repo": "geometor/apollonius",
+  "folios": {
+    "Heath 1896, Props. 1–27 [I. 1–60], pp. 1–52 (PDF 181–232)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n181/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n181/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n20/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n20/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n20/mode/1up"
+    },
+    "Heath 1896, pp. 1–8 (PDF 181–188)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n181/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n181/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n22/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n22/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n22/mode/1up"
+    },
+    "Heath 1896, pp. 8–14 (PDF 188–194)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n188/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n188/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n36/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n36/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n36/mode/1up"
+    },
+    "Heath 1896, pp. 22–52 (PDF 202–232)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n202/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n202/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n100/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n100/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n100/mode/1up"
+    },
+    "Heath 1896, Props. 28–53 [II. 1–53], pp. 53–94 (PDF 233–274)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n233/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n233/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n210/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n210/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n210/mode/1up"
+    },
+    "Heath 1896, pp. 53–56 (PDF 233–236)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n233/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n233/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n210/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n210/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n210/mode/1up"
+    },
+    "Heath 1896, pp. 56–63 (PDF 236–243)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n236/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n236/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n214/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n214/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n214/mode/1up"
+    },
+    "Heath 1896, pp. 72–94 (PDF 252–274)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n252/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n252/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n274/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n274/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n274/mode/1up"
+    },
+    "Heath 1896, Props. 54–76 [III. 1–56], pp. 95–125 (PDF 275–305)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n275/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n275/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n336/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n336/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n336/mode/1up"
+    },
+    "Heath 1896, pp. 95–101 (PDF 275–281)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n275/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n275/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n336/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n336/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n336/mode/1up"
+    },
+    "Heath 1896, pp. 102–108 (PDF 282–288)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n282/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n282/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n376/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n376/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n376/mode/1up"
+    },
+    "Heath 1896, pp. 113–118 (PDF 293–298)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n293/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n293/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n406/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n406/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n406/mode/1up"
+    },
+    "Heath 1896, pp. 119–125 (PDF 299–305)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n299/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n299/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n428/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n428/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n428/mode/1up"
+    },
+    "Heath 1896, Props. 77–83 [IV. 1–57], pp. 126–138 (PDF 306–318)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n306/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n306/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei02apoluoft#page/n94/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei02apoluoft#page/n94/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei02apoluoft#page/n94/mode/1up"
+    },
+    "Heath 1896, p. 126 (PDF 306)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n306/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n306/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei02apoluoft#page/n94/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei02apoluoft#page/n94/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei02apoluoft#page/n94/mode/1up"
+    },
+    "Heath 1896, pp. 126–138 (PDF 306–318)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n306/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n306/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei02apoluoft#page/n96/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei02apoluoft#page/n96/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei02apoluoft#page/n96/mode/1up"
+    },
+    "Heath 1896, Props. 84–113 [V. 1–77], pp. 139–196 (PDF 319–376)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n319/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n319/mode/1up",
+      "grc": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n174/mode/1up",
+      "el": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n174/mode/1up",
+      "la": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n174/mode/1up"
+    },
+    "Heath 1896, pp. 139–159 (PDF 319–339)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n319/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n319/mode/1up",
+      "grc": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n174/mode/1up",
+      "el": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n174/mode/1up",
+      "la": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n174/mode/1up"
+    },
+    "Heath 1896, pp. 168–179 (PDF 348–359)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n348/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n348/mode/1up",
+      "grc": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n194/mode/1up",
+      "el": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n194/mode/1up",
+      "la": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n194/mode/1up"
+    },
+    "Heath 1896, pp. 180–186 (PDF 360–366)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n360/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n360/mode/1up",
+      "grc": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n202/mode/1up",
+      "el": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n202/mode/1up",
+      "la": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n202/mode/1up"
+    },
+    "Heath 1896, Props. 114–147 [VI. 1–33 & VII. 1–51], pp. 197–254 (PDF 377–434)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n377/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n377/mode/1up",
+      "grc": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n218/mode/1up",
+      "el": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n218/mode/1up",
+      "la": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n218/mode/1up"
+    },
+    "Heath 1896, pp. 197–220 (PDF 377–400)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n377/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n377/mode/1up",
+      "grc": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n218/mode/1up",
+      "el": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n218/mode/1up",
+      "la": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n218/mode/1up"
+    },
+    "Heath 1896, pp. 221–254 (PDF 401–434)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n401/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n401/mode/1up",
+      "grc": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n242/mode/1up",
+      "el": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n242/mode/1up",
+      "la": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n242/mode/1up"
+    },
+    "Heath 1896, pp. 231–254 (PDF 411–434)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n411/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n411/mode/1up",
+      "grc": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n250/mode/1up",
+      "el": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n250/mode/1up",
+      "la": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n250/mode/1up"
+    },
+    "Heath 1896, Intro pp. lxviii, cxxv–clvi (PDF 76, 133–164); Pappus Synagoge VII": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n76/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n76/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei02apoluoft#page/n234/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei02apoluoft#page/n234/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei02apoluoft#page/n234/mode/1up"
+    },
+    "Heath 1896, pp. vii–xii, xvii–lxxxvi (PDF 15–20, 25–94)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n15/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n15/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n20/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n20/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n20/mode/1up"
+    },
+    "Heath 1896, pp. lxix–lxxv (PDF 77–83)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n77/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n77/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n20/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n20/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n20/mode/1up"
+    },
+    "Book I": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n181/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n181/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n20/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n20/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n20/mode/1up"
+    },
+    "Book II": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n233/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n233/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n210/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n210/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n210/mode/1up"
+    },
+    "Book III": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n275/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n275/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n336/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n336/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n336/mode/1up"
+    },
+    "Book IV": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n306/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n306/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei02apoluoft#page/n94/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei02apoluoft#page/n94/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei02apoluoft#page/n94/mode/1up"
+    },
+    "Book V": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n319/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n319/mode/1up",
+      "grc": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n174/mode/1up",
+      "el": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n174/mode/1up",
+      "la": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n174/mode/1up"
+    },
+    "Book VI": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n377/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n377/mode/1up",
+      "grc": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n218/mode/1up",
+      "el": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n218/mode/1up",
+      "la": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n218/mode/1up"
+    },
+    "Book VII": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n401/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n401/mode/1up",
+      "grc": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n242/mode/1up",
+      "el": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n242/mode/1up",
+      "la": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n242/mode/1up"
+    },
+    "I. 1–10": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n181/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n181/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n22/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n22/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n22/mode/1up"
+    },
+    "I. 11": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n188/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n188/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n36/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n36/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n36/mode/1up"
+    },
+    "I. 12": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n189/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n189/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n42/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n42/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n42/mode/1up"
+    },
+    "I. 13": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n191/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n191/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n48/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n48/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n48/mode/1up"
+    },
+    "I. 14": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n193/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n193/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n54/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n54/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n54/mode/1up"
+    },
+    "I. 33–38": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n205/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n205/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n100/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n100/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n100/mode/1up"
+    },
+    "I. 49–51": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n216/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n216/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n146/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n146/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n146/mode/1up"
+    },
+    "II. 1–14": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n233/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n233/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n210/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n210/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n210/mode/1up"
+    },
+    "II. 15–23": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n242/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n242/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n228/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n228/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n228/mode/1up"
+    },
+    "II. 44–53": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n252/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n252/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n274/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n274/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n274/mode/1up"
+    },
+    "III. 16–29": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n277/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n277/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n342/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n342/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n342/mode/1up"
+    },
+    "III. 30–40": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n282/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n282/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n376/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n376/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n376/mode/1up"
+    },
+    "III. 45–52": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n293/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n293/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n406/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n406/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n406/mode/1up"
+    },
+    "III. 53–56": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n299/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n299/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n428/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n428/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n428/mode/1up"
+    },
+    "IV. 1–23": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n306/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n306/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei02apoluoft#page/n94/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei02apoluoft#page/n94/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei02apoluoft#page/n94/mode/1up"
+    },
+    "IV. 24–57": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n306/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n306/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei02apoluoft#page/n96/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei02apoluoft#page/n96/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei02apoluoft#page/n96/mode/1up"
+    },
+    "V. 1–34": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n319/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n319/mode/1up",
+      "grc": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n174/mode/1up",
+      "el": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n174/mode/1up",
+      "la": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n174/mode/1up"
+    },
+    "V. 51–63": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n348/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n348/mode/1up",
+      "grc": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n194/mode/1up",
+      "el": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n194/mode/1up",
+      "la": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n194/mode/1up"
+    },
+    "VI. 1–33": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n377/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n377/mode/1up",
+      "grc": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n218/mode/1up",
+      "el": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n218/mode/1up",
+      "la": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n218/mode/1up"
+    },
+    "VII. 12–31": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n408/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n408/mode/1up",
+      "grc": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n246/mode/1up",
+      "el": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n246/mode/1up",
+      "la": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n246/mode/1up"
+    },
+    "VII. 33–51": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n416/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n416/mode/1up",
+      "grc": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n252/mode/1up",
+      "el": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n252/mode/1up",
+      "la": "https://archive.org/details/bub_gb_6N__e_V4xbAC#page/n252/mode/1up"
+    }
+  }
+}
