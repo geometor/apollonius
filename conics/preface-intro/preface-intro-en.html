@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=8713e751" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=99410eb1" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -99,7 +99,36 @@
         </ul>
         <p>Apollonius revolutionized the science by proving in <strong>Book I</strong> that <em>every circular cone whatsoever—whether right or oblique (scalene)—contains all three species of conic sections together with the two-branched opposite sections</em>, solely by varying the inclination of the cutting plane relative to the axial triangle:</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" class="euclid-graphic" data-graphic-id="g1" data-proposition="I.1-14">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" data-graphic-id="g1" data-proposition="I.1-14" data-svg-scope="s-6735105f">
+          <style>
+            svg[data-svg-scope="s-6735105f"] { --geom-muted: #71717a; --geom-hyper: #2563eb; --geom-rose: #be123c }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6735105f"] { --geom-muted: #a1a1aa; --geom-hyper: #60a5fa; --geom-rose: #fb7185 }
+            svg[data-svg-scope="s-6735105f"] { font-family: 'Fira Sans Condensed', 'Fira Sans', system-ui, sans-serif; font-style: normal; font-weight: 700 }
+            svg[data-svg-scope="s-6735105f"] .geom-line { stroke: var(--geom-fg); stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; fill: none }
+            svg[data-svg-scope="s-6735105f"] .geom-bold { stroke: var(--geom-fg); stroke-width: 2.35; stroke-linecap: round; stroke-linejoin: round; fill: none }
+            svg[data-svg-scope="s-6735105f"] .geom-faint { stroke: var(--geom-muted); stroke-width: 1.15; stroke-opacity: 0.72; stroke-linecap: round; fill: none }
+            svg[data-svg-scope="s-6735105f"] .geom-dashed { stroke: var(--geom-muted); stroke-width: 1.35; stroke-dasharray: 5, 3.5; stroke-linecap: round; stroke-linejoin: round; fill: none }
+            svg[data-svg-scope="s-6735105f"] .geom-accent-line { stroke: var(--geom-accent); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; fill: none }
+            svg[data-svg-scope="s-6735105f"] .geom-assert-line { stroke: var(--geom-assert); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; fill: none }
+            svg[data-svg-scope="s-6735105f"] .geom-hyper-line { stroke: var(--geom-hyper); stroke-width: 2.1; stroke-linecap: round; stroke-linejoin: round; fill: none }
+            svg[data-svg-scope="s-6735105f"] .geom-rose-line { stroke: var(--geom-rose); stroke-width: 2.0; stroke-linecap: round; stroke-linejoin: round; fill: none }
+            svg[data-svg-scope="s-6735105f"] .geom-circle { stroke: var(--geom-fg); stroke-width: 1.75; fill: none }
+            svg[data-svg-scope="s-6735105f"] .geom-overlay { stroke: transparent; stroke-width: 4.0; stroke-linecap: round; fill: none }
+            svg[data-svg-scope="s-6735105f"] .geom-polygon { fill: var(--geom-poly-fill); fill-opacity: 0.06; stroke: none }
+            svg[data-svg-scope="s-6735105f"] .geom-polygon-accent { fill: var(--geom-accent); fill-opacity: 0.16; stroke: var(--geom-accent); stroke-width: 1.4 }
+            svg[data-svg-scope="s-6735105f"] .geom-polygon-assert { fill: var(--geom-assert); fill-opacity: 0.14; stroke: var(--geom-assert); stroke-width: 1.4 }
+            svg[data-svg-scope="s-6735105f"] .geom-polygon-rose { fill: var(--geom-rose); fill-opacity: 0.14; stroke: var(--geom-rose); stroke-width: 1.4 }
+            svg[data-svg-scope="s-6735105f"] .geom-point { fill: var(--geom-fg); stroke: var(--geom-point-stroke); stroke-width: 1.2 }
+            svg[data-svg-scope="s-6735105f"] .geom-point-accent { fill: var(--geom-accent); stroke: var(--geom-point-stroke); stroke-width: 1.2 }
+            svg[data-svg-scope="s-6735105f"] .geom-point-assert { fill: var(--geom-assert); stroke: var(--geom-point-stroke); stroke-width: 1.2 }
+            svg[data-svg-scope="s-6735105f"] .geom-point-rose { fill: var(--geom-rose); stroke: var(--geom-point-stroke); stroke-width: 1.2 }
+            svg[data-svg-scope="s-6735105f"] .geom-label { font-size: 13.5px; font-weight: 700; fill: var(--geom-fg); user-select: none }
+            svg[data-svg-scope="s-6735105f"] .geom-label-sm { font-size: 11.5px; font-weight: 700; fill: var(--geom-muted); user-select: none }
+            svg[data-svg-scope="s-6735105f"] .geom-label-accent { font-size: 12.5px; font-weight: 700; fill: var(--geom-accent); user-select: none }
+            svg[data-svg-scope="s-6735105f"] .geom-label-assert { font-size: 12.5px; font-weight: 700; fill: var(--geom-assert); user-select: none }
+            svg[data-svg-scope="s-6735105f"] .geom-label-hyper { font-size: 12.5px; font-weight: 700; fill: var(--geom-hyper); user-select: none }
+            svg[data-svg-scope="s-6735105f"] .geom-label-rose { font-size: 12.5px; font-weight: 700; fill: var(--geom-rose); user-select: none }
+          </style>
           <defs>
             <marker id="geom-tick-1" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
@@ -294,7 +323,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=fd825880"></script>
+  <script src="../../_static/documentation_options.js?v=59fadc99"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
