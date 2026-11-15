@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=99410eb1" />
+  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=ec8980ef" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -82,25 +82,32 @@
         <section class="level-1" id="changelog">
         <h1>Changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h1>
         <section class="level-2" id="id1">
-        <h2>0.1.5 (2026-11-15)<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+        <h2>0.1.6 (2026-11-15)<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+        <ul class="simple">
+        <li><p><strong>fixed</strong>: Eliminated black-fill and dark-on-dark CSS fallback failures across all 12 <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVG plates by emitting explicit <code class="docutils literal notranslate"><span class="pre">fill=&quot;none&quot;</span></code> presentation attributes on every stroke primitive in <code class="docutils literal notranslate"><span class="pre">scripts/build_figures.py</span></code> and pairing with <code class="docutils literal notranslate"><span class="pre">photon-platform/publish</span></code> <code class="docutils literal notranslate"><span class="pre">v0.4.7</span></code> extended palette rules (<code class="docutils literal notranslate"><span class="pre">--geom-muted</span></code>, <code class="docutils literal notranslate"><span class="pre">--geom-hyper</span></code>, <code class="docutils literal notranslate"><span class="pre">--geom-rose</span></code>, <code class="docutils literal notranslate"><span class="pre">.geom-hyper-line</span></code>, <code class="docutils literal notranslate"><span class="pre">.geom-rose-line</span></code>, <code class="docutils literal notranslate"><span class="pre">.geom-polygon-hyper</span></code>, <code class="docutils literal notranslate"><span class="pre">.geom-polygon-rose</span></code>, <code class="docutils literal notranslate"><span class="pre">.geom-point-hyper</span></code>, <code class="docutils literal notranslate"><span class="pre">.geom-point-rose</span></code>, and <code class="docutils literal notranslate"><span class="pre">.geom-label-{accent,assert,hyper,rose}</span></code>).</p></li>
+        <li><p><strong>changed</strong>: Calibrated geometry and glyph typography across all 12 SVG plates (<code class="docutils literal notranslate"><span class="pre">g1</span></code>–<code class="docutils literal notranslate"><span class="pre">g12</span></code>): rim-anchored oblique double-cone arches and separated <code class="docutils literal notranslate"><span class="pre">E₂</span></code>/<code class="docutils literal notranslate"><span class="pre">H₁</span></code> labels (<code class="docutils literal notranslate"><span class="pre">g1</span></code>), clean harmonic ruler below the ellipse (<code class="docutils literal notranslate"><span class="pre">g3</span></code>), on-canvas <code class="docutils literal notranslate"><span class="pre">405px</span></code> auxiliary circle (<code class="docutils literal notranslate"><span class="pre">g6</span></code>), interior <code class="docutils literal notranslate"><span class="pre">L₂</span></code>/<code class="docutils literal notranslate"><span class="pre">L₄</span></code> four-line locus labels (<code class="docutils literal notranslate"><span class="pre">g7</span></code>), <code class="docutils literal notranslate"><span class="pre">365px</span></code> 4-point conic pencil (<code class="docutils literal notranslate"><span class="pre">g8</span></code>), <code class="docutils literal notranslate"><span class="pre">a=180,</span> <span class="pre">b=128</span></code> astroidal evolute keeping all four cusps strictly inside the ellipse (<code class="docutils literal notranslate"><span class="pre">g9</span></code>), <code class="docutils literal notranslate"><span class="pre">380px</span></code> conjugate-diameter parallelogram with clear <code class="docutils literal notranslate"><span class="pre">D</span></code> offset (<code class="docutils literal notranslate"><span class="pre">g10</span></code>), centered <code class="docutils literal notranslate"><span class="pre">C₁..C₃</span></code> Problem of Apollonius circles (<code class="docutils literal notranslate"><span class="pre">g11</span></code>), and scalene <code class="docutils literal notranslate"><span class="pre">ABC</span></code> coaxal pencil placing both Isodynamic Points <code class="docutils literal notranslate"><span class="pre">X(15)</span></code> and <code class="docutils literal notranslate"><span class="pre">X(16)</span></code> centrally inside the right panel (<code class="docutils literal notranslate"><span class="pre">g12</span></code>).</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id2">
+        <h2>0.1.5 (2026-11-15)<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Rebuilt codex documentation with <code class="docutils literal notranslate"><span class="pre">photon-platform/publish</span></code> <code class="docutils literal notranslate"><span class="pre">v0.4.6</span></code> so every inline <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVG carries explicit <code class="docutils literal notranslate"><span class="pre">viewBox</span></code> pixel dimensions, per-diagram scoped <code class="docutils literal notranslate"><span class="pre">&lt;style&gt;</span></code> rules, and Nocturnal Codex dark/light theme parity.</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id2">
-        <h2>0.1.4 (2026-11-14)<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id3">
+        <h2>0.1.4 (2026-11-14)<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Standardized top-level <code class="docutils literal notranslate"><span class="pre">About</span></code> page (<code class="docutils literal notranslate"><span class="pre">docsrc/about/index.rst</span></code> promoted to top header <code class="docutils literal notranslate"><span class="pre">:order:</span> <span class="pre">10</span></code>) with the three-pillar GEOMETOR semantic-extraction mission and archival provenance; retired <code class="docutils literal notranslate"><span class="pre">docsrc/mission/</span></code> stubs cleanly into Home and <code class="docutils literal notranslate"><span class="pre">About</span></code>.</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id3">
-        <h2>0.1.3 (2026-11-14)<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id4">
+        <h2>0.1.3 (2026-11-14)<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p><strong>changed</strong>: Standardized Book Title Page, top-level Header Navigation (<code class="docutils literal notranslate"><span class="pre">Book</span></code>, <code class="docutils literal notranslate"><span class="pre">People</span></code>, <code class="docutils literal notranslate"><span class="pre">Bibliography</span></code>, <code class="docutils literal notranslate"><span class="pre">Usage</span></code>), Reader’s Guide (<code class="docutils literal notranslate"><span class="pre">docsrc/usage/</span></code>), featured Author/Translator profiles in <code class="docutils literal notranslate"><span class="pre">People</span></code>, and English structural terminology.</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id4">
-        <h2>0.1.2 (2026-11-13)<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id5">
+        <h2>0.1.2 (2026-11-13)<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Added track-aware primary-source folio map (<code class="docutils literal notranslate"><span class="pre">resources/conics/folio_map.json</span></code>) resolving 27/27 folio directives to Internet Archive Heath facsimile locus pages.</p></li>
         </ul>
@@ -168,7 +175,7 @@
 
   <script src="_static/jquery.js?v=5d32c60e"></script>
   <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="_static/documentation_options.js?v=59fadc99"></script>
+  <script src="_static/documentation_options.js?v=6e0256f3"></script>
   <script src="_static/doctools.js?v=fd6eb6e6"></script>
   <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="_static/js/collection_controls.js?v=b6b5297a"></script>

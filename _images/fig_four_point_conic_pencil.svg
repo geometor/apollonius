@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 330" width="740" height="330" class="euclid-graphic" data-graphic-id="g8" data-proposition="IV.25-57">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 365" width="740" height="365" class="euclid-graphic" data-graphic-id="g8" data-proposition="IV.25-57">
   <defs>
     <marker id="geom-tick-1" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
       <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
@@ -129,6 +129,12 @@
       stroke: var(--geom-assert);
       stroke-width: 1.4;
     }
+    .geom-polygon-hyper {
+      fill: var(--geom-hyper);
+      fill-opacity: 0.14;
+      stroke: var(--geom-hyper);
+      stroke-width: 1.4;
+    }
     .geom-polygon-rose {
       fill: var(--geom-rose);
       fill-opacity: 0.14;
@@ -147,6 +153,11 @@
     }
     .geom-point-assert {
       fill: var(--geom-assert);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-point-hyper {
+      fill: var(--geom-hyper);
       stroke: var(--geom-point-stroke);
       stroke-width: 1.2;
     }
@@ -193,43 +204,43 @@
     }
   </style>
   <g id="elements">
-    <polygon points="130.00,113.00 260.00,113.00 260.00,243.00 130.00,243.00" class="geom-polygon-assert" />
+    <polygon points="135.38,122.38 254.62,122.38 254.62,241.62 135.38,241.62" class="geom-polygon-assert" />
   </g>
   <g id="graphics">
-    <ellipse cx="195.00" cy="178.00" rx="136.00" ry="74.00" class="geom-bold" />
-    <ellipse cx="195.00" cy="178.00" rx="74.00" ry="136.00" class="geom-hyper-line" />
-    <path d="M 130.00 113.00 L 195.00 178.00 L 260.00 243.00" class="geom-dashed" />
-    <path d="M 260.00 113.00 L 195.00 178.00 L 130.00 243.00" class="geom-dashed" />
-    <path d="M 372.00 20.00 L 372.00 168.00 L 372.00 316.00" class="geom-faint" />
-    <ellipse cx="556.00" cy="178.00" rx="142.00" ry="88.00" class="geom-bold" />
-    <ellipse cx="556.00" cy="178.00" rx="142.00" ry="56.00" class="geom-accent-line" />
-    <path d="M 414.00 80.00 L 414.00 178.00 L 414.00 276.00" class="geom-rose-line" data-ref="[ T1 ]" />
-    <path d="M 698.00 80.00 L 698.00 178.00 L 698.00 276.00" class="geom-rose-line" data-ref="[ T2 ]" />
-    <path d="M 414.00 178.00 L 556.00 178.00 L 698.00 178.00" class="geom-dashed" data-ref="/ T1 T2 /" />
+    <ellipse cx="195.00" cy="182.00" rx="124.00" ry="68.00" fill="none" class="geom-bold" />
+    <ellipse cx="195.00" cy="182.00" rx="68.00" ry="124.00" fill="none" class="geom-hyper-line" />
+    <path d="M 135.38 122.38 L 195.00 182.00 L 254.62 241.62" fill="none" class="geom-dashed" />
+    <path d="M 254.62 122.38 L 195.00 182.00 L 135.38 241.62" fill="none" class="geom-dashed" />
+    <path d="M 372.00 20.00 L 372.00 182.00 L 372.00 344.00" fill="none" class="geom-faint" />
+    <ellipse cx="556.00" cy="182.00" rx="138.00" ry="84.00" fill="none" class="geom-bold" />
+    <ellipse cx="556.00" cy="182.00" rx="138.00" ry="54.00" fill="none" class="geom-accent-line" />
+    <path d="M 418.00 88.00 L 418.00 182.00 L 418.00 276.00" fill="none" class="geom-rose-line" data-ref="[ T1 ]" />
+    <path d="M 694.00 88.00 L 694.00 182.00 L 694.00 276.00" fill="none" class="geom-rose-line" data-ref="[ T2 ]" />
+    <path d="M 418.00 182.00 L 556.00 182.00 L 694.00 182.00" fill="none" class="geom-dashed" data-ref="/ T1 T2 /" />
   </g>
   <g id="highlights" style="pointer-events: none;">
-    <path d="M 414.00 80.00 L 414.00 178.00 L 414.00 276.00" class="geom-overlay" data-ref="[ T1 ]" />
-    <path d="M 698.00 80.00 L 698.00 178.00 L 698.00 276.00" class="geom-overlay" data-ref="[ T2 ]" />
-    <path d="M 414.00 178.00 L 556.00 178.00 L 698.00 178.00" class="geom-overlay" data-ref="/ T1 T2 /" />
+    <path d="M 418.00 88.00 L 418.00 182.00 L 418.00 276.00" fill="none" class="geom-overlay" data-ref="[ T1 ]" />
+    <path d="M 694.00 88.00 L 694.00 182.00 L 694.00 276.00" fill="none" class="geom-overlay" data-ref="[ T2 ]" />
+    <path d="M 418.00 182.00 L 556.00 182.00 L 694.00 182.00" fill="none" class="geom-overlay" data-ref="/ T1 T2 /" />
   </g>
   <g id="points">
-    <circle cx="130.00" cy="113.00" r="3.40" class="geom-point-assert" data-ref="P1" />
-    <circle cx="260.00" cy="113.00" r="3.40" class="geom-point-assert" data-ref="P2" />
-    <circle cx="260.00" cy="243.00" r="3.40" class="geom-point-assert" data-ref="P3" />
-    <circle cx="130.00" cy="243.00" r="3.40" class="geom-point-assert" data-ref="P4" />
-    <circle cx="414.00" cy="178.00" r="3.40" class="geom-point-rose" data-ref="T1" />
-    <circle cx="698.00" cy="178.00" r="3.40" class="geom-point-rose" data-ref="T2" />
+    <circle cx="135.38" cy="122.38" r="3.40" class="geom-point-assert" data-ref="P1" />
+    <circle cx="254.62" cy="122.38" r="3.40" class="geom-point-assert" data-ref="P2" />
+    <circle cx="254.62" cy="241.62" r="3.40" class="geom-point-assert" data-ref="P3" />
+    <circle cx="135.38" cy="241.62" r="3.40" class="geom-point-assert" data-ref="P4" />
+    <circle cx="418.00" cy="182.00" r="3.40" class="geom-point-rose" data-ref="T1" />
+    <circle cx="694.00" cy="182.00" r="3.40" class="geom-point-rose" data-ref="T2" />
   </g>
   <g id="labels">
     <text x="195.00" y="22.00" text-anchor="middle" class="geom-label-sm">IV.25: At Most 4 Intersections</text>
-    <text x="115.00" y="107.00" text-anchor="middle" class="geom-label-assert">P₁</text>
-    <text x="275.00" y="107.00" text-anchor="middle" class="geom-label-assert">P₂</text>
-    <text x="275.00" y="257.00" text-anchor="middle" class="geom-label-assert">P₃</text>
-    <text x="115.00" y="257.00" text-anchor="middle" class="geom-label-assert">P₄</text>
-    <text x="195.00" y="316.00" text-anchor="middle" class="geom-label-sm">C₁ ∩ C₂ = {P₁, P₂, P₃, P₄}  (|C₁ ∩ C₂| ≤ 4)</text>
+    <text x="120.38" y="116.38" text-anchor="middle" class="geom-label-assert">P₁</text>
+    <text x="269.62" y="116.38" text-anchor="middle" class="geom-label-assert">P₂</text>
+    <text x="269.62" y="255.62" text-anchor="middle" class="geom-label-assert">P₃</text>
+    <text x="120.38" y="255.62" text-anchor="middle" class="geom-label-assert">P₄</text>
+    <text x="195.00" y="344.00" text-anchor="middle" class="geom-label-sm">C₁ ∩ C₂ = {P₁, P₂, P₃, P₄}  (|C₁ ∩ C₂| ≤ 4)</text>
     <text x="556.00" y="22.00" text-anchor="middle" class="geom-label-sm">IV.42–46: Double Tangency Exhausts All 4</text>
-    <text x="408.00" y="74.00" text-anchor="middle" class="geom-label-rose">T₁ (mult. 2)</text>
-    <text x="704.00" y="74.00" text-anchor="middle" class="geom-label-rose">T₂ (mult. 2)</text>
-    <text x="556.00" y="316.00" text-anchor="middle" class="geom-label-sm">Bitangent Conics: 2 + 2 = 4 ⇒ Zero Further Common Points</text>
+    <text x="412.00" y="80.00" text-anchor="middle" class="geom-label-rose">T₁ (mult. 2)</text>
+    <text x="700.00" y="80.00" text-anchor="middle" class="geom-label-rose">T₂ (mult. 2)</text>
+    <text x="556.00" y="344.00" text-anchor="middle" class="geom-label-sm">Bitangent Conics: 2 + 2 = 4 ⇒ Zero Further Common Points</text>
   </g>
 </svg>
