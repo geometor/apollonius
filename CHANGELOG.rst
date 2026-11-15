@@ -2,6 +2,12 @@
 Changelog
 =========
 
+0.1.6 (2026-11-15)
+------------------
+
+- **fixed**: Eliminated black-fill and dark-on-dark CSS fallback failures across all 12 ``.euclid-graphic`` SVG plates by emitting explicit ``fill="none"`` presentation attributes on every stroke primitive in ``scripts/build_figures.py`` and pairing with ``photon-platform/publish`` ``v0.4.7`` extended palette rules (``--geom-muted``, ``--geom-hyper``, ``--geom-rose``, ``.geom-hyper-line``, ``.geom-rose-line``, ``.geom-polygon-hyper``, ``.geom-polygon-rose``, ``.geom-point-hyper``, ``.geom-point-rose``, and ``.geom-label-{accent,assert,hyper,rose}``).
+- **changed**: Calibrated geometry and glyph typography across all 12 SVG plates (``g1``–``g12``): rim-anchored oblique double-cone arches and separated ``E₂``/``H₁`` labels (``g1``), clean harmonic ruler below the ellipse (``g3``), on-canvas ``405px`` auxiliary circle (``g6``), interior ``L₂``/``L₄`` four-line locus labels (``g7``), ``365px`` 4-point conic pencil (``g8``), ``a=180, b=128`` astroidal evolute keeping all four cusps strictly inside the ellipse (``g9``), ``380px`` conjugate-diameter parallelogram with clear ``D`` offset (``g10``), centered ``C₁..C₃`` Problem of Apollonius circles (``g11``), and scalene ``ABC`` coaxal pencil placing both Isodynamic Points ``X(15)`` and ``X(16)`` centrally inside the right panel (``g12``).
+
 0.1.5 (2026-11-15)
 ------------------
 

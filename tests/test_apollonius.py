@@ -39,7 +39,7 @@ def _load_build_figures_module():
 
 
 def test_version_and_codex_unit_registry() -> None:
-    assert __version__ == "0.1.5"
+    assert __version__ == "0.1.6"
     assert len(CODEX_UNITS) == 8
     expected_slugs = [
         "preface-intro",
@@ -96,6 +96,15 @@ def test_all_twelve_svg_plates_valid_xml_and_euclid_graphic() -> None:
         assert "data-ref=" in raw_svg
         root = ET.fromstring(raw_svg)
         assert root.tag.endswith("svg")
+        for layer_id in ("graphics", "highlights"):
+            layer = root.find(f".//*[@id='{layer_id}']")
+            assert layer is not None, f"{svg_name}: missing #{layer_id} group"
+            for elem in layer:
+                local_tag = elem.tag.split("}")[-1]
+                if local_tag in ("path", "circle", "ellipse"):
+                    assert elem.attrib.get("fill") == "none", (
+                        f"{svg_name} #{layer_id} <{local_tag}> missing explicit fill='none'"
+                    )
 
 
 def test_exact_geometric_solvers_in_build_figures() -> None:

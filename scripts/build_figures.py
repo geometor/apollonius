@@ -143,6 +143,12 @@ SVG_DEFS_AND_STYLE = """  <defs>
       stroke: var(--geom-assert);
       stroke-width: 1.4;
     }
+    .geom-polygon-hyper {
+      fill: var(--geom-hyper);
+      fill-opacity: 0.14;
+      stroke: var(--geom-hyper);
+      stroke-width: 1.4;
+    }
     .geom-polygon-rose {
       fill: var(--geom-rose);
       fill-opacity: 0.14;
@@ -161,6 +167,11 @@ SVG_DEFS_AND_STYLE = """  <defs>
     }
     .geom-point-assert {
       fill: var(--geom-assert);
+      stroke: var(--geom-point-stroke);
+      stroke-width: 1.2;
+    }
+    .geom-point-hyper {
+      fill: var(--geom-hyper);
       stroke: var(--geom-point-stroke);
       stroke-width: 1.2;
     }
@@ -238,6 +249,7 @@ class SvgCanvas:
         cls: str = "geom-line",
         ref: str | None = None,
         tick: int = 0,
+        dash: str | None = None,
     ) -> None:
         x1, y1 = p1
         x2, y2 = p2
@@ -245,9 +257,14 @@ class SvgCanvas:
         d = f"M {x1:.2f} {y1:.2f} L {mx:.2f} {my:.2f} L {x2:.2f} {y2:.2f}"
         ref_attr = f' data-ref="{_esc_ref(ref)}"' if ref else ""
         tick_attr = f' marker-mid="url(#geom-tick-{tick})"' if tick in (1, 2, 3) else ""
-        self.graphics.append(f'    <path d="{d}" class="{cls}"{ref_attr}{tick_attr} />')
+        dash_attr = f' stroke-dasharray="{dash}"' if dash else ""
+        self.graphics.append(
+            f'    <path d="{d}" fill="none" class="{cls}"{dash_attr}{ref_attr}{tick_attr} />'
+        )
         if ref:
-            self.highlights.append(f'    <path d="{d}" class="geom-overlay"{ref_attr} />')
+            self.highlights.append(
+                f'    <path d="{d}" fill="none" class="geom-overlay"{ref_attr} />'
+            )
 
     def curve(
         self,
@@ -262,7 +279,9 @@ class SvgCanvas:
         rest = " ".join(f"L {x:.2f} {y:.2f}" for x, y in pts[1:])
         end = " Z" if closed else ""
         ref_attr = f' data-ref="{_esc_ref(ref)}"' if ref else ""
-        self.graphics.append(f'    <path d="{head} {rest}{end}" class="{cls}"{ref_attr} />')
+        self.graphics.append(
+            f'    <path d="{head} {rest}{end}" fill="none" class="{cls}"{ref_attr} />'
+        )
 
     def circle(
         self,
@@ -274,11 +293,11 @@ class SvgCanvas:
         cx, cy = center
         ref_attr = f' data-ref="{_esc_ref(ref)}"' if ref else ""
         self.graphics.append(
-            f'    <circle cx="{cx:.2f}" cy="{cy:.2f}" r="{r:.2f}" class="{cls}"{ref_attr} />'
+            f'    <circle cx="{cx:.2f}" cy="{cy:.2f}" r="{r:.2f}" fill="none" class="{cls}"{ref_attr} />'
         )
         if ref:
             self.highlights.append(
-                f'    <circle cx="{cx:.2f}" cy="{cy:.2f}" r="{r:.2f}" class="geom-overlay"{ref_attr} />'
+                f'    <circle cx="{cx:.2f}" cy="{cy:.2f}" r="{r:.2f}" fill="none" class="geom-overlay"{ref_attr} />'
             )
 
     def ellipse_elem(
@@ -295,7 +314,7 @@ class SvgCanvas:
         tr_attr = f' transform="rotate({angle_deg:.2f} {cx:.2f} {cy:.2f})"' if abs(angle_deg) > 1e-6 else ""
         self.graphics.append(
             f'    <ellipse cx="{cx:.2f}" cy="{cy:.2f}" rx="{rx:.2f}" ry="{ry:.2f}" '
-            f'class="{cls}"{tr_attr}{ref_attr} />'
+            f'fill="none" class="{cls}"{tr_attr}{ref_attr} />'
         )
 
     def poly(
@@ -328,7 +347,7 @@ class SvgCanvas:
         ex, ey = vx + r * math.cos(a2), vy + r * math.sin(a2)
         d = f"M {sx:.2f} {sy:.2f} A {r:.2f} {r:.2f} 0 0 {sweep} {mx:.2f} {my:.2f} A {r:.2f} {r:.2f} 0 0 {sweep} {ex:.2f} {ey:.2f}"
         ref_attr = f' data-ref="{_esc_ref(ref)}"' if ref else ""
-        self.graphics.append(f'    <path d="{d}" class="{cls}"{ref_attr} />')
+        self.graphics.append(f'    <path d="{d}" fill="none" class="{cls}"{ref_attr} />')
 
     def right_angle(
         self,
@@ -347,7 +366,7 @@ class SvgCanvas:
         p2 = (vx + ux + wx, vy + uy + wy)
         p3 = (vx + wx, vy + wy)
         self.graphics.append(
-            f'    <path d="M {p1[0]:.2f} {p1[1]:.2f} L {p2[0]:.2f} {p2[1]:.2f} L {p3[0]:.2f} {p3[1]:.2f}" class="{cls}" />'
+            f'    <path d="M {p1[0]:.2f} {p1[1]:.2f} L {p2[0]:.2f} {p2[1]:.2f} L {p3[0]:.2f} {p3[1]:.2f}" fill="none" class="{cls}" />'
         )
 
     def pt(
@@ -415,26 +434,27 @@ class SvgCanvas:
 # ---------------------------------------------------------------------------
 def fig_oblique_cone_sections() -> str:
     """Book I.1–14: Oblique scalene double cone, axial triangle, subcontrary circle & 3 conics."""
-    svg = SvgCanvas("g1", "I.1-14", 760, 360)
+    svg = SvgCanvas("g1", "I.1-14", 760, 392)
 
     # Left panel: Oblique double cone with axial triangle and 3 conic planes
-    a = (210.0, 142.0)  # Apex A (skewed left relative to lower base center -> scalene!)
-    b_low, c_low = (96.0, 312.0), (392.0, 312.0)
-    o_low = (0.5 * (b_low[0] + c_low[0]), 312.0)
+    a = (220.0, 168.0)  # Apex A (skewed left relative to lower base center -> scalene!)
+    b_low, c_low = (106.0, 340.0), (398.0, 340.0)
+    rx_low, ry_low = 0.5 * (c_low[0] - b_low[0]), 22.0
+    o_low = (0.5 * (b_low[0] + c_low[0]), 340.0)
     # Upper nappe generators extending above A along lines BA and CA:
-    # A + t*(A - B_low) and A + t*(A - C_low), t = 0.58
-    t_up = 0.62
+    t_up = 0.56
     b_up = (a[0] + t_up * (a[0] - c_low[0]), a[1] + t_up * (a[1] - c_low[1]))
     c_up = (a[0] + t_up * (a[0] - b_low[0]), a[1] + t_up * (a[1] - b_low[1]))
+    rx_up, ry_up = 0.5 * (c_up[0] - b_up[0]), 13.5
     o_up = (0.5 * (b_up[0] + c_up[0]), 0.5 * (b_up[1] + c_up[1]))
 
-    svg.lbl((235, 22), "I.1–14: Single Oblique Double Cone & Three Sections", "geom-label-sm")
+    svg.lbl((225, 22), "I.1–14: Single Oblique Double Cone & Three Sections", "geom-label-sm")
     svg.poly([a, b_low, c_low], "geom-polygon", ref="< A B C >")
     svg.poly([a, b_up, c_up], "geom-polygon")
 
     # Circular bases projected obliquely
-    svg.ellipse_elem(o_low, 0.5 * (c_low[0] - b_low[0]), 24.0, "geom-line")
-    svg.ellipse_elem(o_up, 0.5 * (c_up[0] - b_up[0]), 15.0, "geom-dashed")
+    svg.ellipse_elem(o_low, rx_low, ry_low, "geom-line")
+    svg.ellipse_elem(o_up, rx_up, ry_up, "geom-dashed")
 
     # Oblique axis O_up - A - O_low
     svg.seg(o_up, o_low, "geom-dashed", ref="[ A O ]")
@@ -443,67 +463,84 @@ def fig_oblique_cone_sections() -> str:
     svg.seg(c_low, b_up, "geom-bold", ref="[ A C ]")
     svg.seg(b_low, c_low, "geom-faint", ref="/ B C /")
 
+    def rim_pair(
+        ctr: tuple[float, float], rx: float, ry: float, x_mid: float, dx_skew: float = 5.0
+    ) -> tuple[tuple[float, float], tuple[float, float]]:
+        xf = x_mid - dx_skew
+        xb = x_mid + dx_skew
+        yf = ctr[1] + ry * math.sqrt(max(0.0, 1.0 - ((xf - ctr[0]) / rx) ** 2))
+        yb = ctr[1] - ry * math.sqrt(max(0.0, 1.0 - ((xb - ctr[0]) / rx) ** 2))
+        return (xf, yf), (xb, yb)
+
+    def quad_arch(
+        vertex: tuple[float, float],
+        q_front: tuple[float, float],
+        q_back: tuple[float, float],
+        n_half: int = 18,
+    ) -> list[tuple[float, float]]:
+        mid_q = (0.5 * (q_front[0] + q_back[0]), 0.5 * (q_front[1] + q_back[1]))
+        half_q = (0.5 * (q_front[0] - q_back[0]), 0.5 * (q_front[1] - q_back[1]))
+        pts: list[tuple[float, float]] = []
+        for k in range(-n_half, n_half + 1):
+            u = k / n_half
+            u2 = u * u
+            pts.append(
+                (
+                    vertex[0] + u2 * (mid_q[0] - vertex[0]) + u * half_q[0],
+                    vertex[1] + u2 * (mid_q[1] - vertex[1]) + u * half_q[1],
+                )
+            )
+        return pts
+
     # 1. Ellipse section cutting both generators AB and AC on lower nappe
-    e1 = (a[0] + 0.44 * (b_low[0] - a[0]), a[1] + 0.44 * (b_low[1] - a[1]))
-    e2 = (a[0] + 0.62 * (c_low[0] - a[0]), a[1] + 0.62 * (c_low[1] - a[1]))
+    e1 = (a[0] + 0.33 * (b_low[0] - a[0]), a[1] + 0.33 * (b_low[1] - a[1]))
+    e2 = (a[0] + 0.42 * (c_low[0] - a[0]), a[1] + 0.42 * (c_low[1] - a[1]))
     emid = (0.5 * (e1[0] + e2[0]), 0.5 * (e1[1] + e2[1]))
     ehalf = 0.5 * math.hypot(e2[0] - e1[0], e2[1] - e1[1])
     eang = math.degrees(math.atan2(e2[1] - e1[1], e2[0] - e1[0]))
-    svg.ellipse_elem(emid, ehalf, 14.0, "geom-assert-line", angle_deg=eang)
-    svg.seg(e1, e2, "geom-assert-line", ref="/ E1 E2 /")
+    svg.ellipse_elem(emid, ehalf, 12.0, "geom-assert-line", angle_deg=eang)
+    svg.seg(e1, e2, "geom-assert-line", ref="/ E1 E2 /", dash="4,3")
 
-    # 2. Parabola section parallel to generator AC: vertex P1 on AB, extending to base BC
-    p_v = (a[0] + 0.68 * (b_low[0] - a[0]), a[1] + 0.68 * (b_low[1] - a[1]))
-    # Parallel to AC meets BC at M_p where P_v + s*(c_low - a) has y = 312
-    s_p = (312.0 - p_v[1]) / (c_low[1] - a[1])
-    m_p = (p_v[0] + s_p * (c_low[0] - a[0]), 312.0)
-    para_pts: list[tuple[float, float]] = []
-    for k in range(-18, 19):
-        u = k / 18.0
-        # Parameterize parabolic arch on base chord around m_p with vertex p_v
-        t_par = u * u
-        cx_p = p_v[0] + t_par * (m_p[0] - p_v[0]) - 22.0 * u * 0.45
-        cy_p = p_v[1] + t_par * (m_p[1] - p_v[1]) + 15.0 * u * 0.55
-        para_pts.append((cx_p, cy_p))
-    svg.curve(para_pts, "geom-accent-line")
-    svg.seg(p_v, m_p, "geom-accent-line", ref="/ P M /")
+    # 2. Parabola section parallel to generator AC: vertex P on AB, terminating on lower circular rim
+    p_v = (a[0] + 0.66 * (b_low[0] - a[0]), a[1] + 0.66 * (b_low[1] - a[1]))
+    s_p = (o_low[1] - p_v[1]) / (c_low[1] - a[1])
+    m_p = (p_v[0] + s_p * (c_low[0] - a[0]), o_low[1])
+    pf_rim, pb_rim = rim_pair(o_low, rx_low, ry_low, m_p[0], dx_skew=6.0)
+    svg.curve(quad_arch(p_v, pf_rim, pb_rim), "geom-accent-line")
+    svg.seg(p_v, m_p, "geom-accent-line", ref="/ P M /", dash="4,3")
 
-    # 3. Hyperbola section cutting upper nappe at H2 and lower nappe at H1
-    h1 = (a[0] + 0.48 * (c_low[0] - a[0]), a[1] + 0.48 * (c_low[1] - a[1]))
-    h2 = (a[0] + 0.42 * (b_up[0] - a[0]), a[1] + 0.42 * (b_up[1] - a[1]))
-    svg.seg((h2[0] + 6, 36.0), (h1[0] + 22, 334.0), "geom-hyper-line", ref="[ H1 H2 ]")
-    hyp_low = [
-        (h1[0] + 22 * u * u - 10 * u, h1[1] + (332 - h1[1]) * u * u + 8 * u)
-        for u in [k / 14.0 for k in range(-14, 15)]
-    ]
-    hyp_up = [
-        (h2[0] - 16 * u * u - 8 * u, h2[1] - (h2[1] - 38) * u * u + 6 * u)
-        for u in [k / 14.0 for k in range(-14, 15)]
-    ]
-    svg.curve(hyp_low, "geom-hyper-line")
-    svg.curve(hyp_up, "geom-hyper-line")
+    # 3. Hyperbola section on right side cutting upper nappe at H2 and lower nappe at H1
+    h1 = (a[0] + 0.62 * (c_low[0] - a[0]), a[1] + 0.62 * (c_low[1] - a[1]))
+    h2 = (a[0] + 0.50 * (c_up[0] - a[0]), a[1] + 0.50 * (c_up[1] - a[1]))
+    m_h_low = (362.0, o_low[1])
+    m_h_up = (261.0, o_up[1])
+    h1_f, h1_b = rim_pair(o_low, rx_low, ry_low, m_h_low[0], dx_skew=4.5)
+    h2_f, h2_b = rim_pair(o_up, rx_up, ry_up, m_h_up[0], dx_skew=3.5)
+    svg.seg(m_h_up, m_h_low, "geom-hyper-line", ref="[ H1 H2 ]", dash="4,3")
+    svg.curve(quad_arch(h1, h1_f, h1_b), "geom-hyper-line")
+    svg.curve(quad_arch(h2, h2_f, h2_b), "geom-hyper-line")
 
-    svg.pt(a, "A", (-13, -4))
-    svg.pt(b_low, "B", (-12, 6))
-    svg.pt(c_low, "C", (12, 6))
-    svg.pt(o_low, "O", (0, 17), lbl_cls="geom-label-sm")
-    svg.pt(e1, "E₁", (-15, -2), "geom-point-assert", "geom-label-assert", ref="E1")
-    svg.pt(e2, "E₂", (16, -2), "geom-point-assert", "geom-label-assert", ref="E2")
-    svg.pt(p_v, "P", (-14, 4), "geom-point-accent", "geom-label-accent", ref="P")
-    svg.pt(h1, "H₁", (16, 2), cls="geom-point", lbl_cls="geom-label-hyper", ref="H1")
-    svg.pt(h2, "H₂", (-16, 4), cls="geom-point", lbl_cls="geom-label-hyper", ref="H2")
+    svg.pt(a, "A", (-15, 2))
+    svg.pt(b_low, "B", (-13, 5))
+    svg.pt(c_low, "C", (13, 5))
+    svg.pt(o_low, "O", (11, -5), lbl_cls="geom-label-sm")
+    svg.pt(e1, "E₁", (-16, -2), "geom-point-assert", "geom-label-assert", ref="E1")
+    svg.pt(e2, "E₂", (17, -4), "geom-point-assert", "geom-label-assert", ref="E2")
+    svg.pt(p_v, "P", (-13, -3), "geom-point-accent", "geom-label-accent", ref="P")
+    svg.pt(h1, "H₁", (17, 4), "geom-point-hyper", "geom-label-hyper", ref="H1")
+    svg.pt(h2, "H₂", (16, 5), "geom-point-hyper", "geom-label-hyper", ref="H2")
 
-    svg.lbl((64, 212), "Ellipse", "geom-label-assert")
-    svg.lbl((66, 268), "Parabola (∥ AC)", "geom-label-accent")
-    svg.lbl((348, 86), "Hyperbola (2 branches)", "geom-label-hyper")
+    svg.lbl((68, 222), "Ellipse", "geom-label-assert")
+    svg.lbl((62, 306), "Parabola (∥ AC)", "geom-label-accent")
+    svg.lbl((352, 92), "Hyperbola (2 branches)", "geom-label-hyper")
 
     # Right panel: Subcontrary (antiparallel) circular section I.5
-    svg.seg((436, 20), (436, 340), "geom-faint")
+    svg.seg((436, 20), (436, 372), "geom-faint")
     svg.lbl((596, 22), "I.5: Subcontrary Circular Section", "geom-label-sm")
 
-    sa = (562.0, 56.0)
-    sb = (468.0, 298.0)
-    sc = (722.0, 298.0)
+    sa = (566.0, 66.0)
+    sb = (470.0, 318.0)
+    sc = (726.0, 318.0)
     svg.poly([sa, sb, sc], "geom-polygon")
     svg.seg(sa, sb, "geom-bold", ref="/ SA SB /")
     svg.seg(sa, sc, "geom-bold", ref="/ SA SC /")
@@ -512,7 +549,7 @@ def fig_oblique_cone_sections() -> str:
     # Exact antiparallel condition: triangle AKG ~ triangle ACB -> AK/AC = AG/AB = lam
     ab_len = math.hypot(sb[0] - sa[0], sb[1] - sa[1])
     ac_len = math.hypot(sc[0] - sa[0], sc[1] - sa[1])
-    ak_len = 152.0
+    ak_len = 162.0
     ag_len = ak_len * ab_len / ac_len
     sk = (
         sa[0] + ak_len / ab_len * (sb[0] - sa[0]),
@@ -523,8 +560,8 @@ def fig_oblique_cone_sections() -> str:
         sa[1] + ag_len / ac_len * (sc[1] - sa[1]),
     )
 
-    # Point M on KG and parallel section DME || BC
-    sm = (0.46 * sk[0] + 0.54 * sg[0], 0.46 * sk[1] + 0.54 * sg[1])
+    # Point M on KG (weighted toward G so horizontal section DME sits clearly above K)
+    sm = (0.34 * sk[0] + 0.66 * sg[0], 0.34 * sk[1] + 0.66 * sg[1])
     t_par_bc = (sm[1] - sa[1]) / (sb[1] - sa[1])
     sd = (sa[0] + t_par_bc * (sb[0] - sa[0]), sm[1])
     se = (sa[0] + t_par_bc * (sc[0] - sa[0]), sm[1])
@@ -546,7 +583,6 @@ def fig_oblique_cone_sections() -> str:
     ang0 = math.atan2(sk[1] - kg_mid[1], sk[0] - kg_mid[0])
     for j in range(37):
         th = ang0 + math.pi * j / 36.0
-        # ensure arc goes on same side as sp
         px = kg_mid[0] + kg_rad * math.cos(th)
         py = kg_mid[1] + kg_rad * math.sin(th)
         if (px - kg_mid[0]) * n_perp[0] + (py - kg_mid[1]) * n_perp[1] < -1e-6:
@@ -565,13 +601,13 @@ def fig_oblique_cone_sections() -> str:
     svg.pt(sa, "A", (0, -10))
     svg.pt(sb, "B", (-12, 6))
     svg.pt(sc, "C", (12, 6))
-    svg.pt(sk, "K", (-14, -2), "geom-point-accent", "geom-label-accent")
+    svg.pt(sk, "K", (-15, 7), "geom-point-accent", "geom-label-accent")
     svg.pt(sg, "G", (14, 2), "geom-point-accent", "geom-label-accent")
-    svg.pt(sd, "D", (-13, 4), lbl_cls="geom-label-sm")
-    svg.pt(se, "E", (13, 4), lbl_cls="geom-label-sm")
-    svg.pt(sm, "M", (2, 16), lbl_cls="geom-label-sm")
+    svg.pt(sd, "D", (-14, -3), lbl_cls="geom-label-sm")
+    svg.pt(se, "E", (14, 4), lbl_cls="geom-label-sm")
+    svg.pt(sm, "M", (3, 17), lbl_cls="geom-label-sm")
     svg.pt(sp, "P", (0, -10), "geom-point-assert", "geom-label-assert")
-    svg.lbl((596, 334), "∠AKG = ∠ACB  ⇒  PM² = DM·ME = KM·MG", "geom-label-sm")
+    svg.lbl((596, 366), "∠AKG = ∠ACB  ⇒  PM² = DM·ME = KM·MG", "geom-label-sm")
 
     return svg.render()
 
@@ -581,7 +617,7 @@ def fig_oblique_cone_sections() -> str:
 # ---------------------------------------------------------------------------
 def fig_application_of_areas() -> str:
     """Book I.11–13: Exact, Deficient & Exceeding Application of Areas on Latus Rectum p."""
-    svg = SvgCanvas("g2", "I.11-13", 780, 320)
+    svg = SvgCanvas("g2", "I.11-13", 780, 332)
 
     # Panel 1: PARABOLA (y^2 = p x)
     svg.lbl((130, 22), "I.11: Parabola (παραβολή)", "geom-label-accent")
@@ -607,14 +643,14 @@ def fig_application_of_areas() -> str:
     svg.curve(par_curve, "geom-bold")
     svg.pt(p1, "P", (-11, -6))
     svg.pt(v1, "V", (10, -5))
-    svg.pt(q1, "Q", (12, -4), "geom-point-accent")
+    svg.pt(q1, "Q", (-10, -8), "geom-point-accent")
     svg.pt(l1, "L", (-12, 5), "geom-point-accent", "geom-label-accent")
     svg.lbl((51, p1[1] + 36), "p", "geom-label-accent")
     svg.lbl((p1[0] + 0.5 * x_par, p1[1] + 36), "p x", "geom-label-accent")
     svg.lbl((v1[0] + 13, p1[1] - 0.5 * y_par), "y", "geom-label-sm")
 
     # Divider 1
-    svg.seg((252, 18), (252, 302), "geom-faint")
+    svg.seg((252, 18), (252, 314), "geom-faint")
 
     # Panel 2: ELLIPSE (y^2 = p x - (p/d) x^2)
     svg.lbl((390, 22), "I.12: Ellipse (ἔλλειψις)", "geom-label-assert")
@@ -651,12 +687,12 @@ def fig_application_of_areas() -> str:
     svg.pt(v2, "V", (9, -5))
     svg.pt(q2, "Q", (0, -10), "geom-point-assert")
     svg.pt(l2, "L", (-11, 5), "geom-point-accent", "geom-label-accent")
-    svg.pt(r2, "R", (11, 4), "geom-point-rose", "geom-label-rose")
+    svg.pt(r2, "R", (13, 6), "geom-point-rose", "geom-label-rose")
     svg.lbl((p2[0] + 0.5 * x_ell, p2[1] + 0.52 * vr_ell + 4), "y²", "geom-label-assert")
-    svg.lbl((p2[0] + 0.5 * x_ell, p2[1] + 0.5 * (vr_ell + p_ell) + 4), "defect", "geom-label-rose")
+    svg.lbl((p2[0] + 0.5 * x_ell, p2[1] + p_ell + 16), "defect", "geom-label-rose")
 
     # Divider 2
-    svg.seg((508, 18), (508, 302), "geom-faint")
+    svg.seg((508, 18), (508, 314), "geom-faint")
 
     # Panel 3: HYPERBOLA (y^2 = p x + (p/d) x^2)
     svg.lbl((644, 22), "I.13: Hyperbola (ὑπερβολή)", "geom-label-hyper")
@@ -675,7 +711,7 @@ def fig_application_of_areas() -> str:
     r3 = (v3[0], p3[1] + vr_hyp)
     m3 = (p3[0], p3[1] + vr_hyp)
 
-    # Base rectangle p*x in accent + Excess rectangle (p/d)*x^2 beyond L in hyper/rose
+    # Base rectangle p*x in accent + Excess rectangle (p/d)*x^2 beyond L in assert
     svg.poly([p3, v3, full3, l3], "geom-polygon-accent", ref="< P3 V3 F3 L3 >")
     svg.poly([l3, full3, r3, m3], "geom-polygon-assert", ref="< L3 F3 R3 M3 >")
     svg.seg((520, p3[1]), (762, p3[1]), "geom-line")
@@ -691,8 +727,8 @@ def fig_application_of_areas() -> str:
     svg.pt(p3_prime, "P′", (-8, -7))
     svg.pt(p3, "P", (-8, -7))
     svg.pt(v3, "V", (9, -5))
-    svg.pt(q3, "Q", (-11, -5), "geom-point-accent")
-    svg.pt(l3, "L", (-11, 3), "geom-point-accent", "geom-label-accent")
+    svg.pt(q3, "Q", (-11, -6), "geom-point-accent")
+    svg.pt(l3, "L", (-13, 12), "geom-point-accent", "geom-label-accent")
     svg.pt(r3, "R", (12, 4), "geom-point-assert", "geom-label-assert")
     svg.lbl((p3[0] + 0.5 * x_hyp, p3[1] + 0.52 * p_hyp + 4), "p x", "geom-label-accent")
     svg.lbl((p3[0] + 0.5 * x_hyp, p3[1] + 0.5 * (p_hyp + vr_hyp) + 4), "excess", "geom-label-assert")
@@ -706,14 +742,14 @@ def fig_application_of_areas() -> str:
 # ---------------------------------------------------------------------------
 def fig_tangent_harmonic_division() -> str:
     """Book I.33–37: Tangent PT, ordinate PV, harmonic range (A', A; V, T) = -1 & CV·CT = CA²."""
-    svg = SvgCanvas("g3", "I.33-37", 680, 320)
-    cx, cy = 245.0, 178.0
-    a, b = 128.0, 84.0
+    svg = SvgCanvas("g3", "I.33-37", 680, 365)
+    cx, cy = 245.0, 164.0
+    a, b = 126.0, 80.0
 
-    # Choose P at x0 = a / 2 = 64 -> x_T = a^2 / x0 = 2a = 256! Exact rational abscissae!
+    # Choose P at x0 = a / 2 = 63 -> x_T = a^2 / x0 = 2a = 252! Exact rational abscissae!
     x0 = 0.5 * a
     y0 = b * math.sqrt(1.0 - (x0 / a) ** 2)
-    xt = a * a / x0  # = 256.0
+    xt = a * a / x0  # = 252.0
 
     p_c = (cx, cy)
     p_ap = (cx - a, cy)
@@ -723,7 +759,6 @@ def fig_tangent_harmonic_division() -> str:
     p_t = (cx + xt, cy)
 
     # Conjugate semi-diameter CD parallel to tangent PT: eccentric angle theta + pi/2
-    # P = (a cos th, -b sin th) in SVG coords -> D = (-a sin th, -b cos th)
     sin_th = math.sqrt(1.0 - (x0 / a) ** 2)
     cos_th = x0 / a
     p_d = (cx - a * sin_th, cy - b * cos_th)
@@ -737,23 +772,24 @@ def fig_tangent_harmonic_division() -> str:
     svg.seg(p_p, p_t, "geom-accent-line", ref="/ P T /")
     svg.right_angle(p_v, (-1, 0), (0, -1), 9.0)
 
-    # Harmonic arcs / ratio callout underneath axis
-    svg.seg((p_ap[0], cy + 44), (p_t[0], cy + 44), "geom-faint")
+    # Harmonic ruler callout cleanly underneath the entire ellipse (cy + b = 244)
+    y_bar = 276.0
+    svg.seg((p_ap[0], y_bar), (p_t[0], y_bar), "geom-faint")
     for px in (p_ap[0], p_c[0], p_v[0], p_a[0], p_t[0]):
-        svg.seg((px, cy + 38), (px, cy + 50), "geom-faint")
-    svg.lbl((0.5 * (p_ap[0] + p_v[0]), cy + 64), "A′V = 3a/2", "geom-label-sm")
-    svg.lbl((0.5 * (p_v[0] + p_a[0]), cy + 64), "VA = a/2", "geom-label-assert")
-    svg.lbl((0.5 * (p_a[0] + p_t[0]), cy + 64), "AT = a", "geom-label-accent")
-    svg.lbl((340, 294), "A′V : VA = 3 : 1 = A′T : TA   (Harmonic Conjugate T of V wrt A′A)", "geom-label-sm")
+        svg.seg((px, y_bar - 6), (px, y_bar + 6), "geom-faint")
+    svg.lbl((0.5 * (p_ap[0] + p_v[0]), y_bar + 22), "A′V = 3a/2", "geom-label-sm")
+    svg.lbl((0.5 * (p_v[0] + p_a[0]), y_bar + 22), "VA = a/2", "geom-label-assert")
+    svg.lbl((0.5 * (p_a[0] + p_t[0]), y_bar + 22), "AT = a", "geom-label-accent")
+    svg.lbl((340, 338), "A′V : VA = 3 : 1 = A′T : TA   (Harmonic Conjugate T of V wrt A′A)", "geom-label-sm")
 
     svg.pt(p_ap, "A′", (-14, -8), ref="A1")
-    svg.pt(p_c, "C", (-8, 18))
-    svg.pt(p_v, "V", (-8, 18), "geom-point-assert", "geom-label-assert")
-    svg.pt(p_a, "A", (10, -8))
+    svg.pt(p_c, "C", (-10, 17))
+    svg.pt(p_v, "V", (9, 17), "geom-point-assert", "geom-label-assert")
+    svg.pt(p_a, "A", (11, -8))
     svg.pt(p_t, "T", (0, -11), "geom-point-accent", "geom-label-accent")
     svg.pt(p_p, "P", (6, -11), "geom-point-accent", "geom-label-accent")
     svg.pt(p_d, "D", (-12, -8), lbl_cls="geom-label-sm")
-    svg.lbl((p_t[0] - 85, p_p[1] + 24), "tangent PT ∥ CD", "geom-label-accent")
+    svg.lbl((p_t[0] - 84, p_p[1] + 22), "tangent PT ∥ CD", "geom-label-accent")
 
     return svg.render()
 
@@ -788,10 +824,6 @@ def fig_hyperbola_asymptotes_secant() -> str:
     svg.curve(bot_br, "geom-hyper-line")
 
     # Exact tangent at P(a cosh t0, -b sinh t0) terminated by asymptotes at D, D':
-    # In math coords: P = (a cosh t0, b sinh t0). Tangent x cosh t0 / a - y sinh t0 / b = 1.
-    # Meets y = +(b/a)x at x = a / (cosh t0 - sinh t0) = a e^{t0} -> D1 = (a e^{t0}, b e^{t0})
-    # Meets y = -(b/a)x at x = a / (cosh t0 + sinh t0) = a e^{-t0} -> D2 = (a e^{-t0}, -b e^{-t0})
-    # Note midpoint of D1 and D2 is EXACTLY P! (Apollonius II.3!)
     t0 = 0.52
     ep, em = math.exp(t0), math.exp(-t0)
     p_pt = (cx + a * math.cosh(t0), cy - b * math.sinh(t0))
@@ -801,11 +833,8 @@ def fig_hyperbola_asymptotes_secant() -> str:
     svg.seg(p_pt, d2, "geom-accent-line", ref="/ P D2 /", tick=1)
 
     # Exact secant cutting right branch in two points Q, Q' and asymptotes in R, R' (Apollonius II.8):
-    # In math coords: line x - m*y = k with |m| < a/b cuts right branch in Q, Q' and asymptotes y = +/-(b/a)x in R, R'!
-    # Let m = 0.82 * (a / b) * 0.48, k = 1.48 * a:
     m_sec = 0.52
     k_sec = 1.58 * a
-    # Solve (k + m y)^2 / a^2 - y^2 / b^2 = 1 -> (m^2/a^2 - 1/b^2) y^2 + (2 k m / a^2) y + (k^2/a^2 - 1) = 0
     qa = m_sec * m_sec / (a * a) - 1.0 / (b * b)
     qb = 2.0 * k_sec * m_sec / (a * a)
     qc = k_sec * k_sec / (a * a) - 1.0
@@ -813,7 +842,6 @@ def fig_hyperbola_asymptotes_secant() -> str:
     yq1 = (-qb - disc) / (2.0 * qa)  # positive y
     yq2 = (-qb + disc) / (2.0 * qa)  # negative y
     xq1, xq2 = k_sec + m_sec * yq1, k_sec + m_sec * yq2
-    # Intersections with asymptotes x = +/-(a/b) y:
     yr1 = k_sec / (a / b - m_sec)
     xr1 = (a / b) * yr1
     yr2 = k_sec / (-a / b - m_sec)
@@ -828,16 +856,16 @@ def fig_hyperbola_asymptotes_secant() -> str:
     svg.seg(p_r1, p_q1, "geom-assert-line", ref="/ R1 Q1 /", tick=2)
     svg.seg(p_q2, p_r2, "geom-assert-line", ref="/ Q2 R2 /", tick=2)
 
-    svg.pt((cx, cy), "C", (-12, 4))
-    svg.pt((cx + a, cy), "A", (-10, 14), lbl_cls="geom-label-sm")
-    svg.pt((cx - a, cy), "A′", (10, 14), lbl_cls="geom-label-sm")
+    svg.pt((cx, cy), "C", (-13, 4))
+    svg.pt((cx + a, cy), "A", (13, 14), lbl_cls="geom-label-sm")
+    svg.pt((cx - a, cy), "A′", (-14, 14), lbl_cls="geom-label-sm")
     svg.pt(p_pt, "P", (-12, -5), "geom-point-accent", "geom-label-accent")
     svg.pt(d1, "D", (-10, -8), "geom-point-accent", "geom-label-accent")
-    svg.pt(d2, "D′", (-12, 12), "geom-point-accent", "geom-label-accent")
-    svg.pt(p_r1, "R", (13, -4), "geom-point-assert", "geom-label-assert")
-    svg.pt(p_q1, "Q", (13, 3), "geom-point-assert", "geom-label-assert")
-    svg.pt(p_q2, "Q′", (14, 3), "geom-point-assert", "geom-label-assert")
-    svg.pt(p_r2, "R′", (14, 10), "geom-point-assert", "geom-label-assert")
+    svg.pt(d2, "D′", (-12, 13), "geom-point-accent", "geom-label-accent")
+    svg.pt(p_r1, "R", (15, -2), "geom-point-assert", "geom-label-assert")
+    svg.pt(p_q1, "Q", (14, 3), "geom-point-assert", "geom-label-assert")
+    svg.pt(p_q2, "Q′", (15, 3), "geom-point-assert", "geom-label-assert")
+    svg.pt(p_r2, "R′", (16, 11), "geom-point-assert", "geom-label-assert")
 
     svg.lbl((cx, 62), "Conjugate Hyperbola", "geom-label-hyper")
     svg.lbl((122, 198), "Opposite Branch", "geom-label-sm")
@@ -851,7 +879,7 @@ def fig_hyperbola_asymptotes_secant() -> str:
 # ---------------------------------------------------------------------------
 def fig_harmonic_pole_polar() -> str:
     """Book III.37–40: Pole T, tangents TP1 & TP2, polar P1P2 & harmonic secants (T, R; A, B) = -1."""
-    svg = SvgCanvas("g5", "III.37-40", 680, 340)
+    svg = SvgCanvas("g5", "III.37-40", 680, 345)
     cx, cy = 415.0, 182.0
     a, b = 156.0, 98.0
 
@@ -861,7 +889,6 @@ def fig_harmonic_pole_polar() -> str:
     # Polar line: (tx/a^2) x + (ty/b^2) y = 1. Intersect with x^2/a^2 + y^2/b^2 = 1:
     alpha = tx / (a * a)
     beta = ty / (b * b)
-    # x = (1 - beta y) / alpha -> ((1 - beta y)^2)/(alpha^2 a^2) + y^2/b^2 = 1
     qa = (beta * beta) / (alpha * alpha * a * a) + 1.0 / (b * b)
     qb = -2.0 * beta / (alpha * alpha * a * a)
     qc = 1.0 / (alpha * alpha * a * a) - 1.0
@@ -875,14 +902,12 @@ def fig_harmonic_pole_polar() -> str:
         return (cx + mx, cy - my)
 
     def secant_hits(slope: float) -> tuple[tuple[float, float], tuple[float, float], tuple[float, float]]:
-        # Ray from (tx, ty) with direction (1, slope): (tx + u, ty + slope*u)
         sa = 1.0 / (a * a) + (slope * slope) / (b * b)
         sb = 2.0 * (tx / (a * a) + ty * slope / (b * b))
         sc = (tx * tx) / (a * a) + (ty * ty) / (b * b) - 1.0
         sd = math.sqrt(sb * sb - 4.0 * sa * sc)
         u1 = (-sb - sd) / (2.0 * sa)
         u2 = (-sb + sd) / (2.0 * sa)
-        # Polar intersection: alpha*(tx + ur) + beta*(ty + slope*ur) = 1
         ur = (1.0 - (alpha * tx + beta * ty)) / (alpha + beta * slope)
         return (
             to_svg(tx + u1, ty + slope * u1),
@@ -921,17 +946,17 @@ def fig_harmonic_pole_polar() -> str:
     svg.seg(p_t, p_h, "geom-hyper-line", ref="/ T H /")
 
     svg.pt(p_t, "T (Pole)", (8, -12), "geom-point-accent", "geom-label-accent", ref="T")
-    svg.pt(p_p1, "P₁", (0, -11), "geom-point-rose", "geom-label-rose", ref="P1")
-    svg.pt(p_p2, "P₂", (2, 18), "geom-point-rose", "geom-label-rose", ref="P2")
-    svg.pt(p_a, "A", (-6, -10), "geom-point-assert", "geom-label-assert")
+    svg.pt(p_p1, "P₁", (-15, -6), "geom-point-rose", "geom-label-rose", ref="P1")
+    svg.pt(p_p2, "P₂", (-16, 12), "geom-point-rose", "geom-label-rose", ref="P2")
+    svg.pt(p_a, "A", (-7, -10), "geom-point-assert", "geom-label-assert")
     svg.pt(p_r, "R", (10, -9), "geom-point-rose", "geom-label-rose")
-    svg.pt(p_b, "B", (12, -6), "geom-point-assert", "geom-label-assert")
-    svg.pt(p_g, "G", (-8, 16), lbl_cls="geom-label-hyper")
+    svg.pt(p_b, "B", (13, -6), "geom-point-assert", "geom-label-assert")
+    svg.pt(p_g, "G", (-14, 13), "geom-point-hyper", "geom-label-hyper")
     svg.pt(p_s, "S", (11, 14), "geom-point-rose", "geom-label-rose")
-    svg.pt(p_h, "H", (13, 8), lbl_cls="geom-label-hyper")
+    svg.pt(p_h, "H", (13, 8), "geom-point-hyper", "geom-label-hyper")
 
-    svg.lbl((p_p1[0] - 48, p_p1[1] + 46), "Polar P₁P₂", "geom-label-rose")
-    svg.lbl((340, 324), "TA : TB = AR : RB   and   TG : TH = GS : SH   (Projective Harmonic Polarity)", "geom-label-sm")
+    svg.lbl((p_p1[0] - 54, p_p1[1] + 46), "Polar P₁P₂", "geom-label-rose")
+    svg.lbl((340, 328), "TA : TB = AR : RB   and   TG : TH = GS : SH   (Projective Harmonic Polarity)", "geom-label-sm")
 
     return svg.render()
 
@@ -941,20 +966,17 @@ def fig_harmonic_pole_polar() -> str:
 # ---------------------------------------------------------------------------
 def fig_central_conic_foci() -> str:
     """Book III.45–52: Foci F1, F2, tangent angle bisection, pedal circle & PF1 + PF2 = 2a."""
-    svg = SvgCanvas("g6", "III.45-52", 680, 360)
-    cx, cy = 340.0, 192.0
-    a, b = 152.0, 102.0
+    svg = SvgCanvas("g6", "III.45-52", 680, 405)
+    cx, cy = 340.0, 204.0
+    a, b = 138.0, 90.0
     c = math.sqrt(a * a - b * b)
 
     # Point P on ellipse at eccentric angle th
     th = 0.92
     px, py = a * math.cos(th), b * math.sin(th)  # math coords (y up)
-    # Tangent at P: (cos th / a) x + (sin th / b) y = 1
-    # Intersects vertex tangent x = +a at K:
     yk_right = b * (1.0 - math.cos(th)) / math.sin(th)
 
     # Feet Z1, Z2 of perpendiculars from F1(-c,0), F2(+c,0) onto tangent:
-    # Normal vector n = (cos th / a, sin th / b)
     nx, ny = math.cos(th) / a, math.sin(th) / b
     n2 = nx * nx + ny * ny
 
@@ -983,14 +1005,14 @@ def fig_central_conic_foci() -> str:
 
     # Major axis and vertex tangents
     svg.seg((cx - a - 36, cy), (cx + a + 36, cy), "geom-line", ref="[ A1 A ]")
-    svg.seg((cx - a, cy - 148), (cx - a, cy + 70), "geom-faint")
-    svg.seg((cx + a, cy - 148), (cx + a, cy + 70), "geom-faint")
+    svg.seg((cx - a, cy - 128), (cx - a, cy + 62), "geom-faint")
+    svg.seg((cx + a, cy - 128), (cx + a, cy + 62), "geom-faint")
 
     # Tangent segment through Z1 - P - Z2 - K
     tdir = (p_z2[0] - p_z1[0], p_z2[1] - p_z1[1])
     svg.seg(
-        (p_z1[0] - 0.22 * tdir[0], p_z1[1] - 0.22 * tdir[1]),
-        (p_k[0] + 0.14 * tdir[0], p_k[1] + 0.14 * tdir[1]),
+        (p_z1[0] - 0.14 * tdir[0], p_z1[1] - 0.14 * tdir[1]),
+        (p_k[0] + 0.10 * tdir[0], p_k[1] + 0.10 * tdir[1]),
         "geom-accent-line",
         ref="[ Z1 Z2 ]",
     )
@@ -1002,12 +1024,12 @@ def fig_central_conic_foci() -> str:
     # Perpendiculars F1 Z1 and F2 Z2 onto tangent
     svg.seg(p_f1, p_z1, "geom-hyper-line", ref="/ F1 Z1 /")
     svg.seg(p_f2, p_z2, "geom-hyper-line", ref="/ F2 Z2 /")
-    svg.right_angle(p_z1, (p_p[0] - p_z1[0], p_p[1] - p_z1[1]), (p_f1[0] - p_z1[0], p_f1[1] - p_z1[1]), 8.5)
-    svg.right_angle(p_z2, (p_p[0] - p_z2[0], p_p[1] - p_z2[1]), (p_f2[0] - p_z2[0], p_f2[1] - p_z2[1]), 8.5)
+    svg.right_angle(p_z1, (p_p[0] - p_z1[0], p_p[1] - p_z1[1]), (p_f1[0] - p_z1[0], p_f1[1] - p_z1[1]), 8.0)
+    svg.right_angle(p_z2, (p_p[0] - p_z2[0], p_p[1] - p_z2[1]), (p_f2[0] - p_z2[0], p_f2[1] - p_z2[1]), 8.0)
 
     # Equal tangent angles <F1 P Z1 = <F2 P Z2 (III.48 optical reflection!)
-    svg.angle_arc(p_p, p_z1, p_f1, 22.0, "geom-rose-line")
-    svg.angle_arc(p_p, p_f2, p_z2, 22.0, "geom-rose-line")
+    svg.angle_arc(p_p, p_z1, p_f1, 20.0, "geom-rose-line")
+    svg.angle_arc(p_p, p_f2, p_z2, 20.0, "geom-rose-line")
 
     svg.pt(p_ap, "A′", (-14, 15))
     svg.pt(p_a, "A", (12, 15))
@@ -1015,11 +1037,11 @@ def fig_central_conic_foci() -> str:
     svg.pt(p_f1, "F₁", (-4, 18), "geom-point-assert", "geom-label-assert", ref="F1")
     svg.pt(p_f2, "F₂", (4, 18), "geom-point-assert", "geom-label-assert", ref="F2")
     svg.pt(p_p, "P", (4, -12), "geom-point-accent", "geom-label-accent")
-    svg.pt(p_z1, "Z₁", (-14, -6), lbl_cls="geom-label-hyper", ref="Z1")
-    svg.pt(p_z2, "Z₂", (13, -7), lbl_cls="geom-label-hyper", ref="Z2")
-    svg.pt(p_k, "K", (12, -2), lbl_cls="geom-label-sm")
-    svg.lbl((cx - 115, cy + 124), "Auxiliary Circle (r = a)", "geom-label-sm")
-    svg.lbl((340, 344), "III.48: ∠F₁PZ₁ = ∠F₂PZ₂   ·   III.49: Z₁, Z₂ ∈ (C, a)   ·   III.52: PF₁ + PF₂ = AA′", "geom-label-sm")
+    svg.pt(p_z1, "Z₁", (5, -12), "geom-point-hyper", "geom-label-hyper", ref="Z1")
+    svg.pt(p_z2, "Z₂", (-2, -13), "geom-point-hyper", "geom-label-hyper", ref="Z2")
+    svg.pt(p_k, "K", (15, -5), lbl_cls="geom-label-sm")
+    svg.lbl((cx - 150, cy + 128), "Auxiliary Circle (r = a)", "geom-label-sm")
+    svg.lbl((340, 384), "III.48: ∠F₁PZ₁ = ∠F₂PZ₂   ·   III.49: Z₁, Z₂ ∈ (C, a)   ·   III.52: PF₁ + PF₂ = AA′", "geom-label-sm")
 
     return svg.render()
 
@@ -1029,8 +1051,8 @@ def fig_central_conic_foci() -> str:
 # ---------------------------------------------------------------------------
 def fig_three_four_line_locus() -> str:
     """Book III.53–56: Four-Line Locus d1·d3 = lambda d2·d4 on an inscribed quadrilateral."""
-    svg = SvgCanvas("g7", "III.53-56", 680, 350)
-    cx, cy = 340.0, 184.0
+    svg = SvgCanvas("g7", "III.53-56", 680, 360)
+    cx, cy = 340.0, 186.0
     a, b = 178.0, 108.0
 
     svg.lbl((340, 22), "III.53–56: The Three-Line & Four-Line Locus  (PQ₁ · PQ₃  =  λ · PQ₂ · PQ₄)", "geom-label-sm")
@@ -1090,10 +1112,10 @@ def fig_three_four_line_locus() -> str:
     svg.pt(q4, "Q₄", (12, -8), "geom-point-rose", "geom-label-rose", ref="Q4")
 
     svg.lbl((148, 178), "L₁", "geom-label-accent")
-    svg.lbl((316, 290), "L₂", "geom-label-hyper")
+    svg.lbl((436, 232), "L₂", "geom-label-hyper")
     svg.lbl((528, 198), "L₃", "geom-label-accent")
-    svg.lbl((424, 96), "L₄", "geom-label-hyper")
-    svg.lbl((340, 334), "Four-Line Locus: PQ₁·PQ₃ / (PQ₂·PQ₄) = const   (Three-Line when L₂ ≡ L₄: PQ₁·PQ₃ = λ·PQ₂²)", "geom-label-sm")
+    svg.lbl((436, 130), "L₄", "geom-label-hyper")
+    svg.lbl((340, 342), "Four-Line Locus: PQ₁·PQ₃ / (PQ₂·PQ₄) = const   (Three-Line when L₂ ≡ L₄: PQ₁·PQ₃ = λ·PQ₂²)", "geom-label-sm")
 
     return svg.render()
 
@@ -1103,13 +1125,11 @@ def fig_three_four_line_locus() -> str:
 # ---------------------------------------------------------------------------
 def fig_four_point_conic_pencil() -> str:
     """Book IV.25–57: Two conics intersect in at most 4 points; bitangent conic counts as 2+2."""
-    svg = SvgCanvas("g8", "IV.25-57", 740, 330)
+    svg = SvgCanvas("g8", "IV.25-57", 740, 365)
 
     # Left panel: Transverse 4-point intersection of two symmetric ellipses
-    # C1: x^2/a^2 + y^2/b^2 = 1, C2: x^2/b^2 + y^2/a^2 = 1 -> exact intersections (+/- s, +/- s)
-    # where s = a*b / sqrt(a^2 + b^2)!
-    c1x, c1y = 195.0, 178.0
-    a1, b1 = 136.0, 74.0
+    c1x, c1y = 195.0, 182.0
+    a1, b1 = 124.0, 68.0
     s_int = (a1 * b1) / math.sqrt(a1 * a1 + b1 * b1)
 
     svg.lbl((195, 22), "IV.25: At Most 4 Intersections", "geom-label-sm")
@@ -1128,25 +1148,25 @@ def fig_four_point_conic_pencil() -> str:
     svg.seg((pts4[1][0], pts4[1][1]), (pts4[3][0], pts4[3][1]), "geom-dashed")
     for px, py, nm, off, rf in pts4:
         svg.pt((px, py), nm, off, "geom-point-assert", "geom-label-assert", ref=rf)
-    svg.lbl((195, 316), "C₁ ∩ C₂ = {P₁, P₂, P₃, P₄}  (|C₁ ∩ C₂| ≤ 4)", "geom-label-sm")
+    svg.lbl((195, 344), "C₁ ∩ C₂ = {P₁, P₂, P₃, P₄}  (|C₁ ∩ C₂| ≤ 4)", "geom-label-sm")
 
     # Divider
-    svg.seg((372, 20), (372, 316), "geom-faint")
+    svg.seg((372, 20), (372, 344), "geom-faint")
 
     # Right panel: Double contact (IV.42–46) — two conics tangent at T1, T2 have ZERO further intersections!
-    c2x, c2y = 556.0, 178.0
-    a2, b2 = 142.0, 88.0
-    b2_inner = 56.0
+    c2x, c2y = 556.0, 182.0
+    a2, b2 = 138.0, 84.0
+    b2_inner = 54.0
     svg.lbl((556, 22), "IV.42–46: Double Tangency Exhausts All 4", "geom-label-sm")
     svg.ellipse_elem((c2x, c2y), a2, b2, "geom-bold")
     svg.ellipse_elem((c2x, c2y), a2, b2_inner, "geom-accent-line")
     # Common tangents at T1(-a2, 0) and T2(+a2, 0)
-    svg.seg((c2x - a2, c2y - 98), (c2x - a2, c2y + 98), "geom-rose-line", ref="[ T1 ]")
-    svg.seg((c2x + a2, c2y - 98), (c2x + a2, c2y + 98), "geom-rose-line", ref="[ T2 ]")
+    svg.seg((c2x - a2, c2y - 94), (c2x - a2, c2y + 94), "geom-rose-line", ref="[ T1 ]")
+    svg.seg((c2x + a2, c2y - 94), (c2x + a2, c2y + 94), "geom-rose-line", ref="[ T2 ]")
     svg.seg((c2x - a2, c2y), (c2x + a2, c2y), "geom-dashed", ref="/ T1 T2 /")
-    svg.pt((c2x - a2, c2y), "T₁ (mult. 2)", (-6, -104), "geom-point-rose", "geom-label-rose", ref="T1")
-    svg.pt((c2x + a2, c2y), "T₂ (mult. 2)", (6, -104), "geom-point-rose", "geom-label-rose", ref="T2")
-    svg.lbl((556, 316), "Bitangent Conics: 2 + 2 = 4 ⇒ Zero Further Common Points", "geom-label-sm")
+    svg.pt((c2x - a2, c2y), "T₁ (mult. 2)", (-6, -102), "geom-point-rose", "geom-label-rose", ref="T1")
+    svg.pt((c2x + a2, c2y), "T₂ (mult. 2)", (6, -102), "geom-point-rose", "geom-label-rose", ref="T2")
+    svg.lbl((556, 344), "Bitangent Conics: 2 + 2 = 4 ⇒ Zero Further Common Points", "geom-label-sm")
 
     return svg.render()
 
@@ -1184,14 +1204,15 @@ def _solve_ellipse_normals(a: float, b: float, x0: float, y0: float) -> list[flo
 def fig_normals_evolute() -> str:
     """Book V.1–63: Envelope evolute of normals to an ellipse & 4 normals from interior point O."""
     svg = SvgCanvas("g9", "V.1-63", 680, 380)
-    cx, cy = 340.0, 194.0
-    a, b = 196.0, 114.0
-    c2 = a * a - b * b  # a^2 - b^2
+    cx, cy = 340.0, 192.0
+    # Choose b/a > 1/sqrt(2) so c^2/b < b and all 4 astroidal cusps stay strictly inside the ellipse!
+    a, b = 180.0, 128.0
+    c2 = a * a - b * b  # c^2/a = 88.98 < 180, c^2/b = 125.125 < 128!
 
     svg.lbl((340, 22), "V.51–62: Envelope of Normals (Astroidal Evolute) & Four Normals from Interior Point O", "geom-label-sm")
     svg.ellipse_elem((cx, cy), a, b, "geom-bold")
-    svg.seg((cx - a - 22, cy), (cx + a + 22, cy), "geom-faint")
-    svg.seg((cx, cy - b - 22), (cx, cy + b + 22), "geom-faint")
+    svg.seg((cx - a - 18, cy), (cx + a + 18, cy), "geom-faint")
+    svg.seg((cx, cy - b - 14), (cx, cy + b + 14), "geom-faint")
 
     # Family of subtle normals enveloping the evolute
     for k in range(36):
@@ -1210,25 +1231,33 @@ def fig_normals_evolute() -> str:
     svg.curve(ev_pts, "geom-rose-line", closed=True, ref="( Evolute )")
 
     # Interior point O inside the evolute: solve f(t) = a*x0*sin t - b*y0*cos t - 0.5*c^2*sin(2t) = 0
-    x0, y0 = 26.0, -18.0  # math coords (strictly inside evolute!)
+    x0, y0 = 22.0, -16.0  # math coords (strictly inside evolute!)
     roots = _solve_ellipse_normals(a, b, x0, y0)
     assert len(roots) == 4, f"Expected 4 exact normal roots, got {len(roots)}"
 
     p_o = (cx + x0, cy - y0)
-    lbl_offsets = [(10, -10), (-15, -10), (-15, 15), (12, 14)]
     for idx, rt in enumerate(roots, start=1):
         nx, ny = a * math.cos(rt), b * math.sin(rt)
         p_n = (cx + nx, cy - ny)
-        # Tangent direction at N in SVG coords: (-a sin rt, -b cos rt)
         t_vec = (-a * math.sin(rt), -b * math.cos(rt))
         n_vec = (p_o[0] - p_n[0], p_o[1] - p_n[1])
+        out_raw = (nx / a, -ny / b)
+        out_len = math.hypot(*out_raw) or 1.0
+        off = (16.5 * out_raw[0] / out_len, 16.5 * out_raw[1] / out_len + 4.0)
         svg.seg(p_o, p_n, "geom-assert-line", ref=f"/ O N{idx} /")
         svg.right_angle(p_n, t_vec, n_vec, 7.5, "geom-assert-line")
-        svg.pt(p_n, f"N_{idx}".translate(str.maketrans("1234", "₁₂₃₄")).replace("_", ""), lbl_offsets[idx - 1], "geom-point-assert", "geom-label-assert", ref=f"N{idx}")
+        svg.pt(
+            p_n,
+            f"N_{idx}".translate(str.maketrans("1234", "₁₂₃₄")).replace("_", ""),
+            off,
+            "geom-point-assert",
+            "geom-label-assert",
+            ref=f"N{idx}",
+        )
 
     svg.pt(p_o, "O", (12, 5), "geom-point-accent", "geom-label-accent", ref="O", r=4.0)
-    svg.lbl((cx + 96, cy - 42), "Evolute Envelope", "geom-label-rose")
-    svg.lbl((340, 364), "Inside Evolute: 4 Normals (ON₁, ON₂, ON₃, ON₄)   ·   Outside Evolute: 2 Normals", "geom-label-sm")
+    svg.lbl((cx + 98, cy - 52), "Evolute Envelope", "geom-label-rose")
+    svg.lbl((340, 366), "Inside Evolute: 4 Normals (ON₁, ON₂, ON₃, ON₄)   ·   Outside Evolute: 2 Normals", "geom-label-sm")
 
     return svg.render()
 
@@ -1238,9 +1267,9 @@ def fig_normals_evolute() -> str:
 # ---------------------------------------------------------------------------
 def fig_conjugate_diameters_theorems() -> str:
     """Book VII.12 & VII.31: Conjugate diameters CP=a', CD=b' with a'²+b'²=a²+b² & a'b'sin ω=ab."""
-    svg = SvgCanvas("g10", "VII.12-31", 680, 360)
-    cx, cy = 340.0, 188.0
-    a, b = 158.0, 96.0
+    svg = SvgCanvas("g10", "VII.12-31", 680, 380)
+    cx, cy = 340.0, 192.0
+    a, b = 154.0, 92.0
 
     # Principal axis rectangle (area 4ab)
     svg.poly(
@@ -1284,22 +1313,22 @@ def fig_conjugate_diameters_theorems() -> str:
     svg.seg(p_dp, p_d, "geom-hyper-line", ref="/ D1 D /")
     svg.angle_arc(p_c, p_p, p_d, 26.0, "geom-rose-line", ref="< P C D )")
 
-    svg.pt(p_c, "C", (-10, 15))
+    svg.pt(p_c, "C", (-13, 15))
     svg.pt((cx + a, cy), "A", (12, 4), lbl_cls="geom-label-sm")
-    svg.pt((cx, cy - b), "B", (10, -6), lbl_cls="geom-label-sm")
+    svg.pt((cx, cy - b), "B", (10, -7), lbl_cls="geom-label-sm")
     svg.pt(p_p, "P", (12, -5), "geom-point-assert", "geom-label-assert")
     svg.pt(p_pp, "P′", (-14, 10), "geom-point-assert", "geom-label-assert")
-    svg.pt(p_d, "D", (-12, -8), lbl_cls="geom-label-hyper")
-    svg.pt(p_dp, "D′", (12, 12), lbl_cls="geom-label-hyper")
+    svg.pt(p_d, "D", (-8, -19), "geom-point-hyper", "geom-label-hyper")
+    svg.pt(p_dp, "D′", (13, 13), "geom-point-hyper", "geom-label-hyper")
     svg.pt(k1, "K", (10, -8), "geom-point-accent", "geom-label-accent")
     svg.pt(k2, "L", (-12, -6), "geom-point-accent", "geom-label-accent")
-    svg.pt(k3, "M", (-12, 12), "geom-point-accent", "geom-label-accent")
+    svg.pt(k3, "M", (-13, 13), "geom-point-accent", "geom-label-accent")
     svg.pt(k4, "N", (12, 10), "geom-point-accent", "geom-label-accent")
 
     svg.lbl((cx + 12, cy - 28), "ω", "geom-label-rose")
     svg.lbl((cx + 0.52 * u[0] + 6, cy + 0.52 * u[1] + 15), "a′", "geom-label-assert")
     svg.lbl((cx + 0.52 * v[0] - 12, cy + 0.52 * v[1] + 4), "b′", "geom-label-hyper")
-    svg.lbl((340, 344), "VII.12: CP² + CD² = a′² + b′² = a² + b²   ·   VII.31: Area(KLMN) = 4 a′b′ sin ω = 4 ab", "geom-label-sm")
+    svg.lbl((340, 362), "VII.12: CP² + CD² = a′² + b′² = a² + b²   ·   VII.31: Area(KLMN) = 4 a′b′ sin ω = 4 ab", "geom-label-sm")
 
     return svg.render()
 
@@ -1331,19 +1360,13 @@ def _solve_apollonius_ccc(
     for s1 in (-1, 1):
         for s2 in (-1, 1):
             for s3 in (-1, 1):
-                # 2(x_i - x_1)x + 2(y_i - y_1)y = d_i0 + 2(s_1 r_1 - s_i r_i) R
                 e1 = 2.0 * (s1 * r1 - s2 * r2)
                 e2 = 2.0 * (s1 * r1 - s3 * r3)
-                # x = mx0 + mx1 * R, y = my0 + my1 * R
                 mx0 = (d10 * a22 - a12 * d20) / det
                 mx1 = (e1 * a22 - a12 * e2) / det
                 my0 = (a11 * d20 - d10 * a21) / det
                 my1 = (a11 * e2 - e1 * a21) / det
 
-                # Substitute into (x - x1)^2 + (y - y1)^2 = (R - s1 r1)^2:
-                # wait: if R + s1 r1 > 0, let's check (x - x1)^2 + (y - y1)^2 - (R + s1 r1)^2 = 0
-                # Note: with (R + s_i r_i)^2 = R^2 + 2 s_i r_i R + r_i^2,
-                # subtracting i=1 from i=2 gives 2(x2-x1)x + 2(y2-y1)y = d10 - 2(s2 r2 - s1 r1)R = d10 + e1 R!
                 ux0, uy0 = mx0 - x1, my0 - y1
                 qa = mx1 * mx1 + my1 * my1 - 1.0
                 qb = 2.0 * (ux0 * mx1 + uy0 * my1 - s1 * r1)
@@ -1357,8 +1380,6 @@ def _solve_apollonius_ccc(
                         continue
                     rx = mx0 + mx1 * root_r
                     ry = my0 + my1 * root_r
-                    # Verify exact tangency to all three given circles:
-                    # dist(center, c_i) == |root_r + s_i * r_i| and root_r + s_i * r_i >= 0
                     if root_r + s1 * r1 < -1e-5 or root_r + s2 * r2 < -1e-5 or root_r + s3 * r3 < -1e-5:
                         continue
                     ok = True
@@ -1412,7 +1433,7 @@ def fig_problem_of_apollonius_ccc() -> str:
             "geom-polygon",
         )
         svg.circle((ox + gx, oy + gy), gr, "geom-bold", ref=f"( C{idx} )")
-        svg.pt((ox + gx, oy + gy), f"C_{idx}".translate(str.maketrans("123", "₁₂₃")).replace("_", ""), (0, 5), ref=f"C{idx}")
+        svg.pt((ox + gx, oy + gy), f"C_{idx}".translate(str.maketrans("123", "₁₂₃")).replace("_", ""), (0, -9), ref=f"C{idx}")
 
     svg.lbl((340, 404), "Given C₁, C₂, C₃ (bold):  1 externally tangent (green) · 1 enclosing (gold) · 6 mixed-contact pairs (blue/rose)", "geom-label-sm")
 
@@ -1424,13 +1445,12 @@ def fig_problem_of_apollonius_ccc() -> str:
 # ---------------------------------------------------------------------------
 def fig_apollonius_circle_locus() -> str:
     """Lost Plane Loci II & ETC Bridge: PA:PB = k circle & Isodynamic Points X(15), X(16)."""
-    svg = SvgCanvas("g12", "Plane-Loci-II-ETC", 760, 360)
+    svg = SvgCanvas("g12", "Plane-Loci-II-ETC", 760, 365)
 
     # Left panel: Single Apollonius Circle PA : PB = k = 5/3 on diameter I1 I2
     svg.lbl((190, 22), "Plane Loci II: Locus PA : PB = k", "geom-label-sm")
     ax, bx, y_ab = 64.0, 176.0, 206.0
     k_rat = 5.0 / 3.0
-    # Internal I1: (ax + k*bx)/(1+k), External I2: (k*bx - ax)/(k - 1)
     x_i1 = (ax + k_rat * bx) / (1.0 + k_rat)
     x_i2 = (k_rat * bx - ax) / (k_rat - 1.0)
     cx_ap = 0.5 * (x_i1 + x_i2)
@@ -1456,21 +1476,21 @@ def fig_apollonius_circle_locus() -> str:
 
     svg.pt((ax, y_ab), "A", (-4, 18))
     svg.pt((bx, y_ab), "B", (0, 18))
-    svg.pt((x_i1, y_ab), "I₁", (-4, -10), "geom-point-assert", "geom-label-assert", ref="I1")
+    svg.pt((x_i1, y_ab), "I₁", (-10, 18), "geom-point-assert", "geom-label-assert", ref="I1")
     svg.pt((x_i2, y_ab), "I₂", (10, 18), "geom-point-rose", "geom-label-rose", ref="I2")
     svg.pt((cx_ap, y_ab), "M", (0, 18), lbl_cls="geom-label-sm")
     svg.pt((px_ap, py_ap), "P", (-8, -11), "geom-point-accent", "geom-label-accent")
-    svg.lbl((190, 338), "PA : PB = AI₁ : I₁B = AI₂ : BI₂ = k   (∠I₁PI₂ = 90°)", "geom-label-sm")
+    svg.lbl((190, 344), "PA : PB = AI₁ : I₁B = AI₂ : BI₂ = k   (∠I₁PI₂ = 90°)", "geom-label-sm")
 
     # Divider
-    svg.seg((384, 20), (384, 344), "geom-faint")
+    svg.seg((384, 20), (384, 348), "geom-faint")
 
     # Right panel: Three Apollonius Circles of Triangle ABC concurring at X(15) & X(16)!
     svg.lbl((572, 22), "ETC Bridge: Three Apollonius Circles ⇒ X(15), X(16)", "geom-label-sm")
-    # Choose scalene triangle ABC so all 3 Apollonius circles have finite moderate radii and stay inside [395, 750]x[38, 322]
-    ta = (536.0, 118.0)
-    tb = (472.0, 232.0)
-    tc = (624.0, 222.0)
+    # Strongly scalene triangle ABC so both X(15) and X(16) sit centrally inside [396, 748] x [40, 318]!
+    ta = (584.0, 178.0)
+    tb = (546.0, 244.0)
+    tc = (710.0, 238.0)
     la = math.hypot(tc[0] - tb[0], tc[1] - tb[1])
     lb = math.hypot(tc[0] - ta[0], tc[1] - ta[1])
     lc = math.hypot(tb[0] - ta[0], tb[1] - ta[1])
@@ -1481,7 +1501,6 @@ def fig_apollonius_circle_locus() -> str:
         v2: tuple[float, float],
         ratio_v1_to_v2: float,
     ) -> tuple[tuple[float, float], float]:
-        # Locus {P : |P - v1| / |P - v2| = k}, k != 1 (passes through v_opp!)
         k = ratio_v1_to_v2
         i1 = ((v1[0] + k * v2[0]) / (1.0 + k), (v1[1] + k * v2[1]) / (1.0 + k))
         i2 = ((v1[0] - k * v2[0]) / (1.0 - k), (v1[1] - k * v2[1]) / (1.0 - k))
@@ -1506,20 +1525,19 @@ def fig_apollonius_circle_locus() -> str:
     assert abs(math.hypot(i_p1[0] - cc_ctr[0], i_p1[1] - cc_ctr[1]) - cc_r) < 1e-5
     assert abs(math.hypot(i_p2[0] - cc_ctr[0], i_p2[1] - cc_ctr[1]) - cc_r) < 1e-5
 
-    # Determine which is inside triangle ABC -> X(15) (1st Isodynamic Point), outside -> X(16)
     cent = ((ta[0] + tb[0] + tc[0]) / 3.0, (ta[1] + tb[1] + tc[1]) / 3.0)
     if math.hypot(i_p1[0] - cent[0], i_p1[1] - cent[1]) < math.hypot(i_p2[0] - cent[0], i_p2[1] - cent[1]):
         x15, x16 = i_p1, i_p2
     else:
         x15, x16 = i_p2, i_p1
 
-    # Clip/draw arcs cleanly inside right panel [392, 752] x [34, 318]
+    # Clip/draw arcs cleanly inside right panel [394, 750] x [38, 322]
     def draw_clipped_circle(ctr: tuple[float, float], rad: float, cls: str) -> None:
         seg_pts: list[tuple[float, float]] = []
         for j in range(361):
             ang = 2.0 * math.pi * j / 360.0
             px, py = ctr[0] + rad * math.cos(ang), ctr[1] + rad * math.sin(ang)
-            if 394.0 <= px <= 750.0 and 36.0 <= py <= 318.0:
+            if 394.0 <= px <= 750.0 and 38.0 <= py <= 322.0:
                 seg_pts.append((px, py))
             else:
                 if len(seg_pts) >= 2:
@@ -1538,12 +1556,12 @@ def fig_apollonius_circle_locus() -> str:
     svg.seg(tc, ta, "geom-bold")
     svg.seg(x15, x16, "geom-dashed", ref="[ X15 X16 ]")
 
-    svg.pt(ta, "A", (-6, -10))
-    svg.pt(tb, "B", (-12, 12))
+    svg.pt(ta, "A", (7, -10))
+    svg.pt(tb, "B", (-13, 12))
     svg.pt(tc, "C", (12, 10))
-    svg.pt(x15, "X(15)", (22, 4), "geom-point-assert", "geom-label-assert", ref="X15", r=3.8)
-    svg.pt(x16, "X(16)", (22, -4), "geom-point-assert", "geom-label-assert", ref="X16", r=3.8)
-    svg.lbl((572, 338), "a·PA = b·PB = c·PC  at Isodynamic Points X(15), X(16)", "geom-label-sm")
+    svg.pt(x15, "X(15)", (25, 4), "geom-point-assert", "geom-label-assert", ref="X15", r=3.8)
+    svg.pt(x16, "X(16)", (25, -6), "geom-point-assert", "geom-label-assert", ref="X16", r=3.8)
+    svg.lbl((572, 344), "a·PA = b·PB = c·PC  at Isodynamic Points X(15), X(16)", "geom-label-sm")
 
     return svg.render()
 
