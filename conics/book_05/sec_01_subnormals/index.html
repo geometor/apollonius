@@ -1,0 +1,201 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>V.1–34: 1. Normals as Maxima and Minima &amp; the Subnormal Laws [Props. 84–94 / V. 1–34] — Conics • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/apollonius/conics/book_05/sec_01_subnormals/" />
+  <meta name="description" content="Extending Euclid’s theorems on the shortest and longest segments from an eccentric point to a circle ([III.7], [III.8]), Apollonius investigates the minimum and maximum straight lines GP drawn…" />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="V.1–34: 1. Normals as Maxima and Minima &amp; the Subnormal Laws [Props. 84–94 / V. 1–34] — Conics • GEOMETOR" />
+  <meta property="og:description" content="Extending Euclid’s theorems on the shortest and longest segments from an eccentric point to a circle ([III.7], [III.8]), Apollonius investigates the minimum and maximum straight lines GP drawn…" />
+  <meta property="og:url" content="https://geometor.github.io/apollonius/conics/book_05/sec_01_subnormals/" />
+  <meta property="og:image" content="https://geometor.github.io/apollonius/_static/social/conics.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Apollonius of Perga — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="V.1–34: 1. Normals as Maxima and Minima &amp; the Subnormal Laws [Props. 84–94 / V. 1–34] — Conics • GEOMETOR" />
+  <meta name="twitter:description" content="Extending Euclid’s theorems on the shortest and longest segments from an eccentric point to a circle ([III.7], [III.8]), Apollonius investigates the minimum and maximum straight lines GP drawn…" />
+  <meta name="twitter:image" content="https://geometor.github.io/apollonius/_static/social/conics.png" />
+  <meta name="twitter:image:alt" content="Apollonius of Perga — GEOMETOR" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=81e79cc0" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif" data-folio="Heath 1896, pp. 139–159 (PDF 319–339)">
+  <header>
+    <div class="logo">
+      <a href="../../../index.html" title="Home">
+        <img src="../../../_static/logo.png" class="logo" alt="GEOMETOR apollonius"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">apollonius</span>
+        </div>
+      </a>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../index.html" class="is-active" aria-selected="true" >Conics</a>
+        </li>
+        <li>
+          <a href="../../persons.html"  >People</a>
+        </li>
+        <li>
+          <a href="../../bibliography.html"  >Bibliography</a>
+        </li>
+        <li>
+          <a href="../../../about/index.html"  >About</a>
+        </li>
+        <li>
+          <a href="../../../usage/index.html"  >Usage</a>
+        </li>
+        <li>
+          <a href="../../../modules/index.html"  >Modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane" data-folio="Heath 1896, pp. 139–159 (PDF 319–339)" data-canonical-id="V.1–34">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <nav class="book-breadcrumbs" aria-label="Breadcrumb">
+            <a class="book-section-home-link" href="../../index.html">Conics</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <a class="book-crumb-link" href="../index.html">Book V</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <span class="book-crumb-current" aria-current="page">Subnormals</span>
+          </nav>
+          <div class="book-provenance-badges">
+            <a class="book-badge folio-badge folio-link" href="https://archive.org/details/treatiseonconics00apolrich#page/n319/mode/1up" target="_blank" rel="noopener" title="View Folio Heath 1896, pp. 139–159 (PDF 319–339)">Folio Heath 1896, pp. 139–159 (PDF 319–339)</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../index.html" title="Book V: Normals, Minimum &amp; Maximum Lines, Subnormals &amp; the Evolute">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <strong class="book-track-item is-active" aria-current="page">English</strong>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="summary.html">Summary</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="notes.html">Notes</a>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../sec_02_evolute_diorismos/index.html" title="2. Determination of the Evolute Diorismos [Props. 99–100 / V. 51–52]"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <span class="folio-anchor" id="folio-Heath 1896, pp. 139–159 (PDF 319–339)" data-folio="Heath 1896, pp. 139–159 (PDF 319–339)" data-page=""></span><section class="level-1" id="normals-as-maxima-and-minima-the-subnormal-laws-props-8494-v-134">
+        <h1>1. Normals as Maxima and Minima &amp; the Subnormal Laws [Props. 84–94 / V. 1–34]<a class="headerlink" href="#normals-as-maxima-and-minima-the-subnormal-laws-props-8494-v-134" title="Link to this heading">¶</a></h1>
+        <p>Extending <a class="person-ref" id="occ-person-euclid-1" href="../../persons.html#person-euclid" data-person="euclid" title="Euclid of Alexandria (fl. c. 300 BCE) — Author of the Elements, Conics (4 Books), and Surface Loci">Euclid's</a> theorems on the shortest and longest segments from an eccentric point to a circle (<span class="justification" data-ref-target="III.7" title="III.7">[III.7]</span>, <span class="justification" data-ref-target="III.8" title="III.8">[III.8]</span>), <a class="person-ref" id="occ-person-apollonius-1" href="../../persons.html#person-apollonius" data-person="apollonius" title="Apollonius of Perga (c. 240–190 BCE) — &#x27;The Great Geometer&#x27; (ὁ μέγας γεωμέτρης); author of the Conics">Apollonius</a> investigates the minimum and maximum straight lines <span class="geom-ref" data-ref="GP" title="GP">GP</span> drawn to a conic from a point <span class="geom-ref" data-ref="G" title="G">G</span> on its principal axis:</p>
+        <ul>
+        <li><p><strong>Constant Subnormal of the Parabola [Props. 87, 90 / V. 8, 13, 27]</strong>: If <span class="geom-ref" data-ref="G" title="G">G</span> lie on the axis of a parabola with <span class="geom-eq-marker" data-assert-equal="AG &gt; \tfrac{1}{2} p_a" hidden></span>, the minimum straight line from <span class="geom-ref" data-ref="G" title="G">G</span> to the curve is <span class="geom-ref" data-ref="GP" title="GP">GP</span> whose ordinate foot <span class="geom-ref" data-ref="N" title="N">N</span> cuts off a <strong>constant subnormal</strong>:</p>
+        <div class="math notranslate nohighlight">
+        \[NG = \tfrac{1}{2}\, p_a,\]</div>
+        <p>and <span class="geom-ref" data-ref="GP" title="GP">GP</span> is strictly <strong>perpendicular to the tangent</strong> at <span class="geom-ref" data-ref="P" title="P">P</span> (hence a <strong>normal</strong>).</p>
+        </li>
+        <li><p><strong>Proportional Subnormal of Central Conics [Props. 88–91 / V. 9–15, 28–29]</strong>: For an ellipse or hyperbola with center <span class="geom-ref" data-ref="C" title="C">C</span>, transverse axis <span class="geom-ref" data-ref="AA'" title="AA&#x27;">AA</span>, and principal parameter <span class="geom-eq-marker" data-assert-equal="p_a = \frac{2b^2}{a}" hidden></span>, a segment <span class="geom-ref" data-ref="GP" title="GP">GP</span> from an axis point <span class="geom-ref" data-ref="G" title="G">G</span> is a minimum or maximum line (and perpendicular to the tangent at <span class="geom-ref" data-ref="P" title="P">P</span>) if and only if its subnormal <span class="geom-ref" data-ref="NG" title="NG">NG</span> satisfies:</p>
+        <div class="math notranslate nohighlight">
+        \[NG : CN = p_a : AA' \quad \bigl(= b^2 : a^2\bigr).\]</div>
+        </li>
+        </ul>
+        <div class="toctree-wrapper compound">
+        </div>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../index.html" title="Book V: Normals, Minimum &amp; Maximum Lines, Subnormals &amp; the Evolute">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../index.html">Conics</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../sec_02_evolute_diorismos/index.html" title="2. Determination of the Evolute Diorismos [Props. 99–100 / V. 51–52]"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../types/book.html">book</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 200 BCE · 1896 Cambridge University Press · Digital Codex GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../_static/documentation_options.js?v=6e0256f3"></script>
+  <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

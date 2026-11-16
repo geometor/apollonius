@@ -65,6 +65,6 @@ Module Contents
 
 .. py:function:: verify_codex_tracks(docsrc_dir: pathlib.Path | None = None) -> list[str]
 
-   Verify 8 units × 3 tracks = 24 synchronized RST files, 12 SVGs, and zero embedded Python.
+   Verify 9 units, companion tracks in all sections, 12 SVGs, and zero embedded Python.
 
 

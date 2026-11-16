@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Book II: Asymptotes, Conjugate Hyperbolas &amp; Secant Intercepts — Conics • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/apollonius/conics/book_02/" />
+  <meta name="description" content="Book II constructs the asymptotes of the hyperbola and proves that they are shared identically by both opposite branches and by both conjugate hyperbolas. It demonstrates the bisected tangent…" />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Book II: Asymptotes, Conjugate Hyperbolas &amp; Secant Intercepts — Conics • GEOMETOR" />
+  <meta property="og:description" content="Book II constructs the asymptotes of the hyperbola and proves that they are shared identically by both opposite branches and by both conjugate hyperbolas. It demonstrates the bisected tangent…" />
+  <meta property="og:url" content="https://geometor.github.io/apollonius/conics/book_02/" />
+  <meta property="og:image" content="https://geometor.github.io/apollonius/_static/social/conics.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Apollonius of Perga — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Book II: Asymptotes, Conjugate Hyperbolas &amp; Secant Intercepts — Conics • GEOMETOR" />
+  <meta name="twitter:description" content="Book II constructs the asymptotes of the hyperbola and proves that they are shared identically by both opposite branches and by both conjugate hyperbolas. It demonstrates the bisected tangent…" />
+  <meta name="twitter:image" content="https://geometor.github.io/apollonius/_static/social/conics.png" />
+  <meta name="twitter:image:alt" content="Apollonius of Perga — GEOMETOR" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=81e79cc0" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif" data-folio="Heath 1896, Props. 28–53 [II. 1–53], pp. 53–94 (PDF 233–274)">
+  <header>
+    <div class="logo">
+      <a href="../../index.html" title="Home">
+        <img src="../../_static/logo.png" class="logo" alt="GEOMETOR apollonius"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">apollonius</span>
+        </div>
+      </a>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Conics</a>
+        </li>
+        <li>
+          <a href="../persons.html"  >People</a>
+        </li>
+        <li>
+          <a href="../bibliography.html"  >Bibliography</a>
+        </li>
+        <li>
+          <a href="../../about/index.html"  >About</a>
+        </li>
+        <li>
+          <a href="../../usage/index.html"  >Usage</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >Modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane" data-folio="Heath 1896, Props. 28–53 [II. 1–53], pp. 53–94 (PDF 233–274)" data-canonical-id="Book II">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <nav class="book-breadcrumbs" aria-label="Breadcrumb">
+            <a class="book-section-home-link" href="../index.html">Conics</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <span class="book-crumb-current" aria-current="page">Book II</span>
+          </nav>
+          <div class="book-provenance-badges">
+            <a class="book-badge folio-badge folio-link" href="https://archive.org/details/treatiseonconics00apolrich#page/n233/mode/1up" target="_blank" rel="noopener" title="View Folio Heath 1896, Props. 28–53 [II. 1–53], pp. 53–94 (PDF 233–274)">Folio Heath 1896, Props. 28–53 [II. 1–53], pp. 53–94 (PDF 233–274)</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../book_01/sec_03_tangents_coordinates/index.html" title="3. Tangents, Harmonic Division &amp; Change of Diameter [Props. 12–27 / I. 33–60]">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="sec_01_asymptotes/index.html" title="1. Construction &amp; Non-Meeting of the Asymptotes [Props. 28–29 / II. 1–2, 15, 17, 21]"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="book-ii-asymptotes-conjugate-hyperbolas-secant-intercepts">
+        <span id="conics-book-2"></span><span id="unit-2-book-2-notes"></span><span id="unit-2-book-2-summary"></span><span id="unit-2-book-2-en"></span><h1>Book II: Asymptotes, Conjugate Hyperbolas &amp; Secant Intercepts<a class="headerlink" href="#book-ii-asymptotes-conjugate-hyperbolas-secant-intercepts" title="Link to this heading">¶</a></h1>
+        <p class="rubric">Propositions 28–53 [Classical II. 1–53] — Apollonius of Perga (ed. T. L. Heath, 1896)</p>
+        <span class="folio-anchor" id="folio-Heath 1896, Props. 28–53 [II. 1–53], pp. 53–94 (PDF 233–274)" data-folio="Heath 1896, Props. 28–53 [II. 1–53], pp. 53–94 (PDF 233–274)" data-page=""></span><p>Book II constructs the asymptotes of the hyperbola and proves that they are shared identically by both opposite branches and by both conjugate hyperbolas. It demonstrates the bisected tangent property, the equality of outer secant intercepts, the asymptotic coordinate symptom <span class="geom-eq-marker" data-assert-equal="xy = \text{const.}" hidden></span>, and provides complete ruler-and-compass constructions to recover the center, axes, and tangents of an arbitrary given conic curve.</p>
+        <section class="level-2" id="sections">
+        <h2>Sections<a class="headerlink" href="#sections" title="Link to this heading">¶</a></h2>
+            <section class="collection ">
+              <article class="excerpt">
+                <div class="content">
+                  <section>
+                    <h2><a href="sec_01_asymptotes/index.html">1. Construction & Non-Meeting of the Asymptotes [Props. 28–29 / II. 1–2, 15, 17, 21]</a></h2>
+                      <p>Proposition 28 [II. 1, 15, 17, 21] — Construction of the Asymptotes.
+                      (1) If PP be a diameter of a hyperbola and  the corresponding parameter, and if on the tangent at P there be set off on each side equal lengths PL, PL such that
+
+                      PL^2 = PL'^2 = \tfrac{1}{4}\, p \cdot PP' \quad [= CD^2],
+
+                      then CL, CL produced from the center C will not meet the curve in any finite point and are accordingly defined as asymptotes.
+                      (2) The opposite branches have the same asymptotes.
+                      (3) Conjugate hyperbolas (having DD as transverse diameter and PP as secondary diameter) share the exact same asymptotes.</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="sec_01_asymptotes/index.html">English</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="sec_01_asymptotes/summary.html">Summary</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="sec_01_asymptotes/notes.html">Notes</a>
+                    </nav>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="sec_02_secants_intercepts/index.html" aria-label="Hyperbola, conjugate hyperbola, common asymptotes, bisected tangent, and equal secant intercepts">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" width="680" height="380" data-graphic-id="g4" data-proposition="II.1-17" data-svg-scope="s-0b029bb3">
+          <style>
+            svg[data-svg-scope="s-0b029bb3"] { --geom-muted: #71717a; --geom-hyper: #2563eb; --geom-rose: #be123c }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-0b029bb3"] { --geom-muted: #a1a1aa; --geom-hyper: #60a5fa; --geom-rose: #fb7185 }
+            svg[data-svg-scope="s-0b029bb3"] { font-family: 'Fira Sans Condensed', 'Fira Sans', system-ui, sans-serif; font-style: normal; font-weight: 700 }
+            svg[data-svg-scope="s-0b029bb3"] .geom-line { stroke: var(--geom-fg); stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; fill: none }
+            svg[data-svg-scope="s-0b029bb3"] .geom-bold { stroke: var(--geom-fg); stroke-width: 2.35; stroke-linecap: round; stroke-linejoin: round; fill: none }
+            svg[data-svg-scope="s-0b029bb3"] .geom-faint { stroke: var(--geom-muted); stroke-width: 1.15; stroke-opacity: 0.72; stroke-linecap: round; fill: none }
+            svg[data-svg-scope="s-0b029bb3"] .geom-dashed { stroke: var(--geom-muted); stroke-width: 1.35; stroke-dasharray: 5, 3.5; stroke-linecap: round; stroke-linejoin: round; fill: none }
+            svg[data-svg-scope="s-0b029bb3"] .geom-accent-line { stroke: var(--geom-accent); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; fill: none }
+            svg[data-svg-scope="s-0b029bb3"] .geom-assert-line { stroke: var(--geom-assert); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; fill: none }
+            svg[data-svg-scope="s-0b029bb3"] .geom-hyper-line { stroke: var(--geom-hyper); stroke-width: 2.1; stroke-linecap: round; stroke-linejoin: round; fill: none }
+            svg[data-svg-scope="s-0b029bb3"] .geom-rose-line { stroke: var(--geom-rose); stroke-width: 2.0; stroke-linecap: round; stroke-linejoin: round; fill: none }
+            svg[data-svg-scope="s-0b029bb3"] .geom-circle { stroke: var(--geom-fg); stroke-width: 1.75; fill: none }
+            svg[data-svg-scope="s-0b029bb3"] .geom-overlay { stroke: transparent; stroke-width: 4.0; stroke-linecap: round; fill: none }
+            svg[data-svg-scope="s-0b029bb3"] .geom-polygon { fill: var(--geom-poly-fill); fill-opacity: 0.06; stroke: none }
+            svg[data-svg-scope="s-0b029bb3"] .geom-polygon-accent { fill: var(--geom-accent); fill-opacity: 0.16; stroke: var(--geom-accent); stroke-width: 1.4 }
+            svg[data-svg-scope="s-0b029bb3"] .geom-polygon-assert { fill: var(--geom-assert); fill-opacity: 0.14; stroke: var(--geom-assert); stroke-width: 1.4 }
+            svg[data-svg-scope="s-0b029bb3"] .geom-polygon-hyper { fill: var(--geom-hyper); fill-opacity: 0.14; stroke: var(--geom-hyper); stroke-width: 1.4 }
+            svg[data-svg-scope="s-0b029bb3"] .geom-polygon-rose { fill: var(--geom-rose); fill-opacity: 0.14; stroke: var(--geom-rose); stroke-width: 1.4 }
+            svg[data-svg-scope="s-0b029bb3"] .geom-point { fill: var(--geom-fg); stroke: var(--geom-point-stroke); stroke-width: 1.2 }
+            svg[data-svg-scope="s-0b029bb3"] .geom-point-accent { fill: var(--geom-accent); stroke: var(--geom-point-stroke); stroke-width: 1.2 }
+            svg[data-svg-scope="s-0b029bb3"] .geom-point-assert { fill: var(--geom-assert); stroke: var(--geom-point-stroke); stroke-width: 1.2 }
+            svg[data-svg-scope="s-0b029bb3"] .geom-point-hyper { fill: var(--geom-hyper); stroke: var(--geom-point-stroke); stroke-width: 1.2 }
+            svg[data-svg-scope="s-0b029bb3"] .geom-point-rose { fill: var(--geom-rose); stroke: var(--geom-point-stroke); stroke-width: 1.2 }
+            svg[data-svg-scope="s-0b029bb3"] .geom-label { font-size: 13.5px; font-weight: 700; fill: var(--geom-fg); user-select: none }
+            svg[data-svg-scope="s-0b029bb3"] .geom-label-sm { font-size: 11.5px; font-weight: 700; fill: var(--geom-muted); user-select: none }
+            svg[data-svg-scope="s-0b029bb3"] .geom-label-accent { font-size: 12.5px; font-weight: 700; fill: var(--geom-accent); user-select: none }
+            svg[data-svg-scope="s-0b029bb3"] .geom-label-assert { font-size: 12.5px; font-weight: 700; fill: var(--geom-assert); user-select: none }
+            svg[data-svg-scope="s-0b029bb3"] .geom-label-hyper { font-size: 12.5px; font-weight: 700; fill: var(--geom-hyper); user-select: none }
+            svg[data-svg-scope="s-0b029bb3"] .geom-label-rose { font-size: 12.5px; font-weight: 700; fill: var(--geom-rose); user-select: none }
+          </style>
+          <defs>
+            <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+              <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" stroke="var(--geom-assert)" stroke-width="1.8" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <g>
+          </g>
+          <g>
+            <path d="M 62.00 3.54 L 340.00 196.00 L 618.00 388.46" fill="none" class="geom-dashed" />
+            <path d="M 62.00 388.46 L 340.00 196.00 L 618.00 3.54" fill="none" class="geom-dashed" />
+            <path d="M 573.39 348.29 L 556.53 335.84 L 541.04 324.28 L 526.85 313.54 L 513.85 303.56 L 501.96 294.27 L 491.11 285.60 L 481.23 277.51 L 472.25 269.94 L 464.12 262.85 L 456.79 256.18 L 450.20 249.90 L 444.32 243.96 L 439.11 238.33 L 434.53 232.97 L 430.55 227.85 L 427.16 222.93 L 424.32 218.18 L 422.03 213.58 L 420.26 209.08 L 419.00 204.68 L 418.25 200.32 L 418.00 196.00 L 418.25 191.68 L 419.00 187.32 L 420.26 182.92 L 422.03 178.42 L 424.32 173.82 L 427.16 169.07 L 430.55 164.15 L 434.53 159.03 L 439.11 153.67 L 444.32 148.04 L 450.20 142.10 L 456.79 135.82 L 464.12 129.15 L 472.25 122.06 L 481.23 114.49 L 491.11 106.40 L 501.96 97.73 L 513.85 88.44 L 526.85 78.46 L 541.04 67.72 L 556.53 56.16 L 573.39 43.71" fill="none" class="geom-bold" />
+            <path d="M 106.61 348.29 L 123.47 335.84 L 138.96 324.28 L 153.15 313.54 L 166.15 303.56 L 178.04 294.27 L 188.89 285.60 L 198.77 277.51 L 207.75 269.94 L 215.88 262.85 L 223.21 256.18 L 229.80 249.90 L 235.68 243.96 L 240.89 238.33 L 245.47 232.97 L 249.45 227.85 L 252.84 222.93 L 255.68 218.18 L 257.97 213.58 L 259.74 209.08 L 261.00 204.68 L 261.75 200.32 L 262.00 196.00 L 261.75 191.68 L 261.00 187.32 L 259.74 182.92 L 257.97 178.42 L 255.68 173.82 L 252.84 169.07 L 249.45 164.15 L 245.47 159.03 L 240.89 153.67 L 235.68 148.04 L 229.80 142.10 L 223.21 135.82 L 215.88 129.15 L 207.75 122.06 L 198.77 114.49 L 188.89 106.40 L 178.04 97.73 L 166.15 88.44 L 153.15 78.46 L 138.96 67.72 L 123.47 56.16 L 106.61 43.71" fill="none" class="geom-bold" />
+            <path d="M 138.01 46.10 L 154.71 56.82 L 170.21 66.64 L 184.63 75.64 L 198.06 83.87 L 210.57 91.38 L 222.26 98.22 L 233.20 104.44 L 243.45 110.07 L 253.08 115.15 L 262.15 119.71 L 270.73 123.78 L 278.86 127.39 L 286.60 130.56 L 294.00 133.31 L 301.11 135.66 L 307.96 137.62 L 314.61 139.21 L 321.10 140.44 L 327.47 141.31 L 333.75 141.83 L 340.00 142.00 L 346.25 141.83 L 352.53 141.31 L 358.90 140.44 L 365.39 139.21 L 372.04 137.62 L 378.89 135.66 L 386.00 133.31 L 393.40 130.56 L 401.14 127.39 L 409.27 123.78 L 417.85 119.71 L 426.92 115.15 L 436.55 110.07 L 446.80 104.44 L 457.74 98.22 L 469.43 91.38 L 481.94 83.87 L 495.37 75.64 L 509.79 66.64 L 525.29 56.82 L 541.99 46.10" fill="none" class="geom-hyper-line" />
+            <path d="M 138.01 345.90 L 154.71 335.18 L 170.21 325.36 L 184.63 316.36 L 198.06 308.13 L 210.57 300.62 L 222.26 293.78 L 233.20 287.56 L 243.45 281.93 L 253.08 276.85 L 262.15 272.29 L 270.73 268.22 L 278.86 264.61 L 286.60 261.44 L 294.00 258.69 L 301.11 256.34 L 307.96 254.38 L 314.61 252.79 L 321.10 251.56 L 327.47 250.69 L 333.75 250.17 L 340.00 250.00 L 346.25 250.17 L 352.53 250.69 L 358.90 251.56 L 365.39 252.79 L 372.04 254.38 L 378.89 256.34 L 386.00 258.69 L 393.40 261.44 L 401.14 264.61 L 409.27 268.22 L 417.85 272.29 L 426.92 276.85 L 436.55 281.93 L 446.80 287.56 L 457.74 293.78 L 469.43 300.62 L 481.94 308.13 L 495.37 316.36 L 509.79 325.36 L 525.29 335.18 L 541.99 345.90" fill="none" class="geom-hyper-line" />
+            <path d="M 471.20 105.17 L 449.99 135.90 L 428.79 166.64" fill="none" class="geom-accent-line" marker-mid="url(#geom-tick-1)" />
+            <path d="M 428.79 166.64 L 407.58 197.37 L 386.37 228.10" fill="none" class="geom-accent-line" marker-mid="url(#geom-tick-1)" />
+            <path d="M 522.73 81.60 L 481.59 160.71 L 440.45 239.82" fill="none" class="geom-line" />
+            <path d="M 532.56 62.69 L 527.65 72.14 L 522.73 81.60" fill="none" class="geom-assert-line" marker-mid="url(#geom-tick-2)" />
+            <path d="M 440.45 239.82 L 435.54 249.28 L 430.62 258.74" fill="none" class="geom-assert-line" marker-mid="url(#geom-tick-2)" />
+          </g>
+          <g>
+            <circle cx="340.00" cy="196.00" r="3.40" class="geom-point" />
+            <circle cx="418.00" cy="196.00" r="3.40" class="geom-point" />
+            <circle cx="262.00" cy="196.00" r="3.40" class="geom-point" />
+            <circle cx="428.79" cy="166.64" r="3.40" class="geom-point-accent" />
+            <circle cx="471.20" cy="105.17" r="3.40" class="geom-point-accent" />
+            <circle cx="386.37" cy="228.10" r="3.40" class="geom-point-accent" />
+            <circle cx="532.56" cy="62.69" r="3.40" class="geom-point-assert" />
+            <circle cx="522.73" cy="81.60" r="3.40" class="geom-point-assert" />
+            <circle cx="440.45" cy="239.82" r="3.40" class="geom-point-assert" />
+            <circle cx="430.62" cy="258.74" r="3.40" class="geom-point-assert" />
+          </g>
+          <g>
+            <text x="340.00" y="22.00" text-anchor="middle" class="geom-label-sm">II.1–17: Asymptotes, Conjugate Hyperbolas, Tangent Bisection &amp; Equal Secant Intercepts</text>
+            <text x="327.00" y="200.00" text-anchor="middle" class="geom-label">C</text>
+            <text x="431.00" y="210.00" text-anchor="middle" class="geom-label-sm">A</text>
+            <text x="248.00" y="210.00" text-anchor="middle" class="geom-label-sm">A′</text>
+            <text x="416.79" y="161.64" text-anchor="middle" class="geom-label-accent">P</text>
+            <text x="461.20" y="97.17" text-anchor="middle" class="geom-label-accent">D</text>
+            <text x="374.37" y="241.10" text-anchor="middle" class="geom-label-accent">D′</text>
+            <text x="547.56" y="60.69" text-anchor="middle" class="geom-label-assert">R</text>
+            <text x="536.73" y="84.60" text-anchor="middle" class="geom-label-assert">Q</text>
+            <text x="455.45" y="242.82" text-anchor="middle" class="geom-label-assert">Q′</text>
+            <text x="446.62" y="269.74" text-anchor="middle" class="geom-label-assert">R′</text>
+            <text x="340.00" y="62.00" text-anchor="middle" class="geom-label-hyper">Conjugate Hyperbola</text>
+            <text x="122.00" y="198.00" text-anchor="middle" class="geom-label-sm">Opposite Branch</text>
+            <text x="340.00" y="364.00" text-anchor="middle" class="geom-label-sm">II.3: DP = PD′ (tangent bisected)   ·   II.8: RQ = Q′R′ (secant intercepts equal)</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="sec_02_secants_intercepts/index.html">2. Secant Intercepts, Bisected Tangents & the Asymptotic Equation [Props. 30–35 / II. 3–16]</a></h2>
+                      <p><strong>Plate 4 — Asymptotes, Conjugate Hyperbolas &amp; Equal Secant Intercepts (Book II.1–21 [Props. 28–38])</strong>. Both conjugate hyperbolas share asymptotes <span class="geom-ref" data-ref="CL" title="CL">CL</span>, <span class="geom-ref" data-ref="CL'" title="CL&#x27;">CL</span>; any tangent segment <span class="geom-ref" data-ref="LL'" title="LL&#x27;">LL</span> between the asymptotes is bisected at its point of contact <span class="geom-ref" data-ref="P" title="P">P</span>; any secant meeting the hyperbola at <span class="geom-ref" data-ref="Q, Q'" title="Q, Q&#x27;">QQ</span> and the asymptotes at <span class="geom-ref" data-ref="R, R'" title="R, R&#x27;">RR</span> cuts off equal intercepts <span class="geom-eq-marker" data-assert-equal="RQ = Q'R'" hidden></span> with <span class="geom-eq-marker" data-assert-equal="RQ \cdot QR' = PL^2" hidden></span>.</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="sec_02_secants_intercepts/index.html">English</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="sec_02_secants_intercepts/summary.html">Summary</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="sec_02_secants_intercepts/notes.html">Notes</a>
+                    </nav>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <section>
+                    <h2><a href="sec_03_axes_tangents/index.html">3. Finding Diameters, Axes & Tangents by Compass and Straightedge [Props. 47–53 / II. 44–53]</a></h2>
+                      <p>In the closing chapters of Book II (<cite>II.44–53</cite>), Apollonius solves the fundamental <strong>problems of geometric recovery</strong> on a ready-drawn conic arc whose cone and parameters are unknown:</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="sec_03_axes_tangents/index.html">English</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="sec_03_axes_tangents/summary.html">Summary</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="sec_03_axes_tangents/notes.html">Notes</a>
+                    </nav>
+                  </section>
+                </div>
+              </article>
+            </section><div class="toctree-wrapper compound">
+        </div>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../book_01/sec_03_tangents_coordinates/index.html" title="3. Tangents, Harmonic Division &amp; Change of Diameter [Props. 12–27 / I. 33–60]">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">Conics</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="sec_01_asymptotes/index.html" title="1. Construction &amp; Non-Meeting of the Asymptotes [Props. 28–29 / II. 1–2, 15, 17, 21]"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../types/book.html">book</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 200 BCE · 1896 Cambridge University Press · Digital Codex GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=6e0256f3"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

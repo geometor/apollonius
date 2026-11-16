@@ -74,7 +74,7 @@ symbolic conic gaps in ``sympy.geometry``.
 Books I, II, IV, V, VI, VII Prefaces — Intro Part II, Ch. I
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/preface-intro/preface-intro-en` (Heath pp. lxix–lxxv · PDF 77–83)
+- **Codex Unit**: :doc:`/conics/preface/index` (Heath pp. lxix–lxxv · PDF 77–83)
 - **Geometric Plate**: —
 - **Euclid Foundations**: VI.27, VI.28, VI.29, XII.10
 - **GEOMETOR & Formal Links**: ``euclid``, ``archimedes``, ``pappus``
@@ -85,7 +85,7 @@ Books I, II, IV, V, VI, VII Prefaces — Intro Part II, Ch. I
 I. 1–10 — The Cone (Introductory Props.)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-1/book-1-en` (Heath pp. 1–8 · PDF 181–188)
+- **Codex Unit**: :doc:`/conics/book_01/index` (Heath pp. 1–8 · PDF 181–188)
 - **Geometric Plate**: ``fig_oblique_cone_sections.svg``
 - **Euclid Foundations**: III.35, VI.4, XI.Def.18
 - **GEOMETOR & Formal Links**: ``euclid``, ``elements``, ``pappus``
@@ -96,7 +96,7 @@ I. 1–10 — The Cone (Introductory Props.)
 I. 11 — Proposition 1
 ~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-1/book-1-en` (Heath pp. 8–9 · PDF 188–189)
+- **Codex Unit**: :doc:`/conics/book_01/index` (Heath pp. 8–9 · PDF 188–189)
 - **Geometric Plate**: ``fig_application_of_areas.svg``
 - **Euclid Foundations**: I.44, II.14, VI.4, VI.27
 - **GEOMETOR & Formal Links**: ``euclid``, ``elements``, ``archimedes``, ``wildberger``
@@ -107,7 +107,7 @@ I. 11 — Proposition 1
 I. 12 — Proposition 2
 ~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-1/book-1-en` (Heath pp. 9–11 · PDF 189–191)
+- **Codex Unit**: :doc:`/conics/book_01/index` (Heath pp. 9–11 · PDF 189–191)
 - **Geometric Plate**: ``fig_application_of_areas.svg``
 - **Euclid Foundations**: II.6, VI.4, VI.29
 - **GEOMETOR & Formal Links**: ``euclid``, ``elements``, ``wildberger``
@@ -118,7 +118,7 @@ I. 12 — Proposition 2
 I. 13 — Proposition 3
 ~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-1/book-1-en` (Heath pp. 11–13 · PDF 191–193)
+- **Codex Unit**: :doc:`/conics/book_01/index` (Heath pp. 11–13 · PDF 191–193)
 - **Geometric Plate**: ``fig_application_of_areas.svg``
 - **Euclid Foundations**: II.5, VI.4, VI.28
 - **GEOMETOR & Formal Links**: ``euclid``, ``elements``, ``archimedes``, ``wildberger``
@@ -129,7 +129,7 @@ I. 13 — Proposition 3
 I. 14, 15, 16 — Propositions 4–6
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-1/book-1-en` (Heath pp. 13–17 · PDF 193–197)
+- **Codex Unit**: :doc:`/conics/book_01/index` (Heath pp. 13–17 · PDF 193–197)
 - **Geometric Plate**: ``fig_oblique_cone_sections.svg``
 - **Euclid Foundations**: VI.4, VI.29
 - **GEOMETOR & Formal Links**: ``euclid``, ``pappus``
@@ -140,7 +140,7 @@ I. 14, 15, 16 — Propositions 4–6
 I. 33–38 — Propositions 12–15
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-1/book-1-en` (Heath pp. 25–30 · PDF 205–210)
+- **Codex Unit**: :doc:`/conics/book_01/index` (Heath pp. 25–30 · PDF 205–210)
 - **Geometric Plate**: ``fig_tangent_harmonic_division.svg``
 - **Euclid Foundations**: II.5, II.6, III.16, VI.17
 - **GEOMETOR & Formal Links**: ``euclid``, ``pappus``, ``mathlib4``
@@ -151,7 +151,7 @@ I. 33–38 — Propositions 12–15
 I. 49–51 — Propositions 20–21
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-1/book-1-en` (Heath pp. 36–41 · PDF 216–221)
+- **Codex Unit**: :doc:`/conics/book_01/index` (Heath pp. 36–41 · PDF 216–221)
 - **Geometric Plate**: ``fig_tangent_harmonic_division.svg``
 - **Euclid Foundations**: I.43, VI.4
 - **GEOMETOR & Formal Links**: ``euclid``, ``wildberger``
@@ -162,7 +162,7 @@ I. 49–51 — Propositions 20–21
 II. 1–14 — Propositions 28–35
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-2/book-2-en` (Heath pp. 53–62 · PDF 233–242)
+- **Codex Unit**: :doc:`/conics/book_02/index` (Heath pp. 53–62 · PDF 233–242)
 - **Geometric Plate**: ``fig_hyperbola_asymptotes_secant.svg``
 - **Euclid Foundations**: II.5, II.6, X.1
 - **GEOMETOR & Formal Links**: ``euclid``, ``archimedes``, ``descartes``
@@ -173,7 +173,7 @@ II. 1–14 — Propositions 28–35
 II. 15–23 — Propositions 28, 36–39
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-2/book-2-en` (Heath pp. 53, 62–64 · PDF 233, 242–244)
+- **Codex Unit**: :doc:`/conics/book_02/index` (Heath pp. 53, 62–64 · PDF 233, 242–244)
 - **Geometric Plate**: ``fig_hyperbola_asymptotes_secant.svg``
 - **Euclid Foundations**: II.6, VI.4
 - **GEOMETOR & Formal Links**: ``euclid``, ``wildberger``
@@ -184,7 +184,7 @@ II. 15–23 — Propositions 28, 36–39
 II. 44–53 — Propositions 47–53
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-2/book-2-en` (Heath pp. 72–83 · PDF 252–263)
+- **Codex Unit**: :doc:`/conics/book_02/index` (Heath pp. 72–83 · PDF 252–263)
 - **Geometric Plate**: ``fig_tangent_harmonic_division.svg``
 - **Euclid Foundations**: III.17, III.31
 - **GEOMETOR & Formal Links**: ``euclid``, ``elements``, ``pappus``
@@ -195,7 +195,7 @@ II. 44–53 — Propositions 47–53
 III. 16–29 — Propositions 57–61
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-3/book-3-en` (Heath pp. 97–101 · PDF 277–281)
+- **Codex Unit**: :doc:`/conics/book_03/index` (Heath pp. 97–101 · PDF 277–281)
 - **Geometric Plate**: ``fig_three_four_line_locus.svg``
 - **Euclid Foundations**: III.35, III.36, III.37
 - **GEOMETOR & Formal Links**: ``euclid``, ``pappus``, ``newton``
@@ -206,7 +206,7 @@ III. 16–29 — Propositions 57–61
 III. 30–40 — Propositions 62–66
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-3/book-3-en` (Heath pp. 102–108 · PDF 282–288)
+- **Codex Unit**: :doc:`/conics/book_03/index` (Heath pp. 102–108 · PDF 282–288)
 - **Geometric Plate**: ``fig_harmonic_pole_polar.svg``
 - **Euclid Foundations**: VI.2, VI.4
 - **GEOMETOR & Formal Links**: ``pappus``, ``mathlib4``, ``wildberger``
@@ -217,7 +217,7 @@ III. 30–40 — Propositions 62–66
 III. 45–52 — Propositions 69–73
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-3/book-3-en` (Heath pp. 113–118 · PDF 293–298)
+- **Codex Unit**: :doc:`/conics/book_03/index` (Heath pp. 113–118 · PDF 293–298)
 - **Geometric Plate**: ``fig_central_conic_foci.svg``
 - **Euclid Foundations**: I.47, II.5, II.6, III.21, III.31
 - **GEOMETOR & Formal Links**: ``euclid``, ``pappus``, ``kepler``, ``wildberger``
@@ -228,7 +228,7 @@ III. 45–52 — Propositions 69–73
 III. 53–56 — Propositions 74–76
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-3/book-3-en` (Heath pp. 119–125 · PDF 299–305)
+- **Codex Unit**: :doc:`/conics/book_03/index` (Heath pp. 119–125 · PDF 299–305)
 - **Geometric Plate**: ``fig_three_four_line_locus.svg``
 - **Euclid Foundations**: VI.16, VI.23
 - **GEOMETOR & Formal Links**: ``pappus``, ``descartes``
@@ -239,7 +239,7 @@ III. 53–56 — Propositions 74–76
 IV. 1–23 — Introductory Note to Book IV
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-4/book-4-en` (Heath pp. 126 · PDF 306)
+- **Codex Unit**: :doc:`/conics/book_04/index` (Heath pp. 126 · PDF 306)
 - **Geometric Plate**: ``fig_harmonic_pole_polar.svg``
 - **Euclid Foundations**: III.17, VI.4
 - **GEOMETOR & Formal Links**: ``pappus``, ``mathlib4``
@@ -250,7 +250,7 @@ IV. 1–23 — Introductory Note to Book IV
 IV. 24–57 — Propositions 77–83
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-4/book-4-en` (Heath pp. 126–138 · PDF 306–318)
+- **Codex Unit**: :doc:`/conics/book_04/index` (Heath pp. 126–138 · PDF 306–318)
 - **Geometric Plate**: ``fig_four_point_conic_pencil.svg``
 - **Euclid Foundations**: III.10, III.13
 - **GEOMETOR & Formal Links**: ``euclid``, ``pappus``
@@ -261,7 +261,7 @@ IV. 24–57 — Propositions 77–83
 V. 1–34 — Propositions 84–94
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-5/book-5-en` (Heath pp. 139–159 · PDF 319–339)
+- **Codex Unit**: :doc:`/conics/book_05/index` (Heath pp. 139–159 · PDF 319–339)
 - **Geometric Plate**: ``fig_normals_evolute.svg``
 - **Euclid Foundations**: I.19, III.7, III.8, III.16
 - **GEOMETOR & Formal Links**: ``euclid``, ``archimedes``
@@ -272,7 +272,7 @@ V. 1–34 — Propositions 84–94
 V. 51–63 — Propositions 99–106
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/book-5/book-5-en` (Heath pp. 168–186 · PDF 348–366)
+- **Codex Unit**: :doc:`/conics/book_05/index` (Heath pp. 168–186 · PDF 348–366)
 - **Geometric Plate**: ``fig_normals_evolute.svg``
 - **Euclid Foundations**: II.5, V.8, VI.28
 - **GEOMETOR & Formal Links**: ``archimedes``, ``descartes``, ``wildberger``
@@ -283,7 +283,7 @@ V. 51–63 — Propositions 99–106
 VI. 1–33 — Definitions 1–6 & Propositions 114–122
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/books-6-7/books-6-7-en` (Heath pp. 197–220 · PDF 377–400)
+- **Codex Unit**: :doc:`/conics/book_06/index` (Heath pp. 197–220 · PDF 377–400)
 - **Geometric Plate**: ``fig_oblique_cone_sections.svg``
 - **Euclid Foundations**: VI.Def.1, VI.20, XI.24
 - **GEOMETOR & Formal Links**: ``euclid``, ``elements``
@@ -294,7 +294,7 @@ VI. 1–33 — Definitions 1–6 & Propositions 114–122
 VII. 12, 13, 29, 30, 31 — Propositions 129 & 136
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/books-6-7/books-6-7-en` (Heath pp. 228–236 · PDF 408–416)
+- **Codex Unit**: :doc:`/conics/book_07/index` (Heath pp. 228–236 · PDF 408–416)
 - **Geometric Plate**: ``fig_conjugate_diameters_theorems.svg``
 - **Euclid Foundations**: I.35, I.47, II.5, II.6, VI.23
 - **GEOMETOR & Formal Links**: ``euclid``, ``wildberger``
@@ -305,7 +305,7 @@ VII. 12, 13, 29, 30, 31 — Propositions 129 & 136
 VII. 33–51 — Propositions 137–147
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/books-6-7/books-6-7-en` (Heath pp. 236–254 · PDF 416–434)
+- **Codex Unit**: :doc:`/conics/book_07/index` (Heath pp. 236–254 · PDF 416–434)
 - **Geometric Plate**: ``fig_conjugate_diameters_theorems.svg``
 - **Euclid Foundations**: V.8, V.10, VI.27
 - **GEOMETOR & Formal Links**: ``euclid``, ``ibn-al-haytham``, ``halley``
@@ -316,7 +316,7 @@ VII. 33–51 — Propositions 137–147
 Pappus Synagoge VII (Περὶ ἐπαφῶν) — Intro Part II, Ch. I & Viète (1600)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/lost-works-pappus/lost-works-pappus-en` (Heath pp. lxviii · PDF 76)
+- **Codex Unit**: :doc:`/reconstructed/index` (Heath pp. lxviii · PDF 76)
 - **Geometric Plate**: ``fig_problem_of_apollonius_ccc.svg``
 - **Euclid Foundations**: III.17, III.36, IV.4, IV.5
 - **GEOMETOR & Formal Links**: ``pappus``, ``elements``, ``etc``
@@ -327,7 +327,7 @@ Pappus Synagoge VII (Περὶ ἐπαφῶν) — Intro Part II, Ch. I & Viète
 Pappus Synagoge VII (Τόποι ἐπίπεδοι II) — Circle of Apollonius & Analytic Treasury
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Codex Unit**: :doc:`/conics/lost-works-pappus/lost-works-pappus-en` (Heath pp. lxviii, cxxv–cxxvi · PDF 76, 133–134)
+- **Codex Unit**: :doc:`/reconstructed/index` (Heath pp. lxviii, cxxv–cxxvi · PDF 76, 133–134)
 - **Geometric Plate**: ``fig_apollonius_circle_locus.svg``
 - **Euclid Foundations**: VI.3, VI.A
 - **GEOMETOR & Formal Links**: ``pappus``, ``elements``, ``etc``, ``wildberger``

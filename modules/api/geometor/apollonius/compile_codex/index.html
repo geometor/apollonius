@@ -6,12 +6,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>geometor.apollonius.compile_codex &mdash; GEOMETOR • apollonius</title>
+
+  <title>geometor.apollonius.compile_codex — Apollonius of Perga • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/apollonius/modules/api/geometor/apollonius/compile_codex/" />
+  <meta name="description" content="Apparatus RST generator and 3-track Book Codex integrity verifier for GEOMETOR • apollonius." />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="geometor.apollonius.compile_codex — Apollonius of Perga • GEOMETOR" />
+  <meta property="og:description" content="Apparatus RST generator and 3-track Book Codex integrity verifier for GEOMETOR • apollonius." />
+  <meta property="og:url" content="https://geometor.github.io/apollonius/modules/api/geometor/apollonius/compile_codex/" />
+  <meta property="og:image" content="https://geometor.github.io/apollonius/_static/social/banner.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Apollonius of Perga — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="geometor.apollonius.compile_codex — Apollonius of Perga • GEOMETOR" />
+  <meta name="twitter:description" content="Apparatus RST generator and 3-track Book Codex integrity verifier for GEOMETOR • apollonius." />
+  <meta name="twitter:image" content="https://geometor.github.io/apollonius/_static/social/banner.png" />
+  <meta name="twitter:image:alt" content="Apollonius of Perga — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=ec8980ef" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=81e79cc0" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -23,14 +43,14 @@
 <body class="book-theme-classical-serif">
   <header>
     <div class="logo">
-      <a href="../../../../../index.html">
-        <img src="../../../../../_static/logo.png" class="logo" alt="Logo"/>
+      <a href="../../../../../index.html" title="Home">
+        <img src="../../../../../_static/logo.png" class="logo" alt="GEOMETOR apollonius"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">apollonius</span>
+        </div>
       </a>
-      <div class="org-repo">
-        <span class="org">GEOMETOR</span>
-        •
-        <span class="repo">apollonius</span>
-      </div>
     </div>
     <nav aria-label="Header">
       <input type="checkbox" id="nav-Header-toggle" >
@@ -62,14 +82,11 @@
     <article class="book-layout book-reading-pane">
       <header class="book-header">
         <div class="book-header-bar">
-          <div class="book-header-identity">
-            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; apollonius</a>
-            <span class="book-header-sep">/</span>
-            <a class="book-title-link" href="../../../../../index.html">GEOMETOR • apollonius</a>
-          </div>
-          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
-            <a class="book-crumb-link" href="../../../../index.html">Modules</a>
-          </div>
+          <nav class="book-breadcrumbs" aria-label="Breadcrumb">
+            <a class="book-section-home-link" href="../../../../index.html">Modules</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <span class="book-crumb-current" aria-current="page">geometor.apollonius.compile_codex</span>
+          </nav>
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
@@ -116,7 +133,7 @@
         <td><p>Generate and write all four scholarly apparatus RST files into <code class="docutils literal notranslate"><span class="pre">docsrc/conics/</span></code>.</p></td>
         </tr>
         <tr class="row-even"><td><p><a class="reference internal" href="#geometor.apollonius.compile_codex.verify_codex_tracks" title="geometor.apollonius.compile_codex.verify_codex_tracks"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_codex_tracks</span></code></a>([docsrc_dir]) → list[str]</p></td>
-        <td><p>Verify 8 units × 3 tracks = 24 synchronized RST files, 12 SVGs, and zero embedded Python.</p></td>
+        <td><p>Verify 9 units, companion tracks in all sections, 12 SVGs, and zero embedded Python.</p></td>
         </tr>
         </tbody>
         </table>
@@ -161,7 +178,7 @@
         <dl class="py function">
         <dt class="sig sig-object py" id="geometor.apollonius.compile_codex.verify_codex_tracks">
         <span class="sig-prename descclassname"><span class="pre">geometor.apollonius.compile_codex.</span></span><span class="sig-name descname"><span class="pre">verify_codex_tracks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">docsrc_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pathlib.Path</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.apollonius.compile_codex.verify_codex_tracks" title="Link to this definition">¶</a></dt>
-        <dd><p>Verify 8 units × 3 tracks = 24 synchronized RST files, 12 SVGs, and zero embedded Python.</p>
+        <dd><p>Verify 9 units, companion tracks in all sections, 12 SVGs, and zero embedded Python.</p>
         </dd></dl>
 
         </section>
@@ -172,13 +189,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../concordance/index.html" title="geometor.apollonius.concordance">&larr; <span class="nav-label">geometor.apollonius.concordance</span></a>
+            <a class="book-nav-btn" href="../concordance/index.html" title="geometor.apollonius.concordance">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
-            <a class="book-toc-link" href="../../../../../index.html">GEOMETOR • apollonius</a>
+            <a class="book-toc-link" href="../../../../index.html">Modules</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../cli/index.html" title="geometor.apollonius.cli"><span class="nav-label">geometor.apollonius.cli</span> &rarr;</a>
+            <a class="book-nav-btn" href="../cli/index.html" title="geometor.apollonius.cli"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -202,6 +219,12 @@
           <input type="hidden" name="area" value="default" />
         </form>
       </div>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/book.html">book</a></li>
+      </ul>
     </aside>
   </div>
   <footer>
