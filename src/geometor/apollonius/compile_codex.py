@@ -100,6 +100,11 @@ def render_concordance_rst(resources_dir: Path | None = None) -> str:
         euclid_str = ", ".join(m.euclid_refs) if m.euclid_refs else "—"
         eco_str = ", ".join(f"``{e}``" for e in m.ecosystem_links) if m.ecosystem_links else "—"
         fig_str = f"``{m.figure}``" if m.figure else "—"
+        doc_link = (
+            "/reconstructed/index"
+            if m.codex_unit == "reconstructed"
+            else f"/conics/{m.codex_unit}/index"
+        )
         lines.extend(
             [
                 f".. _{m.id}:",
@@ -107,7 +112,7 @@ def render_concordance_rst(resources_dir: Path | None = None) -> str:
                 _rst_heading(f"{m.classical_locus} — {m.heath_prop}", "~"),
                 "",
                 (
-                    f"- **Codex Unit**: :doc:`/conics/{m.codex_unit}/{m.codex_unit}-en` "
+                    f"- **Codex Unit**: :doc:`{doc_link}` "
                     f"(Heath pp. {m.heath_pages} · PDF {m.pdf_pages})"
                 ),
                 f"- **Geometric Plate**: {fig_str}",
@@ -242,7 +247,7 @@ def render_persons_rst(resources_dir: Path | None = None) -> str:
                         "",
                         "Born at Perga in Pamphylia around **240 BCE** during the reign of Ptolemy III Euergetes and flourishing under Ptolemy IV Philopator (*Heath 1896, p. lxviii*), :person:`Apollonius of Perga <apollonius>` studied as a young man at **Alexandria** under the successors of :person:`Euclid <euclid>`. As :person:`Geminus <geminus>` (quoted by :person:`Eutocius <eutocius>`) records, his contemporaries held him in such awe for his mastery of conic sections that they named him simply **ὁ μέγας γεωμέτρης — \"The Great Geometer.\"**",
                         "",
-                        "From Apollonius's own epistolary Prefaces (:doc:`Unit 0 </conics/preface-intro/preface-intro-en>`), we trace an unusually vivid intellectual network across the Hellenistic eastern Mediterranean: at **Alexandria**, prompted by :person:`Naucrates <naucrates>`, he drafted the initial eight books of the *Conics*; at **Ephesus**, he conversed with the Epicurean mathematician :person:`Philonides <philonides>`; at **Pergamum**, home of the Attalid royal library, he dedicated Books I–III to :person:`Eudemus of Pergamum <eudemus-pergamum>` and Books IV–VIII to :person:`Attalus <attalus>`.",
+                        "From Apollonius's own epistolary Prefaces (:doc:`Preface </conics/preface/index>`), we trace an unusually vivid intellectual network across the Hellenistic eastern Mediterranean: at **Alexandria**, prompted by :person:`Naucrates <naucrates>`, he drafted the initial eight books of the *Conics*; at **Ephesus**, he conversed with the Epicurean mathematician :person:`Philonides <philonides>`; at **Pergamum**, home of the Attalid royal library, he dedicated Books I–III to :person:`Eudemus of Pergamum <eudemus-pergamum>` and Books IV–VIII to :person:`Attalus <attalus>`.",
                         "",
                         "In addition to the *Conics* and the six analytic treatises preserved in syllabus by :person:`Pappus <pappus>`, ancient sources credit Apollonius with proving the geometric equivalence of eccentric and epicyclic planetary models (Ptolemy, *Almagest* XII.1), comparing the regular dodecahedron and icosahedron inscribed in the same sphere (*Elements* Book XIV), and calculating closer approximations to :eq:`\\pi` in his *Quick-Delivery* (*Ὠκυτόκιον*).",
                     ]
@@ -340,10 +345,11 @@ def write_apparatus_pages(
 
 
 def verify_codex_tracks(docsrc_dir: Path | None = None) -> list[str]:
-    """Verify 8 units × 3 tracks = 24 synchronized RST files, 12 SVGs, and zero embedded Python."""
+    """Verify 9 units, companion tracks in all sections, 12 SVGs, and zero embedded Python."""
     repo_root = Path(__file__).resolve().parents[3]
     docs_root = docsrc_dir or (repo_root / "docsrc")
     conics_dir = docs_root / "conics"
+    reconstructed_dir = docs_root / "reconstructed"
     figures_dir = docs_root / "_static" / "figures"
     errors: list[str] = []
 
@@ -362,32 +368,46 @@ def verify_codex_tracks(docsrc_dir: Path | None = None) -> list[str]:
     )
 
     for unit in CODEX_UNITS:
-        unit_dir = conics_dir / unit.slug
-        for suffix in ("en", "summary", "notes"):
-            track_file = unit_dir / f"{unit.slug}-{suffix}.rst"
-            if not track_file.is_file():
-                errors.append(f"Missing companion track file: {track_file}")
-                continue
-            text = track_file.read_text(encoding="utf-8")
-            if ":layout: book" not in text:
-                errors.append(f"Track file missing ':layout: book': {track_file}")
-            if suffix == "en" and ".. folio::" not in text:
-                errors.append(f"Primary English track missing '.. folio::' marker: {track_file}")
-            for pat in forbidden_patterns:
-                if pat.search(text):
-                    errors.append(
-                        f"Forbidden embedded Python directive '{pat.pattern}' in historical codex: {track_file}"
-                    )
+        unit_dir = reconstructed_dir if unit.slug == "reconstructed" else conics_dir / unit.slug
+        unit_index = unit_dir / "index.rst"
+        if not unit_index.is_file():
+            errors.append(f"Missing unit index file: {unit_index}")
+            continue
+        text = unit_index.read_text(encoding="utf-8")
+        if ":layout: book" not in text:
+            errors.append(f"Unit index missing ':layout: book': {unit_index}")
+        if ".. folio::" not in text:
+            errors.append(f"Unit index missing '.. folio::' marker: {unit_index}")
 
-    # Also scan apparatus and root conics RST files for forbidden embedded Python
-    if conics_dir.is_dir():
-        for rst_file in conics_dir.rglob("*.rst"):
-            text = rst_file.read_text(encoding="utf-8")
-            for pat in forbidden_patterns:
-                if pat.search(text):
-                    msg = f"Forbidden embedded Python directive '{pat.pattern}' in historical codex: {rst_file}"
-                    if msg not in errors:
-                        errors.append(msg)
+        # Check all child section directories in unit_dir
+        sec_dirs = sorted([d for d in unit_dir.iterdir() if d.is_dir() and d.name.startswith("sec_")])
+        if not sec_dirs:
+            errors.append(f"Unit '{unit.slug}' has no sec_* section directories in {unit_dir}")
+        for sec_dir in sec_dirs:
+            for suffix in ("index", "summary", "notes"):
+                track_file = sec_dir / f"{suffix}.rst"
+                if not track_file.is_file():
+                    errors.append(f"Missing companion track file: {track_file}")
+                    continue
+                ttext = track_file.read_text(encoding="utf-8")
+                if ":layout: book" not in ttext:
+                    errors.append(f"Track file missing ':layout: book': {track_file}")
+                if suffix == "index" and ".. folio::" not in ttext:
+                    errors.append(f"Primary section track missing '.. folio::' marker: {track_file}")
+                for pat in forbidden_patterns:
+                    if pat.search(ttext):
+                        errors.append(
+                            f"Forbidden embedded Python directive '{pat.pattern}' in historical codex: {track_file}"
+                        )
+
+    # Also scan all docsrc RST files for forbidden embedded Python
+    for rst_file in docs_root.rglob("*.rst"):
+        text = rst_file.read_text(encoding="utf-8")
+        for pat in forbidden_patterns:
+            if pat.search(text):
+                msg = f"Forbidden embedded Python directive '{pat.pattern}' in historical codex: {rst_file}"
+                if msg not in errors:
+                    errors.append(msg)
 
     for svg_name in EXPECTED_SVG_FIGURES:
         svg_path = figures_dir / svg_name

@@ -40,16 +40,17 @@ def _load_build_figures_module():
 
 def test_version_and_codex_unit_registry() -> None:
     assert __version__ == "0.1.6"
-    assert len(CODEX_UNITS) == 8
+    assert len(CODEX_UNITS) == 9
     expected_slugs = [
-        "preface-intro",
-        "book-1",
-        "book-2",
-        "book-3",
-        "book-4",
-        "book-5",
-        "books-6-7",
-        "lost-works-pappus",
+        "preface",
+        "book_01",
+        "book_02",
+        "book_03",
+        "book_04",
+        "book_05",
+        "book_06",
+        "book_07",
+        "reconstructed",
     ]
     assert [u.slug for u in CODEX_UNITS] == expected_slugs
     assert set(CODEX_UNITS_BY_SLUG.keys()) == set(expected_slugs)
@@ -80,9 +81,9 @@ def test_codex_tracks_and_zero_embedded_python() -> None:
     errors = verify_codex_tracks()
     assert errors == [], f"Codex track verification errors: {errors}"
 
-    conics_dir = REPO_ROOT / "docsrc" / "conics"
-    track_files = list(conics_dir.glob("*/*-*.rst"))
-    assert len(track_files) == 24
+    docsrc = REPO_ROOT / "docsrc"
+    track_files = list(docsrc.glob("**/sec_*/*.rst"))
+    assert len(track_files) == 72
 
 
 def test_all_twelve_svg_plates_valid_xml_and_euclid_graphic() -> None:
@@ -167,7 +168,7 @@ def test_primary_source_folio_map_integrity() -> None:
     folios = data.get("folios", data)
     assert len(folios) >= 27
 
-    # Verify all 27 directives in docsrc match an entry
+    # Verify all 33 directives in docsrc match an entry
     directives = []
     docsrc = REPO_ROOT / "docsrc"
     for rst in docsrc.rglob("*.rst"):
@@ -176,7 +177,7 @@ def test_primary_source_folio_map_integrity() -> None:
             if m:
                 directives.append(m.group(1).strip())
 
-    assert len(directives) == 27
+    assert len(directives) == 33
     for d in directives:
         assert d in folios, f"Directive '{d}' not in folio_map.json"
         entry = folios[d]

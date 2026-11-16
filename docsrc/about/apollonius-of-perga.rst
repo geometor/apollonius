@@ -8,7 +8,7 @@ Born at Perga in Pamphylia around **240 BCE** during the reign of Ptolemy III Eu
 Alexandria, Ephesus & Pergamum
 ------------------------------
 
-From Apollonius's own epistolary Prefaces (:doc:`Unit 0 </conics/preface-intro/preface-intro-en>`), we trace an unusually vivid intellectual network across the Hellenistic eastern Mediterranean:
+From Apollonius's own epistolary Prefaces (:doc:`Preface </conics/preface/index>`), we trace an unusually vivid intellectual network across the Hellenistic eastern Mediterranean:
 
 * At **Alexandria**, prompted by the visiting geometer :person:`Naucrates <naucrates>`, Apollonius drafted the initial eight books of the *Conics*.
 * At **Ephesus**, he conversed with the Epicurean mathematician :person:`Philonides <philonides>`.
@@ -17,7 +17,7 @@ From Apollonius's own epistolary Prefaces (:doc:`Unit 0 </conics/preface-intro/p
 Beyond the *Conics*
 -------------------
 
-In addition to the *Conics* and the six two-book analytic treatises preserved in syllabus by :person:`Pappus <pappus>` (:doc:`Unit 7 </conics/lost-works-pappus/lost-works-pappus-en>`), ancient sources credit Apollonius with:
+In addition to the *Conics* and the six two-book analytic treatises preserved in syllabus by :person:`Pappus <pappus>` (:doc:`Reconstructed Analytic Works </reconstructed/index>`), ancient sources credit Apollonius with:
 
 * **Planetary Epicycles & Eccentrics** (Ptolemy, *Almagest* XII.1): Proving the equivalence of eccentric and epicyclic models and determining stationary points of retrograde planetary motion—ironically preparing the geometric astronomy that :person:`Kepler <kepler>` would replace in 1609 using Apollonius's own ellipses!
 * **Comparison of the Dodecahedron and Icosahedron** inscribed in the same sphere (preserved via Hypsicles as *Euclid Elements Book XIV*).
