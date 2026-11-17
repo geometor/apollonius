@@ -18,8 +18,8 @@ Mission
 Books in This Archive
 ---------------------
 
-- **`Conics <https://geometor.github.io/apollonius/conics/>`_** — Books I–VII (ed. Sir Thomas Little Heath, 1896), establishing the generation of conics from an oblique cone, diameters, asymptotes, harmonic poles and polars, and normals as extrema.
-- **`Reconstructed Analytic Works <https://geometor.github.io/apollonius/reconstructed/>`_** — Reconstructions of Apollonius's lost analytic treasury preserved in Pappus of Alexandria's *Synagoge* Book VII, including the Problem of Apollonius (*Tangencies*) and *Determinate Section*.
+- `Conics <https://geometor.github.io/apollonius/conics/>`_ — Books I–VII (ed. Sir Thomas Little Heath, 1896), establishing the generation of conics from an oblique cone, diameters, asymptotes, harmonic poles and polars, and normals as extrema.
+- `Reconstructed Analytic Works <https://geometor.github.io/apollonius/reconstructed/>`_ — Reconstructions of Apollonius's lost analytic treasury preserved in Pappus of Alexandria's *Synagoge* Book VII, including the Problem of Apollonius (*Tangencies*) and *Determinate Section*.
 
 Repository Contents
 -------------------
