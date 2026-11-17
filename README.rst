@@ -3,6 +3,11 @@ GEOMETOR • apollonius
 
 **Visit the Online Archive:** https://geometor.github.io/apollonius/
 
+.. image:: docsrc/_static/figures/fig_apollonius_circle_locus.svg
+   :alt: GEOMETOR • apollonius featured geometric construction
+   :target: https://geometor.github.io/apollonius/
+   :align: center
+
 **Apollonius of Perga • Conics, Reconstructed Analytic Works • semantic digital archive**
 
 Mission
