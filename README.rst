@@ -21,6 +21,17 @@ Books in This Archive
 - `Conics <https://geometor.github.io/apollonius/conics/>`_ — Books I–VII (ed. Sir Thomas Little Heath, 1896), establishing the generation of conics from an oblique cone, diameters, asymptotes, harmonic poles and polars, and normals as extrema.
 - `Reconstructed Analytic Works <https://geometor.github.io/apollonius/reconstructed/>`_ — Reconstructions of Apollonius's lost analytic treasury preserved in Pappus of Alexandria's *Synagoge* Book VII, including the Problem of Apollonius (*Tangencies*) and *Determinate Section*.
 
+Python Package & Modules
+------------------------
+
+The ``geometor-apollonius`` Python package (``import geometor.apollonius``) provides the executable symbolic geometry, construction, and compilation modules powering this archive:
+
+- ``compile_codex.py`` — Apparatus RST generator and 3-track Book Codex integrity verifier for GEOMETOR • apollonius.
+- ``concordance.py`` — Canonical Codex Unit registry and cross-corpus concordance verifier for Apollonius's Conics.
+- ``cli.py`` — Command-line interface for GEOMETOR • apollonius.
+
+See the `API Reference <https://geometor.github.io/apollonius/modules/>`_ for full module documentation.
+
 Repository Contents
 -------------------
 
