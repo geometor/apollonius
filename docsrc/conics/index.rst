@@ -59,7 +59,7 @@ Scholarly Apparatus
 
 * :doc:`Cross-Corpus Concordance & Symbolic Gap Audit <concordance>` — Complete mapping of the **387 classical propositions** and **147 Heath propositions** to ``euclid``, ``elements``, ``archimedes``, ``pappus``, ``etc``, ``wildberger``, Lean ``mathlib4``, and ``sympy.geometry`` gaps.
 * :doc:`Bibliography & Critical Editions <bibliography>` — Public Domain editions (:cite:`Heath 1896 <heath:1896>`, :cite:`Heiberg 1891–1893 <heiberg:1891>`, :cite:`Halley 1710 <halley:1710>`) and reception canon.
-* :doc:`Prosopography of the Conic Tradition <persons>` — Chronological register of **29** geometers, patrons, translators, and editors.
+* :doc:`Prosopography of the Conic Tradition <people/index>` — Chronological register of **29** geometers, patrons, translators, and editors.
 * :doc:`Technical Glossary of Apollonian Conics <glossary>` — Greek, Latin, and English lexicon of **18** core conic terms.
 
 .. toctree::
@@ -83,5 +83,5 @@ Scholarly Apparatus
 
    concordance
    bibliography
-   persons
+   people/index
    glossary
