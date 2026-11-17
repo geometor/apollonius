@@ -1,3 +1,6 @@
+:navigation: header
+:order: 16
+:nav_title: Glossary
 :layout: book
 
 .. _conics-glossary:
