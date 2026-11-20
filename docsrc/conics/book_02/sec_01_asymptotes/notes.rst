@@ -3,6 +3,7 @@
 :breadcrumb_title: Notes
 :order: 1
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 53–56 (PDF 233–236)
 
 Notes — Asymptotes as Tangents at Infinity
 ==========================================

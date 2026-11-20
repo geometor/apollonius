@@ -3,6 +3,7 @@
 :breadcrumb_title: Notes
 :order: 1
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 221–254 (PDF 401–434)
 
 Notes — Linear-Algebraic Spectral Meaning of Book VII
 =====================================================

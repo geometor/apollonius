@@ -3,6 +3,7 @@
 :breadcrumb_title: Notes
 :order: 1
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. vii–xii, xvii–lxxxvi (PDF 15–20, 25–94)
 
 Notes — Textual Witnesses, Trilogy Context & Planimetry
 =======================================================

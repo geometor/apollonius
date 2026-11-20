@@ -4,6 +4,7 @@
 :order: 4
 :title: Book IV: Number of Intersections & Tangencies of Conics
 :hero: /_static/figures/fig_four_point_conic_pencil.svg
+:folio: Heath 1896, Props. 77–83 [IV. 1–57], pp. 126–138 (PDF 306–318)
 
 .. _unit-4-book-4-en:
 .. _unit-4-book-4-summary:

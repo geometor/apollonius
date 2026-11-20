@@ -3,6 +3,7 @@
 :breadcrumb_title: Notes
 :order: 1
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 1–8 (PDF 181–188)
 
 Notes — Why Apollonius Orders the Curves Parabola → Hyperbola → Ellipse
 =======================================================================

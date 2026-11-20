@@ -4,6 +4,7 @@
 :order: 5
 :title: Book V: Normals, Minimum & Maximum Lines, Subnormals & the Evolute
 :hero: /_static/figures/fig_normals_evolute.svg
+:folio: Heath 1896, Props. 84–113 [V. 1–77], pp. 139–196 (PDF 319–376)
 
 .. _unit-5-book-5-en:
 .. _unit-5-book-5-summary:

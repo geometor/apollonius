@@ -4,6 +4,7 @@
 :order: 6
 :title: Book VI: Equal and Similar Conics & Cone Embedding
 :hero: /_static/figures/fig_oblique_cone_sections.svg
+:folio: Heath 1896, pp. 197–220 (PDF 377–400)
 
 .. _unit-6-books-6-7-en:
 .. _unit-6-books-6-7-summary:

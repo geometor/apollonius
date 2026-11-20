@@ -3,6 +3,7 @@
 :breadcrumb_title: Notes
 :order: 1
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 95–101 (PDF 275–281)
 
 Notes — Generalization of Euclid III.35–36
 ==========================================

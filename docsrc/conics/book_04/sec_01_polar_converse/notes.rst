@@ -3,6 +3,7 @@
 :breadcrumb_title: Notes
 :order: 1
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, p. 126 (PDF 306)
 
 Notes — Desargues's Involution & Self-Polar Triangles
 =====================================================

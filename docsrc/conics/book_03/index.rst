@@ -4,6 +4,7 @@
 :order: 3
 :title: Book III: Chord Rectangles, Harmonic Poles & Polars, Foci & the 4-Line Locus
 :hero: /_static/figures/fig_harmonic_pole_polar.svg
+:folio: Heath 1896, Props. 54–76 [III. 1–56], pp. 95–125 (PDF 275–305)
 
 .. _unit-3-book-3-en:
 .. _unit-3-book-3-summary:

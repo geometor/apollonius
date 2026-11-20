@@ -3,6 +3,7 @@
 :breadcrumb_title: Notes
 :order: 3
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 180–186 (PDF 360–366)
 
 Notes — Architectural Relevance to geometor.model
 =================================================

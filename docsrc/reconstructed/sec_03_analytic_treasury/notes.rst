@@ -3,6 +3,7 @@
 :breadcrumb_title: Notes
 :order: 3
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, Intro pp. lxviii, cxxv–clvi (PDF 76, 133–164); Pappus Synagoge VII
 
 Notes — Pappus Book VII Transmission Context
 ============================================

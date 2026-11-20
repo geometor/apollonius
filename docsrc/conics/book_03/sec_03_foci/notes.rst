@@ -3,6 +3,7 @@
 :breadcrumb_title: Notes
 :order: 3
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 113–118 (PDF 293–298)
 
 Notes — Why Book III Omits the Focus of the Parabola
 ====================================================

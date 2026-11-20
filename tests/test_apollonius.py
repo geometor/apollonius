@@ -177,11 +177,19 @@ def test_primary_source_folio_map_integrity() -> None:
             if m:
                 directives.append(m.group(1).strip())
 
-    assert len(directives) == 33
+    assert len(directives) == 38
     for d in directives:
         assert d in folios, f"Directive '{d}' not in folio_map.json"
         entry = folios[d]
         assert isinstance(entry, dict)
         assert entry.get("default", "").startswith("https://archive.org/")
         assert entry.get("en", "").startswith("https://archive.org/")
+
+    for sub in ("conics", "reconstructed"):
+        for rst in (docsrc / sub).rglob("*.rst"):
+            if "/people/" in rst.as_posix():
+                continue
+            m_b = re.search(r"^\s*:folio:\s*(.+?)\s*$", rst.read_text(encoding="utf-8"), re.MULTILINE)
+            assert m_b is not None, f"Missing :folio: header badge in {rst}"
+            assert m_b.group(1).strip() in folios, f"Unmapped :folio: badge in {rst}"
 

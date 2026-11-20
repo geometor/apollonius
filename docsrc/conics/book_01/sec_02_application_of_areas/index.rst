@@ -23,6 +23,8 @@ Let a cutting plane intersect the base in :g:`DE` perpendicular to the base of t
 
 **Plate 2 — Application of Areas (Book I.11–13 [Props. 1–3])**. Left: :term:`parabolē <parabole>` (:eq:`y^2 = px`, exact application to :term:`orthia <orthia>` :g:`p`). Center: :term:`elleipsis <elleipsis>` (:eq:`y^2 = px - \frac{p}{d}x^2`, falling short by a similar rectangle). Right: :term:`hyperbolē <hyperbole>` (:eq:`y^2 = px + \frac{p}{d}x^2`, exceeding by a similar rectangle).
 
+.. folio:: I. 11
+
 .. enunciation::
 
    **Proposition 1 [I. 11] — The Parabola (παραβολή)**. If a cone be cut by a plane through its axis, and also by another plane cutting the base in a straight line perpendicular to the base of the axial triangle, and if further the diameter of the section be **parallel to one of the sides of the axial triangle**, then any straight line :g:`QV` drawn from the section parallel to the common section of the cutting plane and the base to meet the diameter :g:`PM` will be **equal in square** to the rectangle contained by :g:`PV` and a certain fixed straight line :g:`PL` (:term:`latus rectum <orthia>`), where :eq:`PL : PA = BC^2 : BA \cdot AC`:
@@ -30,6 +32,8 @@ Let a cutting plane intersect the base in :g:`DE` perpendicular to the base of t
    .. math::
 
       QV^2 = PL \cdot PV \qquad \bigl(y^2 = p x\bigr).
+
+.. folio:: I. 12
 
 .. enunciation::
 
@@ -39,6 +43,8 @@ Let a cutting plane intersect the base in :g:`DE` perpendicular to the base of t
 
       QV^2 = PV \cdot PL + \frac{PL}{PP'} PV^2 \qquad \Longleftrightarrow \qquad QV^2 : PV \cdot VP' = p : d.
 
+.. folio:: I. 13
+
 .. enunciation::
 
    **Proposition 3 [I. 13] — The Ellipse (ἔλλειψις)**. If the cutting plane meet **both sides of the axial triangle** on the same nape at :g:`P` and :g:`P'`, then :g:`QV^2` equals the rectangle applied to :g:`PL` with width :g:`PV`, **falling short** (*ἐλλεῖπον*, :just:`VI.28`) by a figure similar and similarly situated to the rectangle :eq:`PP' \cdot PL`:
@@ -46,6 +52,8 @@ Let a cutting plane intersect the base in :g:`DE` perpendicular to the base of t
    .. math::
 
       QV^2 = PV \cdot PL - \frac{PL}{PP'} PV^2 \qquad \Longleftrightarrow \qquad QV^2 : PV \cdot VP' = p : d.
+
+.. folio:: I. 14
 
 .. enunciation::
 

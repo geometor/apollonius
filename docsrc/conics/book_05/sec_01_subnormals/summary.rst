@@ -3,6 +3,7 @@
 :breadcrumb_title: Summary
 :order: 1
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 139–159 (PDF 319–339)
 
 Summary — Subnormals & Normal Invariants
 ========================================

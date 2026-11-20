@@ -4,6 +4,7 @@
 :order: 2
 :title: Book II: Asymptotes, Conjugate Hyperbolas & Secant Intercepts
 :hero: /_static/figures/fig_hyperbola_asymptotes_secant.svg
+:folio: Heath 1896, Props. 28–53 [II. 1–53], pp. 53–94 (PDF 233–274)
 
 .. _unit-2-book-2-en:
 .. _unit-2-book-2-summary:

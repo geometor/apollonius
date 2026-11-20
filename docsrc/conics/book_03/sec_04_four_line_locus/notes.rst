@@ -3,6 +3,7 @@
 :breadcrumb_title: Notes
 :order: 4
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 119–125 (PDF 299–305)
 
 Notes — From Book III.53–56 to Descartes's La Géométrie
 =======================================================

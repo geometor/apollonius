@@ -4,6 +4,7 @@
 :order: 7
 :title: Book VII: Conjugate Diameter Theorems & Extrema
 :hero: /_static/figures/fig_conjugate_diameters_theorems.svg
+:folio: Heath 1896, pp. 221–254 (PDF 401–434)
 
 .. _conics-book-7:
 

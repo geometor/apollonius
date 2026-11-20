@@ -3,6 +3,7 @@
 :breadcrumb_title: Notes
 :order: 2
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 56–63 (PDF 236–243)
 
 Notes — Menaechmus's Curve & Self-Conjugate Directions
 ======================================================

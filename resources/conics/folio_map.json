@@ -3,6 +3,13 @@
   "_description": "Canonical primary-source folio map for Apollonius of Perga's Conics (Heath 1896, Heiberg 1891/1893, Halley 1710)",
   "_repo": "geometor/apollonius",
   "folios": {
+    "Heath 1896, Props. 1–147 [Books I–VII], pp. 1–254 (PDF 181–434)": {
+      "default": "https://archive.org/details/treatiseonconics00apolrich#page/n181/mode/1up",
+      "en": "https://archive.org/details/treatiseonconics00apolrich#page/n181/mode/1up",
+      "grc": "https://archive.org/details/apolloniipergaei01apoluoft#page/n20/mode/1up",
+      "el": "https://archive.org/details/apolloniipergaei01apoluoft#page/n20/mode/1up",
+      "la": "https://archive.org/details/apolloniipergaei01apoluoft#page/n20/mode/1up"
+    },
     "Heath 1896, Props. 1–27 [I. 1–60], pp. 1–52 (PDF 181–232)": {
       "default": "https://archive.org/details/treatiseonconics00apolrich#page/n181/mode/1up",
       "en": "https://archive.org/details/treatiseonconics00apolrich#page/n181/mode/1up",

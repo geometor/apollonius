@@ -3,6 +3,7 @@
 :breadcrumb_title: Summary
 :order: 2
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 231–254 (PDF 411–434)
 
 Summary — Extrema of Conjugate Functions
 ========================================

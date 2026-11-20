@@ -48,6 +48,7 @@ def render_concordance_rst(resources_dir: Path | None = None) -> str:
 
     lines: list[str] = [
         ":layout: book",
+        ":folio: Heath 1896, Props. 1–147 [Books I–VII], pp. 1–254 (PDF 181–434)",
         "",
         ".. _conics-concordance:",
         "",
@@ -160,6 +161,7 @@ def render_bibliography_rst(resources_dir: Path | None = None) -> str:
         ":nav_title: Bibliography",
         ":layout: book",
         ":title: Bibliography",
+        ":folio: Heath 1896, Props. 1–147 [Books I–VII], pp. 1–254 (PDF 181–434)",
         "",
         ".. _bibliography:",
         ".. _conics-bibliography:",
@@ -290,6 +292,7 @@ def render_glossary_rst(resources_dir: Path | None = None) -> str:
 
     lines: list[str] = [
         ":layout: book",
+        ":folio: Heath 1896, Props. 1–147 [Books I–VII], pp. 1–254 (PDF 181–434)",
         "",
         ".. _conics-glossary:",
         "",
