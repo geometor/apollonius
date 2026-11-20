@@ -3,6 +3,12 @@ GEOMETOR • apollonius
 
 **Visit the Online Archive:** https://geometor.github.io/apollonius/
 
+.. image:: docsrc/_static/logo.png
+   :alt: GEOMETOR • apollonius Medallion
+   :target: https://geometor.github.io/apollonius/
+   :width: 180px
+   :align: center
+
 .. image:: docsrc/_static/figures/fig_apollonius_circle_locus.svg
    :alt: GEOMETOR • apollonius featured geometric construction
    :target: https://geometor.github.io/apollonius/
