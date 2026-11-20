@@ -3,6 +3,7 @@
 :breadcrumb_title: Summary
 :order: 2
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 102–108 (PDF 282–288)
 
 Summary — Harmonic Poles & Polars
 =================================

@@ -4,6 +4,7 @@
 :order: 0
 :title: Preface & General Introduction: From Oblique Cone to Prefatory Letters
 :hero: /_static/figures/fig_oblique_cone_sections.svg
+:folio: Heath 1896, pp. vii–xii, xvii–lxxxvi (PDF 15–20, 25–94)
 
 .. _unit-0-preface-intro-en:
 .. _unit-0-preface-intro-summary:

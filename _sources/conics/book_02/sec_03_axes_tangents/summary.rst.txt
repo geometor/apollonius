@@ -3,6 +3,7 @@
 :breadcrumb_title: Summary
 :order: 3
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 72–94 (PDF 252–274)
 
 Summary — Geometric Recovery of Conic Data
 ==========================================

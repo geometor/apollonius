@@ -3,6 +3,7 @@
 :breadcrumb_title: Notes
 :order: 3
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 22–52 (PDF 202–232)
 
 Notes — Tangent Harmonicity as 1D Projective Polarity
 =====================================================

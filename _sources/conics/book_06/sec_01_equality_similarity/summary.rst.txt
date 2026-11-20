@@ -3,6 +3,7 @@
 :breadcrumb_title: Summary
 :order: 1
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 197–220 (PDF 377–400)
 
 Summary — Equality & Similarity of Conics
 =========================================

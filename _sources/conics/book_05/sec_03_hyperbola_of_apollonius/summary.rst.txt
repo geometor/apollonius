@@ -3,6 +3,7 @@
 :breadcrumb_title: Summary
 :order: 3
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 180–186 (PDF 360–366)
 
 Summary — The Hyperbola of Apollonius
 =====================================

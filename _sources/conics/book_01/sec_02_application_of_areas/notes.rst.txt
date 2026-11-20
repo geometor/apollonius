@@ -3,6 +3,7 @@
 :breadcrumb_title: Notes
 :order: 2
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 8–14 (PDF 188–194)
 
 Notes — Euclid VI.27–29 & Rational Trigonometry
 ===============================================

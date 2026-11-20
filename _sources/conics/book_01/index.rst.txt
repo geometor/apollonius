@@ -4,6 +4,7 @@
 :order: 1
 :title: Book I: Generation of the Cone & Fundamental Symptoms
 :hero: /_static/figures/fig_application_of_areas.svg
+:folio: Heath 1896, Props. 1–27 [I. 1–60], pp. 1–52 (PDF 181–232)
 
 .. _unit-1-book-1-en:
 .. _unit-1-book-1-summary:

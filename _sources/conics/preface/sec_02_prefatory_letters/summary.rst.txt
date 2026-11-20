@@ -3,6 +3,7 @@
 :breadcrumb_title: Summary
 :order: 2
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. lxix–lxxv (PDF 77–83)
 
 Summary — Textual Survival & Heath's Consolidation
 ==================================================

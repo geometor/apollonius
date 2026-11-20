@@ -1,7 +1,5 @@
-:navigation: header
-:order: 16
-:nav_title: Glossary
 :layout: book
+:folio: Heath 1896, Props. 1–147 [Books I–VII], pp. 1–254 (PDF 181–434)
 
 .. _conics-glossary:
 

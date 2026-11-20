@@ -3,6 +3,7 @@
 :breadcrumb_title: Summary
 :order: 2
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 56–63 (PDF 236–243)
 
 Summary — Secant Intercepts & the Asymptotic Equation
 =====================================================

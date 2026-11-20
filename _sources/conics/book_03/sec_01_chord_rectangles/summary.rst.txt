@@ -3,6 +3,7 @@
 :breadcrumb_title: Summary
 :order: 1
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 95–101 (PDF 275–281)
 
 Summary — Tangent Triangles & Intersecting Chords
 =================================================

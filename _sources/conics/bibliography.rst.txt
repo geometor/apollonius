@@ -1,8 +1,9 @@
 :navigation: header
-:order: 12
+:order: 6
 :nav_title: Bibliography
 :layout: book
 :title: Bibliography
+:folio: Heath 1896, Props. 1–147 [Books I–VII], pp. 1–254 (PDF 181–434)
 
 .. _bibliography:
 .. _conics-bibliography:

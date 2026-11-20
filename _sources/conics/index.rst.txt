@@ -8,6 +8,7 @@
 :book_subtitle: Books I–VII (ed. Sir Thomas Little Heath, 1896)
 :author: Apollonius of Perga
 :year: 1896
+:folio: Heath 1896, Props. 1–147 [Books I–VII], pp. 1–254 (PDF 181–434)
 :hero: /_static/figures/fig_oblique_cone_sections.svg
 :excerpt: Apollonius of Perga's foundational treatise on conic sections, generating parabola, ellipse, and hyperbola from a single oblique cone and establishing asymptotes, focal properties, normals, and conjugate diameters.
 
@@ -17,6 +18,8 @@ Conics
 ======
 
 .. rubric:: *ΚΩΝΙΚΩΝ ΒΙΒΛΙΑ* · Treatise on Conic Sections — Apollonius of Perga (ed. T. L. Heath, 1896)
+
+.. folio:: Heath 1896, Props. 1–147 [Books I–VII], pp. 1–254 (PDF 181–434)
 
 .. container:: title-page
 

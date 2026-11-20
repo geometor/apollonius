@@ -3,6 +3,7 @@
 :breadcrumb_title: Notes
 :order: 2
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 126–138 (PDF 306–318)
 
 Notes — Bézout's Theorem & Five-Point Conics
 ============================================

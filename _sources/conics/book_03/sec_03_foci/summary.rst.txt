@@ -3,6 +3,7 @@
 :breadcrumb_title: Summary
 :order: 3
 :tracks: English: index | Summary: summary | Notes: notes
+:folio: Heath 1896, pp. 113–118 (PDF 293–298)
 
 Summary — Focal Properties of Central Conics
 ============================================
