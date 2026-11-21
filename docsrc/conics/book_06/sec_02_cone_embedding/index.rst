@@ -11,7 +11,7 @@
 2. Cutting Any Given Conic from Any Given Right Cone [Props. 120–122 / VI. 28–33]
 =================================================================================
 
-Given *any* right circular cone and *any* prescribed parabola (`VI.28`), hyperbola (`VI.29`), or ellipse (`VI.30`), Apollonius constructs the exact cutting plane—proving that a **single right cone suffices to generate every possible parabola and ellipse, and every hyperbola whose asymptotic angle does not exceed the cone's vertical angle**!
+**Embedding a Given Conic in a Given Right Cone (`VI.28–33 [Props. 120–122]`).** Given a right circular cone and any prescribed parabola (`VI.28`), hyperbola (`VI.29`), or ellipse (`VI.30`), to find a plane cutting the cone in a section equal to the given conic: every parabola and every ellipse can be cut from any given right cone, and every hyperbola whose asymptotic angle does not exceed the vertical angle of the axial triangle can likewise be cut from it.
 
 .. toctree::
    :hidden:

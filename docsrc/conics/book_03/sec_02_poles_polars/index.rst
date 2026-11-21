@@ -13,7 +13,7 @@
 2. Harmonic Properties of Poles & Polars [Props. 62–66 / III. 30–40]
 ====================================================================
 
-Starting with transversals parallel to an asymptote (`Prop. 62 [III. 30–34]`) and chords parallel to an asymptote (`Prop. 63 [III. 35–36]`), Apollonius ascends in **Propositions 64–66 (`III. 37–40`)** to the universal theorem of **projective polarity**:
+From transversals parallel to an asymptote (`Prop. 62 [III. 30–34]`) and chords parallel to an asymptote (`Prop. 63 [III. 35–36]`), the harmonic division of secants by tangents and chords of contact follows for every conic section (**Props. 64–66 [`III. 37–40`]**):
 
 .. picture:: /_static/figures/fig_harmonic_pole_polar.svg
    :alt: Harmonic pole T, chord of contact polar Qq, and harmonically divided secants

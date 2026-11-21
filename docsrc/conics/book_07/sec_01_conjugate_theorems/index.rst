@@ -13,7 +13,7 @@
 1. Apollonius's Conjugate Diameter Theorems [Props. 123–136 / VII. 1–32]
 ========================================================================
 
-Using two ingenious focal-like **auxiliary points** :g:`H, H'` laid off along the principal axis :g:`AA'` such that :eq:`AH : HA' = p_a : AA'` (`Props. 123–128 [VII. 1–11]`), Apollonius reduces the lengths of *any* pair of oblique :term:`conjugate diameters <diametros>` :g:`PP'` (:eq:`= 2a'`) and :g:`DD'` (:eq:`= 2b'`) to pure focal-style segments along the axis, proving his two celebrated invariance theorems:
+Let two **homologue points** :g:`H, H'` be taken along the principal axis :g:`AA'` of a central conic such that :eq:`AH : HA' = p_a : AA'` (`Props. 123–128 [VII. 1–11]`); expressing the lengths of any pair of oblique :term:`conjugate diameters <diametros>` :g:`PP'` (:eq:`= 2a'`) and :g:`DD'` (:eq:`= 2b'`) in terms of segments on the axis yields the two invariance theorems of conjugate diameters:
 
 .. picture:: /_static/figures/fig_conjugate_diameters_theorems.svg
    :alt: Ellipse with principal axes AA', BB', oblique conjugate diameters PP', DD', and circumscribed tangent parallelogram LL'MM'

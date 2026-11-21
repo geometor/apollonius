@@ -11,7 +11,7 @@
 3. Constructing Normals via Apollonius's Rectangular Hyperbola [Props. 105–106 / V. 58–63]
 ==========================================================================================
 
-Because finding the feet :g:`P_i` of the four normals from :g:`O = (x_0, y_0)` is a **solid (degree-4 / cubic-resolvent) problem**, Apollonius constructs the normal feet synthetically (`V.62–63 [Prop. 106]`) by intersecting the given conic with an **auxiliary rectangular hyperbola** (the *Hyperbola of Apollonius*) whose asymptotes are parallel to the conic's axes!
+**Construction of Normals (`V.58–63 [Props. 105–106]`).** Given a conic section and any point :g:`O = (x_0, y_0)` in its plane, to draw the normals from :g:`O` to the section: construct an **auxiliary rectangular hyperbola** whose asymptotes are parallel to the principal axes of the given conic and which passes through :g:`O` and the center; the intersections :g:`P_i` of this rectangular hyperbola with the given conic are the exact feet of the normals drawn from :g:`O`.
 
 .. toctree::
    :hidden:

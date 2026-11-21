@@ -13,7 +13,7 @@
 1. Converse Harmonic Polarity [IV. 1–23]
 ========================================
 
-Propositions `IV.1–23` supply the exact **converse** of Book III's harmonic polar theorems (`III.30–40`): if from an external point :g:`T` secants meet a conic in :g:`R, R'` and harmonic conjugates :g:`M` of :g:`T` with respect to :g:`R, R'` are marked on each secant, those harmonic conjugates lie along the **straight polar chord of contact** joining the points of tangency from :g:`T`—giving a pure straightedge-only construction of tangents!
+**Converse Harmonic Polarity (`IV.1–23`).** If from an external point :g:`T` secants be drawn meeting a conic section in :g:`R, R'`, and on each secant the point :g:`M` be taken so that :g:`T, M` divide :g:`R, R'` harmonically, then the locus of all such points :g:`M` is the **straight chord of contact** joining the points of tangency of the tangents drawn from :g:`T`.
 
 .. toctree::
    :hidden:
