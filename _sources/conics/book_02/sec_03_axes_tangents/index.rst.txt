@@ -13,11 +13,11 @@
 3. Finding Diameters, Axes & Tangents by Compass and Straightedge [Props. 47–53 / II. 44–53]
 ============================================================================================
 
-In the closing chapters of Book II (`II.44–53`), Apollonius solves the fundamental **problems of geometric recovery** on a ready-drawn conic arc whose cone and parameters are unknown:
+Given a drawn conic section in a plane without its cone or parameters, let its diameter, center, axes, and tangents be found as follows:
 
-1. **Finding a Diameter & Center (`II.44–45 [Props. 47–48]`)**: Bisecting two parallel chords gives a diameter; intersecting two non-parallel diameters gives the center :g:`C`.
-2. **Finding the Principal Orthogonal Axes (`II.46–48 [Props. 49–50]`)**: For the parabola, dropping a chord perpendicular to the found diameter locates the unique axis; for a central conic, describing a circle around :g:`C` intersecting the conic in :g:`K, H` yields the two orthogonal axes bisecting :g:`KH` and its supplement (:just:`III.3`).
-3. **Drawing Tangents from Any Point (`II.49 [Prop. 51]`)**: Given an external point :g:`T`, Apollonius constructs the contact points :g:`Q, Q'` via harmonic division on the diameter through :g:`T` (:eq:`CT \cdot CV = CP^2` for central conics; :eq:`TP = PV` for the parabola), proving that at most two tangents pass through :g:`T`.
+1. **Finding a Diameter & Center (`II.44–45 [Props. 47–48]`)**: Draw two parallel chords and join their midpoints to obtain a diameter; intersect two non-parallel diameters to obtain the center :g:`C`.
+2. **Finding the Principal Orthogonal Axes (`II.46–48 [Props. 49–50]`)**: In a parabola, draw a chord perpendicular to the found diameter and bisect it to obtain the unique axis; in a central conic, describe a circle around :g:`C` meeting the conic in :g:`K, H`—the lines through :g:`C` bisecting :g:`KH` and its supplement give the two orthogonal axes (:just:`III.3`).
+3. **Drawing Tangents from Any Point (`II.49 [Prop. 51]`)**: Given an external point :g:`T`, find the contact points :g:`Q, Q'` by harmonic division on the diameter through :g:`T` (:eq:`CT \cdot CV = CP^2` for central conics; :eq:`TP = PV` for the parabola); at most two tangents can be drawn to the section from :g:`T`.
 
 .. toctree::
    :hidden:

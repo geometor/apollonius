@@ -13,7 +13,7 @@
 3. Focal Properties of Central Conics [Props. 69–73 / III. 45–52]
 =================================================================
 
-Apollonius introduces the two foci :g:`S`, :g:`S'` on the principal axis :g:`AA'` without using a word for "burning point" (coined by :person:`Kepler <kepler>` in 1604), naming them strictly from his area-application geometry **τὰ ἐκ τῆς παραβολῆς γινόμενα σημεῖα** (:term:`"the points arising out of the application" <semeia-ek-tes-paraboles>`): apply along the axis :g:`AA'` a rectangle :eq:`AS \cdot SA' = AS' \cdot S'A' = \tfrac{1}{4}\, p_a \cdot AA' = CB^2 = b^2` (falling short by a square on the ellipse so :eq:`CS^2 = a^2 - b^2`, exceeding by a square on the hyperbola so :eq:`CS^2 = a^2 + b^2`).
+Let two points :g:`S`, :g:`S'`—**τὰ ἐκ τῆς παραβολῆς γινόμενα σημεῖα** (:term:`"the points arising out of the application" <semeia-ek-tes-paraboles>`)—be taken on the principal axis :g:`AA'` of an ellipse or hyperbola such that the rectangle applied along :g:`AA'` satisfies :eq:`AS \cdot SA' = AS' \cdot S'A' = \tfrac{1}{4}\, p_a \cdot AA' = CB^2 = b^2` (falling short by a square on the ellipse so :eq:`CS^2 = a^2 - b^2`, exceeding by a square on the hyperbola so :eq:`CS^2 = a^2 + b^2`).
 
 .. picture:: /_static/figures/fig_central_conic_foci.svg
    :alt: Central conic foci, equal tangent reflection angles, focal sum 2a, and auxiliary pedal circle

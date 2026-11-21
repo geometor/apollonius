@@ -14,7 +14,7 @@
 3. Tangents, Harmonic Division & Change of Diameter [Props. 12–27 / I. 33–60]
 =============================================================================
 
-Apollonius establishes tangent lines without limits by proving that no straight line can fall between the tangent and the curve (extending :just:`III.16`), and discovers that **tangency is governed by harmonic division**:
+A straight line touches a conic section when it meets the curve at one point and no straight line can fall between the tangent and the curve (extending :just:`III.16`), governed throughout by **harmonic division**:
 
 .. picture:: /_static/figures/fig_tangent_harmonic_division.svg
    :alt: Harmonic division of conic diameter by tangent and ordinate foot
@@ -28,7 +28,7 @@ Apollonius establishes tangent lines without limits by proving that no straight 
 
      \frac{TP}{TP'} = \frac{PV}{VP'} \qquad \Longleftrightarrow \qquad CT \cdot CV = CP^2 \qquad \Longleftrightarrow \qquad CV \cdot VT = PV \cdot VP'.
 
-* **Reference to Any New Conjugate Diameter [Props. 20–21 / I. 49–51]**: Using pure Euclidean quadrangle-area identities (:just:`I.43`), Apollonius proves that if any point :g:`Q` on a conic be taken as a new vertex, the diameter through :g:`Q` and the tangent at :g:`Q` form a new oblique coordinate frame in which **the exact same area-application equation holds** with a transformed parameter :eq:`p'`.
+* **Reference to Any New Conjugate Diameter [Props. 20–21 / I. 49–51]**: By quadrangle-area equivalence (:just:`I.43`), if any point :g:`Q` on a conic be taken as a new vertex, the diameter through :g:`Q` and the tangent at :g:`Q` form a new oblique coordinate frame in which **the exact same area-application equation holds** with a transformed parameter :eq:`p'`.
 
 .. toctree::
    :hidden:

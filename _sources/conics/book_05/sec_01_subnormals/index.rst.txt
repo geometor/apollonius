@@ -13,7 +13,7 @@
 1. Normals as Maxima and Minima & the Subnormal Laws [Props. 84–94 / V. 1–34]
 =============================================================================
 
-Extending :person:`Euclid's <euclid>` theorems on the shortest and longest segments from an eccentric point to a circle (:just:`III.7`, :just:`III.8`), :person:`Apollonius <apollonius>` investigates the minimum and maximum straight lines :g:`GP` drawn to a conic from a point :g:`G` on its principal axis:
+Let :g:`G` be a point taken on the principal axis of a conic section, and consider the shortest and longest straight lines :g:`GP` drawn from :g:`G` to the curve (extending :just:`III.7`, :just:`III.8`):
 
 * **Constant Subnormal of the Parabola [Props. 87, 90 / V. 8, 13, 27]**: If :g:`G` lie on the axis of a parabola with :eq:`AG > \tfrac{1}{2} p_a`, the minimum straight line from :g:`G` to the curve is :g:`GP` whose ordinate foot :g:`N` cuts off a **constant subnormal**:
 

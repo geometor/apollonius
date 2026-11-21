@@ -13,7 +13,7 @@
 1. Construction & Non-Meeting of the Asymptotes [Props. 28–29 / II. 1–2, 15, 17, 21]
 ====================================================================================
 
-Book II opens with the geometric construction of the :term:`asymptotes <asymptotoi>` (*αἱ ἀσύμπτωτοι*) of a hyperbola, its opposite branch, and its conjugate hyperbolas from the :term:`characteristic figure <eidos>` of any diameter :g:`PP'`:
+From the :term:`characteristic figure <eidos>` of any diameter :g:`PP'` of a hyperbola, its opposite branch, and its conjugate hyperbolas, let the :term:`asymptotes <asymptotoi>` (*αἱ ἀσύμπτωτοι*) be constructed as follows:
 
 .. enunciation::
 

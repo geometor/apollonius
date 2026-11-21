@@ -13,7 +13,7 @@
 2. Determination of the Evolute Diorismos [Props. 99–100 / V. 51–52]
 ====================================================================
 
-Apollonius next poses the profound :term:`diorismos <diorismos>` problem for an **arbitrary point** :g:`O` off the axis: *how many normals can be drawn through* :g:`O` *that cut the axis between* :g:`O` *and the vertex?*
+Let an arbitrary point :g:`O` be given off the principal axis of a conic section; to determine by :term:`diorismos <diorismos>` how many minimum straight lines (normals) can be drawn through :g:`O` meeting the axis between :g:`O` and the vertex:
 
 .. picture:: /_static/figures/fig_normals_evolute.svg
    :alt: Ellipse with astroidal evolute envelope and four normals from an interior point O
