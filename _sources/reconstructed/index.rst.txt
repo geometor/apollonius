@@ -6,6 +6,9 @@
 :title: Reconstructed Analytic Works
 :subtitle: The Lost Treatises of the Domain of Analysis (Pappus Synagoge VII)
 :author: Apollonius of Perga
+:year: -200
+:year_label: ca. 200 BCE
+:edition_year: 1896
 :hero: /_static/figures/fig_problem_of_apollonius_ccc.svg
 :folio: Heath 1896, Intro pp. lxviii, cxxv–clvi (PDF 76, 133–164); Pappus Synagoge VII
 
