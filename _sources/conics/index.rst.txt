@@ -70,20 +70,6 @@ Scholarly Apparatus
 .. toctree::
    :maxdepth: 1
    :hidden:
-   :caption: Treatise Books
-
-   preface/index
-   book_01/index
-   book_02/index
-   book_03/index
-   book_04/index
-   book_05/index
-   book_06/index
-   book_07/index
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
    :caption: Scholarly Apparatus
 
    concordance

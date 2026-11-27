@@ -67,11 +67,3 @@ Sections
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   sec_01_tangencies/index
-   sec_02_plane_loci/index
-   sec_03_analytic_treasury/index

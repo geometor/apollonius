@@ -25,10 +25,3 @@ Sections
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   sec_01_polar_converse/index
-   sec_02_intersections_bound/index

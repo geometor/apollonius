@@ -25,11 +25,3 @@ Sections
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   sec_01_subnormals/index
-   sec_02_evolute_diorismos/index
-   sec_03_hyperbola_of_apollonius/index

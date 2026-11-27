@@ -25,11 +25,3 @@ Sections
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   sec_01_asymptotes/index
-   sec_02_secants_intercepts/index
-   sec_03_axes_tangents/index

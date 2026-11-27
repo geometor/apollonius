@@ -25,10 +25,3 @@ Sections
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   sec_01_equality_similarity/index
-   sec_02_cone_embedding/index

@@ -25,10 +25,3 @@ Sections
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   sec_01_historical_survey/index
-   sec_02_prefatory_letters/index
