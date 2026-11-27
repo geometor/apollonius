@@ -22,10 +22,3 @@ Sections
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   sec_01_conjugate_theorems/index
-   sec_02_conjugate_extrema/index

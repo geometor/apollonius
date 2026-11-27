@@ -36,12 +36,3 @@ Sections
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   sec_01_chord_rectangles/index
-   sec_02_poles_polars/index
-   sec_03_foci/index
-   sec_04_four_line_locus/index

@@ -41,11 +41,3 @@ Sections
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   sec_01_cone_sections/index
-   sec_02_application_of_areas/index
-   sec_03_tangents_coordinates/index
