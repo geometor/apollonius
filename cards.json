@@ -1,0 +1,2032 @@
+{
+  "schema": "photon.card.v1",
+  "site": {
+    "org": "geometor",
+    "org_name": "GEOMETOR",
+    "repo": "apollonius",
+    "repo_name": "apollonius",
+    "title": "Apollonius of Perga",
+    "base_url": "https://geometor.github.io/apollonius",
+    "github_url": "https://github.com/geometor/apollonius",
+    "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg"
+  },
+  "cards": {
+    "about/apollonius-of-perga": {
+      "id": "about/apollonius-of-perga",
+      "docname": "about/apollonius-of-perga",
+      "type": "article",
+      "title": "Apollonius of Perga: The Great Geometer",
+      "url": "https://geometor.github.io/apollonius/about/apollonius-of-perga.html",
+      "description": "Born at Perga in Pamphylia around 240 BCE during the reign of Ptolemy III Euergetes and flourishing under Ptolemy IV Philopator (Heath 1896, p. lxviii), Apollonius of Perga studied as a young man at Alexandria under the successors of…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Apollonius of Perga: The Great Geometer",
+      "labels": [
+        "about-apollonius-of-perga"
+      ]
+    },
+    "about/heath-trilogy": {
+      "id": "about/heath-trilogy",
+      "docname": "about/heath-trilogy",
+      "type": "article",
+      "title": "The Heath Cambridge Greek Trilogy (1896–1912)",
+      "url": "https://geometor.github.io/apollonius/about/heath-trilogy.html",
+      "description": "Between 1896 and 1912, Sir Thomas Little Heath (1861–1940) produced at Cambridge University Press the three foundational English editions that brought the summit of Greek demonstrative geometry into modern mathematical scholarship:",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "The Heath Cambridge Greek Trilogy (1896–1912)",
+      "labels": [
+        "about-heath-trilogy"
+      ]
+    },
+    "about/index": {
+      "id": "about/index",
+      "docname": "about/index",
+      "type": "article",
+      "title": "About",
+      "url": "https://geometor.github.io/apollonius/about/",
+      "description": "GEOMETOR • apollonius presents the Digital Scriptorium 3-Track Book Codex and cross-corpus concordance of Apollonius of Perga’s Treatise on Conic Sections (Κωνικά, Books I–VII, c. 200 BCE). This critical digital edition is grounded…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "About",
+      "labels": [
+        "about",
+        "about-index",
+        "apollonius-about",
+        "apollonius-mission"
+      ]
+    },
+    "about/textual-transmission": {
+      "id": "about/textual-transmission",
+      "docname": "about/textual-transmission",
+      "type": "article",
+      "title": "Greek & Arabic Textual Transmission",
+      "url": "https://geometor.github.io/apollonius/about/textual-transmission.html",
+      "description": "The survival of Apollonius’s Conics across twenty-two centuries is one of the most dramatic chapters in the history of science:",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Greek & Arabic Textual Transmission",
+      "labels": [
+        "about-textual-transmission"
+      ]
+    },
+    "changelog": {
+      "id": "changelog",
+      "docname": "changelog",
+      "type": "article",
+      "title": "Changelog",
+      "url": "https://geometor.github.io/apollonius/changelog.html",
+      "description": "fixed: Eliminated black-fill and dark-on-dark CSS fallback failures across all 12 .euclid-graphic SVG plates by emitting explicit fill=\"none\" presentation attributes on every stroke primitive in scripts/build_figures.py and pairing with…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Changelog"
+    },
+    "conics/bibliography": {
+      "id": "conics/bibliography",
+      "docname": "conics/bibliography",
+      "type": "section",
+      "title": "Bibliography",
+      "url": "https://geometor.github.io/apollonius/conics/bibliography.html",
+      "description": "Primary Public Domain editions, ancient and medieval witnesses, early-modern reconstructions, and GEOMETOR ecosystem references cited via :cite: across the Conics codex.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Bibliography",
+      "labels": [
+        "bibliography",
+        "conics-bibliography",
+        "cite-heath-1896",
+        "cite-heiberg-1891",
+        "cite-heiberg-1893",
+        "cite-halley-1710",
+        "cite-halley-1706",
+        "cite-nix-1889",
+        "cite-balsam-1861",
+        "cite-zeuthen-1886",
+        "cite-hultsch-1877",
+        "cite-euclid-heath1908",
+        "cite-archimedes-heath1897",
+        "cite-viete-1600",
+        "cite-kepler-1604",
+        "cite-descartes-1637",
+        "cite-kimberling-etc",
+        "cite-wildberger-2005",
+        "cite-mathlib4-polepolar"
+      ]
+    },
+    "conics/book_01/index": {
+      "id": "conics/book_01/index",
+      "docname": "conics/book_01/index",
+      "type": "section",
+      "title": "Book I: Generation of the Cone & Fundamental Symptoms",
+      "url": "https://geometor.github.io/apollonius/conics/book_01/",
+      "description": "Book I unifies the generation of second-degree curves by producing the parabola, hyperbola, ellipse, and two-branched opposite sections from a single arbitrary oblique circular double cone. Through the Pythagorean-Euclidean technique of…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_application_of_areas.svg",
+      "image_alt": "Geometric application of areas for Parabola, Ellipse, and Hyperbola",
+      "labels": [
+        "unit-1-book-1-en",
+        "unit-1-book-1-summary",
+        "unit-1-book-1-notes",
+        "conics-book-1"
+      ]
+    },
+    "conics/book_01/sec_01_cone_sections/index": {
+      "id": "conics/book_01/sec_01_cone_sections/index",
+      "docname": "conics/book_01/sec_01_cone_sections/index",
+      "type": "section",
+      "title": "1. Definitions & Sections of the Oblique Cone [I. Defs. 1–8, I. 1–10]",
+      "url": "https://geometor.github.io/apollonius/conics/book_01/sec_01_cone_sections/",
+      "description": "Definitions (I. Defs. 1–8). If from a fixed apex A a straight line, indefinitely produced both ways, moves around the circumference of a circle BC not in the same plane with A, the double surface traced out is a conic surface consisting…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "1. Definitions & Sections of the Oblique Cone [I. Defs. 1–8, I. 1–10]"
+    },
+    "conics/book_01/sec_01_cone_sections/notes": {
+      "id": "conics/book_01/sec_01_cone_sections/notes",
+      "docname": "conics/book_01/sec_01_cone_sections/notes",
+      "type": "section",
+      "title": "Notes — Why Apollonius Orders the Curves Parabola → Hyperbola → Ellipse",
+      "url": "https://geometor.github.io/apollonius/conics/book_01/sec_01_cone_sections/notes.html",
+      "description": "Modern textbooks routinely list ellipse, parabola, hyperbola by eccentricity (, , ). In Book I.11–13, however, Apollonius proves Parabola (`I.11`), then Hyperbola (`I.12`), then Ellipse (`I.13`):",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Notes — Why Apollonius Orders the Curves Parabola → Hyperbola → Ellipse"
+    },
+    "conics/book_01/sec_01_cone_sections/summary": {
+      "id": "conics/book_01/sec_01_cone_sections/summary",
+      "docname": "conics/book_01/sec_01_cone_sections/summary",
+      "type": "section",
+      "title": "Summary — Definitions & Sections of the Oblique Cone",
+      "url": "https://geometor.github.io/apollonius/conics/book_01/sec_01_cone_sections/summary.html",
+      "description": "The Cone (`I.1–10`): Oblique double cone, axial triangle, parallel circular sections (I.4), and antiparallel subcontrary sections (I.5, 9).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Summary — Definitions & Sections of the Oblique Cone"
+    },
+    "conics/book_01/sec_02_application_of_areas/index": {
+      "id": "conics/book_01/sec_02_application_of_areas/index",
+      "docname": "conics/book_01/sec_02_application_of_areas/index",
+      "type": "section",
+      "title": "2. Fundamental Symptoms via Application of Areas [Props. 1–4 / I. 11–14]",
+      "url": "https://geometor.github.io/apollonius/conics/book_01/sec_02_application_of_areas/",
+      "description": "Let a cutting plane intersect the base in DE perpendicular to the base of the axial triangle ABC, cutting out on the cone a curve with diameter PM (starting at vertex P on generator AB). For any point Q on the curve with ordinate QV…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_application_of_areas.svg",
+      "image_alt": "Geometric application of areas for Parabola, Ellipse, and Hyperbola"
+    },
+    "conics/book_01/sec_02_application_of_areas/notes": {
+      "id": "conics/book_01/sec_02_application_of_areas/notes",
+      "docname": "conics/book_01/sec_02_application_of_areas/notes",
+      "type": "section",
+      "title": "Notes — Euclid VI.27–29 & Rational Trigonometry",
+      "url": "https://geometor.github.io/apollonius/conics/book_01/sec_02_application_of_areas/notes.html",
+      "description": "Apollonius’s naming triad translates Euclid’s Pythagorean application of areas ([I.44], [VI.27], [VI.28], [VI.29] in geometor/euclid) directly into curve theory:",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_application_of_areas.svg",
+      "image_alt": "Geometric application of areas for Parabola, Ellipse, and Hyperbola"
+    },
+    "conics/book_01/sec_02_application_of_areas/summary": {
+      "id": "conics/book_01/sec_02_application_of_areas/summary",
+      "docname": "conics/book_01/sec_02_application_of_areas/summary",
+      "type": "section",
+      "title": "Summary — Fundamental Symptoms via Application of Areas",
+      "url": "https://geometor.github.io/apollonius/conics/book_01/sec_02_application_of_areas/summary.html",
+      "description": "Fundamental Symptoms (`Props. 1–4 [I.11–14]`): - Parabola (`I.11`): (exact application). - Hyperbola (`I.12`): (application with excess; two-vertex ratio ). - Ellipse (`I.13`): (application with defect; two-vertex ratio ). - Opposite…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_application_of_areas.svg",
+      "image_alt": "Geometric application of areas for Parabola, Ellipse, and Hyperbola"
+    },
+    "conics/book_01/sec_03_tangents_coordinates/index": {
+      "id": "conics/book_01/sec_03_tangents_coordinates/index",
+      "docname": "conics/book_01/sec_03_tangents_coordinates/index",
+      "type": "section",
+      "title": "3. Tangents, Harmonic Division & Change of Diameter [Props. 12–27 / I. 33–60]",
+      "url": "https://geometor.github.io/apollonius/conics/book_01/sec_03_tangents_coordinates/",
+      "description": "A straight line touches a conic section when it meets the curve at one point and no straight line can fall between the tangent and the curve (extending [III.16]), governed throughout by harmonic division:",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_tangent_harmonic_division.svg",
+      "image_alt": "Harmonic division of conic diameter by tangent and ordinate foot"
+    },
+    "conics/book_01/sec_03_tangents_coordinates/notes": {
+      "id": "conics/book_01/sec_03_tangents_coordinates/notes",
+      "docname": "conics/book_01/sec_03_tangents_coordinates/notes",
+      "type": "section",
+      "title": "Notes — Tangent Harmonicity as 1D Projective Polarity",
+      "url": "https://geometor.github.io/apollonius/conics/book_01/sec_03_tangents_coordinates/notes.html",
+      "description": "Propositions 12–14 (I.33–37) reveal why the parabola’s is the exact projective limit of : as the second vertex P recedes to infinity along the diameter, the ratio , leaving P as the midpoint of TV—that is, .",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_tangent_harmonic_division.svg",
+      "image_alt": "Harmonic division of conic diameter by tangent and ordinate foot"
+    },
+    "conics/book_01/sec_03_tangents_coordinates/summary": {
+      "id": "conics/book_01/sec_03_tangents_coordinates/summary",
+      "docname": "conics/book_01/sec_03_tangents_coordinates/summary",
+      "type": "section",
+      "title": "Summary — Tangents, Harmonic Division & Coordinate Change",
+      "url": "https://geometor.github.io/apollonius/conics/book_01/sec_03_tangents_coordinates/summary.html",
+      "description": "Secants & Tangents (`Props. 7–15 [I.17–38]`): - Parabola subtangent law: . - Central conic harmonic tangent law: and .",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_tangent_harmonic_division.svg",
+      "image_alt": "Harmonic division of conic diameter by tangent and ordinate foot"
+    },
+    "conics/book_02/index": {
+      "id": "conics/book_02/index",
+      "docname": "conics/book_02/index",
+      "type": "section",
+      "title": "Book II: Asymptotes, Conjugate Hyperbolas & Secant Intercepts",
+      "url": "https://geometor.github.io/apollonius/conics/book_02/",
+      "description": "Book II constructs the asymptotes of the hyperbola and proves that they are shared identically by both opposite branches and by both conjugate hyperbolas. It demonstrates the bisected tangent property, the equality of outer secant…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_hyperbola_asymptotes_secant.svg",
+      "image_alt": "Hyperbola, conjugate hyperbola, common asymptotes, bisected tangent, and equal secant intercepts",
+      "labels": [
+        "unit-2-book-2-en",
+        "unit-2-book-2-summary",
+        "unit-2-book-2-notes",
+        "conics-book-2"
+      ]
+    },
+    "conics/book_02/sec_01_asymptotes/index": {
+      "id": "conics/book_02/sec_01_asymptotes/index",
+      "docname": "conics/book_02/sec_01_asymptotes/index",
+      "type": "section",
+      "title": "1. Construction & Non-Meeting of the Asymptotes [Props. 28–29 / II. 1–2, 15, 17, 21]",
+      "url": "https://geometor.github.io/apollonius/conics/book_02/sec_01_asymptotes/",
+      "description": "From the characteristic figure of any diameter PP of a hyperbola, its opposite branch, and its conjugate hyperbolas, let the asymptotes (αἱ ἀσύμπτωτοι) be constructed as follows:",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "1. Construction & Non-Meeting of the Asymptotes [Props. 28–29 / II. 1–2, 15, 17, 21]"
+    },
+    "conics/book_02/sec_01_asymptotes/notes": {
+      "id": "conics/book_02/sec_01_asymptotes/notes",
+      "docname": "conics/book_02/sec_01_asymptotes/notes",
+      "type": "section",
+      "title": "Notes — Asymptotes as Tangents at Infinity",
+      "url": "https://geometor.github.io/apollonius/conics/book_02/sec_01_asymptotes/notes.html",
+      "description": "Heath remarks in his footnote to Book III (p. 102) and Introduction (pp. cxxx–cxxxvii) how closely Apollonius approaches the projective doctrine of Desargues and Kepler:",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Notes — Asymptotes as Tangents at Infinity"
+    },
+    "conics/book_02/sec_01_asymptotes/summary": {
+      "id": "conics/book_02/sec_01_asymptotes/summary",
+      "docname": "conics/book_02/sec_01_asymptotes/summary",
+      "type": "section",
+      "title": "Summary — Construction of the Asymptotes",
+      "url": "https://geometor.github.io/apollonius/conics/book_02/sec_01_asymptotes/summary.html",
+      "description": "Existence & Commonality of Asymptotes (`II.1, 15, 17, 21 [Prop. 28]`): Half-tangent squared defines the two rays CLCL shared by both opposite branches and both conjugate hyperbolas.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Summary — Construction of the Asymptotes"
+    },
+    "conics/book_02/sec_02_secants_intercepts/index": {
+      "id": "conics/book_02/sec_02_secants_intercepts/index",
+      "docname": "conics/book_02/sec_02_secants_intercepts/index",
+      "type": "section",
+      "title": "2. Secant Intercepts, Bisected Tangents & the Asymptotic Equation [Props. 30–35 / II. 3–16]",
+      "url": "https://geometor.github.io/apollonius/conics/book_02/sec_02_secants_intercepts/",
+      "description": "Plate 4 — Asymptotes, Conjugate Hyperbolas & Equal Secant Intercepts (Book II.1–21 [Props. 28–38]). Both conjugate hyperbolas share asymptotes CL, CL; any tangent segment LL between the asymptotes is bisected at its point of contact P…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_hyperbola_asymptotes_secant.svg",
+      "image_alt": "Hyperbola, conjugate hyperbola, common asymptotes, bisected tangent, and equal secant intercepts"
+    },
+    "conics/book_02/sec_02_secants_intercepts/notes": {
+      "id": "conics/book_02/sec_02_secants_intercepts/notes",
+      "docname": "conics/book_02/sec_02_secants_intercepts/notes",
+      "type": "section",
+      "title": "Notes — Menaechmus’s Curve & Self-Conjugate Directions",
+      "url": "https://geometor.github.io/apollonius/conics/book_02/sec_02_secants_intercepts/notes.html",
+      "description": "In Proposition 34 (`II. 12`), Apollonius proves that along the two asymptotes as oblique coordinate axes, every hyperbola satisfies the constant-rectangle law When the asymptotes are perpendicular (, the equilateral or rectangular…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_hyperbola_asymptotes_secant.svg",
+      "image_alt": "Hyperbola, conjugate hyperbola, common asymptotes, bisected tangent, and equal secant intercepts"
+    },
+    "conics/book_02/sec_02_secants_intercepts/summary": {
+      "id": "conics/book_02/sec_02_secants_intercepts/summary",
+      "docname": "conics/book_02/sec_02_secants_intercepts/summary",
+      "type": "section",
+      "title": "Summary — Secant Intercepts & the Asymptotic Equation",
+      "url": "https://geometor.github.io/apollonius/conics/book_02/sec_02_secants_intercepts/summary.html",
+      "description": "Tangent Bisection (`II.3, 9 [Prop. 30]`): Every tangent segment intercepted by the asymptotes is bisected at the point of tangency ().",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_hyperbola_asymptotes_secant.svg",
+      "image_alt": "Hyperbola, conjugate hyperbola, common asymptotes, bisected tangent, and equal secant intercepts"
+    },
+    "conics/book_02/sec_03_axes_tangents/index": {
+      "id": "conics/book_02/sec_03_axes_tangents/index",
+      "docname": "conics/book_02/sec_03_axes_tangents/index",
+      "type": "section",
+      "title": "3. Finding Diameters, Axes & Tangents by Compass and Straightedge [Props. 47–53 / II. 44–53]",
+      "url": "https://geometor.github.io/apollonius/conics/book_02/sec_03_axes_tangents/",
+      "description": "Given a drawn conic section in a plane without its cone or parameters, let its diameter, center, axes, and tangents be found as follows:",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "3. Finding Diameters, Axes & Tangents by Compass and Straightedge [Props. 47–53 / II. 44–53]"
+    },
+    "conics/book_02/sec_03_axes_tangents/notes": {
+      "id": "conics/book_02/sec_03_axes_tangents/notes",
+      "docname": "conics/book_02/sec_03_axes_tangents/notes",
+      "type": "section",
+      "title": "Notes — Constructibility Over Quadratic Extensions",
+      "url": "https://geometor.github.io/apollonius/conics/book_02/sec_03_axes_tangents/notes.html",
+      "description": "Every problem in II.44–53 (Props. 47–53) uses only straightedge and compass once a conic arc is drawn on the plane. In geometor.model, recovering the principal axes of a rotated conic amounts to intersecting it with a concentric circle…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Notes — Constructibility Over Quadratic Extensions"
+    },
+    "conics/book_02/sec_03_axes_tangents/summary": {
+      "id": "conics/book_02/sec_03_axes_tangents/summary",
+      "docname": "conics/book_02/sec_03_axes_tangents/summary",
+      "type": "section",
+      "title": "Summary — Geometric Recovery of Conic Data",
+      "url": "https://geometor.github.io/apollonius/conics/book_02/sec_03_axes_tangents/summary.html",
+      "description": "Constructive Problems (`II.44–53 [Props. 47–53]`): Euclidean straightedge-and-compass algorithms to recover diameters, center, principal axes, external tangents, and tangents making a given angle with the axis or diameter.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Summary — Geometric Recovery of Conic Data"
+    },
+    "conics/book_03/index": {
+      "id": "conics/book_03/index",
+      "docname": "conics/book_03/index",
+      "type": "section",
+      "title": "Book III: Chord Rectangles, Harmonic Poles & Polars, Foci & the 4-Line Locus",
+      "url": "https://geometor.github.io/apollonius/conics/book_03/",
+      "description": "In the General Preface (Preface), Apollonius singles out Book III with special pride: it contains “many remarkable theorems useful for the syntheses of solid loci and for diorismoi, the majority and prettiest of which are new”…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_harmonic_pole_polar.svg",
+      "image_alt": "Harmonic pole T, chord of contact polar Qq, and harmonically divided secants",
+      "labels": [
+        "unit-3-book-3-en",
+        "unit-3-book-3-summary",
+        "unit-3-book-3-notes",
+        "conics-book-3"
+      ]
+    },
+    "conics/book_03/sec_01_chord_rectangles/index": {
+      "id": "conics/book_03/sec_01_chord_rectangles/index",
+      "docname": "conics/book_03/sec_01_chord_rectangles/index",
+      "type": "section",
+      "title": "1. Equality of Tangent Triangles & Intersecting Chord Rectangles [Props. 54–61 / III. 1–29]",
+      "url": "https://geometor.github.io/apollonius/conics/book_03/sec_01_chord_rectangles/",
+      "description": "Equal Tangent-Diameter Triangles [Prop. 54 / III. 1, 4, 11]: If tangents at P and Q meet at O, and diameters through P, Q meet the opposite tangents in E, T, the triangles OPT and OQE have equal area—the foundational lemma behind every…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "1. Equality of Tangent Triangles & Intersecting Chord Rectangles [Props. 54–61 / III. 1–29]"
+    },
+    "conics/book_03/sec_01_chord_rectangles/notes": {
+      "id": "conics/book_03/sec_01_chord_rectangles/notes",
+      "docname": "conics/book_03/sec_01_chord_rectangles/notes",
+      "type": "section",
+      "title": "Notes — Generalization of Euclid III.35–36",
+      "url": "https://geometor.github.io/apollonius/conics/book_03/sec_01_chord_rectangles/notes.html",
+      "description": "In Euclidean geometry ([III.35] and [III.36]), the product of intersecting chord segments in a circle is constant. Apollonius discovers the projective truth: for any conic, the ratio of rectangles contained by segments of chords parallel…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Notes — Generalization of Euclid III.35–36"
+    },
+    "conics/book_03/sec_01_chord_rectangles/summary": {
+      "id": "conics/book_03/sec_01_chord_rectangles/summary",
+      "docname": "conics/book_03/sec_01_chord_rectangles/summary",
+      "type": "section",
+      "title": "Summary — Tangent Triangles & Intersecting Chords",
+      "url": "https://geometor.github.io/apollonius/conics/book_03/sec_01_chord_rectangles/summary.html",
+      "description": "Tangent & Diameter Area Equalities (`III.1–15 [Props. 54–56]`): Equal triangles cut off by two tangents and the diameters through their contact points.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Summary — Tangent Triangles & Intersecting Chords"
+    },
+    "conics/book_03/sec_02_poles_polars/index": {
+      "id": "conics/book_03/sec_02_poles_polars/index",
+      "docname": "conics/book_03/sec_02_poles_polars/index",
+      "type": "section",
+      "title": "2. Harmonic Properties of Poles & Polars [Props. 62–66 / III. 30–40]",
+      "url": "https://geometor.github.io/apollonius/conics/book_03/sec_02_poles_polars/",
+      "description": "From transversals parallel to an asymptote (Prop. 62 [III. 30–34]) and chords parallel to an asymptote (Prop. 63 [III. 35–36]), the harmonic division of secants by tangents and chords of contact follows for every conic section (Props.…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_harmonic_pole_polar.svg",
+      "image_alt": "Harmonic pole T, chord of contact polar Qq, and harmonically divided secants"
+    },
+    "conics/book_03/sec_02_poles_polars/notes": {
+      "id": "conics/book_03/sec_02_poles_polars/notes",
+      "docname": "conics/book_03/sec_02_poles_polars/notes",
+      "type": "section",
+      "title": "Notes — Bridge to Lean mathlib4 & sympy Gaps",
+      "url": "https://geometor.github.io/apollonius/conics/book_03/sec_02_poles_polars/notes.html",
+      "description": "Propositions 62–66 (III.30–40) are the historical birthplace of projective polarity:",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_harmonic_pole_polar.svg",
+      "image_alt": "Harmonic pole T, chord of contact polar Qq, and harmonically divided secants"
+    },
+    "conics/book_03/sec_02_poles_polars/summary": {
+      "id": "conics/book_03/sec_02_poles_polars/summary",
+      "docname": "conics/book_03/sec_02_poles_polars/summary",
+      "type": "section",
+      "title": "Summary — Harmonic Poles & Polars",
+      "url": "https://geometor.github.io/apollonius/conics/book_03/sec_02_poles_polars/summary.html",
+      "description": "Harmonic Poles & Polars (`III.30–40 [Props. 62–66]`): Every secant through pole T is divided harmonically by the conic and polar Qq: .",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_harmonic_pole_polar.svg",
+      "image_alt": "Harmonic pole T, chord of contact polar Qq, and harmonically divided secants"
+    },
+    "conics/book_03/sec_03_foci/index": {
+      "id": "conics/book_03/sec_03_foci/index",
+      "docname": "conics/book_03/sec_03_foci/index",
+      "type": "section",
+      "title": "3. Focal Properties of Central Conics [Props. 69–73 / III. 45–52]",
+      "url": "https://geometor.github.io/apollonius/conics/book_03/sec_03_foci/",
+      "description": "Let two points S, S—τὰ ἐκ τῆς παραβολῆς γινόμενα σημεῖα (“the points arising out of the application”)—be taken on the principal axis AA of an ellipse or hyperbola such that the rectangle applied along AA satisfies (falling short by a…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_central_conic_foci.svg",
+      "image_alt": "Central conic foci, equal tangent reflection angles, focal sum 2a, and auxiliary pedal circle"
+    },
+    "conics/book_03/sec_03_foci/notes": {
+      "id": "conics/book_03/sec_03_foci/notes",
+      "docname": "conics/book_03/sec_03_foci/notes",
+      "type": "section",
+      "title": "Notes — Why Book III Omits the Focus of the Parabola",
+      "url": "https://geometor.github.io/apollonius/conics/book_03/sec_03_foci/notes.html",
+      "description": "Every attentive reader of Book III.45–52 asks why Apollonius proves the optical reflection property and focal properties for the ellipse and hyperbola, yet never mentions the focus of the parabola (treated contemporaneously by Diocles in…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_central_conic_foci.svg",
+      "image_alt": "Central conic foci, equal tangent reflection angles, focal sum 2a, and auxiliary pedal circle"
+    },
+    "conics/book_03/sec_03_foci/summary": {
+      "id": "conics/book_03/sec_03_foci/summary",
+      "docname": "conics/book_03/sec_03_foci/summary",
+      "type": "section",
+      "title": "Summary — Focal Properties of Central Conics",
+      "url": "https://geometor.github.io/apollonius/conics/book_03/sec_03_foci/summary.html",
+      "description": "Central Foci & the 3-/4-Line Locus (`III.45–56 [Props. 69–76]`): - Focal application ; equal reflection angles (III.48); pedal circle (III.49); (III.51–52).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_central_conic_foci.svg",
+      "image_alt": "Central conic foci, equal tangent reflection angles, focal sum 2a, and auxiliary pedal circle"
+    },
+    "conics/book_03/sec_04_four_line_locus/index": {
+      "id": "conics/book_03/sec_04_four_line_locus/index",
+      "docname": "conics/book_03/sec_04_four_line_locus/index",
+      "type": "section",
+      "title": "4. The Locus with Respect to Three and Four Lines [Props. 74–76 / III. 53–56]",
+      "url": "https://geometor.github.io/apollonius/conics/book_03/sec_04_four_line_locus/",
+      "description": "Plate 7 — The Three-Line and Four-Line Locus (Book III.53–56 [Props. 74–76]). For a point P on a conic inscribed with quadrilateral ABCD, the product of oblique distances to opposite side-pairs maintains a constant ratio (degenerating…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_three_four_line_locus.svg",
+      "image_alt": "Inscribed quadrilateral in a conic illustrating the Four-Line Locus distance product law"
+    },
+    "conics/book_03/sec_04_four_line_locus/notes": {
+      "id": "conics/book_03/sec_04_four_line_locus/notes",
+      "docname": "conics/book_03/sec_04_four_line_locus/notes",
+      "type": "section",
+      "title": "Notes — From Book III.53–56 to Descartes’s La Géométrie",
+      "url": "https://geometor.github.io/apollonius/conics/book_03/sec_04_four_line_locus/notes.html",
+      "description": "In Book III (III.41–43 too!), Note Prop. 67 [III. 41] already gives the quadratic Bézier / Steiner tangent envelope of a parabola ()! And III.53–56 (Props. 74–76), preserved alongside Pappus’s commentary in Synagoge VII (Hultsch 1877)…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_three_four_line_locus.svg",
+      "image_alt": "Inscribed quadrilateral in a conic illustrating the Four-Line Locus distance product law"
+    },
+    "conics/book_03/sec_04_four_line_locus/summary": {
+      "id": "conics/book_03/sec_04_four_line_locus/summary",
+      "docname": "conics/book_03/sec_04_four_line_locus/summary",
+      "type": "section",
+      "title": "Summary — The Three-Line and Four-Line Locus",
+      "url": "https://geometor.github.io/apollonius/conics/book_03/sec_04_four_line_locus/summary.html",
+      "description": "Constant intercept products (III.53–56) synthesizing the Three-Line and Four-Line Locus.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_three_four_line_locus.svg",
+      "image_alt": "Inscribed quadrilateral in a conic illustrating the Four-Line Locus distance product law"
+    },
+    "conics/book_04/index": {
+      "id": "conics/book_04/index",
+      "docname": "conics/book_04/index",
+      "type": "section",
+      "title": "Book IV: Number of Intersections & Tangencies of Conics",
+      "url": "https://geometor.github.io/apollonius/conics/book_04/",
+      "description": "In the Preface to Book IV (addressed to Attalus after the death of Eudemus), Apollonius states the exact purpose of the fourth Book: in how many points at most can sections of cones meet one another, or meet the circumference of a circle…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_four_point_conic_pencil.svg",
+      "image_alt": "Pencil of conics intersecting in at most four common base points A, B, C, D",
+      "labels": [
+        "unit-4-book-4-en",
+        "unit-4-book-4-summary",
+        "unit-4-book-4-notes",
+        "conics-book-4"
+      ]
+    },
+    "conics/book_04/sec_01_polar_converse/index": {
+      "id": "conics/book_04/sec_01_polar_converse/index",
+      "docname": "conics/book_04/sec_01_polar_converse/index",
+      "type": "section",
+      "title": "1. Converse Harmonic Polarity [IV. 1–23]",
+      "url": "https://geometor.github.io/apollonius/conics/book_04/sec_01_polar_converse/",
+      "description": "Converse Harmonic Polarity (`IV.1–23`). If from an external point T secants be drawn meeting a conic section in RR, and on each secant the point M be taken so that TM divide RR harmonically, then the locus of all such points M is the…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "1. Converse Harmonic Polarity [IV. 1–23]"
+    },
+    "conics/book_04/sec_01_polar_converse/notes": {
+      "id": "conics/book_04/sec_01_polar_converse/notes",
+      "docname": "conics/book_04/sec_01_polar_converse/notes",
+      "type": "section",
+      "title": "Notes — Desargues’s Involution & Self-Polar Triangles",
+      "url": "https://geometor.github.io/apollonius/conics/book_04/sec_01_polar_converse/notes.html",
+      "description": "Look closely at Apollonius’s proof technique in IV.25–57: given four intersection points ABCD, the intersection TABcapCD has the exact same polar line with respect to every conic passing through ABCD! In modern projective geometry…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Notes — Desargues’s Involution & Self-Polar Triangles"
+    },
+    "conics/book_04/sec_01_polar_converse/summary": {
+      "id": "conics/book_04/sec_01_polar_converse/summary",
+      "docname": "conics/book_04/sec_01_polar_converse/summary",
+      "type": "section",
+      "title": "Summary — Converse Harmonic Polarity",
+      "url": "https://geometor.github.io/apollonius/conics/book_04/sec_01_polar_converse/summary.html",
+      "description": "Converse Harmonic Polarity (`IV.1–23`): If harmonic conjugates M of external pole T with respect to secant intersections RR are determined, they lie on a straight line: the chord of contact of the tangents from T.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Summary — Converse Harmonic Polarity"
+    },
+    "conics/book_04/sec_02_intersections_bound/index": {
+      "id": "conics/book_04/sec_02_intersections_bound/index",
+      "docname": "conics/book_04/sec_02_intersections_bound/index",
+      "type": "section",
+      "title": "2. Non-Coincidence of Arcs & the Four-Point Intersection Bound [Props. 77–83 / IV. 24–57]",
+      "url": "https://geometor.github.io/apollonius/conics/book_04/sec_02_intersections_bound/",
+      "description": "Plate 8 — At Most Four Intersections & the Four-Point Conic Pencil (Book IV.24–57 [Props. 77–83]). Two distinct conics (here an ellipse, a circle, and a two-branch hyperbola) can intersect in at most four points ABCD; their diagonal…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_four_point_conic_pencil.svg",
+      "image_alt": "Pencil of conics intersecting in at most four common base points A, B, C, D"
+    },
+    "conics/book_04/sec_02_intersections_bound/notes": {
+      "id": "conics/book_04/sec_02_intersections_bound/notes",
+      "docname": "conics/book_04/sec_02_intersections_bound/notes",
+      "type": "section",
+      "title": "Notes — Bézout’s Theorem & Five-Point Conics",
+      "url": "https://geometor.github.io/apollonius/conics/book_04/sec_02_intersections_bound/notes.html",
+      "description": "Book IV (IV.24–57) is the direct synthetic ancestor of Bézout’s Theorem for degree-2 plane curves (), generalizing Euclid’s [III.10] (“A circle does not cut a circle at more points than two”—which holds only because every circle already…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_four_point_conic_pencil.svg",
+      "image_alt": "Pencil of conics intersecting in at most four common base points A, B, C, D"
+    },
+    "conics/book_04/sec_02_intersections_bound/summary": {
+      "id": "conics/book_04/sec_02_intersections_bound/summary",
+      "docname": "conics/book_04/sec_02_intersections_bound/summary",
+      "type": "section",
+      "title": "Summary — Intersection & Tangency Multiplicity Table",
+      "url": "https://geometor.github.io/apollonius/conics/book_04/sec_02_intersections_bound/summary.html",
+      "description": "Apollonius’s 57 propositions in Book IV establish the exact intersection-multiplicity conservation law for two distinct plane quadrics:",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_four_point_conic_pencil.svg",
+      "image_alt": "Pencil of conics intersecting in at most four common base points A, B, C, D"
+    },
+    "conics/book_05/index": {
+      "id": "conics/book_05/index",
+      "docname": "conics/book_05/index",
+      "type": "section",
+      "title": "Book V: Normals, Minimum & Maximum Lines, Subnormals & the Evolute",
+      "url": "https://geometor.github.io/apollonius/conics/book_05/",
+      "description": "Preserved solely through Thābit ibn Qurra’s ninth-century Arabic translation (Halley 1710, Nix 1889), Book V is universally acclaimed by historians of mathematics as the supreme masterpiece of ancient synthetic geometry—anticipating…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_normals_evolute.svg",
+      "image_alt": "Ellipse with astroidal evolute envelope and four normals from an interior point O",
+      "labels": [
+        "unit-5-book-5-en",
+        "unit-5-book-5-summary",
+        "unit-5-book-5-notes",
+        "conics-book-5"
+      ]
+    },
+    "conics/book_05/sec_01_subnormals/index": {
+      "id": "conics/book_05/sec_01_subnormals/index",
+      "docname": "conics/book_05/sec_01_subnormals/index",
+      "type": "section",
+      "title": "1. Normals as Maxima and Minima & the Subnormal Laws [Props. 84–94 / V. 1–34]",
+      "url": "https://geometor.github.io/apollonius/conics/book_05/sec_01_subnormals/",
+      "description": "Let G be a point taken on the principal axis of a conic section, and consider the shortest and longest straight lines GP drawn from G to the curve (extending [III.7], [III.8]):",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "1. Normals as Maxima and Minima & the Subnormal Laws [Props. 84–94 / V. 1–34]"
+    },
+    "conics/book_05/sec_01_subnormals/notes": {
+      "id": "conics/book_05/sec_01_subnormals/notes",
+      "docname": "conics/book_05/sec_01_subnormals/notes",
+      "type": "section",
+      "title": "Notes — How Apollonius Derives the Evolute Without Derivatives",
+      "url": "https://geometor.github.io/apollonius/conics/book_05/sec_01_subnormals/notes.html",
+      "description": "In Heath Intro pp. lxxv–lxxvi and pp. 168–179, Heath cautions against anachronistically imagining differential calculus in Book V while marveling at how Apollonius achieves the exact same algebraic envelope by pure Euclidean ratio…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Notes — How Apollonius Derives the Evolute Without Derivatives"
+    },
+    "conics/book_05/sec_01_subnormals/summary": {
+      "id": "conics/book_05/sec_01_subnormals/summary",
+      "docname": "conics/book_05/sec_01_subnormals/summary",
+      "type": "section",
+      "title": "Summary — Subnormals & Normal Invariants",
+      "url": "https://geometor.github.io/apollonius/conics/book_05/sec_01_subnormals/summary.html",
+      "description": "Evolute Equation Derived from Prop. 99 [V. 51–52]",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Summary — Subnormals & Normal Invariants"
+    },
+    "conics/book_05/sec_02_evolute_diorismos/index": {
+      "id": "conics/book_05/sec_02_evolute_diorismos/index",
+      "docname": "conics/book_05/sec_02_evolute_diorismos/index",
+      "type": "section",
+      "title": "2. Determination of the Evolute Diorismos [Props. 99–100 / V. 51–52]",
+      "url": "https://geometor.github.io/apollonius/conics/book_05/sec_02_evolute_diorismos/",
+      "description": "Let an arbitrary point O be given off the principal axis of a conic section; to determine by diorismos how many minimum straight lines (normals) can be drawn through O meeting the axis between O and the vertex:",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_normals_evolute.svg",
+      "image_alt": "Ellipse with astroidal evolute envelope and four normals from an interior point O"
+    },
+    "conics/book_05/sec_02_evolute_diorismos/notes": {
+      "id": "conics/book_05/sec_02_evolute_diorismos/notes",
+      "docname": "conics/book_05/sec_02_evolute_diorismos/notes",
+      "type": "section",
+      "title": "Notes — Semicubical Parabolas and Lamé Curves",
+      "url": "https://geometor.github.io/apollonius/conics/book_05/sec_02_evolute_diorismos/notes.html",
+      "description": "Apollonius’s threshold equation generates the semicubical parabola for the parabola evolute and the astroidal Lamé curve for central conics. This discovery establishes that Greek geometry solved non-linear envelopes by synthetic diorismos.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_normals_evolute.svg",
+      "image_alt": "Ellipse with astroidal evolute envelope and four normals from an interior point O"
+    },
+    "conics/book_05/sec_02_evolute_diorismos/summary": {
+      "id": "conics/book_05/sec_02_evolute_diorismos/summary",
+      "docname": "conics/book_05/sec_02_evolute_diorismos/summary",
+      "type": "section",
+      "title": "Summary — Determination of the Evolute Diorismos",
+      "url": "https://geometor.github.io/apollonius/conics/book_05/sec_02_evolute_diorismos/summary.html",
+      "description": "Evolute Envelope: Point-by-point determination of the caustic curve separating points with 2 normals from points with 4 normals on central conics, and 1 normal from 3 normals on the parabola.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_normals_evolute.svg",
+      "image_alt": "Ellipse with astroidal evolute envelope and four normals from an interior point O"
+    },
+    "conics/book_05/sec_03_hyperbola_of_apollonius/index": {
+      "id": "conics/book_05/sec_03_hyperbola_of_apollonius/index",
+      "docname": "conics/book_05/sec_03_hyperbola_of_apollonius/index",
+      "type": "section",
+      "title": "3. Constructing Normals via Apollonius’s Rectangular Hyperbola [Props. 105–106 / V. 58–63]",
+      "url": "https://geometor.github.io/apollonius/conics/book_05/sec_03_hyperbola_of_apollonius/",
+      "description": "Construction of Normals (`V.58–63 [Props. 105–106]`). Given a conic section and any point Ox0y0 in its plane, to draw the normals from O to the section: construct an auxiliary rectangular hyperbola whose asymptotes are parallel to the…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "3. Constructing Normals via Apollonius’s Rectangular Hyperbola [Props. 105–106 / V. 58–63]"
+    },
+    "conics/book_05/sec_03_hyperbola_of_apollonius/notes": {
+      "id": "conics/book_05/sec_03_hyperbola_of_apollonius/notes",
+      "docname": "conics/book_05/sec_03_hyperbola_of_apollonius/notes",
+      "type": "section",
+      "title": "Notes — Architectural Relevance to geometor.model",
+      "url": "https://geometor.github.io/apollonius/conics/book_05/sec_03_hyperbola_of_apollonius/notes.html",
+      "description": "Notice how Apollonius solves a quartic normal problem geometrically in V.62–63: instead of expanding a messy degree-4 trigonometric polynomial in , he intersects the given conic with the Hyperbola of Apollonius . In geometor.model…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Notes — Architectural Relevance to geometor.model"
+    },
+    "conics/book_05/sec_03_hyperbola_of_apollonius/summary": {
+      "id": "conics/book_05/sec_03_hyperbola_of_apollonius/summary",
+      "docname": "conics/book_05/sec_03_hyperbola_of_apollonius/summary",
+      "type": "section",
+      "title": "Summary — The Hyperbola of Apollonius",
+      "url": "https://geometor.github.io/apollonius/conics/book_05/sec_03_hyperbola_of_apollonius/summary.html",
+      "description": "For an ellipse and target point Ox0y0, the normal at Pxy passes through O if and only if P lies on the auxiliary rectangular hyperbola:",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Summary — The Hyperbola of Apollonius"
+    },
+    "conics/book_06/index": {
+      "id": "conics/book_06/index",
+      "docname": "conics/book_06/index",
+      "type": "section",
+      "title": "Book VI: Equal and Similar Conics & Cone Embedding",
+      "url": "https://geometor.github.io/apollonius/conics/book_06/",
+      "description": "Preserved in Thābit ibn Qurra’s Arabic translation (Halley 1710), Book VI establishes the complete theory of congruence and similarity for conic sections and conic segments. It proves the universal similarity of all parabolas, provides…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Book VI: Equal and Similar Conics & Cone Embedding",
+      "labels": [
+        "unit-6-books-6-7-en",
+        "unit-6-books-6-7-summary",
+        "unit-6-books-6-7-notes",
+        "conics-book-6"
+      ]
+    },
+    "conics/book_06/sec_01_equality_similarity/index": {
+      "id": "conics/book_06/sec_01_equality_similarity/index",
+      "docname": "conics/book_06/sec_01_equality_similarity/index",
+      "type": "section",
+      "title": "1. Equality & Similarity of Conics [Props. 114–119 / VI. 1–27]",
+      "url": "https://geometor.github.io/apollonius/conics/book_06/sec_01_equality_similarity/",
+      "description": "Definitions (`VI. Defs. 1–6`, p. 197). Two conic sections are equal (ἴσαι) when one can be applied to the other so as everywhere to coincide, and similar (ὅμοιαι) when ordinates drawn to the axis at proportional distances from the vertex…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "1. Equality & Similarity of Conics [Props. 114–119 / VI. 1–27]"
+    },
+    "conics/book_06/sec_01_equality_similarity/notes": {
+      "id": "conics/book_06/sec_01_equality_similarity/notes",
+      "docname": "conics/book_06/sec_01_equality_similarity/notes",
+      "type": "section",
+      "title": "Notes — Geometric Transformation & Similarity Invariants",
+      "url": "https://geometor.github.io/apollonius/conics/book_06/sec_01_equality_similarity/notes.html",
+      "description": "In Book VI, Apollonius anticipates the modern Klein Erlangen program: two conic sections are equal (congruent) when related by rigid motion (isometry), and similar when related by an affine homothety. The theorem that all parabolas are…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Notes — Geometric Transformation & Similarity Invariants"
+    },
+    "conics/book_06/sec_01_equality_similarity/summary": {
+      "id": "conics/book_06/sec_01_equality_similarity/summary",
+      "docname": "conics/book_06/sec_01_equality_similarity/summary",
+      "type": "section",
+      "title": "Summary — Equality & Similarity of Conics",
+      "url": "https://geometor.github.io/apollonius/conics/book_06/sec_01_equality_similarity/summary.html",
+      "description": "Definitions 1–6: Exact definitions of equal/unequal and similar/dissimilar conic sections and conic segments.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Summary — Equality & Similarity of Conics"
+    },
+    "conics/book_06/sec_02_cone_embedding/index": {
+      "id": "conics/book_06/sec_02_cone_embedding/index",
+      "docname": "conics/book_06/sec_02_cone_embedding/index",
+      "type": "section",
+      "title": "2. Cutting Any Given Conic from Any Given Right Cone [Props. 120–122 / VI. 28–33]",
+      "url": "https://geometor.github.io/apollonius/conics/book_06/sec_02_cone_embedding/",
+      "description": "Embedding a Given Conic in a Given Right Cone (`VI.28–33 [Props. 120–122]`). Given a right circular cone and any prescribed parabola (VI.28), hyperbola (VI.29), or ellipse (VI.30), to find a plane cutting the cone in a section equal to…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "2. Cutting Any Given Conic from Any Given Right Cone [Props. 120–122 / VI. 28–33]"
+    },
+    "conics/book_06/sec_02_cone_embedding/notes": {
+      "id": "conics/book_06/sec_02_cone_embedding/notes",
+      "docname": "conics/book_06/sec_02_cone_embedding/notes",
+      "type": "section",
+      "title": "Notes — Return to the Solid 3D Cone",
+      "url": "https://geometor.github.io/apollonius/conics/book_06/sec_02_cone_embedding/notes.html",
+      "description": "After having severed conic theory from solid 3D geometry in Book I.14 to work entirely in the 2D plane through Books I–V, Apollonius deliberately returns to the 3D cone in Book VI.28–33 to solve the universal embedding problem: proving…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Notes — Return to the Solid 3D Cone"
+    },
+    "conics/book_06/sec_02_cone_embedding/summary": {
+      "id": "conics/book_06/sec_02_cone_embedding/summary",
+      "docname": "conics/book_06/sec_02_cone_embedding/summary",
+      "type": "section",
+      "title": "Summary — 3D Cone Embedding",
+      "url": "https://geometor.github.io/apollonius/conics/book_06/sec_02_cone_embedding/summary.html",
+      "description": "3D Cone Embedding (`VI.28–33 [Props. 120–122]`): Explicit straightedge-and-compass construction of the cutting planes in a given right circular cone that cut out a prescribed parabola, ellipse, or admissible hyperbola (diorismos on the…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Summary — 3D Cone Embedding"
+    },
+    "conics/book_07/index": {
+      "id": "conics/book_07/index",
+      "docname": "conics/book_07/index",
+      "type": "section",
+      "title": "Book VII: Conjugate Diameter Theorems & Extrema",
+      "url": "https://geometor.github.io/apollonius/conics/book_07/",
+      "description": "Book VII crowns ancient geometric algebra with Apollonius’s celebrated Theorems on Conjugate Diameters: the quadratic trace invariance () and the determinant parallelogram area invariance (). It then establishes the exhaustive series of…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_conjugate_diameters_theorems.svg",
+      "image_alt": "Ellipse with principal axes AA', BB', oblique conjugate diameters PP', DD', and circumscribed tangent parallelogram LL'MM'",
+      "labels": [
+        "conics-book-7"
+      ]
+    },
+    "conics/book_07/sec_01_conjugate_theorems/index": {
+      "id": "conics/book_07/sec_01_conjugate_theorems/index",
+      "docname": "conics/book_07/sec_01_conjugate_theorems/index",
+      "type": "section",
+      "title": "1. Apollonius’s Conjugate Diameter Theorems [Props. 123–136 / VII. 1–32]",
+      "url": "https://geometor.github.io/apollonius/conics/book_07/sec_01_conjugate_theorems/",
+      "description": "Let two homologue points HH be taken along the principal axis AA of a central conic such that (Props. 123–128 [VII. 1–11]); expressing the lengths of any pair of oblique conjugate diameters PP () and DD () in terms of segments on the axis…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_conjugate_diameters_theorems.svg",
+      "image_alt": "Ellipse with principal axes AA', BB', oblique conjugate diameters PP', DD', and circumscribed tangent parallelogram LL'MM'"
+    },
+    "conics/book_07/sec_01_conjugate_theorems/notes": {
+      "id": "conics/book_07/sec_01_conjugate_theorems/notes",
+      "docname": "conics/book_07/sec_01_conjugate_theorems/notes",
+      "type": "section",
+      "title": "Notes — Linear-Algebraic Spectral Meaning of Book VII",
+      "url": "https://geometor.github.io/apollonius/conics/book_07/sec_01_conjugate_theorems/notes.html",
+      "description": "From the vantage point of modern linear algebra and Rational Trigonometry (Wildberger 2005), Propositions 129 and 136 (`VII.12–13, 31`) express the two fundamental orthogonal invariants (trace and determinant) of a matrix!",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_conjugate_diameters_theorems.svg",
+      "image_alt": "Ellipse with principal axes AA', BB', oblique conjugate diameters PP', DD', and circumscribed tangent parallelogram LL'MM'"
+    },
+    "conics/book_07/sec_01_conjugate_theorems/summary": {
+      "id": "conics/book_07/sec_01_conjugate_theorems/summary",
+      "docname": "conics/book_07/sec_01_conjugate_theorems/summary",
+      "type": "section",
+      "title": "Summary — Conjugate Diameter Invariants",
+      "url": "https://geometor.github.io/apollonius/conics/book_07/sec_01_conjugate_theorems/summary.html",
+      "description": "Homothety Lemmas (`VII.1–11 [Props. 123–128]`): Auxiliary axis division translates oblique conjugate diameters into collinear segments on AA.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_conjugate_diameters_theorems.svg",
+      "image_alt": "Ellipse with principal axes AA', BB', oblique conjugate diameters PP', DD', and circumscribed tangent parallelogram LL'MM'"
+    },
+    "conics/book_07/sec_02_conjugate_extrema/index": {
+      "id": "conics/book_07/sec_02_conjugate_extrema/index",
+      "docname": "conics/book_07/sec_02_conjugate_extrema/index",
+      "type": "section",
+      "title": "2. Extrema of Conjugate Functions for Book VIII [Props. 131–147 / VII. 21–51]",
+      "url": "https://geometor.github.io/apollonius/conics/book_07/sec_02_conjugate_extrema/",
+      "description": "Extrema of Conjugate Diameters (`Props. 131–147 [VII. 21–51]`, pp. 231–254). As the vertex P moves along an ellipse from the major vertex A to the minor vertex B, the magnitudes , , the parameter , and vary monotonically between their…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "2. Extrema of Conjugate Functions for Book VIII [Props. 131–147 / VII. 21–51]"
+    },
+    "conics/book_07/sec_02_conjugate_extrema/notes": {
+      "id": "conics/book_07/sec_02_conjugate_extrema/notes",
+      "docname": "conics/book_07/sec_02_conjugate_extrema/notes",
+      "type": "section",
+      "title": "Notes — Reconstructing the Lost Book VIII",
+      "url": "https://geometor.github.io/apollonius/conics/book_07/sec_02_conjugate_extrema/notes.html",
+      "description": "In the Preface to Book VII (Heath p. lxxv), Apollonius explicitly tells Attalus why he forged the intricate inequality theorems VII.21–51: “Several examples of these occur in the determinate conic problems solved and demonstrated by me in…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Notes — Reconstructing the Lost Book VIII"
+    },
+    "conics/book_07/sec_02_conjugate_extrema/summary": {
+      "id": "conics/book_07/sec_02_conjugate_extrema/summary",
+      "docname": "conics/book_07/sec_02_conjugate_extrema/summary",
+      "type": "section",
+      "title": "Summary — Extrema of Conjugate Functions",
+      "url": "https://geometor.github.io/apollonius/conics/book_07/sec_02_conjugate_extrema/summary.html",
+      "description": "Diorismos Inequalities (`VII.21–51 [Props. 131–147]`): Exact extrema of , , , , and preparing the solvability conditions for reconstructing conics from conjugate-diameter data in the lost Book VIII.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Summary — Extrema of Conjugate Functions"
+    },
+    "conics/concordance": {
+      "id": "conics/concordance",
+      "docname": "conics/concordance",
+      "type": "section",
+      "title": "Cross-Corpus Concordance & Symbolic Gap Audit",
+      "url": "https://geometor.github.io/apollonius/conics/concordance.html",
+      "description": "This concordance maps the 387 classical Greek and Arabic propositions of Apollonius’s Conics (Books I–VII) and T. L. Heath’s 147 consolidated propositions (1896) across the Digital Scriptorium Codex units, Euclid’s Elements, Archimedes…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Cross-Corpus Concordance & Symbolic Gap Audit",
+      "labels": [
+        "conics-concordance",
+        "conc-prefaces-letters",
+        "conc-i-1-10-cone",
+        "conc-i-11-parabola",
+        "conc-i-12-hyperbola",
+        "conc-i-13-ellipse",
+        "conc-i-14-opposites",
+        "conc-i-33-38-tangents",
+        "conc-i-49-51-coordinate-change",
+        "conc-ii-1-14-asymptotes",
+        "conc-ii-15-23-conjugate-hyperbolas",
+        "conc-ii-44-53-axes-tangents",
+        "conc-iii-16-29-chord-rectangles",
+        "conc-iii-30-40-poles-polars",
+        "conc-iii-45-52-foci",
+        "conc-iii-53-56-four-line-locus",
+        "conc-iv-1-23-polar-converse",
+        "conc-iv-24-57-intersections",
+        "conc-v-1-34-subnormals",
+        "conc-v-51-63-evolute",
+        "conc-vi-1-33-similarity-cones",
+        "conc-vii-12-31-apollonius-theorems",
+        "conc-vii-33-51-extrema",
+        "conc-pappus-vii-tangencies-ccc",
+        "conc-pappus-vii-plane-loci-apollonius-circle",
+        "gap-general-conic-quadratic",
+        "gap-pole-polar-duality",
+        "gap-five-point-pencil",
+        "gap-normals-evolute",
+        "gap-apollonius-ccc"
+      ]
+    },
+    "conics/glossary": {
+      "id": "conics/glossary",
+      "docname": "conics/glossary",
+      "type": "section",
+      "title": "Technical Glossary of Apollonian Conics",
+      "url": "https://geometor.github.io/apollonius/conics/glossary.html",
+      "description": "Greek, Latin, and English geometrical terminology of Apollonius of Perga, verified against T. L. Heath’s Notes on the Terminology of Greek Geometry (1896, pp. clvii–clxx) and Heiberg’s Index Graecitatis (1893).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Technical Glossary of Apollonian Conics",
+      "labels": [
+        "conics-glossary",
+        "term-parabole",
+        "term-elleipsis",
+        "term-hyperbole",
+        "term-orthia",
+        "term-plagia",
+        "term-eidos",
+        "term-tetagmenos",
+        "term-diametros",
+        "term-hypenantia",
+        "term-antikeimenai",
+        "term-symptoma",
+        "term-asymptotoi",
+        "term-semeia-ek-tes-paraboles",
+        "term-topos-pros-treis-kai-tessaras-grammas",
+        "term-diorismos",
+        "term-evolute",
+        "term-epaphai",
+        "term-neusis"
+      ]
+    },
+    "conics/index": {
+      "id": "conics/index",
+      "docname": "conics/index",
+      "type": "book",
+      "title": "Conics",
+      "url": "https://geometor.github.io/apollonius/conics/",
+      "subtitle": "Books I–VII (ed. Sir Thomas Little Heath, 1896)",
+      "description": "Apollonius of Perga’s foundational treatise on conic sections, generating parabola, ellipse, and hyperbola from a single oblique cone and establishing asymptotes, focal properties, normals, and conjugate diameters.",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_conjugate_diameters_theorems.svg",
+      "image_alt": "Ellipse with principal axes AA', BB', oblique conjugate diameters PP', DD', and circumscribed tangent parallelogram LL'MM'",
+      "facets": {
+        "author": "Apollonius of Perga",
+        "year": "-200",
+        "year_sort": -200,
+        "year_label": "ca. 200 BCE",
+        "year_display": "ca. 200 BCE",
+        "edition_year": "1896"
+      },
+      "labels": [
+        "conics-codex"
+      ]
+    },
+    "conics/people/apollonius": {
+      "id": "conics/people/apollonius",
+      "docname": "conics/people/apollonius",
+      "type": "person",
+      "title": "Apollonius of Perga",
+      "url": "https://geometor.github.io/apollonius/conics/people/apollonius.html",
+      "description": "Original Name / Form: Ἀπολλώνιος ὁ Περγαῖος",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Apollonius of Perga",
+      "facets": {
+        "death_year": "-190",
+        "death_year_sort": -190,
+        "death_label": "190 BC",
+        "lifespan": "c. 240–190 BCE",
+        "site_url": "https://geometor.github.io/apollonius/",
+        "github_url": "https://github.com/geometor/apollonius"
+      },
+      "labels": [
+        "person-apollonius"
+      ]
+    },
+    "conics/people/archimedes": {
+      "id": "conics/people/archimedes",
+      "docname": "conics/people/archimedes",
+      "type": "person",
+      "title": "Archimedes of Syracuse",
+      "url": "https://geometor.github.io/apollonius/conics/people/archimedes.html",
+      "description": "Original Name / Form: Ἀρχιμήδης ὁ Συρακούσιος",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Archimedes of Syracuse",
+      "facets": {
+        "death_year": "-212",
+        "death_year_sort": -212,
+        "death_label": "212 BC",
+        "lifespan": "c. 287–212 BCE",
+        "site_url": "https://geometor.github.io/archimedes/",
+        "github_url": "https://github.com/geometor/archimedes"
+      },
+      "labels": [
+        "person-archimedes"
+      ]
+    },
+    "conics/people/aristaeus": {
+      "id": "conics/people/aristaeus",
+      "docname": "conics/people/aristaeus",
+      "type": "person",
+      "title": "Aristaeus the Elder",
+      "url": "https://geometor.github.io/apollonius/conics/people/aristaeus.html",
+      "description": "Original Name / Form: Ἀρισταῖος ὁ Πρεσβύτερος",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Aristaeus the Elder",
+      "facets": {
+        "death_year": "-330",
+        "death_year_sort": -330,
+        "death_label": "330 BC",
+        "lifespan": "fl. c. 330 BCE"
+      },
+      "labels": [
+        "person-aristaeus"
+      ]
+    },
+    "conics/people/attalus": {
+      "id": "conics/people/attalus",
+      "docname": "conics/people/attalus",
+      "type": "person",
+      "title": "Attalus of Pergamum",
+      "url": "https://geometor.github.io/apollonius/conics/people/attalus.html",
+      "description": "Original Name / Form: Ἄτταλος",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Attalus of Pergamum",
+      "facets": {
+        "death_year": "-200",
+        "death_year_sort": -200,
+        "death_label": "200 BC",
+        "lifespan": "fl. c. 200 BCE"
+      },
+      "labels": [
+        "person-attalus"
+      ]
+    },
+    "conics/people/banu-musa": {
+      "id": "conics/people/banu-musa",
+      "docname": "conics/people/banu-musa",
+      "type": "person",
+      "title": "Banū Mūsā)",
+      "url": "https://geometor.github.io/apollonius/conics/people/banu-musa.html",
+      "description": "Original Name / Form: Banū Mūsā",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Banū Mūsā)",
+      "facets": {
+        "lifespan": "Ahmad & al-Hasan ibn Shākir"
+      },
+      "labels": [
+        "person-banu-musa"
+      ]
+    },
+    "conics/people/conon": {
+      "id": "conics/people/conon",
+      "docname": "conics/people/conon",
+      "type": "person",
+      "title": "Conon of Samos",
+      "url": "https://geometor.github.io/apollonius/conics/people/conon.html",
+      "description": "Original Name / Form: Κόνων ὁ Σάμιος",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Conon of Samos",
+      "facets": {
+        "death_year": "-220",
+        "death_year_sort": -220,
+        "death_label": "220 BC",
+        "lifespan": "c. 280–220 BCE"
+      },
+      "labels": [
+        "person-conon"
+      ]
+    },
+    "conics/people/desargues": {
+      "id": "conics/people/desargues",
+      "docname": "conics/people/desargues",
+      "type": "person",
+      "title": "Girard Desargues",
+      "url": "https://geometor.github.io/apollonius/conics/people/desargues.html",
+      "description": "Original Name / Form: Girard Desargues",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Girard Desargues",
+      "facets": {
+        "death_year": "1661",
+        "death_year_sort": 1661,
+        "death_label": "1661",
+        "lifespan": "1591–1661"
+      },
+      "labels": [
+        "person-desargues"
+      ]
+    },
+    "conics/people/descartes": {
+      "id": "conics/people/descartes",
+      "docname": "conics/people/descartes",
+      "type": "person",
+      "title": "René Descartes",
+      "url": "https://geometor.github.io/apollonius/conics/people/descartes.html",
+      "description": "Original Name / Form: Renatus Cartesius",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "René Descartes",
+      "facets": {
+        "death_year": "1650",
+        "death_year_sort": 1650,
+        "death_label": "1650",
+        "lifespan": "1596–1650"
+      },
+      "labels": [
+        "person-descartes"
+      ]
+    },
+    "conics/people/diocles": {
+      "id": "conics/people/diocles",
+      "docname": "conics/people/diocles",
+      "type": "person",
+      "title": "Diocles",
+      "url": "https://geometor.github.io/apollonius/conics/people/diocles.html",
+      "description": "Original Name / Form: Διοκλῆς",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Diocles",
+      "facets": {
+        "death_year": "-180",
+        "death_year_sort": -180,
+        "death_label": "180 BC",
+        "lifespan": "c. 240–180 BCE"
+      },
+      "labels": [
+        "person-diocles"
+      ]
+    },
+    "conics/people/euclid": {
+      "id": "conics/people/euclid",
+      "docname": "conics/people/euclid",
+      "type": "person",
+      "title": "Euclid of Alexandria",
+      "url": "https://geometor.github.io/apollonius/conics/people/euclid.html",
+      "description": "Original Name / Form: Εὐκλείδης",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Euclid of Alexandria",
+      "facets": {
+        "death_year": "-300",
+        "death_year_sort": -300,
+        "death_label": "300 BC",
+        "lifespan": "fl. c. 300 BCE",
+        "site_url": "https://geometor.github.io/euclid/",
+        "github_url": "https://github.com/geometor/euclid"
+      },
+      "labels": [
+        "person-euclid"
+      ]
+    },
+    "conics/people/eudemus-pergamum": {
+      "id": "conics/people/eudemus-pergamum",
+      "docname": "conics/people/eudemus-pergamum",
+      "type": "person",
+      "title": "Eudemus of Pergamum",
+      "url": "https://geometor.github.io/apollonius/conics/people/eudemus-pergamum.html",
+      "description": "Original Name / Form: Εὔδημος ὁ Περγαμηνός",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Eudemus of Pergamum",
+      "facets": {
+        "death_year": "-205",
+        "death_year_sort": -205,
+        "death_label": "205 BC",
+        "lifespan": "fl. c. 205 BCE"
+      },
+      "labels": [
+        "person-eudemus-pergamum"
+      ]
+    },
+    "conics/people/eutocius": {
+      "id": "conics/people/eutocius",
+      "docname": "conics/people/eutocius",
+      "type": "person",
+      "title": "Eutocius of Ascalon",
+      "url": "https://geometor.github.io/apollonius/conics/people/eutocius.html",
+      "description": "Original Name / Form: Εὐτόκιος ὁ Ἀσκαλωνίτης",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Eutocius of Ascalon",
+      "facets": {
+        "death_year": "540",
+        "death_year_sort": 540,
+        "death_label": "540",
+        "lifespan": "c. 480–540 CE"
+      },
+      "labels": [
+        "person-eutocius"
+      ]
+    },
+    "conics/people/geminus": {
+      "id": "conics/people/geminus",
+      "docname": "conics/people/geminus",
+      "type": "person",
+      "title": "Geminus of Rhodes",
+      "url": "https://geometor.github.io/apollonius/conics/people/geminus.html",
+      "description": "Original Name / Form: Γεμῖνος",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Geminus of Rhodes",
+      "facets": {
+        "death_year": "-110",
+        "death_year_sort": -110,
+        "death_label": "110 BC",
+        "lifespan": "c. 110–40 BCE"
+      },
+      "labels": [
+        "person-geminus"
+      ]
+    },
+    "conics/people/halley": {
+      "id": "conics/people/halley",
+      "docname": "conics/people/halley",
+      "type": "person",
+      "title": "Edmond Halley",
+      "url": "https://geometor.github.io/apollonius/conics/people/halley.html",
+      "description": "Original Name / Form: Edmundus Halleius",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Edmond Halley",
+      "facets": {
+        "death_year": "1742",
+        "death_year_sort": 1742,
+        "death_label": "1742",
+        "lifespan": "1656–1742"
+      },
+      "labels": [
+        "person-halley"
+      ]
+    },
+    "conics/people/heath": {
+      "id": "conics/people/heath",
+      "docname": "conics/people/heath",
+      "type": "person",
+      "title": "Sir Thomas Little Heath",
+      "url": "https://geometor.github.io/apollonius/conics/people/heath.html",
+      "description": "Original Name / Form: T. L. Heath",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Sir Thomas Little Heath",
+      "facets": {
+        "death_year": "1940",
+        "death_year_sort": 1940,
+        "death_label": "1940",
+        "lifespan": "1861–1940"
+      },
+      "labels": [
+        "person-heath"
+      ]
+    },
+    "conics/people/heiberg": {
+      "id": "conics/people/heiberg",
+      "docname": "conics/people/heiberg",
+      "type": "person",
+      "title": "Johan Ludvig Heiberg",
+      "url": "https://geometor.github.io/apollonius/conics/people/heiberg.html",
+      "description": "Original Name / Form: I. L. Heiberg",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Johan Ludvig Heiberg",
+      "facets": {
+        "death_year": "1928",
+        "death_year_sort": 1928,
+        "death_label": "1928",
+        "lifespan": "1854–1928"
+      },
+      "labels": [
+        "person-heiberg"
+      ]
+    },
+    "conics/people/hypatia": {
+      "id": "conics/people/hypatia",
+      "docname": "conics/people/hypatia",
+      "type": "person",
+      "title": "Hypatia of Alexandria",
+      "url": "https://geometor.github.io/apollonius/conics/people/hypatia.html",
+      "description": "Original Name / Form: Ὑπατία",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Hypatia of Alexandria",
+      "facets": {
+        "death_year": "415",
+        "death_year_sort": 415,
+        "death_label": "415",
+        "lifespan": "c. 355–415 CE"
+      },
+      "labels": [
+        "person-hypatia"
+      ]
+    },
+    "conics/people/ibn-al-haytham": {
+      "id": "conics/people/ibn-al-haytham",
+      "docname": "conics/people/ibn-al-haytham",
+      "type": "person",
+      "title": "Ibn al-Haytham",
+      "url": "https://geometor.github.io/apollonius/conics/people/ibn-al-haytham.html",
+      "description": "Original Name / Form: Abū ʿAlī al-Ḥasan ibn al-Haytham",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Ibn al-Haytham",
+      "facets": {
+        "lifespan": "Alhazen"
+      },
+      "labels": [
+        "person-ibn-al-haytham"
+      ]
+    },
+    "conics/people/index": {
+      "id": "conics/people/index",
+      "docname": "conics/people/index",
+      "type": "section",
+      "title": "People",
+      "url": "https://geometor.github.io/apollonius/conics/people/",
+      "description_source": "empty",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "People",
+      "labels": [
+        "persons",
+        "conics-persons"
+      ]
+    },
+    "conics/people/kepler": {
+      "id": "conics/people/kepler",
+      "docname": "conics/people/kepler",
+      "type": "person",
+      "title": "Johannes Kepler",
+      "url": "https://geometor.github.io/apollonius/conics/people/kepler.html",
+      "description": "Original Name / Form: Ioannes Keplerus",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Johannes Kepler",
+      "facets": {
+        "death_year": "1630",
+        "death_year_sort": 1630,
+        "death_label": "1630",
+        "lifespan": "1571–1630",
+        "site_url": "https://geometor.github.io/kepler/",
+        "github_url": "https://github.com/geometor/kepler"
+      },
+      "labels": [
+        "person-kepler"
+      ]
+    },
+    "conics/people/menaechmus": {
+      "id": "conics/people/menaechmus",
+      "docname": "conics/people/menaechmus",
+      "type": "person",
+      "title": "Menaechmus",
+      "url": "https://geometor.github.io/apollonius/conics/people/menaechmus.html",
+      "description": "Original Name / Form: Μέναιχμος",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Menaechmus",
+      "facets": {
+        "death_year": "-320",
+        "death_year_sort": -320,
+        "death_label": "320 BC",
+        "lifespan": "c. 380–320 BCE"
+      },
+      "labels": [
+        "person-menaechmus"
+      ]
+    },
+    "conics/people/naucrates": {
+      "id": "conics/people/naucrates",
+      "docname": "conics/people/naucrates",
+      "type": "person",
+      "title": "Naucrates the Geometer",
+      "url": "https://geometor.github.io/apollonius/conics/people/naucrates.html",
+      "description": "Original Name / Form: Ναυκράτης ὁ Γεωμέτρης",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Naucrates the Geometer",
+      "facets": {
+        "death_year": "-210",
+        "death_year_sort": -210,
+        "death_label": "210 BC",
+        "lifespan": "fl. c. 210 BCE"
+      },
+      "labels": [
+        "person-naucrates"
+      ]
+    },
+    "conics/people/newton": {
+      "id": "conics/people/newton",
+      "docname": "conics/people/newton",
+      "type": "person",
+      "title": "Sir Isaac Newton",
+      "url": "https://geometor.github.io/apollonius/conics/people/newton.html",
+      "description": "Original Name / Form: Isaacus Newtonus",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Sir Isaac Newton",
+      "facets": {
+        "death_year": "1727",
+        "death_year_sort": 1727,
+        "death_label": "1727",
+        "lifespan": "1642–1727"
+      },
+      "labels": [
+        "person-newton"
+      ]
+    },
+    "conics/people/nicoteles": {
+      "id": "conics/people/nicoteles",
+      "docname": "conics/people/nicoteles",
+      "type": "person",
+      "title": "Nicoteles of Cyrene",
+      "url": "https://geometor.github.io/apollonius/conics/people/nicoteles.html",
+      "description": "Original Name / Form: Νικοτέλης ὁ Κυρηναῖος",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Nicoteles of Cyrene",
+      "facets": {
+        "death_year": "-230",
+        "death_year_sort": -230,
+        "death_label": "230 BC",
+        "lifespan": "fl. c. 230 BCE"
+      },
+      "labels": [
+        "person-nicoteles"
+      ]
+    },
+    "conics/people/pappus": {
+      "id": "conics/people/pappus",
+      "docname": "conics/people/pappus",
+      "type": "person",
+      "title": "Pappus of Alexandria",
+      "url": "https://geometor.github.io/apollonius/conics/people/pappus.html",
+      "description": "Original Name / Form: Πάππος ὁ Ἀλεξανδρεύς",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Pappus of Alexandria",
+      "facets": {
+        "death_year": "350",
+        "death_year_sort": 350,
+        "death_label": "350",
+        "lifespan": "c. 290–350 CE",
+        "site_url": "https://geometor.github.io/pappus/",
+        "github_url": "https://github.com/geometor/pappus"
+      },
+      "labels": [
+        "person-pappus"
+      ]
+    },
+    "conics/people/pascal": {
+      "id": "conics/people/pascal",
+      "docname": "conics/people/pascal",
+      "type": "person",
+      "title": "Blaise Pascal",
+      "url": "https://geometor.github.io/apollonius/conics/people/pascal.html",
+      "description": "Original Name / Form: Blasius Pascalis",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Blaise Pascal",
+      "facets": {
+        "death_year": "1662",
+        "death_year_sort": 1662,
+        "death_label": "1662",
+        "lifespan": "1623–1662",
+        "site_url": "https://geometor.github.io/pascal/",
+        "github_url": "https://github.com/geometor/pascal"
+      },
+      "labels": [
+        "person-pascal"
+      ]
+    },
+    "conics/people/philonides": {
+      "id": "conics/people/philonides",
+      "docname": "conics/people/philonides",
+      "type": "person",
+      "title": "Philonides of Laodicea",
+      "url": "https://geometor.github.io/apollonius/conics/people/philonides.html",
+      "description": "Original Name / Form: Φιλωνίδης",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Philonides of Laodicea",
+      "facets": {
+        "death_year": "-130",
+        "death_year_sort": -130,
+        "death_label": "130 BC",
+        "lifespan": "c. 200–130 BCE"
+      },
+      "labels": [
+        "person-philonides"
+      ]
+    },
+    "conics/people/thabit-ibn-qurra": {
+      "id": "conics/people/thabit-ibn-qurra",
+      "docname": "conics/people/thabit-ibn-qurra",
+      "type": "person",
+      "title": "Thābit ibn Qurra",
+      "url": "https://geometor.github.io/apollonius/conics/people/thabit-ibn-qurra.html",
+      "description": "Original Name / Form: Thābit ibn Qurra al-Ḥarrānī",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Thābit ibn Qurra",
+      "facets": {
+        "death_year": "901",
+        "death_year_sort": 901,
+        "death_label": "901",
+        "lifespan": "836–901 CE"
+      },
+      "labels": [
+        "person-thabit-ibn-qurra"
+      ]
+    },
+    "conics/people/viete": {
+      "id": "conics/people/viete",
+      "docname": "conics/people/viete",
+      "type": "person",
+      "title": "François Viète",
+      "url": "https://geometor.github.io/apollonius/conics/people/viete.html",
+      "description": "Original Name / Form: Franciscus Vieta",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "François Viète",
+      "facets": {
+        "death_year": "1603",
+        "death_year_sort": 1603,
+        "death_label": "1603",
+        "lifespan": "1540–1603"
+      },
+      "labels": [
+        "person-viete"
+      ]
+    },
+    "conics/people/zeuthen": {
+      "id": "conics/people/zeuthen",
+      "docname": "conics/people/zeuthen",
+      "type": "person",
+      "title": "Hieronymus Georg Zeuthen",
+      "url": "https://geometor.github.io/apollonius/conics/people/zeuthen.html",
+      "description": "Original Name / Form: H. G. Zeuthen",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Hieronymus Georg Zeuthen",
+      "facets": {
+        "death_year": "1920",
+        "death_year_sort": 1920,
+        "death_label": "1920",
+        "lifespan": "1839–1920"
+      },
+      "labels": [
+        "person-zeuthen"
+      ]
+    },
+    "conics/preface/index": {
+      "id": "conics/preface/index",
+      "docname": "conics/preface/index",
+      "type": "section",
+      "title": "Preface & General Introduction: From Oblique Cone to Prefatory Letters",
+      "url": "https://geometor.github.io/apollonius/conics/preface/",
+      "description": "The Conics of Apollonius of Perga represents the supreme synthesis of ancient Greek geometry. In this general introduction and prefatory correspondence, Apollonius surveys the earlier work of Menaechmus, Aristaeus, Euclid, and Archimedes…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_oblique_cone_sections.svg",
+      "image_alt": "Oblique scalene double cone showing parabola, ellipse, and two-branch hyperbola sections",
+      "labels": [
+        "unit-0-preface-intro-en",
+        "unit-0-preface-intro-summary",
+        "unit-0-preface-intro-notes",
+        "conics-preface"
+      ]
+    },
+    "conics/preface/sec_01_historical_survey/index": {
+      "id": "conics/preface/sec_01_historical_survey/index",
+      "docname": "conics/preface/sec_01_historical_survey/index",
+      "type": "section",
+      "title": "1. From Three Right Cones to One Oblique Scalene Cone",
+      "url": "https://geometor.github.io/apollonius/conics/preface/sec_01_historical_survey/",
+      "description": "Prior to Apollonius of Perga, Greek geometers generated the three conic sections by cutting three distinct species of right circular cones with a plane strictly perpendicular to one generator of the cone (Heath 1896, pp. xvii–xxx):",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_oblique_cone_sections.svg",
+      "image_alt": "Oblique scalene double cone showing parabola, ellipse, and two-branch hyperbola sections"
+    },
+    "conics/preface/sec_01_historical_survey/notes": {
+      "id": "conics/preface/sec_01_historical_survey/notes",
+      "docname": "conics/preface/sec_01_historical_survey/notes",
+      "type": "section",
+      "title": "Notes — Textual Witnesses, Trilogy Context & Planimetry",
+      "url": "https://geometor.github.io/apollonius/conics/preface/sec_01_historical_survey/notes.html",
+      "description": "T. L. Heath’s Treatise on Conic Sections (Cambridge University Press, 1896) was the inaugural volume of his monumental three-part Cambridge synthesis of Greek geometry:",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_oblique_cone_sections.svg",
+      "image_alt": "Oblique scalene double cone showing parabola, ellipse, and two-branch hyperbola sections"
+    },
+    "conics/preface/sec_01_historical_survey/summary": {
+      "id": "conics/preface/sec_01_historical_survey/summary",
+      "docname": "conics/preface/sec_01_historical_survey/summary",
+      "type": "section",
+      "title": "Summary — Historical Genesis & Eight-Book Plan",
+      "url": "https://geometor.github.io/apollonius/conics/preface/sec_01_historical_survey/summary.html",
+      "description": "Pre-Apollonian Canon (Menaechmus, Aristaeus, Euclid, Archimedes)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_oblique_cone_sections.svg",
+      "image_alt": "Oblique scalene double cone showing parabola, ellipse, and two-branch hyperbola sections"
+    },
+    "conics/preface/sec_02_prefatory_letters/index": {
+      "id": "conics/preface/sec_02_prefatory_letters/index",
+      "docname": "conics/preface/sec_02_prefatory_letters/index",
+      "type": "section",
+      "title": "2. Apollonius’s Own Prefatory Letters (Books I–VII)",
+      "url": "https://geometor.github.io/apollonius/conics/preface/sec_02_prefatory_letters/",
+      "description": "Unlike Euclid’s impersonal axiomatic treatise, Apollonius prefaced each Book of the Conics with an epistolary cover letter explaining its genesis, scope, and mathematical novelty (Heiberg 1891, Halley 1710, Heath 1896, pp. lxix–lxxv).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "2. Apollonius’s Own Prefatory Letters (Books I–VII)"
+    },
+    "conics/preface/sec_02_prefatory_letters/notes": {
+      "id": "conics/preface/sec_02_prefatory_letters/notes",
+      "docname": "conics/preface/sec_02_prefatory_letters/notes",
+      "type": "section",
+      "title": "Notes — Prosopographical Context of the Prefaces",
+      "url": "https://geometor.github.io/apollonius/conics/preface/sec_02_prefatory_letters/notes.html",
+      "description": "Apollonius’s casual mention of Philonides in the Preface to Book II (p. lxxii) gained remarkable archaeological confirmation from the carbonized Vita Philonidis (PHerc. 1044) unearthed at Herculaneum, which confirms Philonides of…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Notes — Prosopographical Context of the Prefaces"
+    },
+    "conics/preface/sec_02_prefatory_letters/summary": {
+      "id": "conics/preface/sec_02_prefatory_letters/summary",
+      "docname": "conics/preface/sec_02_prefatory_letters/summary",
+      "type": "section",
+      "title": "Summary — Textual Survival & Heath’s Consolidation",
+      "url": "https://geometor.github.io/apollonius/conics/preface/sec_02_prefatory_letters/summary.html",
+      "description": "Original Work: 8 Books (~487 propositions attested by Pappus).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Summary — Textual Survival & Heath’s Consolidation"
+    },
+    "index": {
+      "id": "index",
+      "docname": "index",
+      "type": "project",
+      "title": "Apollonius of Perga",
+      "url": "https://geometor.github.io/apollonius/",
+      "description": "Apollonius of Perga (The Great Geometer, c. 262 – c. 190 BCE) transformed classical geometry by deriving the parabola, ellipse, hyperbola, and opposite branches from a single oblique cone. This archive unites Sir Thomas Little Heath’s…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Apollonius of Perga Medallion",
+      "labels": [
+        "apollonius-home"
+      ]
+    },
+    "modules/api/geometor/apollonius/cli/index": {
+      "id": "modules/api/geometor/apollonius/cli/index",
+      "docname": "modules/api/geometor/apollonius/cli/index",
+      "type": "article",
+      "title": "geometor.apollonius.cli",
+      "url": "https://geometor.github.io/apollonius/modules/api/geometor/apollonius/cli/",
+      "description": "Command-line interface for GEOMETOR • apollonius.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "geometor.apollonius.cli"
+    },
+    "modules/api/geometor/apollonius/compile_codex/index": {
+      "id": "modules/api/geometor/apollonius/compile_codex/index",
+      "docname": "modules/api/geometor/apollonius/compile_codex/index",
+      "type": "article",
+      "title": "geometor.apollonius.compile_codex",
+      "url": "https://geometor.github.io/apollonius/modules/api/geometor/apollonius/compile_codex/",
+      "description": "Apparatus RST generator and 3-track Book Codex integrity verifier for GEOMETOR • apollonius.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "geometor.apollonius.compile_codex"
+    },
+    "modules/api/geometor/apollonius/concordance/index": {
+      "id": "modules/api/geometor/apollonius/concordance/index",
+      "docname": "modules/api/geometor/apollonius/concordance/index",
+      "type": "article",
+      "title": "geometor.apollonius.concordance",
+      "url": "https://geometor.github.io/apollonius/modules/api/geometor/apollonius/concordance/",
+      "description": "Canonical Codex Unit registry and cross-corpus concordance verifier for Apollonius’s Conics.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "geometor.apollonius.concordance"
+    },
+    "modules/index": {
+      "id": "modules/index",
+      "docname": "modules/index",
+      "type": "article",
+      "title": "Modules",
+      "url": "https://geometor.github.io/apollonius/modules/",
+      "description": "The geometor.apollonius Python package provides deterministic provenance and SHA-256 verification, cross-corpus proposition concordance queries, scholarly RST apparatus compilation, and CLI inspection tools for the Conics codex.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Modules",
+      "labels": [
+        "apollonius-modules"
+      ]
+    },
+    "reconstructed/index": {
+      "id": "reconstructed/index",
+      "docname": "reconstructed/index",
+      "type": "book",
+      "title": "Reconstructed Analytic Works",
+      "url": "https://geometor.github.io/apollonius/reconstructed/",
+      "subtitle": "The Lost Treatises of the Domain of Analysis (Pappus Synagoge VII)",
+      "description": "Beyond the Conics, Apollonius of Perga authored six major two-book treatises forming the core of the ancient Domain of Analysis (Τόπος ἀναλυόμενος) preserved for posterity in Book VII of Pappus of Alexandria’s Mathematical Collection…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_problem_of_apollonius_ccc.svg",
+      "image_alt": "All eight Apollonius tangent circles to three given mutually external circles C1, C2, C3",
+      "facets": {
+        "author": "Apollonius of Perga",
+        "year": "-200",
+        "year_sort": -200,
+        "year_label": "ca. 200 BCE",
+        "year_display": "ca. 200 BCE",
+        "edition_year": "1896"
+      },
+      "labels": [
+        "unit-7-lost-works-pappus-en",
+        "unit-7-lost-works-pappus-summary",
+        "unit-7-lost-works-pappus-notes",
+        "conics-lost-works"
+      ]
+    },
+    "reconstructed/sec_01_tangencies/index": {
+      "id": "reconstructed/sec_01_tangencies/index",
+      "docname": "reconstructed/sec_01_tangencies/index",
+      "type": "section",
+      "title": "1. On Tangencies (Περὶ ἐπαφῶν) — The Problem of Apollonius (CCC)",
+      "url": "https://geometor.github.io/apollonius/reconstructed/sec_01_tangencies/",
+      "description": "Pappus summarizes the famous ten contact problems of Apollonius’s two-book treatise On Tangencies: given any three geometric elements in a plane—each being a Point (`P`), a Straight Line (`L`), or a Circle (`C`)—construct by straightedge…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_problem_of_apollonius_ccc.svg",
+      "image_alt": "All eight Apollonius tangent circles to three given mutually external circles C1, C2, C3"
+    },
+    "reconstructed/sec_01_tangencies/notes": {
+      "id": "reconstructed/sec_01_tangencies/notes",
+      "docname": "reconstructed/sec_01_tangencies/notes",
+      "type": "section",
+      "title": "Notes — The Apollonius Point X(181)",
+      "url": "https://geometor.github.io/apollonius/reconstructed/sec_01_tangencies/notes.html",
+      "description": "Three flagship centers in Clark Kimberling’s Encyclopedia of Triangle Centers (geometor/etc) arise directly from the two Apollonian locus and tangency theorems:",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_problem_of_apollonius_ccc.svg",
+      "image_alt": "All eight Apollonius tangent circles to three given mutually external circles C1, C2, C3"
+    },
+    "reconstructed/sec_01_tangencies/summary": {
+      "id": "reconstructed/sec_01_tangencies/summary",
+      "docname": "reconstructed/sec_01_tangencies/summary",
+      "type": "section",
+      "title": "Summary — On Tangencies (De Tactionibus)",
+      "url": "https://geometor.github.io/apollonius/reconstructed/sec_01_tangencies/summary.html",
+      "description": "Treatise: On Tangencies (De Tactionibus, 2 Books, epaphai).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_problem_of_apollonius_ccc.svg",
+      "image_alt": "All eight Apollonius tangent circles to three given mutually external circles C1, C2, C3"
+    },
+    "reconstructed/sec_02_plane_loci/index": {
+      "id": "reconstructed/sec_02_plane_loci/index",
+      "docname": "reconstructed/sec_02_plane_loci/index",
+      "type": "section",
+      "title": "2. Plane Loci (Τόποι ἐπίπεδοι) — The Circle of Apollonius",
+      "url": "https://geometor.github.io/apollonius/reconstructed/sec_02_plane_loci/",
+      "description": "In Book II of Plane Loci, Apollonius proved one of the most fertile theorems of Euclidean and triangle geometry:",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_apollonius_circle_locus.svg",
+      "image_alt": "Locus PA:PB = k and the three coaxal Apollonius circles of a triangle meeting at X(15) and X(16)"
+    },
+    "reconstructed/sec_02_plane_loci/notes": {
+      "id": "reconstructed/sec_02_plane_loci/notes",
+      "docname": "reconstructed/sec_02_plane_loci/notes",
+      "type": "section",
+      "title": "Notes — Isodynamic Points & Fermat’s 1636 Coordinate Geometry",
+      "url": "https://geometor.github.io/apollonius/reconstructed/sec_02_plane_loci/notes.html",
+      "description": "On reference triangle ABC with side lengths , the three Apollonius Circles ( through A, through B, and through C) share the Lemoine Axis as common radical axis and intersect in two real points inverse in the circumcircle—X(15) and…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_apollonius_circle_locus.svg",
+      "image_alt": "Locus PA:PB = k and the three coaxal Apollonius circles of a triangle meeting at X(15) and X(16)"
+    },
+    "reconstructed/sec_02_plane_loci/summary": {
+      "id": "reconstructed/sec_02_plane_loci/summary",
+      "docname": "reconstructed/sec_02_plane_loci/summary",
+      "type": "section",
+      "title": "Summary — Plane Loci (Loca Plana)",
+      "url": "https://geometor.github.io/apollonius/reconstructed/sec_02_plane_loci/summary.html",
+      "description": "Treatise: Plane Loci (Loca Plana, 2 Books).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image": "https://geometor.github.io/apollonius/_static/figures/fig_apollonius_circle_locus.svg",
+      "image_alt": "Locus PA:PB = k and the three coaxal Apollonius circles of a triangle meeting at X(15) and X(16)"
+    },
+    "reconstructed/sec_03_analytic_treasury/index": {
+      "id": "reconstructed/sec_03_analytic_treasury/index",
+      "docname": "reconstructed/sec_03_analytic_treasury/index",
+      "type": "section",
+      "title": "3. The Remaining Four Analytic Treatises in Pappus VII",
+      "url": "https://geometor.github.io/apollonius/reconstructed/sec_03_analytic_treasury/",
+      "description": "Cutting Off of a Ratio (Περὶ λόγου ἀποτομῆς, 2 Books — extant in Arabic, ed. Halley 1706): Through a given point draw a straight line cutting off segments on two given lines (measured from given base points) bearing a prescribed…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "3. The Remaining Four Analytic Treatises in Pappus VII"
+    },
+    "reconstructed/sec_03_analytic_treasury/notes": {
+      "id": "reconstructed/sec_03_analytic_treasury/notes",
+      "docname": "reconstructed/sec_03_analytic_treasury/notes",
+      "type": "section",
+      "title": "Notes — Pappus Book VII Transmission Context",
+      "url": "https://geometor.github.io/apollonius/reconstructed/sec_03_analytic_treasury/notes.html",
+      "description": "In Book VII of the Synagoge, Pappus defines the Domain of Analysis (Τόπος ἀναλυόμενος) as a body of doctrine provided for those who, having mastered the Elements, wish to acquire power in solving problems. Apollonius authored 12 of the 33…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Notes — Pappus Book VII Transmission Context"
+    },
+    "reconstructed/sec_03_analytic_treasury/summary": {
+      "id": "reconstructed/sec_03_analytic_treasury/summary",
+      "docname": "reconstructed/sec_03_analytic_treasury/summary",
+      "type": "section",
+      "title": "Summary — The Remaining Analytic Treatises",
+      "url": "https://geometor.github.io/apollonius/reconstructed/sec_03_analytic_treasury/summary.html",
+      "description": "Survival / Restoration",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Summary — The Remaining Analytic Treatises"
+    },
+    "usage/index": {
+      "id": "usage/index",
+      "docname": "usage/index",
+      "type": "section",
+      "title": "Usage",
+      "url": "https://geometor.github.io/apollonius/usage/",
+      "description": "This archive is built with PHOTON Publish as an interconnected semantic book codex.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/apollonius/_static/medallion.svg",
+      "image_alt": "Usage",
+      "labels": [
+        "usage"
+      ]
+    }
+  },
+  "labels": {
+    "about-apollonius-of-perga": "about/apollonius-of-perga",
+    "about-heath-trilogy": "about/heath-trilogy",
+    "about": "about/index",
+    "about-index": "about/index",
+    "apollonius-about": "about/index",
+    "apollonius-mission": "about/index",
+    "about-textual-transmission": "about/textual-transmission",
+    "bibliography": "conics/bibliography",
+    "conics-bibliography": "conics/bibliography",
+    "cite-heath-1896": "conics/bibliography",
+    "cite-heiberg-1891": "conics/bibliography",
+    "cite-heiberg-1893": "conics/bibliography",
+    "cite-halley-1710": "conics/bibliography",
+    "cite-halley-1706": "conics/bibliography",
+    "cite-nix-1889": "conics/bibliography",
+    "cite-balsam-1861": "conics/bibliography",
+    "cite-zeuthen-1886": "conics/bibliography",
+    "cite-hultsch-1877": "conics/bibliography",
+    "cite-euclid-heath1908": "conics/bibliography",
+    "cite-archimedes-heath1897": "conics/bibliography",
+    "cite-viete-1600": "conics/bibliography",
+    "cite-kepler-1604": "conics/bibliography",
+    "cite-descartes-1637": "conics/bibliography",
+    "cite-kimberling-etc": "conics/bibliography",
+    "cite-wildberger-2005": "conics/bibliography",
+    "cite-mathlib4-polepolar": "conics/bibliography",
+    "unit-1-book-1-en": "conics/book_01/index",
+    "unit-1-book-1-summary": "conics/book_01/index",
+    "unit-1-book-1-notes": "conics/book_01/index",
+    "conics-book-1": "conics/book_01/index",
+    "unit-2-book-2-en": "conics/book_02/index",
+    "unit-2-book-2-summary": "conics/book_02/index",
+    "unit-2-book-2-notes": "conics/book_02/index",
+    "conics-book-2": "conics/book_02/index",
+    "unit-3-book-3-en": "conics/book_03/index",
+    "unit-3-book-3-summary": "conics/book_03/index",
+    "unit-3-book-3-notes": "conics/book_03/index",
+    "conics-book-3": "conics/book_03/index",
+    "unit-4-book-4-en": "conics/book_04/index",
+    "unit-4-book-4-summary": "conics/book_04/index",
+    "unit-4-book-4-notes": "conics/book_04/index",
+    "conics-book-4": "conics/book_04/index",
+    "unit-5-book-5-en": "conics/book_05/index",
+    "unit-5-book-5-summary": "conics/book_05/index",
+    "unit-5-book-5-notes": "conics/book_05/index",
+    "conics-book-5": "conics/book_05/index",
+    "unit-6-books-6-7-en": "conics/book_06/index",
+    "unit-6-books-6-7-summary": "conics/book_06/index",
+    "unit-6-books-6-7-notes": "conics/book_06/index",
+    "conics-book-6": "conics/book_06/index",
+    "conics-book-7": "conics/book_07/index",
+    "conics-concordance": "conics/concordance",
+    "conc-prefaces-letters": "conics/concordance",
+    "conc-i-1-10-cone": "conics/concordance",
+    "conc-i-11-parabola": "conics/concordance",
+    "conc-i-12-hyperbola": "conics/concordance",
+    "conc-i-13-ellipse": "conics/concordance",
+    "conc-i-14-opposites": "conics/concordance",
+    "conc-i-33-38-tangents": "conics/concordance",
+    "conc-i-49-51-coordinate-change": "conics/concordance",
+    "conc-ii-1-14-asymptotes": "conics/concordance",
+    "conc-ii-15-23-conjugate-hyperbolas": "conics/concordance",
+    "conc-ii-44-53-axes-tangents": "conics/concordance",
+    "conc-iii-16-29-chord-rectangles": "conics/concordance",
+    "conc-iii-30-40-poles-polars": "conics/concordance",
+    "conc-iii-45-52-foci": "conics/concordance",
+    "conc-iii-53-56-four-line-locus": "conics/concordance",
+    "conc-iv-1-23-polar-converse": "conics/concordance",
+    "conc-iv-24-57-intersections": "conics/concordance",
+    "conc-v-1-34-subnormals": "conics/concordance",
+    "conc-v-51-63-evolute": "conics/concordance",
+    "conc-vi-1-33-similarity-cones": "conics/concordance",
+    "conc-vii-12-31-apollonius-theorems": "conics/concordance",
+    "conc-vii-33-51-extrema": "conics/concordance",
+    "conc-pappus-vii-tangencies-ccc": "conics/concordance",
+    "conc-pappus-vii-plane-loci-apollonius-circle": "conics/concordance",
+    "gap-general-conic-quadratic": "conics/concordance",
+    "gap-pole-polar-duality": "conics/concordance",
+    "gap-five-point-pencil": "conics/concordance",
+    "gap-normals-evolute": "conics/concordance",
+    "gap-apollonius-ccc": "conics/concordance",
+    "conics-glossary": "conics/glossary",
+    "term-parabole": "conics/glossary",
+    "term-elleipsis": "conics/glossary",
+    "term-hyperbole": "conics/glossary",
+    "term-orthia": "conics/glossary",
+    "term-plagia": "conics/glossary",
+    "term-eidos": "conics/glossary",
+    "term-tetagmenos": "conics/glossary",
+    "term-diametros": "conics/glossary",
+    "term-hypenantia": "conics/glossary",
+    "term-antikeimenai": "conics/glossary",
+    "term-symptoma": "conics/glossary",
+    "term-asymptotoi": "conics/glossary",
+    "term-semeia-ek-tes-paraboles": "conics/glossary",
+    "term-topos-pros-treis-kai-tessaras-grammas": "conics/glossary",
+    "term-diorismos": "conics/glossary",
+    "term-evolute": "conics/glossary",
+    "term-epaphai": "conics/glossary",
+    "term-neusis": "conics/glossary",
+    "conics-codex": "conics/index",
+    "person-apollonius": "conics/people/apollonius",
+    "person-archimedes": "conics/people/archimedes",
+    "person-aristaeus": "conics/people/aristaeus",
+    "person-attalus": "conics/people/attalus",
+    "person-banu-musa": "conics/people/banu-musa",
+    "person-conon": "conics/people/conon",
+    "person-desargues": "conics/people/desargues",
+    "person-descartes": "conics/people/descartes",
+    "person-diocles": "conics/people/diocles",
+    "person-euclid": "conics/people/euclid",
+    "person-eudemus-pergamum": "conics/people/eudemus-pergamum",
+    "person-eutocius": "conics/people/eutocius",
+    "person-geminus": "conics/people/geminus",
+    "person-halley": "conics/people/halley",
+    "person-heath": "conics/people/heath",
+    "person-heiberg": "conics/people/heiberg",
+    "person-hypatia": "conics/people/hypatia",
+    "person-ibn-al-haytham": "conics/people/ibn-al-haytham",
+    "persons": "conics/people/index",
+    "conics-persons": "conics/people/index",
+    "person-kepler": "conics/people/kepler",
+    "person-menaechmus": "conics/people/menaechmus",
+    "person-naucrates": "conics/people/naucrates",
+    "person-newton": "conics/people/newton",
+    "person-nicoteles": "conics/people/nicoteles",
+    "person-pappus": "conics/people/pappus",
+    "person-pascal": "conics/people/pascal",
+    "person-philonides": "conics/people/philonides",
+    "person-thabit-ibn-qurra": "conics/people/thabit-ibn-qurra",
+    "person-viete": "conics/people/viete",
+    "person-zeuthen": "conics/people/zeuthen",
+    "unit-0-preface-intro-en": "conics/preface/index",
+    "unit-0-preface-intro-summary": "conics/preface/index",
+    "unit-0-preface-intro-notes": "conics/preface/index",
+    "conics-preface": "conics/preface/index",
+    "apollonius-home": "index",
+    "apollonius-modules": "modules/index",
+    "unit-7-lost-works-pappus-en": "reconstructed/index",
+    "unit-7-lost-works-pappus-summary": "reconstructed/index",
+    "unit-7-lost-works-pappus-notes": "reconstructed/index",
+    "conics-lost-works": "reconstructed/index",
+    "usage": "usage/index"
+  }
+}
